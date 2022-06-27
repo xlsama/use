@@ -31,7 +31,7 @@
   - Screentshots：`全部取消勾选` 我用 [iShot](https://apps.apple.com/cn/app/ishot-%E4%BC%98%E7%A7%80%E7%9A%84%E6%88%AA%E5%9B%BE%E5%BD%95%E5%B1%8F%E5%B7%A5%E5%85%B7/id1485844094?mt=12) 截图
   - Spotlight：`全部取消勾选` 不用聚焦，用 [raycast](https://raycast.com/)
 
-    - [Config](https://github.com/xlsama/dotfiles)
+    - [Config](https://github.com/xlsama/use)
 
 ## Mouse
 
@@ -45,12 +45,12 @@
 
 - [Alacritty](https://github.com/alacritty/alacritty)
 
-  - Config：[alacritty.yml](https://github.com/xlsama/dotfiles/blob/main/alacritty.yml)
+  - Config：[alacritty.yml](https://github.com/xlsama/use/blob/main/alacritty.yml)
 
 - [zsh](https://ohmyz.sh/) - Shell
 
-  - Config：[.zshrc](https://github.com/xlsama/dotfiles/blob/main/.zshrc)
+  - Config：[.zshrc](https://github.com/xlsama/use/blob/main/.zshrc)
 
 - [Tmux](https://github.com/tmux/tmux/wiki/Installing) - multiplexer
 
-  - Config：[tmux.conf](https://github.com/xlsama/dotfiles/blob/main/tmux.conf)
+  - Config：[tmux.conf](https://github.com/xlsama/use/blob/main/tmux.conf)

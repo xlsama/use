@@ -16,4 +16,4 @@
 
 ## 硬件
 
-- MacBook Pro 16' M1 Ma
+- MacBook Pro 16' M1
