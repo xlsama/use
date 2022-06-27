@@ -30,5 +30,3 @@ curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_m
 ```json
 "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}"
 ```
-
-这里需要注意：如果是中文输入法下，按 `esc` 切换到正常模式是可以的，但是按 `control+[` 是不可以，因为这时 `[` 是 ` 【` ，所以我改用 `control+c` 了。
