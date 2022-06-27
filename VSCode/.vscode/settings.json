@@ -1,1 +1,83 @@
-{}
+{
+  // font
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  // explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  // code completion
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // vim
+  "vim.leader": ",",
+  "vim.incsearch": true,
+  "vim.hlsearch": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<space>"],
+      "after": [":"]
+    },
+    // navigator
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.navigateLeft"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.navigateRight"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.navigateUp"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.navigateDown"]
+    },
+    // format
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["editor.action.format"]
+    }
+  ],
+  // auto switch input method
+  // im-select https://github.com/daipeihust/im-select
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select com.apple.keylayout.ABC {im}",
+  // code format
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  // code style
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.semi": false,
+  "prettier.tabWidth": 2,
+  "prettier.arrowParens": "avoid",
+  "prettier.trailingComma": "all",
+  // theme
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  // editor
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.minimap.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "workbench.startupEditor": "none",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.sideBar.location": "right",
+  "workbench.editor.untitled.hint": "hidden",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.tabSize": 2,
+  // leetcode
+  "leetcode.endpoint": "leetcode-cn"
+}
