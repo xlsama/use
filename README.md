@@ -1,21 +1,39 @@
-# Use
-
-我在用的
+# 我在用的
 
 ## 编辑器
 
-- Editor: [VSCode](https://code.visualstudio.com/)
+[VSCode](https://code.visualstudio.com/)
 
-- Settings & Extensions
+Settings & Extensions
 
 ## CLI
 
-- zsh - Shell
+zsh - Shell
 
-  - Config
+- Config
+
+## 软件
+
+浏览器：[Chrome](Chrome/Chrome.md)
+
+启动器: [Raycast](https://raycast.com)
+
+- [配置](Raycast)
+
+Todo：[滴答清单](https://dida365.com/)
+
+- 显隐快捷键：Ctrl + t
+
+自动切换输入法 [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
+
+- 除了微信是双拼，其他应用激活时都为英文
+
+翻译 [Bob](https://github.com/ripperhe/Bob)
+
+- 显隐快捷键：Option + f
 
 ## 硬件
 
-- MacBook Pro 16' M1
+MacBook Pro 16' M1
 
 未完。。。
