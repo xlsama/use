@@ -34,6 +34,12 @@ Todo：[滴答清单](https://dida365.com/)
 
 ## 硬件
 
-MacBook Pro 16' M1
+电脑：MacBook Pro 16' M1
+
+键盘：[HHKB](HHKB/HHKB.md)
+
+鼠标：LG Master 3
+
+显示器：Dell U2723QX 27 寸 + 24 寸显示器
 
 未完。。。
