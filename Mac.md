@@ -25,7 +25,7 @@
   这样 vim 用起来很丝滑，比如按住 hjkl、Control+d、Control+u 时
 
 ```
-defaults write -g applepressandholdenabled -bool false
+defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 需要重启
 
