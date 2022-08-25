@@ -28,6 +28,7 @@
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 需要重启
+Command+Shift+Q 重启当前用户
 
 - Shortcuts：
 
