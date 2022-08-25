@@ -40,6 +40,6 @@ Todo：[滴答清单](https://dida365.com/)
 
 鼠标：LG Master 3
 
-显示器：Dell U2723QX 27 寸 + 24 寸显示器
+显示器：Dell U2723QX 27 寸
 
 未完。。。

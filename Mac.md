@@ -27,6 +27,7 @@
 ```
 defaults write -g applepressandholdenabled -bool false
 ```
+需要重启
 
 - Shortcuts：
 
