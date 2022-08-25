@@ -24,6 +24,10 @@
 
   这样 vim 用起来很丝滑，比如按住 hjkl、Control+d、Control+u 时
 
+```
+defaults write -g applepressandholdenabled -bool false
+```
+
 - Shortcuts：
 
   - Launchpad：
@@ -54,3 +58,4 @@
 - [Tmux](https://github.com/tmux/tmux/wiki/Installing) - multiplexer
 
   - Config：[tmux.conf](https://github.com/xlsama/use/blob/main/tmux.conf)
+
