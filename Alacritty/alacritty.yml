@@ -29,9 +29,9 @@ window:
   # Number of lines/columns (not pixels) in the terminal. The number of columns
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
-  #dimensions:
-  #columns: 170
-  #lines: 52
+  dimensions:
+    columns: 180
+    lines: 60
 
   # Window position (changes require restart)
   #
@@ -156,7 +156,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 15
+  size: 13
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
