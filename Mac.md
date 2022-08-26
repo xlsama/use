@@ -49,6 +49,39 @@ Command+Shift+Q 重启当前用户
 
 ## Terminal
 
+install homebrew
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+install oh-my-zsh
+
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+install nvim tmux lua
+
+brew install nvim tmux lua
+
+install nvm
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+install node
+
+nvm install lts
+
+[install jdk](https://www.oracle.com/java/technologies/downloads/)
+
+install firacode
+
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
+
+install nerd-font
+
+brew tap homebrew/cask-fonts &&
+brew install --cask font-fira-code-nerd-font
+
+
 - [Alacritty](https://github.com/alacritty/alacritty)
 
   - Config：[alacritty.yml](https://github.com/xlsama/use/blob/main/alacritty.yml)
