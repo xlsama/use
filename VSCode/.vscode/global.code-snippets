@@ -1,0 +1,37 @@
+{
+	"Print to console": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "cl",
+		"body": ["console.log($1)"]
+	},
+  "import module": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "im",
+    "body": ["import $0 from '$1'"],
+  },
+  "import statement": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "imm",
+    "body": ["import { $0 } from '$1'"]
+  },
+  "export default": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ed",
+    "body": ["export default $0"]
+  },
+  "init react template": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "irt",
+    "body": "import React from 'react'\n\nconst $1 = () => {\n  return (\n    <div className='$2'>\n      $3\n    </div>\n  )\n}\n\nexport default $1"
+  },
+  "useState": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "us",
+    "body": "const [$1, set$1] = useState($2)\n"
+  },
+  "useEffect": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ue",
+    "body": "useEffect(() => {\n  $0\n}, [])\n"
+  }
+}
