@@ -11,6 +11,7 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   z
+  extract
 )
 
 # https://ohmyz.sh/
