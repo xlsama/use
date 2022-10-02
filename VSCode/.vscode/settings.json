@@ -30,7 +30,6 @@
     "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
     "source.organizeImports": false
   },
-  "window.nativeTabs": true, 
   "workbench.editor.closeOnFileDelete": true,
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.cursorBlinking": true,
@@ -47,8 +46,12 @@
 
   // Vim
   "vim.leader": ",",
+  "vim.useSystemClipboard": true,
   "vim.incsearch": true,
   "vim.hlsearch": false,
+  "vim.foldfix": true,
+  "vim.smartRelativeLine": true,
+  "vim.showMarksInGutter": true,
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -120,4 +123,6 @@
   // Extension configs
   "extensions.ignoreRecommendations": true,
   "leetcode.endpoint": "leetcode-cn",
+  "leetcode.workspaceFolder": "/Users/xlsama/code/algorithm",
+  "leetcode.defaultLanguage": "typescript",
 }
