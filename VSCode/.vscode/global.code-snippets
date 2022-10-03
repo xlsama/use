@@ -21,8 +21,8 @@
   },
   "init react template": {
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "irt",
-    "body": "import React from 'react'\n\nconst $1 = () => {\n  return (\n    <div className='$2'>\n      $3\n    </div>\n  )\n}\n\nexport default $1"
+    "prefix": "ir",
+    "body": "const $1 = () => {\n  return (\n    <div>\n      $2\n    </div>\n  )\n}\n\nexport default $1"
   },
   "useState": {
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
