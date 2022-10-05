@@ -125,5 +125,5 @@
   "leetcode.endpoint": "leetcode-cn",
   "leetcode.workspaceFolder": "/Users/xlsama/code/algorithm",
   "leetcode.defaultLanguage": "typescript",
-  "leetcode.hint.configWebviewMarkdown": false
+  "leetcode.hint.configWebviewMarkdown": false,
 }
