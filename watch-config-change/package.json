@@ -1,0 +1,11 @@
+{
+	"type": "module",
+	"scripts": {
+		"start": "node main.js",
+		"deploy": "zx script.mjs"
+	},
+	"dependencies": {
+		"chokidar": "^3.5.3",
+		"zx": "^7.0.8"
+	}
+}
