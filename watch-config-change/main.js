@@ -10,7 +10,7 @@ chokidar.watch(systemPaths).on('change', () => {
       console.error(`exec error: ${error}`);
       return;
     }
-    stdout && console.log(`stdout: ${stdout}`);
+    // stdout && console.log(`stdout: ${stdout}`);
     // console.error(`stderr: ${stderr}`);
   });
 });
