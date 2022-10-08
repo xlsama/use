@@ -6,7 +6,6 @@
   "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
-
   // Editor
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
@@ -37,13 +36,11 @@
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.enabled": true,
-
   // Git
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "diffEditor.ignoreTrimWhitespace": false,
-
   // Vim
   "vim.leader": ",",
   "vim.useSystemClipboard": true,
@@ -119,7 +116,6 @@
   "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
   "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
   "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select com.apple.keylayout.ABC {im}",
-
   // Extension configs
   "extensions.ignoreRecommendations": true,
   "leetcode.endpoint": "leetcode-cn",
