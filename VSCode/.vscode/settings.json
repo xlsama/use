@@ -56,64 +56,34 @@
   "vim.showMarksInGutter": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
     }
   ],
   "vim.normalModeKeyBindings": [
     {
-      "before": [
-        "<space>"
-      ],
-      "after": [
-        ":"
-      ]
+      "before": ["<space>"],
+      "after": [":"]
     },
     {
-      "before": [
-        "<C-h>"
-      ],
-      "commands": [
-        "workbench.action.navigateLeft"
-      ]
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.navigateLeft"]
     },
     {
-      "before": [
-        "<C-l>"
-      ],
-      "commands": [
-        "workbench.action.navigateRight"
-      ]
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.navigateRight"]
     },
     {
-      "before": [
-        "<C-k>"
-      ],
-      "commands": [
-        "workbench.action.navigateUp"
-      ]
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.navigateUp"]
     },
     {
-      "before": [
-        "<C-j>"
-      ],
-      "commands": [
-        "workbench.action.navigateDown"
-      ]
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.navigateDown"]
     },
     {
-      "before": [
-        "<leader>",
-        "f"
-      ],
-      "commands": [
-        "editor.action.format"
-      ]
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.format"]
     }
   ],
   // auto switch input method    im-select https://github.com/daipeihust/im-select
