@@ -1,0 +1,23 @@
+[
+  {
+    "key": "ctrl+q =",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+q -",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  }
+]
