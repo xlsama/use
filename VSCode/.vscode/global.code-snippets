@@ -1,36 +1,36 @@
 {
-	"Print to console": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
-		"prefix": "cl",
-		"body": ["console.log($1)"]
-	},
+  "Print to console": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cl",
+    "body": ["console.log($1)"]
+  },
   "import module": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "im",
-    "body": ["import $0 from '$1'"],
+    "body": ["import $0 from '$1'"]
   },
   "import statement": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "imm",
     "body": ["import { $0 } from '$1'"]
   },
   "export default": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "ed",
     "body": ["export default $0"]
   },
   "init react template": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "ir",
     "body": "const $1 = () => {\n  return (\n    <div>\n      $2\n    </div>\n  )\n}\n\nexport default $1"
   },
   "useState": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "us",
-		"body": "const [$1, set${1/(.*)/${1:/capitalize}/}] = useState($2)\n"
+    "body": "const [$1, set${1/(.*)/${1:/capitalize}/}] = useState($2)\n"
   },
   "useEffect": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "ue",
     "body": "useEffect(() => {\n  $0\n}, [])\n"
   }
