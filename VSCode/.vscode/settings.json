@@ -25,20 +25,10 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  // "editor.codeActionsOnSave": {
-  //   "source.fixAll": false,
-  //   "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
-  //   "source.organizeImports": false
-  // },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "workbench.editor.closeOnFileDelete": true,
   "workbench.list.smoothScrolling": true,
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontWeight": "300",
-  "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.tabs.enabled": true,
 
   // Git
   "git.autofetch": true,
