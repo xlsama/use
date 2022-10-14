@@ -42,7 +42,7 @@ Proxy：[whistle](https://github.com/avwo/whistle)
 
 电脑：MacBook Pro 16 M1 Max
 
-键盘：[HHKB](hhkb/README.md)
+键盘：[HHKB](hhkb)
 
 鼠标：LG Master 3
 
