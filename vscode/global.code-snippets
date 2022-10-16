@@ -24,6 +24,11 @@
     "prefix": "con",
     "body": ["const $1 = $0"]
   },
+  "const { x } = x": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "con",
+    "body": ["const $1 = $0"]
+  },
   "init react template": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "ir",
