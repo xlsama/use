@@ -42,7 +42,6 @@
   "vim.incsearch": true,
   "vim.hlsearch": false,
   "vim.foldfix": true,
-  "vim.smartRelativeLine": true,
   "vim.showMarksInGutter": true,
   "vim.insertModeKeyBindings": [
     {
