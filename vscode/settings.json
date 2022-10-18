@@ -14,7 +14,7 @@
   "editor.minimap.enabled": false,
   "editor.inlineSuggest.enabled": true,
   "workbench.startupEditor": "none",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.editor.untitled.hint": "hidden",
   "security.workspace.trust.untrustedFiles": "open",
   "editor.tabSize": 2,
