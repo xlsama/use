@@ -26,7 +26,14 @@ Todo：[滴答清单](https://dida365.com/)
 
 鼠标管理：[Logi Options+](https://www.logitech.com/en-us/software/options.html)
 
-截图：[iShot](https://apps.apple.com/us/app/ishot-screenshot-recording-ocr/id1485844094?mt=12)
+截图：[shottr](https://shottr.cc/) + Mac 内置
+
+- shottr
+  - Area screenshot `shift+command+1`
+  - Active window screenshot `shift+command+2`
+  - Fullscreen screenshot `shift+command+4`
+- Mac
+  - Screenshot and recording options `shift+command+3`
 
 图床：[uPic](https://github.com/gee1k/uPic)
 
