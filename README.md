@@ -2,11 +2,11 @@
 
 ## 软件
 
+浏览器：[Chrome](Chrome/Chrome.md)
+
 编辑器：[VSCode](https://code.visualstudio.com/)
 
 终端：[alacritty](https://github.com/alacritty/alacritty)
-
-浏览器：[Chrome](Chrome/Chrome.md)
 
 启动器：[Raycast](https://raycast.com)
 
@@ -44,6 +44,10 @@ Shell：[ohmyzsh](https://ohmyz.sh/)
 Package Manager：[homebrew](https://brew.sh/)
 
 Proxy：[whistle](https://github.com/avwo/whistle)
+
+## 其他
+
+软路由：[OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
 
 ## 设备
 
