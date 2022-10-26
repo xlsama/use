@@ -29,7 +29,7 @@
   "editor.formatOnSave": true,
   "workbench.editor.closeOnFileDelete": true,
   "workbench.list.smoothScrolling": true,
-  "markdown-preview-github-styles.colorTheme": "system",
+  "markdown-preview-github-styles.colorTheme": "auto",
 
   // Git
   "git.autofetch": true,
