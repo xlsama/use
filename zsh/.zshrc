@@ -66,6 +66,9 @@ alias t="nr test"
 alias lint="nr lint"
 alias lintf="nr lint --fix"
 
+alias o='open'
+alias c='code'
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
