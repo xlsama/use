@@ -1,43 +1,50 @@
-# 我在用的
+# I am using
 
-## 软件
+## Software
 
-浏览器：[Chrome](Chrome/Chrome.md)
+Browser：[Chrome](Chrome/Chrome.md)
 
-编辑器：[VSCode](https://code.visualstudio.com/)
+IDE：[VSCode](https://code.visualstudio.com/)
 
-终端：[alacritty](https://github.com/alacritty/alacritty)
+Terminal：[alacritty](https://github.com/alacritty/alacritty)
 
-启动器：[Raycast](https://raycast.com)
+Launcher：[Raycast](https://raycast.com)
 
-Todo：[滴答清单](https://dida365.com/)
+Todo：[ticktick](https://ticktick.com/)
 
-- 显隐快捷键：Ctrl + t
+- hidden shortcuts：`control + t`
 
-自动切换输入法：[KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
+auto switch input source：[KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
 
-- 除了微信是双拼，其他应用激活时都为英文
+- wechat: Shuangpin - Simplified
 
-翻译： [Bob](https://github.com/ripperhe/Bob)
+- other: ABC
 
-- 显隐快捷键：Option + f
+Translate： [Bob](https://github.com/ripperhe/Bob)
 
-鼠标平滑：[Mos](https://mos.caldis.me/)
+- hidden shortcuts：Option + f
 
-鼠标管理：[Logi Options+](https://www.logitech.com/en-us/software/options.html)
+Mouse smooth scroll：[Mos](https://mos.caldis.me/)
 
-截图：[shottr](https://shottr.cc/) + Mac 内置
+Mouse Manager：[Logi Options+](https://www.logitech.com/en-us/software/options.html)
+
+Screenshot：[shottr](https://shottr.cc/) + Mac 内置
 
 - shottr
+
   - Area screenshot `shift+command+1`
+
   - Active window screenshot `shift+command+2`
+
   - Fullscreen screenshot `shift+command+4`
+
 - Mac
+
   - Screenshot and recording options `shift+command+3`
 
-图床：[uPic](https://github.com/gee1k/uPic)
+Picture Bed：[uPic](https://github.com/gee1k/uPic)
 
-## 命令行
+## Terminal
 
 Shell：[ohmyzsh](https://ohmyz.sh/)
 
@@ -45,16 +52,18 @@ Package Manager：[homebrew](https://brew.sh/)
 
 Proxy：[whistle](https://github.com/avwo/whistle)
 
-## 其他
+## Other
 
-软路由：[OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
+Soft Router：[OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
 
-## 设备
+## Devices
 
-电脑：MacBook Pro 16 M1 Max
+Computer：MacBook Pro 16 M1 Max
 
-键盘：[HHKB](hhkb)
+Keyboard：[HHKB](hhkb)
 
-鼠标：LG Master 3
+Mouse：LG Master 3
 
-显示器：Dell U2723QX 27 寸
+Monitor：Dell U2723QX 27
+
+## [MacOS System Settings](Mac.md)

@@ -1,96 +1,122 @@
-# MacOS System Preferences
+# MacOS System Settings
 
-![image-20210924215647479](https://i.loli.net/2021/09/24/J5fCZycLGIVXir2.png)
+`Version: 13.0`
 
 ## General
 
-- Appearance：`Auto` 根据日落日出时间自动切换白天和黑夜模式
-- SideBar icon size：
-  - Allow wallpaper tinting in windows `不勾选` 窗口的背景颜色随壁纸变化
-- Show scroll bars：`When scrolling` 只有当滚动时才显示滚动条，鼠标也是
+### Language & Region
 
-## Language & Region
+- Preferred languages：`English – Primary`
 
-- Preferred languages：`English – Primary` 系统语言
+- First day of week：`Monday`
 
-- First day of week：`Monday` 一周的第一天
+## Appearance
+
+- Appearance：`Auto`
+
+- Allow wallpaper tinting in windows `false`
+
+- Show scroll bars：`When scrolling`
+
+## Siri & Soptlight
+
+- Ask Siri `false`
+
+## Desktop & Dock
+
+- Position on screen `Right`
+
+- Automatically hide and show the Dock `true`
+
+- Show recent applications in Dock `false`
+
+- Stage Manager `true`
+
+## Touch ID & Password
+
+- Apple Watch `true`
+
+## Game Center
+
+- Game Center `false`
 
 ## Keyboard
 
-- Keyboard：
+- Key repeat rate ：`Fast`
 
-  - Key Repeat：`Fast` 拉到最快
-  - Delay Until Repeat：`Short` 拉到最短
+- Delay until repeat：`Short`
 
-  这样 vim 用起来很丝滑，比如按住 hjkl、Control+d、Control+u 时
-
-```
+```shell
+# Long press for continuous input
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
-需要重启
-Command+Shift+Q 重启当前用户
 
-- Shortcuts：
+- Keyboard navigation `true`
 
-  - Launchpad：
-    - Show Launchpad：`Command+Space` 打开启动台（这个不常用）
-  - Screentshots：`全部取消勾选` 我用 [iShot](https://apps.apple.com/cn/app/ishot-%E4%BC%98%E7%A7%80%E7%9A%84%E6%88%AA%E5%9B%BE%E5%BD%95%E5%B1%8F%E5%B7%A5%E5%85%B7/id1485844094?mt=12) 截图
-  - Spotlight：`全部取消勾选` 不用聚焦，用 [raycast](https://raycast.com/)
+### Keyboard Shortcuts
 
-    - [Config](https://github.com/xlsama/use)
+- Launchpad & Dock
+
+  - Show Launchpad `option + space`
+
+- Input Sources
+
+  - Select the previous input source `control + option + space`
+
+  - Select next source in input menu `control + space`
+
+- Screenshots
+
+  - Save picture of screen as a file `false`
+
+  - Copy picture of screen to the clipboard `false`
+
+  - Save picture of selected area as a file `false`
+
+  - Copy picture of selected area to the clipboard `false`
+
+  - Screenshot and recording options `true` `shift + commmand + 3`
+
+- Spotlight
+
+  - Show Spotlight search `false`
+
+  - Show Finder search window `false`
+
+### Text Input
+
+- Use the Caps Lock key to switch to and from ABC `false`
+
+- Correct spelling automatically `false`
+
+- Capitalize words automatically `false`
+
+- Add period with double-space `false`
+
+#### Shuangpin - Simplified
+
+- Shuangpin layout `Xiaohe`
+
+- Show traditional and rare characters `true`
 
 ## Mouse
 
-- Scroll direction：Natural `勾选` 鼠标滚动方向自然
+- Natural scrolling `true`
 
-## Sharing
+## Other
 
-- Computer Name：`xlsama` 我的计算机名字（蓝牙，AirDrop 等显示的名字）
+```shell
+brew install firacode
+```
 
-## Terminal
+```shell
+brew tap homebrew/cask-fonts && brew install --cask font-fira-code
+```
 
-install homebrew
+```shell
+brew install nerd-font
+```
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-install oh-my-zsh
-
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-install nvim tmux lua
-
-brew install nvim tmux lua
-
-install nvm
-
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-
-install node
-
-nvm install lts
-
-[install jdk](https://www.oracle.com/java/technologies/downloads/)
-
-install firacode
-
-brew tap homebrew/cask-fonts
-brew install --cask font-fira-code
-
-install nerd-font
-
-brew tap homebrew/cask-fonts &&
-brew install --cask font-fira-code-nerd-font
-
-
-- [Alacritty](https://github.com/alacritty/alacritty)
-
-  - Config：[alacritty.yml](https://github.com/xlsama/use/blob/main/alacritty.yml)
-
-- [zsh](https://ohmyz.sh/) - Shell
-
-  - Config：[.zshrc](https://github.com/xlsama/use/blob/main/.zshrc)
-
-- [Tmux](https://github.com/tmux/tmux/wiki/Installing) - multiplexer
-
-  - Config：[tmux.conf](https://github.com/xlsama/use/blob/main/tmux.conf)
-
+```shell
+brew tap homebrew/cask-fonts && brew install --cask font-fira-code-nerd-font
+```
