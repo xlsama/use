@@ -28,7 +28,7 @@ Mouse smooth scroll：[Mos](https://mos.caldis.me/)
 
 Mouse Manager：[Logi Options+](https://www.logitech.com/en-us/software/options.html)
 
-Screenshot：[shottr](https://shottr.cc/) + Mac 内置
+Screenshot：[shottr](https://shottr.cc/) + Mac
 
 - shottr
 
