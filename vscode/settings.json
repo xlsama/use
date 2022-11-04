@@ -55,6 +55,14 @@
       "after": [":"]
     },
     {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
       "before": ["<C-h>"],
       "commands": ["workbench.action.navigateLeft"]
     },
