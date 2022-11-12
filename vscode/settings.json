@@ -25,7 +25,7 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "rome.rome",
   "editor.formatOnSave": true,
   "workbench.editor.closeOnFileDelete": true,
   "workbench.list.smoothScrolling": true,
