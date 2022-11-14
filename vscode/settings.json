@@ -1,6 +1,6 @@
 {
   // Visuals
-  "editor.fontSize": 13.5,
+  "editor.fontSize": 14,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "workbench.colorTheme": "One Dark Pro",
