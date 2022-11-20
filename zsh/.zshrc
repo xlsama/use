@@ -66,7 +66,7 @@ alias lint="nr lint"
 alias lintf="nr lint --fix"
 
 alias o='open'
-alias c='code'
+alias c='code -r'
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
