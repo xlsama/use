@@ -63,6 +63,14 @@
       "after": ["$"]
     },
     {
+      "before": ["<C-d>"],
+      "after": ["j", "j", "j", "j", "j", "j", "j", "j", "j", "j"]
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["k", "k", "k", "k", "k", "k", "k", "k", "k", "k"]
+    },
+    {
       "before": ["<C-h>"],
       "commands": ["workbench.action.navigateLeft"]
     },
@@ -79,8 +87,20 @@
       "commands": ["workbench.action.navigateDown"]
     },
     {
+      "before": ["<leader>", "v"],
+      "after": ["V"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "after": ["z", "z"]
+    },
+    {
       "before": ["<leader>", "f"],
       "commands": ["editor.action.format"]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["workbench.action.openRecent"]
     }
   ],
   // auto switch input method    im-select https://github.com/daipeihust/im-select
@@ -88,6 +108,14 @@
   "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
   "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
   "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select com.apple.keylayout.ABC {im}",
+
+  // Code Style
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.trailingComma": "none",
 
   // Extension configs
   "extensions.ignoreRecommendations": true,
