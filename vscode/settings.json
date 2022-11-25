@@ -91,6 +91,10 @@
       "after": ["V"]
     },
     {
+      "before": ["<leader>", "g"],
+      "after": ["G"]
+    },
+    {
       "before": ["<leader>", "c"],
       "after": ["z", "z"]
     },
