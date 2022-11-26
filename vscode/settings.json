@@ -105,6 +105,10 @@
     {
       "before": ["<leader>", "r"],
       "commands": ["workbench.action.openRecent"]
+    },
+    {
+      "before": ["<leader>", "n", "f"],
+      "commands": ["fileutils.newFile"]
     }
   ],
   // auto switch input method    im-select https://github.com/daipeihust/im-select
