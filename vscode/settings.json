@@ -113,6 +113,10 @@
     {
       "before": ["<leader>", "r", "f"],
       "commands": ["fileutils.renameFile"]
+    },
+    {
+      "before": ["<leader>", "d", "f"],
+      "commands": ["fileutils.removeFile"]
     }
   ],
   // auto switch input method    im-select https://github.com/daipeihust/im-select
