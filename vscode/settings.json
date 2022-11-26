@@ -107,7 +107,7 @@
       "commands": ["workbench.action.openRecent"]
     },
     {
-      "before": ["<leader>", "n", "f", "<CR>"],
+      "before": ["<leader>", "n", "f"],
       "commands": ["fileutils.newFile"]
     },
     {
