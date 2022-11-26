@@ -103,7 +103,7 @@
       "commands": ["editor.action.format"]
     },
     {
-      "before": ["<leader>", "r"],
+      "before": ["<leader>", "o"],
       "commands": ["workbench.action.openRecent"]
     },
     {
