@@ -108,7 +108,8 @@
     },
     {
       "before": ["<leader>", "n", "f"],
-      "commands": ["fileutils.newFile"]
+      "commands": ["fileutils.newFile"],
+      "slient": true
     },
     {
       "before": ["<leader>", "r", "f"],
