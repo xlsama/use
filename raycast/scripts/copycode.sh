@@ -7,7 +7,7 @@
 # @raycast.packageName Messages
 
 # Optional parameters:
-# @raycast.icon images/Message.png
+# @raycast.icon images/message.png
 
 # Documentation:
 # @raycast.description Copy verification code from a message.
