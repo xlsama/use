@@ -96,7 +96,7 @@
     },
     {
       "before": ["<leader>", "c"],
-      "after": ["z", "z", "5", "<C-e>"]
+      "after": ["z", "z"]
     },
     {
       "before": ["<leader>", "f"],
