@@ -64,11 +64,11 @@
     },
     {
       "before": ["<C-d>"],
-      "after": ["j", "j", "j", "j", "j", "j", "j", "j", "j", "j", "z", "z"]
+      "after": ["1", "0", "j", "<leader>", "c"]
     },
     {
       "before": ["<C-u>"],
-      "after": ["k", "k", "k", "k", "k", "k", "k", "k", "k", "k", "z", "z"]
+      "after": ["1", "0", "k", "<leader>", "c"]
     },
     {
       "before": ["<C-h>"],
@@ -96,7 +96,7 @@
     },
     {
       "before": ["<leader>", "c"],
-      "after": ["z", "z"]
+      "after": ["z", "z", "1", "0", "<C-e>"]
     },
     {
       "before": ["<leader>", "f"],
