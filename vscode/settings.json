@@ -16,6 +16,8 @@
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.list.smoothScrolling": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.tabSize": 2,
   "editor.accessibilitySupport": "off",
@@ -27,8 +29,14 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "workbench.editor.closeOnFileDelete": true,
-  "workbench.list.smoothScrolling": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".*, pnpm-lock.yaml, tsconfig.json",
+    "README.md": "CHANGELOG.md, LICENCE"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
 
   // Git
   "git.autofetch": true,
