@@ -24,13 +24,13 @@
 
 ## Desktop & Dock
 
-- Position on screen `Right`
+- Position on screen `Left`
 
 - Automatically hide and show the Dock `true`
 
 - Show recent applications in Dock `false`
 
-- Stage Manager `true`
+- Stage Manager `false`
 
 ## Touch ID & Password
 
@@ -61,9 +61,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 - Input Sources
 
-  - Select the previous input source `control + option + space`
+  - Select the previous input source `ctrl + option + space`
 
-  - Select next source in input menu `control + space`
+  - Select next source in input menu `ctrl + space`
 
 - Screenshots
 
@@ -75,7 +75,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
   - Copy picture of selected area to the clipboard `false`
 
-  - Screenshot and recording options `true` `shift + commmand + 3`
+  - Screenshot and recording options `true` `option + d`
 
 - Spotlight
 
@@ -104,6 +104,8 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 - Natural scrolling `true`
 
 ## Other
+
+- fonts
 
 ```shell
 brew install firacode

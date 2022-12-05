@@ -6,13 +6,13 @@ Browser：[Chrome](Chrome/Chrome.md)
 
 IDE：[VSCode](https://code.visualstudio.com/)
 
-Terminal：[alacritty](https://github.com/alacritty/alacritty)
+Terminal：[Alacritty](https://github.com/alacritty/alacritty)
 
 Launcher：[Raycast](https://raycast.com)
 
-Todo：[ticktick](https://ticktick.com/)
+Todo：[TickTick](https://ticktick.com/)
 
-- hidden shortcuts：`control + t`
+- hidden shortcuts：`ctrl + t`
 
 auto switch input source：[KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
 
@@ -20,37 +20,29 @@ auto switch input source：[KeyboardHolder](https://github.com/leaves615/Keyboar
 
 - other: ABC
 
-Translate： [Bob](https://github.com/ripperhe/Bob)
-
-- hidden shortcuts：Option + f
-
 Mouse smooth scroll：[Mos](https://mos.caldis.me/)
 
 Mouse Manager：[Logi Options+](https://www.logitech.com/en-us/software/options.html)
 
-Screenshot：[shottr](https://shottr.cc/) + Mac
+Screenshot：[Shottr](https://shottr.cc/) + Mac
 
-- shottr
+- [Shottr](https://shottr.cc/)
 
-  - Area screenshot `shift+command+1`
+  - Area screenshot `option + a`
 
-  - Active window screenshot `shift+command+2`
-
-  - Fullscreen screenshot `shift+command+4`
+  - Active window screenshot `option + s`
 
 - Mac
 
-  - Screenshot and recording options `shift+command+3`
-
-Picture Bed：[uPic](https://github.com/gee1k/uPic)
+  - Screenshot and recording options `option + d`
 
 ## Terminal
 
-Shell：[ohmyzsh](https://ohmyz.sh/)
+Shell：[OhMyZsh](https://ohmyz.sh/)
 
-Package Manager：[homebrew](https://brew.sh/)
+Package Manager：[Homebrew](https://brew.sh/)
 
-Proxy：[whistle](https://github.com/avwo/whistle)
+Proxy：[Whistle](https://github.com/avwo/whistle)
 
 ## Other
 
@@ -58,7 +50,7 @@ Soft Router：[OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
 
 ## Devices
 
-Computer：MacBook Pro 16 M1 Max
+Computer：MacBook Pro 16 M1 Max 32GB + 1T
 
 Keyboard：[HHKB](hhkb)
 
