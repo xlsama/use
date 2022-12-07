@@ -6,7 +6,7 @@
 // @raycast.mode silent
 
 // Optional parameters:
-// @raycast.icon images/douban.png
+// @raycast.icon https://img1.doubanio.com/favicon.ico
 // @raycast.packageName Link
 
 // Documentation:
