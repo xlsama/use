@@ -55,10 +55,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 ### Keyboard Shortcuts
 
-- Launchpad & Dock
-
-  - Show Launchpad `option + space`
-
 - Input Sources
 
   - Select the previous input source `ctrl + option + space`

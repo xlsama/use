@@ -14,15 +14,13 @@ Todo：[TickTick](https://ticktick.com/)
 
 - hidden shortcuts：`ctrl + t`
 
-auto switch input source：[KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
+Mouse Manager：[Mac Mouse Fix](https://github.com/noah-nuebling/mac-mouse-fix)
 
-- wechat: Shuangpin - Simplified
+Auto Switch Input Source：[KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
 
-- other: ABC
+- Wechat: Shuangpin - Simplified
 
-Mouse smooth scroll：[Mos](https://mos.caldis.me/)
-
-Mouse Manager：[Logi Options+](https://www.logitech.com/en-us/software/options.html)
+- Other: ABC
 
 Screenshot：[Shottr](https://shottr.cc/) + Mac
 
@@ -54,7 +52,7 @@ Computer：MacBook Pro 16 M1 Max 32GB + 1T
 
 Keyboard：[HHKB](hhkb)
 
-Mouse：LG Master 3
+Mouse：LG GPW 2 G PRO X SUPERLIGHT
 
 Monitor：Dell U2723QX 27
 
