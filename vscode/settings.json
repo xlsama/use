@@ -30,6 +30,7 @@
     "README.md": "CHANGELOG.md, LICENCE"
   },
   "editor.guides.bracketPairs": "active",
+  "window.commandCenter": false,
 
   // Git
   "git.autofetch": true,
