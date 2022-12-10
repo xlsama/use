@@ -1,18 +1,19 @@
 {
   "recommendations": [
     "antfu.icons-carbon",
+    "llvm-vs-code-extensions.vscode-clangd",
     "formulahendry.code-runner",
     "naumovs.color-highlight",
     "usernamehw.errorlens",
     "dbaeumer.vscode-eslint",
+    "fisheva.eva-theme",
     "sleistner.vscode-fileutils",
     "file-icons.file-icons",
     "eamodio.gitlens",
     "yzhang.markdown-all-in-one",
-    "zhuangtongfa.material-theme",
+    "bierner.markdown-mermaid",
     "esbenp.prettier-vscode",
     "rust-lang.rust-analyzer",
-    "jeffersonlicet.snipped",
     "vscodevim.vim"
   ]
 }
