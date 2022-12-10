@@ -57,10 +57,6 @@ Package Manager：[Homebrew](https://brew.sh/)
 
 Proxy：[Whistle](https://github.com/avwo/whistle)
 
-## Other
-
-Soft Router：[OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
-
 ## Devices
 
 Computer：MacBook Pro 16 M1 Max 32GB + 1T
@@ -71,4 +67,8 @@ Mouse：LG Pro X Superlight (GPW 2)
 
 Monitor：Dell U2723QX 27
 
-## [MacOS System Settings](Mac.md)
+## Other
+
+Soft Router：[OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
+
+MacOS System Settings：[Mac.md](Mac.md)
