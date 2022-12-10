@@ -52,7 +52,7 @@ Computer：MacBook Pro 16 M1 Max 32GB + 1T
 
 Keyboard：[HHKB](hhkb)
 
-Mouse：LG GPW 2 G PRO X SUPERLIGHT
+Mouse：LG Pro X Superlight (GPW 2)
 
 Monitor：Dell U2723QX 27
 
