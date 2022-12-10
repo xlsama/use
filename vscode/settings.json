@@ -3,7 +3,10 @@
   "editor.fontSize": 14,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "workbench.colorTheme": "One Dark Pro",
+  "window.autoDetectColorScheme": true,
+  "workbench.colorTheme": "Eva Light",
+  "workbench.preferredLightColorTheme": "Eva Light",
+  "workbench.preferredDarkColorTheme": "Eva Dark",
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
 
