@@ -4,7 +4,7 @@
 
 Browser：[Chrome](Chrome/Chrome.md)
 
-IDE：[VSCode](https://code.visualstudio.com/)
+Editor：[VSCode](https://code.visualstudio.com/)
 
 Terminal：[Alacritty](https://github.com/alacritty/alacritty)
 
@@ -12,19 +12,32 @@ Launcher：[Raycast](https://raycast.com)
 
 Todo：[TickTick](https://ticktick.com/)
 
+<details>
+<summary></summary>
+
 - hidden shortcuts：`ctrl + t`
+
+</details>
 
 Mouse Manager：[Mac Mouse Fix](https://github.com/noah-nuebling/mac-mouse-fix)
 
 Auto Switch Input Source：[KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
 
+<details>
+<summary></summary>
+
 - Wechat: Shuangpin - Simplified
 
 - Other: ABC
 
+</details>
+
 Screenshot：[Shottr](https://shottr.cc/) + Mac
 
-- [Shottr](https://shottr.cc/)
+<details>
+<summary></summary>
+
+- Shottr
 
   - Area screenshot `option + a`
 
@@ -33,6 +46,8 @@ Screenshot：[Shottr](https://shottr.cc/) + Mac
 - Mac
 
   - Screenshot and recording options `option + d`
+
+</details>
 
 ## Terminal
 
