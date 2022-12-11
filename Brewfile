@@ -13,7 +13,7 @@ brew "neovim"
 brew "tmux"
 brew "wget"
 brew "you-get"
-brew "gpg"
+brew "gnupg"
 brew "im-select"
 
 # 'brew install --cask'
