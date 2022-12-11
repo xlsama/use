@@ -41,3 +41,5 @@
 
     - command: zx ./script.mjs
       description: install vscode extensions
+
+    - commnand: rm -rf ~/.zsh_history ~/.zsh_sessions
