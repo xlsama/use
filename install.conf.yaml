@@ -28,6 +28,7 @@
 
 - create:
     - ~/code
+    - ~/bin
 
 - shell:
     - command: brew bundle --file=./Brewfile

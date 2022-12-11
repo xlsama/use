@@ -1,7 +1,6 @@
 # 'brew tap'
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "daipeihust/tap"
 
 # 'brew install'
 brew "fish"
@@ -14,7 +13,6 @@ brew "tmux"
 brew "wget"
 brew "you-get"
 brew "gnupg"
-brew "im-select"
 
 # 'brew install --cask'
 cask "font-fira-code"

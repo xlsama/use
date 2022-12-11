@@ -127,8 +127,8 @@
   // auto switch input method    im-select https://github.com/daipeihust/im-select
   "vim.autoSwitchInputMethod.enable": true,
   "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
-  "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
-  "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select com.apple.keylayout.ABC {im}",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/Users/xlsama/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/Users/xlsama/bin/im-select com.apple.keylayout.ABC {im}",
 
   // Prompt
   "emmet.includeLanguages": {
