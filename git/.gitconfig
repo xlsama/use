@@ -1,0 +1,8 @@
+[user]
+	name = xlsama
+	email = im.xlsama@gmail.com
+[core]
+	excludesfile = /Users/xlsama/.gitignore_global
+	editor = nvim
+[init]
+	defaultBranch = main

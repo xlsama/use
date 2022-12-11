@@ -1,0 +1,11 @@
+# Mac OS
+**/.DS_Store
+
+# node
+**/node_modules/
+
+# IDE
+**/.idea/
+
+# cache
+**/.vite/
