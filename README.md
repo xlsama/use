@@ -1,5 +1,11 @@
 # I am using
 
+## Installation
+
+```shell
+git clone https://github.com/xlsama/use && cd use && ./install
+```
+
 ## Software
 
 Browser：[Chrome](Chrome/Chrome.md)
