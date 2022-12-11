@@ -47,8 +47,7 @@
 - Delay until repeat：`Short`
 
 ```shell
-# Long press for continuous input
-defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g ApplePressAndHoldEnabled -bool false # Long press for continuous input
 ```
 
 - Keyboard navigation `true`
