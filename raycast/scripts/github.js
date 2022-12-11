@@ -6,7 +6,7 @@
 // @raycast.mode silent
 
 // Optional parameters:
-// @raycast.icon images/github2.png
+// @raycast.icon images/github.png
 // @raycast.packageName Link
 
 // Documentation:

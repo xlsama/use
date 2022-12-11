@@ -152,9 +152,5 @@
   "prettier.trailingComma": "none",
 
   // Extension configs
-  "extensions.ignoreRecommendations": true,
-  "leetcode.endpoint": "leetcode-cn",
-  "leetcode.workspaceFolder": "/Users/xlsama/code/algorithm",
-  "leetcode.defaultLanguage": "typescript",
-  "leetcode.hint.configWebviewMarkdown": false
+  "extensions.ignoreRecommendations": true
 }
