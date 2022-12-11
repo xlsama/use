@@ -2,7 +2,7 @@
 	name = xlsama
 	email = im.xlsama@gmail.com
 [core]
-	excludesfile = $HOME/.gitignore
-	# editor = nvim
+	excludesfile = /Users/xlsama/.gitignore
+	editor = nvim
 [init]
 	defaultBranch = main
