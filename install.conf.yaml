@@ -11,6 +11,7 @@
 - clean: ['~', '~/.config']
 
 - link:
+    # git
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore: git/.gitignore
 
@@ -20,6 +21,7 @@
     ~/.config/omf: config/omf
     ~/.config/nvim: config/nvim
 
+    # vscode
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
     ~/Library/Application Support/Code/User/snippets/global.code-snippets: vscode/global.code-snippets
