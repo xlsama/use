@@ -12,7 +12,6 @@ brew "neovim"
 brew "tmux"
 brew "wget"
 brew "you-get"
-brew "gnupg"
 
 # 'brew install --cask'
 cask "font-fira-code"
