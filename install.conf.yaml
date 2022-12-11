@@ -4,6 +4,9 @@
       relink: true
       force: true
       ignore-missing: true
+    shell:
+      stdout: true
+      quiet: true
 
 - clean: ['~', '~/.config']
 
@@ -25,6 +28,5 @@
     - ~/code
 
 - shell:
-    - command: echo $HOME
-      stdout: true
-      description: Reading and printing variable
+    - [brew bundle --file=./Brewfile, homebrew install]
+    - [chsh -s $(which fish), Making fish the default shell]

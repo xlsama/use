@@ -98,23 +98,3 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 ## Mouse
 
 - Natural scrolling `true`
-
-## Other
-
-- fonts
-
-```shell
-brew install firacode
-```
-
-```shell
-brew tap homebrew/cask-fonts && brew install --cask font-fira-code
-```
-
-```shell
-brew install nerd-font
-```
-
-```shell
-brew tap homebrew/cask-fonts && brew install --cask font-fira-code-nerd-font
-```

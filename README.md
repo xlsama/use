@@ -55,6 +55,8 @@ Screenshot：[Shottr](https://shottr.cc/) + Mac
 
 </details>
 
+[ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)
+
 ## Terminal
 
 Shell：[OhMyZsh](https://ohmyz.sh/)
