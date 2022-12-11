@@ -50,4 +50,5 @@ alias b='nr build'
 alias o='open'
 alias c='code -r'
 
+alias use='c ~/use'
 alias sync='sh ~/use/install'
