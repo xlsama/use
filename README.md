@@ -47,7 +47,7 @@ Screenshot：[Shottr](https://shottr.cc/) + Mac
 
   - Area screenshot `option + a`
 
-  - Active window screenshot `option + s`
+  - Any window screenshot `option + s`
 
 - Mac
 
