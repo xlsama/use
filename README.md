@@ -1,5 +1,3 @@
-# I am using
-
 ## Installation
 
 ```shell
@@ -8,26 +6,26 @@ git clone https://github.com/xlsama/use && cd use && ./install
 
 ## Software
 
-Browser：[Chrome](Chrome/Chrome.md)
+Browser: [Chrome](Chrome/Chrome.md)
 
-Editor：[VSCode](https://code.visualstudio.com/)
+Editor: [VSCode](https://code.visualstudio.com/)
 
-Terminal：[Alacritty](https://github.com/alacritty/alacritty)
+Terminal: [Alacritty](https://github.com/alacritty/alacritty)
 
-Launcher：[Raycast](https://raycast.com)
+Launcher: [Raycast](https://raycast.com)
 
-Todo：[TickTick](https://ticktick.com/)
+Todo: [TickTick](https://ticktick.com/)
 
 <details>
 <summary></summary>
 
-- hidden shortcuts：`ctrl + t`
+- hidden shortcuts: `ctrl + t`
 
 </details>
 
-Mouse Manager：[Mac Mouse Fix](https://github.com/noah-nuebling/mac-mouse-fix)
+Mouse Manager: [Mac Mouse Fix](https://github.com/noah-nuebling/mac-mouse-fix)
 
-Auto Switch Input Source：[KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
+Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
 
 <details>
 <summary></summary>
@@ -38,7 +36,7 @@ Auto Switch Input Source：[KeyboardHolder](https://github.com/leaves615/Keyboar
 
 </details>
 
-Screenshot：[Shottr](https://shottr.cc/) + Mac
+Screenshot: [Shottr](https://shottr.cc/) + Mac
 
 <details>
 <summary></summary>
@@ -59,24 +57,24 @@ Screenshot：[Shottr](https://shottr.cc/) + Mac
 
 ## Terminal
 
-Shell：[OhMyZsh](https://ohmyz.sh/)
+Shell: [fish](https://fishshell.com/)
 
-Package Manager：[Homebrew](https://brew.sh/)
+Package Manager: [Homebrew](https://brew.sh/)
 
-Proxy：[Whistle](https://github.com/avwo/whistle)
+Proxy: [Whistle](https://github.com/avwo/whistle)
 
 ## Devices
 
-Computer：MacBook Pro 16 M1 Max 32GB + 1T
+Computer: MacBook Pro 16 M1 Max 32GB + 1T
 
-Keyboard：[HHKB](hhkb)
+Keyboard: [HHKB](hhkb)
 
-Mouse：LG Pro X Superlight (GPW 2)
+Mouse: LG Pro X Superlight (GPW 2)
 
-Monitor：Dell U2723QX 27
+Monitor: Dell U2723QX 27
 
 ## Other
 
-Soft Router：[OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
+Soft Router: [OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
 
-MacOS System Settings：[Mac.md](Mac.md)
+MacOS System Settings: [Mac.md](Mac.md)
