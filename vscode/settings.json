@@ -105,6 +105,10 @@
       "commands": ["editor.action.format"]
     },
     {
+      "before": ["<leader>", "r"],
+      "commands": ["code-runner.run"]
+    },
+    {
       "before": ["<leader>", "o", "r"],
       "commands": ["workbench.action.openRecent"]
     },
