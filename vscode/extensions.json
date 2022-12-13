@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "antfu.icons-carbon",
+    "ms-vscode.cpptools",
     "llvm-vs-code-extensions.vscode-clangd",
     "formulahendry.code-runner",
     "naumovs.color-highlight",
