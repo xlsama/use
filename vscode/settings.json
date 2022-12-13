@@ -105,23 +105,27 @@
       "commands": ["editor.action.format"]
     },
     {
-      "before": ["<leader>", "r"],
+      "before": ["<leader>", "s"],
       "commands": ["code-runner.run"]
     },
     {
-      "before": ["<leader>", "o", "r"],
+      "before": ["<leader>", "d"],
+      "commands": ["workbench.action.debug.start"]
+    },
+    {
+      "before": ["<leader>", "o"],
       "commands": ["workbench.action.openRecent"]
     },
     {
-      "before": ["<leader>", "n", "f"],
+      "before": ["<leader>", "n"],
       "commands": ["fileutils.newFile"]
     },
     {
-      "before": ["<leader>", "r", "f"],
+      "before": ["<leader>", "r"],
       "commands": ["fileutils.renameFile"]
     },
     {
-      "before": ["<leader>", "d", "f"],
+      "before": ["<leader>", "r", "r"],
       "commands": ["fileutils.removeFile"]
     }
   ],
@@ -131,17 +135,16 @@
   "vim.autoSwitchInputMethod.obtainIMCmd": "/Users/xlsama/bin/im-select",
   "vim.autoSwitchInputMethod.switchIMCmd": "/Users/xlsama/bin/im-select com.apple.keylayout.ABC {im}",
 
-  // Prompt
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-
   // Code Format
   "editor.formatOnSave": true,
-  "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[c]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+
+  // Prompt
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
   },
 
   // Code Style
@@ -153,5 +156,6 @@
   "prettier.trailingComma": "none",
 
   // Extension configs
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "C_Cpp.intelliSenseEngine": "disabled"
 }
