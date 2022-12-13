@@ -34,13 +34,7 @@
     - command: brew bundle --file=./Brewfile
       description: homebrew install
 
-    - command: chsh -s $(which fish)
-      description: Making fish the default shell
+    - command: npx zx ./script.mjs
 
-    - command: npm i -g zx whistle pnpm @antfu/ni upload-image-from-clipboard vite
-      description: npm install global dependencies
-
-    - command: zx ./script.mjs
-      description: install vscode extensions
-
-    - commnand: rm -rf ~/.zsh*
+    # - command: chsh -s $(which fish)
+    #   description: Making fish the default shell

@@ -9,3 +9,5 @@
 
 # cache
 **/.vite/
+
+Brewfile.lock.json

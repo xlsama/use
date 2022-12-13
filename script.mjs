@@ -1,8 +1,14 @@
 #!/usr/bin/env zx
 
-const { recommendations } = await fs.readJson('./vscode/extensions.json')
+console.log(chalk.blue('npm install global dependencies'))
+await $`npm i -g zx whistle pnpm @antfu/ni upload-image-from-clipboard vite`
 
+console.log(chalk.blue('install vscode extensions'))
+const { recommendations } = await fs.readJson('./vscode/extensions.json')
 recommendations.forEach(async name => {
   console.log(chalk.cyan(name))
   await $`code --install-extension ${name}`
 })
+
+console.log(chalk.blue('remove ~/.zshrc ~/.zsh_history ./Brewfile.lock.json'))
+await $`rm -rf ~/.zshrc ~/.zsh_history ./Brewfile.lock.json`
