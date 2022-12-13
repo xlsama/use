@@ -1,5 +1,5 @@
 {
-  // Visuals
+  // visual
   "editor.fontSize": 14,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
@@ -7,7 +7,7 @@
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
 
-  // Editor
+  // editor
   "editor.minimap.enabled": false,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
@@ -32,13 +32,13 @@
   "editor.guides.bracketPairs": "active",
   "window.commandCenter": false,
 
-  // Git
+  // git
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "diffEditor.ignoreTrimWhitespace": false,
 
-  // Vim
+  // vim
   "vim.leader": ",",
   "vim.useSystemClipboard": true,
   "vim.incsearch": true,
@@ -131,27 +131,28 @@
   "vim.autoSwitchInputMethod.obtainIMCmd": "/Users/xlsama/bin/im-select",
   "vim.autoSwitchInputMethod.switchIMCmd": "/Users/xlsama/bin/im-select com.apple.keylayout.ABC {im}",
 
-  // Code Format
+  // code formatting
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[c]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
 
-  // Prompt
+  // prompt
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
 
-  // Code Style
-  "prettier.printWidth": 80,
-  "prettier.tabWidth": 2,
-  "prettier.semi": false,
+  // code style
   "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
   "prettier.trailingComma": "none",
+  "prettier.arrowParens": "avoid",
 
-  // Extension configs
+  // extension config
   "extensions.ignoreRecommendations": true,
-  "C_Cpp.intelliSenseEngine": "disabled"
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "hexeditor.columnWidth": 16,
+  "hexeditor.showDecodedText": true,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside"
 }
