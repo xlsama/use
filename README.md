@@ -23,7 +23,7 @@ Todo: [TickTick](https://ticktick.com/)
 
 </details>
 
-Mouse Manager: [Mac Mouse Fix](https://github.com/noah-nuebling/mac-mouse-fix)
+Mouse: [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html#software-download) && [Mos](https://github.com/Caldis/Mos)
 
 Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
 
@@ -36,7 +36,7 @@ Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/Keyboard
 
 </details>
 
-Screenshot: [Shottr](https://shottr.cc/) + Mac
+Screenshot: [Shottr](https://shottr.cc/) && Mac
 
 <details>
 <summary></summary>
@@ -69,7 +69,7 @@ Computer: MacBook Pro 16 M1 Max 32GB + 1T
 
 Keyboard: [HHKB](hhkb)
 
-Mouse: LG Pro X Superlight (GPW 2)
+Mouse: Logi MX Master 3
 
 Monitor: Dell U2723QX 27
 
