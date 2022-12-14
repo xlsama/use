@@ -77,4 +77,4 @@ Monitor: Dell U2723QX 27
 
 Soft Router: [OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
 
-MacOS System Settings: [Mac.md](Mac.md)
+MacOS System Settings: [.macos](.macos)
