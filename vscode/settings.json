@@ -133,6 +133,7 @@
 
   // code formatting
   "editor.formatOnSave": true,
+  "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[c]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
