@@ -32,6 +32,10 @@
   "editor.guides.bracketPairs": "active",
   "window.commandCenter": false,
 
+  // terminal
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "Terminal.app",
+
   // git
   "git.autofetch": true,
   "git.enableSmartCommit": true,
