@@ -151,6 +151,7 @@
 
   // extension config
   "extensions.ignoreRecommendations": true,
+  "code-runner.runInTerminal": true,
   "C_Cpp.intelliSenseEngine": "disabled",
   "hexeditor.columnWidth": 16,
   "hexeditor.showDecodedText": true,
