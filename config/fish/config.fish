@@ -6,15 +6,9 @@ set -g fish_greeting
 
 starship init fish | source
 
-# Aliases
-alias l='ls -la'
+# aliases
 
-# Vim
-alias v='nvim'
-alias vi='nvim'
-alias vim='nvim'
-
-# Git
+# git
 alias gst='git status'
 alias ga='git add'
 alias ga.='git add .'
@@ -46,6 +40,9 @@ alias gra='git rebase --abort'
 alias s='nr start'
 alias d='nr dev'
 alias b='nr build'
+
+alias l='ls -la'
+alias v='nvim'
 
 alias o='open'
 alias c='code -r'
