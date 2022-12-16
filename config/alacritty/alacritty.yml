@@ -184,7 +184,7 @@ draw_bold_text_with_bright_colors: true
 # Colors
 colors:
   primary:
-    background: '#282a36'
+    background: '#282C34'
     foreground: '#f8f8f2'
     bright_foreground: '#ffffff'
 
@@ -231,7 +231,7 @@ colors:
     red: '#ff5555'
     green: '#50fa7b'
     yellow: '#f1fa8c'
-    blue: '#bd93f9'
+    blue: '#669CF7'
     magenta: '#ff79c6'
     cyan: '#8be9fd'
     white: '#f8f8f2'
@@ -241,7 +241,7 @@ colors:
     red: '#ff6e6e'
     green: '#69ff94'
     yellow: '#ffffa5'
-    blue: '#d6acff'
+    blue: '#669CF7'
     magenta: '#ff92df'
     cyan: '#a4ffff'
     white: '#ffffff'
