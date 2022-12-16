@@ -1,6 +1,6 @@
 {
   // visual
-  "editor.fontSize": 14,
+  "editor.fontSize": 14.5,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "workbench.colorTheme": "Eva Dark",
