@@ -7,13 +7,13 @@ osascript -e 'tell application "System Preferences" to quit'
 # finder
 chflags nohidden ~/Library
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
 # dock
 defaults write com.apple.dock orientation -string left 
 defaults write com.apple.dock tilesize -int 47 
 defaults write com.apple.dock autohide -bool true
-defaults write com.apple.finder ShowPathbar -bool true
-defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
 # keyboard
 defaults write ApplePressAndHoldEnabled -bool false
