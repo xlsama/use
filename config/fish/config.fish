@@ -41,7 +41,7 @@ alias s='nr start'
 alias d='nr dev'
 alias b='nr build'
 
-alias l='ls -la'
+alias l='ls -a'
 alias v='nvim'
 
 alias o='open'
