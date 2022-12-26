@@ -14,27 +14,9 @@ Terminal: [Alacritty](https://github.com/alacritty/alacritty)
 
 Launcher: [Raycast](https://raycast.com)
 
-Todo: [TickTick](https://ticktick.com/)
-
-<details>
-<summary></summary>
-
-- hidden shortcuts: `ctrl + t`
-
-</details>
-
 Mouse: [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html#software-download) && [Mos](https://github.com/Caldis/Mos)
 
 Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
-
-<details>
-<summary></summary>
-
-- Wechat: Shuangpin - Simplified
-
-- Other: ABC
-
-</details>
 
 Screenshot: [Shottr](https://shottr.cc/) && Mac
 
@@ -53,7 +35,7 @@ Screenshot: [Shottr](https://shottr.cc/) && Mac
 
 </details>
 
-[ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)
+Proxy: [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)
 
 ## Terminal
 
