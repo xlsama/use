@@ -3,7 +3,7 @@
   "editor.fontSize": 14.5,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "workbench.colorTheme": "Eva Dark",
+  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
 
@@ -11,7 +11,7 @@
   "editor.minimap.enabled": false,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.inlineSuggest.enabled": true,
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
