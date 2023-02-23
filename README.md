@@ -14,8 +14,6 @@ Terminal: [Alacritty](https://github.com/alacritty/alacritty)
 
 Launcher: [Raycast](https://raycast.com)
 
-Mouse: [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html#software-download) && [Mos](https://github.com/Caldis/Mos)
-
 Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
 
 Screenshot: [Shottr](https://shottr.cc/) && Mac
@@ -48,10 +46,6 @@ Proxy: [Whistle](https://github.com/avwo/whistle)
 ## Devices
 
 Computer: MacBook Pro 16 M1 Max 32GB + 1T
-
-Keyboard: [HHKB](hhkb)
-
-Mouse: Logi MX Master 3
 
 Monitor: Dell U2723QX 27
 
