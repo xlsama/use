@@ -31,6 +31,7 @@
   },
   "editor.guides.bracketPairs": "active",
   "window.commandCenter": false,
+  "editor.linkedEditing": true,
 
   // terminal
   "terminal.explorerKind": "external",
@@ -145,7 +146,8 @@
 
   // prompt
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
   },
 
   // code style
