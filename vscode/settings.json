@@ -62,6 +62,11 @@
       "after": [":"]
     },
     {
+      "before": [";"],
+      "commands": ["workbench.action.showCommands"],
+      "silent": true
+    },
+    {
       "before": ["H"],
       "after": ["^"]
     },
@@ -106,10 +111,6 @@
       "after": ["z", "z"]
     },
     {
-      "before": ["<leader>", "f"],
-      "commands": ["editor.action.format"]
-    },
-    {
       "before": ["<leader>", "s"],
       "commands": ["code-runner.run"]
     },
@@ -119,15 +120,8 @@
     },
     {
       "before": ["<leader>", "o"],
-      "commands": ["workbench.action.openRecent"]
-    },
-    {
-      "before": ["<leader>", "n"],
-      "commands": ["fileutils.newFile"]
-    },
-    {
-      "before": ["<leader>", "r"],
-      "commands": ["fileutils.renameFile"]
+      "commands": ["workbench.action.openRecent"],
+      "silent": true
     }
   ],
   // auto switch input method    im-select https://github.com/daipeihust/im-select
