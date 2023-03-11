@@ -14,7 +14,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.inlineSuggest.enabled": true,
   "workbench.startupEditor": "none",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.list.smoothScrolling": true,
