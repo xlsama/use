@@ -47,9 +47,15 @@
   "vim.leader": ",",
   "vim.useSystemClipboard": true,
   "vim.incsearch": true,
-  "vim.hlsearch": false,
+  "vim.hlsearch": true,
   "vim.foldfix": true,
   "vim.showMarksInGutter": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-e>": false,
+    "<C-f>": false,
+    "<C-b>": false
+  },
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
@@ -67,20 +73,32 @@
       "silent": true
     },
     {
-      "before": ["H"],
-      "after": ["^"]
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["<C-r>"],
+      "commands": ["redo"]
     },
     {
       "before": ["L"],
       "after": ["$"]
     },
     {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
       "before": ["<C-d>"],
-      "after": ["1", "0", "j", "<leader>", "c"]
+      "after": ["1", "0", "j", "<leader>", "z"]
     },
     {
       "before": ["<C-u>"],
-      "after": ["1", "0", "k", "<leader>", "c"]
+      "after": ["1", "0", "k", "<leader>", "z"]
     },
     {
       "before": ["<C-h>"],
@@ -103,25 +121,54 @@
       "after": ["V"]
     },
     {
-      "before": ["<leader>", "g"],
-      "after": ["G"]
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<leader>", "y"],
+      "after": ["y", "y"]
     },
     {
       "before": ["<leader>", "c"],
+      "after": ["c", "c"]
+    },
+    {
+      "before": ["<leader>", "z"],
       "after": ["z", "z"]
     },
     {
-      "before": ["<leader>", "s"],
-      "commands": ["code-runner.run"]
+      "before": ["<leader>", "g"],
+      "after": ["G"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["L"],
+      "after": ["$"]
     },
     {
-      "before": ["<leader>", "d"],
-      "commands": ["workbench.action.debug.start"]
+      "before": ["H"],
+      "after": ["^"]
     },
     {
-      "before": ["<leader>", "o"],
-      "commands": ["workbench.action.openRecent"],
+      "before": [">"],
+      "commands": ["editor.action.indentLines"],
       "silent": true
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"],
+      "silent": true
+    }
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
     }
   ],
   // auto switch input method    im-select https://github.com/daipeihust/im-select
@@ -145,9 +192,13 @@
   },
 
   // code style
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 100,
   "prettier.singleQuote": true,
-  "prettier.trailingComma": "none",
   "prettier.arrowParens": "avoid",
+  "prettier.trailingComma": "none",
+  "prettier.bracketSpacing": true,
+  "prettier.useEditorConfig": false,
 
   // extension config
   "extensions.ignoreRecommendations": true,
