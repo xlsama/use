@@ -121,10 +121,6 @@
       "after": ["V"]
     },
     {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
-    },
-    {
       "before": ["<leader>", "c"],
       "after": ["c", "c"]
     },
