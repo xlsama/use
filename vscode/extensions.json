@@ -16,6 +16,5 @@
     "esbenp.prettier-vscode",
     "rust-lang.rust-analyzer",
     "vscodevim.vim",
-    "mohammadbaqer.better-folding"
   ]
 }
