@@ -3,6 +3,8 @@
 	email = im.xlsama@gmail.com
 [core]
 	excludesfile = /Users/xlsama/.gitignore
-	editor = nvim
+	editor = vim
 [init]
 	defaultBranch = main
+[includeIf "gitdir:/Users/xlsama/code/bytedance/"]
+  path = ~/.gitconfig_work
