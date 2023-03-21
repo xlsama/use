@@ -14,4 +14,4 @@
 # @raycast.author xlsama
 # @raycast.authorURL https://github.com/xlsama
 
-open "https://chat.openai.com/chat"
+open "https://ai.com"
