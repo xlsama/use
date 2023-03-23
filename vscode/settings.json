@@ -132,6 +132,10 @@
     {
       "before": ["<leader>", "g"],
       "after": ["G"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "after": ["<leader>", "<leader>", "s"]
     }
   ],
   "vim.visualModeKeyBindings": [
