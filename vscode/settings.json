@@ -46,6 +46,7 @@
   // vim
   "vim.leader": ",",
   "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.hlsearch": true,
   "vim.foldfix": true,
