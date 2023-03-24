@@ -33,15 +33,55 @@
   "window.commandCenter": false,
   "editor.linkedEditing": true,
 
-  // terminal
-  "terminal.explorerKind": "external",
-  "terminal.external.osxExec": "Terminal.app",
-
   // git
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "diffEditor.ignoreTrimWhitespace": false,
+
+  // code completion
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  // code formatting
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[c][cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+
+  // code style
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.trailingComma": "none",
+  "prettier.bracketSpacing": true,
+  "prettier.useEditorConfig": false,
+
+  // terminal
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "Terminal.app",
+
+  // extension config
+  "extensions.ignoreRecommendations": true,
+  "code-runner.runInTerminal": true,
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "hexeditor.columnWidth": 16,
+  "hexeditor.showDecodedText": true,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.workspaceFolder": "/Users/xlsama/code/algorithm",
+  "leetcode.defaultLanguage": "typescript",
 
   // vim
   "vim.leader": ",",
@@ -75,15 +115,18 @@
     },
     {
       "before": ["<C-n>"],
-      "commands": [":nohl"]
+      "commands": [":nohl"],
+      "silent": true
     },
     {
       "before": ["u"],
-      "commands": ["undo"]
+      "commands": ["undo"],
+      "silent": true
     },
     {
       "before": ["<C-r>"],
-      "commands": ["redo"]
+      "commands": ["redo"],
+      "silent": true
     },
     {
       "before": ["L"],
@@ -172,40 +215,5 @@
   "vim.autoSwitchInputMethod.enable": true,
   "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
   "vim.autoSwitchInputMethod.obtainIMCmd": "/Users/xlsama/bin/im-select",
-  "vim.autoSwitchInputMethod.switchIMCmd": "/Users/xlsama/bin/im-select com.apple.keylayout.ABC {im}",
-
-  // code formatting
-  "editor.formatOnSave": true,
-  "editor.tabSize": 2,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[c][cpp]": {
-    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-  },
-
-  // prompt
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
-  },
-
-  // code style
-  "prettier.tabWidth": 2,
-  "prettier.printWidth": 100,
-  "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
-  "prettier.trailingComma": "none",
-  "prettier.bracketSpacing": true,
-  "prettier.useEditorConfig": false,
-
-  // extension config
-  "extensions.ignoreRecommendations": true,
-  "code-runner.runInTerminal": true,
-  "C_Cpp.intelliSenseEngine": "disabled",
-  "hexeditor.columnWidth": 16,
-  "hexeditor.showDecodedText": true,
-  "hexeditor.defaultEndianness": "little",
-  "hexeditor.inspectorType": "aside",
-  "leetcode.endpoint": "leetcode-cn",
-  "leetcode.workspaceFolder": "/Users/xlsama/code/algorithm",
-  "leetcode.defaultLanguage": "typescript"
+  "vim.autoSwitchInputMethod.switchIMCmd": "/Users/xlsama/bin/im-select com.apple.keylayout.ABC {im}"
 }
