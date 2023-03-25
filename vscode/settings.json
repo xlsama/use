@@ -146,11 +146,13 @@
     },
     {
       "before": ["<leader>", "b"],
-      "commands": ["workbench.action.navigateBack"]
+      "commands": ["workbench.action.navigateBack"],
+      "silent": true
     },
     {
       "before": ["<leader>", "f"],
-      "commands": ["workbench.action.navigateForward"]
+      "commands": ["workbench.action.navigateForward"],
+      "silent": true
     },
     {
       "before": ["<C-h>"],
