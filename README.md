@@ -45,9 +45,9 @@ Proxy: [Whistle](https://github.com/avwo/whistle)
 
 ## Devices
 
-Computer: MacBook Pro 16 M1 Max 32GB + 1T
+Computer: MacBook Pro 16 M1 Max 32GB
 
-Monitor: Dell U2723QX 27
+No external keyboard/monitor
 
 ## Other
 
