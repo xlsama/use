@@ -145,6 +145,14 @@
       "after": ["1", "0", "k", "<leader>", "z"]
     },
     {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    {
       "before": ["<C-h>"],
       "commands": ["workbench.action.navigateLeft"]
     },
