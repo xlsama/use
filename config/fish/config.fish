@@ -41,11 +41,11 @@ alias s='nr start'
 alias d='nr dev'
 alias b='nr build'
 
-alias l='ls -a'
+alias l='ls -la'
 alias v='nvim'
 
 alias o='open'
 alias c='code -r'
 
-alias use='c ~/use'
+alias use='code ~/use'
 alias sync='sh ~/use/install'
