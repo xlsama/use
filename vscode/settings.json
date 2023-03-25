@@ -13,8 +13,6 @@
   "explorer.confirmDelete": false,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.inlineSuggest.enabled": true,
-  "workbench.startupEditor": "none",
-  "workbench.sideBar.location": "left",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.list.smoothScrolling": true,
@@ -30,8 +28,14 @@
     "README.md": "CHANGELOG.md, LICENCE"
   },
   "editor.guides.bracketPairs": "active",
-  "window.commandCenter": false,
   "editor.linkedEditing": true,
+
+  // window
+  "window.commandCenter": false,
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "left",
+  "window.restoreFullscreen": true,
+  "window.newWindowDimensions": "fullscreen",
 
   // git
   "git.autofetch": true,
