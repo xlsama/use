@@ -48,4 +48,6 @@ alias o='open'
 alias c='code -r'
 
 alias use='code ~/use'
-alias sync='sh ~/use/install'
+alias idl='npm run sync-idl'
+alias gen='npm run gen'
+
