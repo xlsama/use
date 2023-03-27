@@ -41,8 +41,6 @@ Shell: [fish](https://fishshell.com/)
 
 Package Manager: [Homebrew](https://brew.sh/)
 
-Proxy: [Whistle](https://github.com/avwo/whistle)
-
 ## Devices
 
 Computer: MacBook Pro 16 M1 Max 32GB
