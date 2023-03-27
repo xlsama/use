@@ -45,9 +45,7 @@ Package Manager: [Homebrew](https://brew.sh/)
 
 Computer: MacBook Pro 16 M1 Max 32GB
 
-Monitor: Dell U2723QX 27
-
-No external keyboard
+No external keyboard/monitor
 
 ## Other
 
