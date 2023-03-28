@@ -9,6 +9,7 @@ starship init fish | source
 # aliases
 
 # git
+alias g='gitui'
 alias gst='git status'
 alias ga='git add'
 alias ga.='git add .'
@@ -55,4 +56,3 @@ alias c='code -r'
 alias use='code ~/use'
 alias idl='npm run sync-idl'
 alias gen='npm run gen'
-

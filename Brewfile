@@ -13,6 +13,7 @@ brew "tmux"
 brew "wget"
 brew "you-get"
 brew "lsd"
+brew "gitui"
 
 # 'brew install --cask'
 cask "font-fira-code"
