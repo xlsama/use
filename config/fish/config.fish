@@ -42,8 +42,13 @@ alias d='nr dev'
 alias b='nr build'
 
 alias l='ls -la'
-alias v='nvim'
+alias ls='lsd'
+alias la='ls -a'
+alias ll='ls -l'
+alias lt='ls --tree'
 
+
+alias v='nvim'
 alias o='open'
 alias c='code -r'
 
