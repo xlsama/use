@@ -6,7 +6,7 @@
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon https://chat.openai.com/favicon-32x32.png
+# @raycast.icon images/chatgpt.png
 # @raycast.packageName Link
 
 # Documentation:
