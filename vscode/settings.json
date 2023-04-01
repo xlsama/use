@@ -89,6 +89,7 @@
   "leetcode.endpoint": "leetcode-cn",
   "leetcode.workspaceFolder": "/Users/xlsama/code/algorithm",
   "leetcode.defaultLanguage": "typescript",
+  "leetcode.hint": false,
 
   // vim
   "vim.leader": ",",
