@@ -33,7 +33,7 @@
   // window
   "window.commandCenter": false,
   "workbench.startupEditor": "none",
-  "workbench.sideBar.location": "left",
+  "workbench.sideBar.location": "right",
   "window.restoreFullscreen": true,
   "window.newWindowDimensions": "fullscreen",
 
