@@ -38,9 +38,9 @@ alias gshc='git stash clear'
 alias grc='git rebase --continue'
 alias gra='git rebase --abort'
 
-alias s='nr start'
-alias d='nr dev'
-alias b='nr build'
+alias s='npm run start'
+alias d='npm run dev'
+alias b='npm run build'
 
 alias l='ls -la'
 alias ls='lsd'
