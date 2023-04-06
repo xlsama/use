@@ -29,6 +29,12 @@
   },
   "editor.guides.bracketPairs": "active",
   "editor.linkedEditing": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
 
   // window
   "window.commandCenter": false,
@@ -90,6 +96,9 @@
   "leetcode.endpoint": "leetcode-cn",
   "leetcode.workspaceFolder": "/Users/xlsama/code/algorithm",
   "leetcode.defaultLanguage": "typescript",
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
 
   // vim
   "vim.leader": ",",
