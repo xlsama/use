@@ -48,7 +48,8 @@
     "*": true,
     "yaml": false,
     "plaintext": false,
-    "markdown": false
+    "markdown": false,
+    "scminput": false
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
