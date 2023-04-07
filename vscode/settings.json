@@ -24,7 +24,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "package.json": ".*, pnpm-lock.yaml, tsconfig.json",
+    "package.json": ".*, pnpm-lock.yaml, tsconfig.json, tailwind.config.*",
     "README.md": "CHANGELOG.md, LICENCE"
   },
   "editor.guides.bracketPairs": "active",
