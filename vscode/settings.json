@@ -35,6 +35,7 @@
   "editor.quickSuggestions": {
     "strings": true
   },
+  "editor.hover.delay": 100,
 
   // window
   "window.commandCenter": false,
