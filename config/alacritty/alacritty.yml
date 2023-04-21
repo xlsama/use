@@ -3,16 +3,16 @@ env:
 
 window:
   dimensions:
-    columns: 160
-    lines: 55
+    columns: 165
+    lines: 48
 
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
   position:
-    x: 480
-    y: 300
+    x: 340
+    y: 170
 
   # Window padding (changes require restart)
   padding:
