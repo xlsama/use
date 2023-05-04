@@ -55,3 +55,5 @@ alias o='open'
 alias c='code -r'
 
 alias use='code ~/use'
+
+alias python='python3'
