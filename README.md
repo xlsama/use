@@ -1,51 +1,42 @@
-## Installation
-
-```shell
-git clone https://github.com/xlsama/use && cd use && ./install
-```
-
 ## Software
 
-Browser: [Chrome](Chrome/Chrome.md)
+- Browser: [Chrome](Chrome/Chrome.md)
 
-Editor: [VSCode](https://code.visualstudio.com/)
+- Editor: [VSCode](https://code.visualstudio.com/)
 
-Terminal: [Alacritty](https://github.com/alacritty/alacritty)
+- Terminal: [Alacritty](https://github.com/alacritty/alacritty)
 
-Launcher: [Raycast](https://raycast.com)
+- Launcher: [Raycast](https://raycast.com)
 
-Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
+- Todo: [TickTick](https://ticktick.com/)
 
-Screenshot: [Shottr](https://shottr.cc/) && Mac
+- Screenshot: [Shottr](https://shottr.cc/) & Mac
 
-<details>
-<summary></summary>
+- Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
 
-- Shottr
+- Mouse: [Mos](https://mos.caldis.me/) & Logi Options+
 
-  - Area screenshot `option + a`
+- Bob
 
-  - Any window screenshot `option + s`
+- PopClip
 
-- Mac
+- Proxy: [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)
 
-  - Screenshot and recording options `option + d`
+## Hardware
 
-</details>
+- MacBook Pro 16 M1 Max / 32GB RAM
 
-Proxy: [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)
+- Monitor: Dell U2723QX
 
-## Terminal
+- Mouse: MX Master 3s
+
+- Keyboard: HHKB HYBRID TYPE-S
+
+## CLI
 
 Shell: [fish](https://fishshell.com/)
 
 Package Manager: [Homebrew](https://brew.sh/)
-
-## Devices
-
-Computer: MacBook Pro 16 M1 Max 32GB
-
-No external keyboard/monitor
 
 ## Other
 

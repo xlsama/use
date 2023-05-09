@@ -1,6 +1,6 @@
 {
   // visual
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "workbench.colorTheme": "One Dark Pro Darker",
@@ -71,6 +71,9 @@
   },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
   },
 
   // code style
