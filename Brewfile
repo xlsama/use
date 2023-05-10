@@ -3,10 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
 # 'brew install'
-brew "fish"
 brew "starship"
-brew "httpie"
-brew "ffmpeg"
 brew "lua"
 brew "neovim"
 brew "tmux"
