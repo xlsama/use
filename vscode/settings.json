@@ -72,6 +72,7 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
+  "python.formatting.provider": "black",
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
@@ -177,19 +178,23 @@
     },
     {
       "before": ["<C-h>"],
-      "commands": ["workbench.action.navigateLeft"]
+      "commands": ["workbench.action.navigateLeft"],
+      "silent": true
     },
     {
       "before": ["<C-l>"],
-      "commands": ["workbench.action.navigateRight"]
+      "commands": ["workbench.action.navigateRight"],
+      "silent": true
     },
     {
       "before": ["<C-k>"],
-      "commands": ["workbench.action.navigateUp"]
+      "commands": ["workbench.action.navigateUp"],
+      "silent": true
     },
     {
       "before": ["<C-j>"],
-      "commands": ["workbench.action.navigateDown"]
+      "commands": ["workbench.action.navigateDown"],
+      "silent": true
     },
     {
       "before": ["<leader>", "v"],
