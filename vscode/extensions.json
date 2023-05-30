@@ -1,21 +1,28 @@
 {
   "recommendations": [
-    "antfu.icons-carbon",
     "ms-vscode.cpptools",
+    "antfu.icons-carbon",
     "llvm-vs-code-extensions.vscode-clangd",
     "formulahendry.code-runner",
     "naumovs.color-highlight",
     "usernamehw.errorlens",
     "dbaeumer.vscode-eslint",
-    "fisheva.eva-theme",
-    "sleistner.vscode-fileutils",
+    "tamasfe.even-better-toml",
     "file-icons.file-icons",
+    "GitHub.copilot",
     "eamodio.gitlens",
-    "yzhang.markdown-all-in-one",
-    "bierner.markdown-mermaid",
+    "ms-vscode.hexeditor",
+    "LeetCode.vscode-leetcode",
+    "cweijan.vscode-office",
+    "zhuangtongfa.material-theme",
     "esbenp.prettier-vscode",
+    "yoavbls.pretty-ts-errors",
+    "ms-python.vscode-pylance",
+    "ms-python.python",
+    "humao.rest-client",
     "rust-lang.rust-analyzer",
-    "vscodevim.vim",
-    "github.copilot"
+    "richie5um2.vscode-sort-json",
+    "bradlc.vscode-tailwindcss",
+    "vscodevim.vim"
   ]
 }

@@ -6,5 +6,7 @@
 	editor = nvim
 [init]
 	defaultBranch = main
-[includeIf "gitdir:/Users/xlsama/code/bytedance/"]
+[includeIf "gitdir:/Users/xlsama/code/work/"]
   path = ~/.gitconfig_work
+[url "https://github.com/"]
+	insteadOf = git://github.com/

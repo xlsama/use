@@ -16,8 +16,6 @@
 
 - Mouse: [Mos](https://mos.caldis.me/) & Logi Options+
 
-- Bob
-
 - PopClip
 
 - Proxy: [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)

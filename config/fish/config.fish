@@ -54,6 +54,6 @@ alias v='nvim'
 alias o='open'
 alias c='code -r'
 
-alias use='code ~/use'
+alias use='code ~/code/use'
 
 alias python='python3'

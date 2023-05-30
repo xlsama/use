@@ -3,7 +3,7 @@
   "editor.fontSize": 15,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "One Dark Modern",
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
 
@@ -36,6 +36,9 @@
     "strings": true
   },
   "editor.hover.delay": 100,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
 
   // window
   "window.commandCenter": false,
@@ -78,11 +81,12 @@
   },
 
   // code style
+  "prettier.semi": false,
   "prettier.tabWidth": 2,
   "prettier.printWidth": 100,
   "prettier.singleQuote": true,
   "prettier.arrowParens": "avoid",
-  "prettier.trailingComma": "none",
+  "prettier.trailingComma": "all",
   "prettier.bracketSpacing": true,
   "prettier.useEditorConfig": false,
 

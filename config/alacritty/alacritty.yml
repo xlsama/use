@@ -197,7 +197,7 @@ colors:
 
 cursor:
   style:
-    shape: Beam
+    shape: Block
     blinking: Always
 
 live_config_reload: true

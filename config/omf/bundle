@@ -1,3 +1,2 @@
-package foreign-env
 package zlua
 theme default
