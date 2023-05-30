@@ -29,3 +29,5 @@ Package Manager: [Homebrew](https://brew.sh/)
 Soft Router: [OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
 
 MacOS System Settings: [.macos](.macos)
+
+ss
