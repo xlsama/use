@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# 获取当前工作目录的路径
+project_root=$(pwd)
+
+# 执行code --list-extensions命令，并将结果保存到变量extensions中
+extensions=$(code --list-extensions)
+
+# 将变量extensions中的字符串转换为JSON数组
+json="{\"recommendations\": ["
+first=true
+for extension in $extensions
+do
+  if [ "$first" = false ]; then
+    json="$json,"
+  fi
+  json="$json\"$extension\""
+  first=false
+done
+json="$json]}"
+
+# 使用jq进行缩进和格式化
+formatted_json=$(echo "$json" | jq '.')
+
+# 将格式化后的JSON数据写入文件
+echo "$formatted_json" > "$project_root/vscode/extensions.json"
+
+# 保持 extensions.json 文件和 code --list-extensions 的输出结果同步
+git add "$project_root/vscode/extensions.json"

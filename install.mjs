@@ -56,12 +56,14 @@ const link_map = [
   },
 ]
 
+// ln -s files
 console.log(chalk.blue('ln -s files'))
 link_map.forEach(async ({ source, target }) => {
   await $`rm -rf ${target}`
   await $`ln -s ${source} ${target}`
 })
 
+// set macOS system settings
 console.log(chalk.blue('set macOS system settings'))
 // finder
 await $`defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
@@ -72,8 +74,12 @@ await $`defaults write ApplePressAndHoldEnabled -bool false`
 // screenshot
 await $`defaults write com.apple.screencapture location ~/Downloads`
 
+// install vscode extensions
 console.log(chalk.blue('install vscode extensions'))
 const { recommendations } = await fs.readJson('./vscode/extensions.json')
 recommendations.forEach(async name => {
   await $`code --install-extension ${name}`
 })
+
+// copy pre-commit git hook
+await $`cp ./.hooks/pre-commit ./.git/hooks/`
