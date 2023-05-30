@@ -1,17 +1,17 @@
 # 'brew tap'
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
 # 'brew install'
-brew "starship"
-brew "lua"
-brew "neovim"
+brew "fish"
 brew "tmux"
-brew "wget"
+brew "starship"
+brew "neovim"
+brew "lua"
 brew "you-get"
 brew "lsd"
 brew "gitui"
 brew "jq"
+brew "fnm"
 
 # 'brew install --cask'
 cask "font-fira-code"
