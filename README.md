@@ -1,3 +1,13 @@
+## Installation
+
+```shell
+zx ./install.mjs
+```
+
+```shell
+brew bundle --file=./Brewfile
+```
+
 ## Software
 
 - Browser: [Chrome](Chrome/Chrome.md)
