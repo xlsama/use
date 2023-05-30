@@ -117,6 +117,11 @@
   "vim.hlsearch": true,
   "vim.foldfix": true,
   "vim.showMarksInGutter": true,
+  // auto switch input method    im-select https://github.com/daipeihust/im-select
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/Users/xlsama/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/Users/xlsama/bin/im-select com.apple.keylayout.ABC {im}",
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-e>": false,
@@ -250,10 +255,5 @@
       "before": ["H"],
       "after": ["^"]
     }
-  ],
-  // auto switch input method    im-select https://github.com/daipeihust/im-select
-  "vim.autoSwitchInputMethod.enable": true,
-  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
-  "vim.autoSwitchInputMethod.obtainIMCmd": "/Users/xlsama/bin/im-select",
-  "vim.autoSwitchInputMethod.switchIMCmd": "/Users/xlsama/bin/im-select com.apple.keylayout.ABC {im}"
+  ]
 }
