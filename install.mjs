@@ -56,7 +56,7 @@ const link_map = [
   },
 ]
 
-// ln -s files
+// link config files
 console.log(chalk.blue('ln -s files'))
 link_map.forEach(async ({ source, target }) => {
   await $`rm -rf ${target}`

@@ -7,7 +7,7 @@
 - Todo: [TickTick](https://ticktick.com/)
 - Screenshot: [Shottr](https://shottr.cc/) & Mac
 - Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
-- Mouse: [Mos](https://mos.caldis.me/) & Logi Options+
+- Mouse: [SmoothScroll](https://www.smoothscroll.net/mac/) & [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
 - PopClip
 - Proxy: [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)
 
@@ -27,5 +27,3 @@ Package Manager: [Homebrew](https://brew.sh/)
 ## Other
 
 Soft Router: [OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
-
-MacOS System Settings: [.macos](.macos)
