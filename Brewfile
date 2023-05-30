@@ -11,6 +11,7 @@ brew "wget"
 brew "you-get"
 brew "lsd"
 brew "gitui"
+brew "jq"
 
 # 'brew install --cask'
 cask "font-fira-code"
