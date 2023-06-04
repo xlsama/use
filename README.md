@@ -18,7 +18,7 @@ brew bundle --file=./Brewfile
 - Screenshot: [Shottr](https://shottr.cc/) & Mac
 - Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
 - Mouse: [SmoothScroll](https://www.smoothscroll.net/mac/) & [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
-- PopClip
+- Clip: [PopClip](https://pilotmoon.com/popclip/)
 - Proxy: [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)
 
 ## Hardware
@@ -33,6 +33,8 @@ brew bundle --file=./Brewfile
 Shell: [fish](https://fishshell.com/)
 
 Package Manager: [Homebrew](https://brew.sh/)
+
+Terminal multiplexer: [tmux](https://github.com/tmux/tmux)
 
 ## Other
 
