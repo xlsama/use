@@ -16,9 +16,10 @@ brew bundle --file=./Brewfile
 - Launcher: [Raycast](https://raycast.com)
 - Todo: [TickTick](https://ticktick.com/)
 - Screenshot: [Shottr](https://shottr.cc/) & Mac
-- Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
-- Mouse: [SmoothScroll](https://www.smoothscroll.net/mac/) & [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
+- Mouse: [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) & [SmoothScroll](https://www.smoothscroll.net/mac/)
 - Clip: [PopClip](https://pilotmoon.com/popclip/)
+- Input Source: [微信键盘](https://z.weixin.qq.com/)
+- Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
 - Proxy: [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)
 
 ## Hardware
