@@ -2,7 +2,6 @@
   "recommendations": [
     "antfu.icons-carbon",
     "bradlc.vscode-tailwindcss",
-    "cweijan.vscode-office",
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
     "esbenp.prettier-vscode",
