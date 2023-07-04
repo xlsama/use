@@ -1,8 +1,10 @@
 {
   "recommendations": [
     "antfu.icons-carbon",
+    "antfu.theme-vitesse",
     "bradlc.vscode-tailwindcss",
     "dbaeumer.vscode-eslint",
+    "devicescript.devicescript-vscode",
     "eamodio.gitlens",
     "esbenp.prettier-vscode",
     "file-icons.file-icons",
@@ -11,6 +13,7 @@
     "humao.rest-client",
     "LeetCode.vscode-leetcode",
     "llvm-vs-code-extensions.vscode-clangd",
+    "meganrogge.template-string-converter",
     "ms-python.python",
     "ms-python.vscode-pylance",
     "ms-vscode.cpptools",
@@ -21,7 +24,6 @@
     "tamasfe.even-better-toml",
     "usernamehw.errorlens",
     "vscodevim.vim",
-    "yoavbls.pretty-ts-errors",
-    "zhuangtongfa.material-theme"
+    "yoavbls.pretty-ts-errors"
   ]
 }

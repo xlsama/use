@@ -3,9 +3,16 @@
   "editor.fontSize": 15,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Vitesse Dark",
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
+
+  // window
+  "window.commandCenter": false,
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+  "window.restoreFullscreen": true,
+  "window.newWindowDimensions": "fullscreen",
 
   // editor
   "editor.minimap.enabled": false,
@@ -28,24 +35,10 @@
     "README.md": "CHANGELOG.md, LICENCE"
   },
   "editor.guides.bracketPairs": "active",
-  "editor.linkedEditing": true,
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "editor.quickSuggestions": {
-    "strings": true
-  },
   "editor.hover.delay": 100,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-
-  // window
-  "window.commandCenter": false,
-  "workbench.startupEditor": "none",
-  "workbench.sideBar.location": "right",
-  "window.restoreFullscreen": true,
-  "window.newWindowDimensions": "fullscreen",
 
   // git
   "git.autofetch": true,
@@ -64,10 +57,22 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "editor.linkedEditing": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.suggest.insertMode": "replace",
 
-  // code formatting
+  // code formatting & code style
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.sortJSON": true,
+    "source.organizeImports": true
+  },
+  "sortJSON.orderOverride": ["name", "version", "description"],
+  "sortJSON.orderUnderride": ["dependencies", "devDependencies"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[c][cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
@@ -79,8 +84,6 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
-
-  // code style
   "prettier.semi": false,
   "prettier.tabWidth": 2,
   "prettier.printWidth": 100,
@@ -95,6 +98,7 @@
   "terminal.external.osxExec": "Terminal.app",
 
   // extension config
+  "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
   "code-runner.runInTerminal": true,
   "C_Cpp.intelliSenseEngine": "disabled",
