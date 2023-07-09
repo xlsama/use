@@ -21,6 +21,7 @@
     "naumovs.color-highlight",
     "richie5um2.vscode-sort-json",
     "rust-lang.rust-analyzer",
+    "stylelint.vscode-stylelint",
     "tamasfe.even-better-toml",
     "usernamehw.errorlens",
     "vscodevim.vim",
