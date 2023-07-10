@@ -39,7 +39,7 @@
     "when": "filesExplorerFocus && !inputFocus"
   },
   {
-    "key": "c",
+    "key": "y",
     "command": "filesExplorer.copy",
     "when": "filesExplorerFocus && !inputFocus"
   },
