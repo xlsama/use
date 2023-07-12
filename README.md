@@ -10,17 +10,18 @@ brew bundle --file=./Brewfile
 
 ## Software
 
-- Browser: [Chrome](Chrome/Chrome.md)
-- Editor: [VSCode](https://code.visualstudio.com/)
-- Terminal: [Alacritty](https://github.com/alacritty/alacritty)
-- Launcher: [Raycast](https://raycast.com)
-- Todo: [TickTick](https://ticktick.com/)
-- Screenshot: [Shottr](https://shottr.cc/) & Mac
-- Mouse: [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) & [SmoothScroll](https://www.smoothscroll.net/mac/)
-- Clip: [PopClip](https://pilotmoon.com/popclip/)
-- Input Source: [微信键盘](https://z.weixin.qq.com/)
-- Auto Switch Input Source: [KeyboardHolder](https://github.com/leaves615/KeyboardHolder)
-- Proxy: [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)
+- [Chrome](Chrome/Chrome.md) - Browser
+- [VSCode](https://code.visualstudio.com/) - Editor
+- [Alacritty](https://github.com/alacritty/alacritty) - Terminal
+- [Raycast](https://raycast.com) - Launcher
+- [TickTick](https://dida365.com/) - Todo list (Web Platform) `Raycast Shortcuts: Ctrl + t`
+- [Shottr](https://shottr.cc/) & Mac - Screenshot and recoding
+- [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) & [SmoothScroll](https://www.smoothscroll.net/mac/) - Custom mouse and smooth scrolling
+- [PopClip](https://pilotmoon.com/popclip/) - PopClip appears when you select text with your mouse
+- [微信输入法](https://z.weixin.qq.com/) - Chinese input method
+- [KeyboardHolder](https://github.com/leaves615/KeyboardHolder) - Auto Switch Input Source
+- [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public) - Bypass GFW
+- [Klack](https://tryklack.com/) - Mechanical Keyboard Sound for built-in keyboard
 
 ## Hardware
 
