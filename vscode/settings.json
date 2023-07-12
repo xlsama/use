@@ -28,13 +28,14 @@
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.stickyScroll.enabled": true,
   "editor.inlineSuggest.enabled": true,
   "workbench.editor.untitled.hint": "hidden",
   "workbench.editor.closeOnFileDelete": true,
-  "workbench.list.smoothScrolling": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.accessibilitySupport": "off",
-  "editor.stickyScroll.enabled": true,
   "audioCues.lineHasError": "off",
   "audioCues.lineHasFoldedArea": "off",
   "explorer.fileNesting.enabled": true,
@@ -53,7 +54,6 @@
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
-  "diffEditor.ignoreTrimWhitespace": false,
 
   // code completion
   "github.copilot.enable": {
@@ -100,7 +100,6 @@
   "prettier.arrowParens": "avoid",
   "prettier.trailingComma": "all",
   "prettier.bracketSpacing": true,
-  "prettier.useEditorConfig": false,
 
   // terminal
   "terminal.explorerKind": "external",
