@@ -125,7 +125,6 @@
   // vim
   "vim.leader": ",",
   "vim.useSystemClipboard": true,
-  "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.hlsearch": true,
   "vim.foldfix": true,
@@ -233,10 +232,6 @@
     {
       "before": ["<leader>", "g"],
       "after": ["G"]
-    },
-    {
-      "before": ["<leader>", "s"],
-      "after": ["<leader>", "<leader>", "s"]
     }
   ],
   "vim.visualModeKeyBindings": [
