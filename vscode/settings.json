@@ -263,5 +263,39 @@
       "before": ["H"],
       "after": ["^"]
     }
+  ],
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["w"],
+      "after": ["i", "w"]
+    },
+    {
+      "before": ["["],
+      "after": ["i", "["]
+    },
+    {
+      "before": ["b"],
+      "after": ["i", "("]
+    },
+    {
+      "before": ["n"],
+      "after": ["i", "{"]
+    },
+    {
+      "before": [","],
+      "after": ["i", "<"]
+    },
+    {
+      "before": ["'"],
+      "after": ["i", "'"]
+    },
+    {
+      "before": ["\""],
+      "after": ["i", "\""]
+    },
+    {
+      "before": ["`"],
+      "after": ["i", "`"]
+    }
   ]
 }
