@@ -43,12 +43,10 @@ alias d='npm run dev'
 alias b='npm run build'
 alias s='npm run start'
 
-alias l='ls -la'
 alias ls='lsd'
-alias la='ls -a'
-alias ll='ls -l'
+alias l='ls -1a'
+alias ll='ls -la'
 alias lt='ls --tree'
-
 
 alias v='nvim'
 alias o='open'
