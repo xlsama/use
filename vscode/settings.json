@@ -27,9 +27,9 @@
   "editor.minimap.enabled": false,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
-  "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "workbench.list.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.stickyScroll.enabled": true,
   "editor.inlineSuggest.enabled": true,
   "workbench.editor.untitled.hint": "hidden",
@@ -45,10 +45,8 @@
     "README.md": "CHANGELOG.md, LICENCE"
   },
   "editor.guides.bracketPairs": "active",
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
   "editor.hover.delay": 100,
+  "files.simpleDialog.enable": true,
 
   // git
   "git.autofetch": true,
@@ -71,12 +69,18 @@
   "editor.quickSuggestions": {
     "strings": true
   },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
   "editor.suggest.insertMode": "replace",
 
   // code formatting & code style
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
     "source.fixAll.sortJSON": true,
     "source.organizeImports": true
   },
