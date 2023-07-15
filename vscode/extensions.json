@@ -2,7 +2,6 @@
   "recommendations": [
     "antfu.icons-carbon",
     "antfu.theme-vitesse",
-    "BDSoftware.format-on-auto-save",
     "bradlc.vscode-tailwindcss",
     "dbaeumer.vscode-eslint",
     "devicescript.devicescript-vscode",

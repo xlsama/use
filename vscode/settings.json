@@ -75,8 +75,7 @@
   "editor.suggest.insertMode": "replace",
 
   // code formatting & code style
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 500,
+  "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
