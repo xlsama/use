@@ -14,9 +14,9 @@ brew bundle --file=./Brewfile
 - [VSCode](https://code.visualstudio.com/) - Editor
 - [Alacritty](https://github.com/alacritty/alacritty) - Terminal
 - [Raycast](https://raycast.com) - Launcher
-- [TickTick](https://dida365.com/) - Todo list (Web Platform) `Raycast Shortcuts: Ctrl + t`
-- [Snipaste](https://www.snipaste.com/index.html) & Mac - Screenshot and recoding
-- [PopClip](https://pilotmoon.com/popclip/) - PopClip appears when you select text with your mouse
+- [TickTick](https://dida365.com/) - Todo (Web Platform) `Raycast Shortcuts: Ctrl + t`
+- [iShot Pro](https://apps.apple.com/us/app/ishot-pro-screenshot-recording/id1611347086?mt=12) - Screenshot & Recording
+- [PopClip](https://pilotmoon.com/popclip/) - Quick jump
 - [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) & [SmoothScroll](https://www.smoothscroll.net/mac/) - Custom mouse and smooth scrolling
 - [微信输入法](https://z.weixin.qq.com/) - Chinese input method
 - [KeyboardHolder](https://github.com/leaves615/KeyboardHolder) - Auto Switch Input Source
@@ -27,8 +27,8 @@ brew bundle --file=./Brewfile
 
 - MacBook Pro 16 M1 Max / 32GB RAM
 - Monitor: Dell U2723QX
-- Mouse: MX Master 3s
 - Keyboard: HHKB Hybrid TYPE-S
+- Mouse: MX Master 3s
 
 ## CLI
 
