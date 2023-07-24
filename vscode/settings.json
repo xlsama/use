@@ -58,7 +58,6 @@
     "*": true,
     "yaml": false,
     "plaintext": false,
-    "markdown": false,
     "scminput": false
   },
   "emmet.includeLanguages": {
@@ -70,7 +69,8 @@
     "strings": true
   },
   "files.associations": {
-    "*.css": "tailwindcss"
+    "*.css": "tailwindcss",
+    "*.svelte": "html"
   },
   "editor.suggest.insertMode": "replace",
 
@@ -94,6 +94,9 @@
   "python.formatting.provider": "black",
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "prettier.semi": false,
   "prettier.tabWidth": 2,
