@@ -6,7 +6,7 @@
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico
+# @raycast.icon images/spotify2.png
 # @raycast.packageName Link
 
 # Documentation:
