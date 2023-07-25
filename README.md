@@ -13,8 +13,8 @@ brew bundle --file=./Brewfile
 - [Chrome](Chrome/Chrome.md) - Browser
 - [VSCode](https://code.visualstudio.com/) - Editor
 - [Alacritty](https://github.com/alacritty/alacritty) - Terminal
+- [TickTick](https://dida365.com/) - Todo(`Web`) Pin in Chrome
 - [Raycast](https://raycast.com) - Launcher
-- [TickTick](https://dida365.com/) - Todo (Web Platform) `Raycast Shortcuts: Ctrl + t`
 - [iShot Pro](https://apps.apple.com/us/app/ishot-pro-screenshot-recording/id1611347086?mt=12) - Screenshot & Recording
 - [PopClip](https://pilotmoon.com/popclip/) - Quick jump
 - [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) & [SmoothScroll](https://www.smoothscroll.net/mac/) - Custom mouse and smooth scrolling
