@@ -72,7 +72,6 @@
     "*.css": "tailwindcss",
     "*.svelte": "html"
   },
-  "editor.suggest.insertMode": "replace",
 
   // code formatting & code style
   "editor.formatOnSave": true,
