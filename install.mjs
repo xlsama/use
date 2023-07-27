@@ -54,6 +54,11 @@ const link_map = [
     source: `${HOME_DIR}/code/use/vscode/global.code-snippets`,
     target: `${HOME_DIR}/Library/Application Support/Code/User/snippets/global.code-snippets`,
   },
+  // for work
+  {
+    source: `${HOME_DIR}/code/use/vscode/semi.code-snippets`,
+    target: `${HOME_DIR}/Library/Application Support/Code/User/snippets/semi.code-snippets`,
+  },
 ]
 
 // link config files
@@ -71,8 +76,6 @@ await $`defaults write com.apple.finder ShowPathbar -bool true`
 await $`defaults write com.apple.finder _FXSortFoldersFirst -bool true`
 // keyboard
 await $`defaults write ApplePressAndHoldEnabled -bool false`
-// screenshot
-await $`defaults write com.apple.screencapture location ~/Downloads`
 
 // install vscode extensions
 console.log(chalk.blue('install vscode extensions'))
