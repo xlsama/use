@@ -53,3 +53,4 @@ alias c='code -r'
 alias use='code ~/code/use'
 
 alias python='python3'
+alias nv='fnm'
