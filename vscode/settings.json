@@ -78,8 +78,7 @@
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.fixAll.sortJSON": true,
-    "source.organizeImports": true
+    "source.fixAll.sortJSON": true
   },
   "sortJSON.orderOverride": ["name", "version", "description"],
   "sortJSON.orderUnderride": ["dependencies", "devDependencies"],
