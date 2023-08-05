@@ -69,8 +69,7 @@
     "strings": true
   },
   "files.associations": {
-    "*.css": "tailwindcss",
-    "*.svelte": "html"
+    "*.css": "tailwindcss"
   },
 
   // code formatting & code style
@@ -89,7 +88,6 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
-  "python.formatting.provider": "black",
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
@@ -103,10 +101,6 @@
   "prettier.arrowParens": "avoid",
   "prettier.trailingComma": "all",
   "prettier.bracketSpacing": true,
-
-  // terminal
-  "terminal.explorerKind": "external",
-  "terminal.external.osxExec": "Terminal.app",
 
   // extension config
   "extensions.autoUpdate": "onlyEnabledExtensions",
@@ -123,6 +117,7 @@
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
+  "svelte.enable-ts-plugin": true,
 
   // vim
   "vim.leader": ",",
