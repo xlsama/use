@@ -1,33 +1,53 @@
 {
-  "Print to console": {
+  "console.log": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "cl",
     "body": ["console.log($1)"]
   },
-  "import module": {
+  "console.log('x:', x)": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cll",
+    "body": ["console.log('$1:', $1)"]
+  },
+  "import from": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "im",
-    "body": ["import $0 from '$1'"]
+    "body": ["import $2 from '$1'"]
   },
-  "import statement": {
+  "import { } from": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "imm",
-    "body": ["import { $0 } from '$1'"]
+    "body": ["import { $2 } from '$1'"]
+  },
+  "export {}": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "em",
+    "body": ["export { $1 }"]
   },
   "export default": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "ed",
-    "body": ["export default $0"]
+    "body": ["export default $1"]
+  },
+  "export * from": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ef",
+    "body": ["export * from '$1'"]
+  },
+  "export { } from": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "eff",
+    "body": ["export { $2 } from '$1'"]
   },
   "const x = x": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "con",
-    "body": ["const $1 = $0"]
+    "prefix": "cn",
+    "body": ["const $1 = $2"]
   },
   "const { x } = x": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "conn",
-    "body": ["const { $0 } = $1"]
+    "prefix": "cnn",
+    "body": ["const { $2 } = $1"]
   },
   "init react template": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
@@ -42,6 +62,6 @@
   "useEffect": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "ue",
-    "body": "useEffect(() => {\n  $0\n}, [])\n"
+    "body": "useEffect(() => {\n  $1\n}, [])\n"
   }
 }
