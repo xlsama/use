@@ -41,8 +41,9 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "package.json": ".*, pnpm-lock.yaml, tsconfig.json, tailwind.config.*",
-    "README.md": "CHANGELOG.md, LICENCE"
+    "README.md": "*.md, LICENCE",
+    "package.json": ".*, tsconfig.json, tailwind.config.*, pnpm*, package*, yarn*",
+    "cargo.toml": "*.toml, cargo*"
   },
   "editor.guides.bracketPairs": "active",
   "editor.hover.delay": 100,
@@ -50,8 +51,8 @@
 
   // git
   "git.autofetch": true,
-  "git.enableSmartCommit": true,
   "git.confirmSync": false,
+  "git.enableSmartCommit": true,
 
   // code completion
   "github.copilot.enable": {
@@ -76,8 +77,10 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
+    "source.fixAll": false,
     "source.fixAll.eslint": true,
-    "source.fixAll.sortJSON": true
+    "source.fixAll.sortJSON": true,
+    "source.organizeImports": false
   },
   "sortJSON.orderOverride": ["name", "version", "description"],
   "sortJSON.orderUnderride": ["dependencies", "devDependencies"],
@@ -102,22 +105,19 @@
   "prettier.trailingComma": "all",
   "prettier.bracketSpacing": true,
 
-  // extension config
+  // extension configs
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
   "code-runner.runInTerminal": true,
   "C_Cpp.intelliSenseEngine": "disabled",
-  "hexeditor.columnWidth": 16,
-  "hexeditor.showDecodedText": true,
-  "hexeditor.defaultEndianness": "little",
-  "hexeditor.inspectorType": "aside",
   "leetcode.endpoint": "leetcode-cn",
-  "leetcode.workspaceFolder": "/Users/xlsama/code/algorithm",
+  "leetcode.workspaceFolder": "/Users/xlsama/code/practice/algorithm",
   "leetcode.defaultLanguage": "typescript",
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
   "svelte.enable-ts-plugin": true,
+  "eslint.quiet": true,
 
   // vim
   "vim.leader": ",",

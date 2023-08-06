@@ -17,13 +17,13 @@
     "ms-python.python",
     "ms-python.vscode-pylance",
     "ms-vscode.cpptools",
-    "ms-vscode.hexeditor",
     "naumovs.color-highlight",
     "richie5um2.vscode-sort-json",
     "rust-lang.rust-analyzer",
     "svelte.svelte-vscode",
     "tamasfe.even-better-toml",
     "usernamehw.errorlens",
+    "vadimcn.vscode-lldb",
     "vscodevim.vim",
     "yoavbls.pretty-ts-errors"
   ]
