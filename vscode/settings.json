@@ -46,7 +46,6 @@
     "cargo.toml": "*.toml, cargo*"
   },
   "editor.guides.bracketPairs": "active",
-  "editor.hover.delay": 100,
   "files.simpleDialog.enable": true,
 
   // git
