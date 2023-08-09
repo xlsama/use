@@ -42,7 +42,7 @@
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
     "README.md": "*.md, LICENCE",
-    "package.json": ".*, tsconfig.json, tailwind.config.*, pnpm*, package*, yarn*",
+    "package.json": ".*, tsconfig.json, tailwind.config.*, pnpm*, package*, yarn*, eden*, *.sh",
     "cargo.toml": "*.toml, cargo*"
   },
   "editor.guides.bracketPairs": "active",
