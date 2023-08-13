@@ -16,28 +16,32 @@
     }
   },
 
-  // window
-  "window.commandCenter": false,
-  "workbench.startupEditor": "none",
-  "workbench.sideBar.location": "right",
-  "window.restoreFullscreen": true,
-  "window.newWindowDimensions": "fullscreen",
-
   // editor
   "editor.minimap.enabled": false,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "editor.smoothScrolling": true,
-  "workbench.list.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.stickyScroll.enabled": true,
-  "editor.inlineSuggest.enabled": true,
   "workbench.editor.untitled.hint": "hidden",
+  "workbench.list.smoothScrolling": true,
   "workbench.editor.closeOnFileDelete": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.accessibilitySupport": "off",
   "audioCues.lineHasError": "off",
   "audioCues.lineHasFoldedArea": "off",
+  "editor.guides.bracketPairs": "active",
+  "files.simpleDialog.enable": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 5,
+  "window.commandCenter": false,
+  "window.restoreFullscreen": true,
+  "window.newWindowDimensions": "fullscreen",
+  "window.nativeTabs": true, // this is great, macOS only
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
@@ -45,34 +49,6 @@
     "package.json": ".*, tsconfig.json, tailwind.config.*, pnpm*, package*, yarn*, eden*, *.sh",
     "cargo.toml": "*.toml, cargo*"
   },
-  "editor.guides.bracketPairs": "active",
-  "files.simpleDialog.enable": true,
-
-  // git
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-
-  // code completion
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "scminput": false
-  },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "typescript.preferences.importModuleSpecifier": "non-relative",
-  "editor.linkedEditing": true,
-  "editor.quickSuggestions": {
-    "strings": true
-  },
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-
-  // code formatting & code style
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
@@ -81,8 +57,6 @@
     "source.fixAll.sortJSON": true,
     "source.organizeImports": false
   },
-  "sortJSON.orderOverride": ["name", "version", "description"],
-  "sortJSON.orderUnderride": ["dependencies", "devDependencies"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[c][cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
@@ -96,13 +70,42 @@
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "prettier.semi": false,
-  "prettier.tabWidth": 2,
-  "prettier.printWidth": 100,
-  "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
-  "prettier.trailingComma": "all",
-  "prettier.bracketSpacing": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "editor.linkedEditing": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  // search
+  "search.exclude": {
+    "**/.git": true,
+    "**/.github": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "**/yarn.lock": true
+  },
+
+  // git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
 
   // extension configs
   "extensions.autoUpdate": "onlyEnabledExtensions",
@@ -117,6 +120,21 @@
   },
   "svelte.enable-ts-plugin": true,
   "eslint.quiet": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "scminput": false
+  },
+  "sortJSON.orderOverride": ["name", "version", "description"],
+  "sortJSON.orderUnderride": ["dependencies", "devDependencies"],
+  "prettier.semi": false,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.bracketSpacing": true,
+  "prettier.trailingComma": "all",
 
   // vim
   "vim.leader": ",",
