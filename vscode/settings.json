@@ -4,9 +4,6 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "workbench.colorTheme": "Vitesse Dark",
-  "workbench.preferredLightColorTheme": "Eva Light",
-  "workbench.preferredDarkColorTheme": "Vitesse Dark",
-  "window.autoDetectColorScheme": true,
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.colorCustomizations": {
