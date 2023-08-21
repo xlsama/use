@@ -48,9 +48,16 @@ alias l='ls -1A'
 
 alias v='nvim'
 alias o='open'
-alias c='code -r'
+alias c='code'
 
 alias use='code ~/code/use'
 
 alias python='python3'
 alias nv='fnm'
+
+# pnpm
+set -gx PNPM_HOME "/Users/xlsama/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
