@@ -77,7 +77,6 @@
     "javascript": "javascriptreact"
   },
   "emmet.showSuggestionsAsSnippets": true,
-  "editor.snippetSuggestions": "top",
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {
     "strings": true
