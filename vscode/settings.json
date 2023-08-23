@@ -59,6 +59,7 @@
     "source.fixAll.sortJSON": true,
     "source.organizeImports": false
   },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[c][cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
@@ -75,7 +76,8 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.snippetSuggestions": "top",
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {
     "strings": true
