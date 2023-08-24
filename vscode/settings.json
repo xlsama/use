@@ -318,5 +318,11 @@
       "before": ["`"],
       "after": ["i", "`"]
     }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["w"],
+      "after": ["i", "w"]
+    }
   ]
 }
