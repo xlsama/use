@@ -15,12 +15,12 @@ brew bundle --file=./Brewfile
 - [Alacritty](https://github.com/alacritty/alacritty) - Terminal
 - [TickTick](https://dida365.com/) - Todo(`Web`) Pin in Chrome
 - [Raycast](https://raycast.com) - Launcher
-- [iShot Pro](https://apps.apple.com/us/app/ishot-pro-screenshot-recording/id1611347086?mt=12) - Screenshot & Recording
+- [Feishu](https://www.feishu.cn/) - Meeting, Screenshot and recording
 - [PopClip](https://pilotmoon.com/popclip/) - Quick jump
-- [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) & [SmoothScroll](https://www.smoothscroll.net/mac/) - Custom mouse and smooth scrolling
+- [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse Manager
+- [SmoothScroll](https://www.smoothscroll.net/mac/) - SmoothScroll
 - [微信输入法](https://z.weixin.qq.com/) - Chinese input method
 - [KeyboardHolder](https://github.com/leaves615/KeyboardHolder) - Auto Switch Input Source
-- [Klack](https://tryklack.com/) - Mechanical Keyboard Sound for built-in keyboard
 - [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public) - Bypass GFW
 
 ## Hardware
