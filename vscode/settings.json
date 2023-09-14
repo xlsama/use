@@ -109,6 +109,8 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
+  "git.allowNoVerifyCommit": true,
+  "git.confirmNoVerifyCommit": false,
 
   // extension configs
   "extensions.autoUpdate": "onlyEnabledExtensions",
