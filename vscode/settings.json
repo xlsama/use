@@ -111,6 +111,8 @@
   "git.enableSmartCommit": true,
   "git.allowNoVerifyCommit": true,
   "git.confirmNoVerifyCommit": false,
+  "git.allowForcePush": true,
+  "git.confirmForcePush": false,
 
   // extension configs
   "extensions.autoUpdate": "onlyEnabledExtensions",
