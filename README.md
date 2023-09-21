@@ -27,7 +27,7 @@ brew bundle --file=./Brewfile
 
 - MacBook Pro 16 M1 Max / 32GB RAM
 - Monitor: Dell U2723QX
-- Keyboard: HHKB Hybrid TYPE-S
+- Keyboard: MX Keys Mini
 - Mouse: MX Master 3s
 
 ## CLI

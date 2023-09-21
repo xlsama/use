@@ -1,13 +1,5 @@
 [
   {
-    "key": "ctrl+s =",
-    "command": "workbench.action.splitEditor"
-  },
-  {
-    "key": "ctrl+s -",
-    "command": "workbench.action.splitEditorDown"
-  },
-  {
     "key": "shift+cmd+a",
     "command": "workbench.view.scm"
   },
@@ -27,6 +19,22 @@
   {
     "key": "cmd+b",
     "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+n",
+    "command": "workbench.action.newWindowTab"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+s =",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+s -",
+    "command": "workbench.action.splitEditorDown"
   },
   {
     "key": "a",

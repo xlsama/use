@@ -3,7 +3,7 @@
   "editor.fontSize": 15,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "workbench.colorTheme": "GitHub Plus",
+  "workbench.colorTheme": "Vitesse Dark",
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "GitHub Plus",
   "workbench.preferredDarkColorTheme": "Vitesse Dark",
@@ -30,7 +30,6 @@
   "editor.stickyScroll.enabled": true,
   "workbench.editor.untitled.hint": "hidden",
   "workbench.list.smoothScrolling": true,
-  "workbench.editor.closeOnFileDelete": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.accessibilitySupport": "off",
   "audioCues.lineHasError": "off",
@@ -38,15 +37,9 @@
   "editor.guides.bracketPairs": "active",
   "files.simpleDialog.enable": true,
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 5,
-  "window.commandCenter": false,
-  "window.restoreFullscreen": true,
-  "window.newWindowDimensions": "fullscreen",
+  "window.newWindowDimensions": "maximized",
   "window.nativeTabs": true, // this is great, macOS only
   "workbench.startupEditor": "none",
-  "workbench.sideBar.location": "right",
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
@@ -62,7 +55,6 @@
     "source.fixAll.sortJSON": true,
     "source.organizeImports": false
   },
-  "typescript.preferences.importModuleSpecifier": "non-relative",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[c][cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
