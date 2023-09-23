@@ -4,9 +4,6 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "workbench.colorTheme": "Vitesse Dark",
-  "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "GitHub Plus",
-  "workbench.preferredDarkColorTheme": "Vitesse Dark",
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.colorCustomizations": {
@@ -166,11 +163,6 @@
     {
       "before": ["<space>"],
       "after": [":"]
-    },
-    {
-      "before": [";"],
-      "commands": ["workbench.action.showCommands"],
-      "silent": true
     },
     {
       "before": ["<C-n>"],
