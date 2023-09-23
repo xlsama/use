@@ -282,20 +282,16 @@
       "after": ["i", "w"]
     },
     {
+      "before": ["9"],
+      "after": ["i", "("]
+    },
+    {
       "before": ["["],
       "after": ["i", "["]
     },
     {
-      "before": ["b"],
-      "after": ["i", "("]
-    },
-    {
-      "before": ["n"],
+      "before": ["{"],
       "after": ["i", "{"]
-    },
-    {
-      "before": [","],
-      "after": ["i", "<"]
     },
     {
       "before": ["'"],
@@ -308,6 +304,10 @@
     {
       "before": ["`"],
       "after": ["i", "`"]
+    },
+    {
+      "before": [","],
+      "after": ["i", "<"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -316,20 +316,16 @@
       "after": ["i", "w"]
     },
     {
+      "before": ["9"],
+      "after": ["i", "("]
+    },
+    {
       "before": ["["],
       "after": ["i", "["]
     },
     {
-      "before": ["b"],
-      "after": ["i", "("]
-    },
-    {
-      "before": ["n"],
+      "before": ["{"],
       "after": ["i", "{"]
-    },
-    {
-      "before": [","],
-      "after": ["i", "<"]
     },
     {
       "before": ["'"],
@@ -342,6 +338,10 @@
     {
       "before": ["`"],
       "after": ["i", "`"]
+    },
+    {
+      "before": [","],
+      "after": ["i", "<"]
     }
   ]
 }
