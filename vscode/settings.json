@@ -60,7 +60,7 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
@@ -109,9 +109,11 @@
   // extension configs
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
+  "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
     "javascript": "bun",
-    "typescript": "bun"
+    "typescript": "bun",
+    "python": "python3"
   },
   "C_Cpp.intelliSenseEngine": "disabled",
   "leetcode.endpoint": "leetcode-cn",
