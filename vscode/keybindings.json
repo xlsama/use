@@ -21,12 +21,12 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "cmd+n",
+    "key": "shift+cmd+n",
     "command": "workbench.action.newWindowTab"
   },
   {
-    "key": "cmd+n",
-    "command": "-workbench.action.files.newUntitledFile"
+    "key": "shift+cmd+n",
+    "command": "-workbench.action.newWindow"
   },
   {
     "key": "ctrl+s =",
