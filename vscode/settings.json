@@ -105,6 +105,7 @@
   "git.confirmNoVerifyCommit": false,
   "git.allowForcePush": true,
   "git.confirmForcePush": false,
+  "git.openRepositoryInParentFolders": "always",
 
   // extension configs
   "extensions.autoUpdate": "onlyEnabledExtensions",
