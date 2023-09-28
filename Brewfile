@@ -12,6 +12,7 @@ brew "lsd"
 brew "gitui"
 brew "jq"
 brew "fnm"
+brew "ripgrep"
 
 # 'brew install --cask'
 cask "font-fira-code"
