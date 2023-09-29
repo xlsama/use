@@ -125,8 +125,6 @@
   },
   "svelte.enable-ts-plugin": true,
   "eslint.quiet": true,
-  "sortJSON.orderOverride": ["name", "version", "description"],
-  "sortJSON.orderUnderride": ["dependencies", "devDependencies"],
   "prettier.semi": false,
   "prettier.tabWidth": 2,
   "prettier.printWidth": 80,
