@@ -1,5 +1,6 @@
 # 'brew tap'
 tap "homebrew/cask-fonts"
+tap "daipeihust/tap"
 
 # 'brew install'
 brew "fish"
@@ -13,6 +14,7 @@ brew "gitui"
 brew "jq"
 brew "fnm"
 brew "ripgrep"
+brew "im-select"
 
 # 'brew install --cask'
 cask "font-fira-code"

@@ -25,7 +25,7 @@
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.stickyScroll.enabled": true,
-  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.empty.hint": "hidden",
   "workbench.list.smoothScrolling": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.accessibilitySupport": "off",
@@ -64,6 +64,12 @@
   },
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
@@ -246,6 +252,16 @@
     {
       "before": ["<leader>", "s"],
       "after": ["%"]
+    },
+    {
+      "before": ["g", "["],
+      "commands": ["editor.fold"],
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "before": ["g", "]"],
+      "commands": ["editor.unfold"],
+      "when": "editorTextFocus && foldingEnabled"
     }
   ],
   "vim.visualModeKeyBindings": [

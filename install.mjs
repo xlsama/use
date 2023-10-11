@@ -84,5 +84,9 @@ recommendations.forEach(async name => {
   await $`code --install-extension ${name}`
 })
 
+// install package
+await $`curl -fsSL https://bun.sh/install | bash` // bun
+await $`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` // rust
+
 // copy pre-commit git hook
 await $`cp ./.hooks/pre-commit ./.git/hooks/`
