@@ -56,6 +56,14 @@ window:
   # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
 
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Scrolling distance multiplier.
+  multiplier: 3
+
 # Font configuration
 font:
   # Normal (roman) font face
