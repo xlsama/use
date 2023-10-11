@@ -1,14 +1,8 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
 set -g fish_greeting
 
 starship init fish | source
 
 # aliases
-
-# git
 alias g='gitui'
 alias gst='git status'
 alias ga='git add'
@@ -18,8 +12,6 @@ alias gc='git commit'
 alias gcm='git commit -m'
 alias gca='git commit --amend'
 alias gac='git add --all && git commit'
-alias gco='git checkout'
-alias gcb='git checkout -b'
 alias gs='git switch'
 alias gsc='git switch --create'
 alias gp='git push'
@@ -36,6 +28,8 @@ alias gsh='git stash'
 alias gshp='git stash pop'
 alias gshl='git stash list'
 alias gshc='git stash clear'
+alias gmc='git merge --continue'
+alias gma='git merge --abort'
 alias grc='git rebase --continue'
 alias gra='git rebase --abort'
 
@@ -52,6 +46,7 @@ alias c='code -r'
 
 alias python='python3'
 alias nv='fnm'
+# aliases end
 
 # pnpm
 set -gx PNPM_HOME "/Users/xlsama/Library/pnpm"

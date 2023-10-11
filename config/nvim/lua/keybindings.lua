@@ -13,7 +13,6 @@ map("n", "H", "^", opt)
 map("n", "L", "$", opt)
 map("n", "<leader>v", "V", opt)
 map("n", "<leader>g", "G", opt)
-map("n", "<leader>c", "zz", opt)
 
 -- insert
 map("i", "jk", "<ESC>", opt)
