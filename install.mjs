@@ -87,6 +87,7 @@ recommendations.forEach(async name => {
 // install package
 await $`curl -fsSL https://bun.sh/install | bash` // bun
 await $`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` // rust
+await $`curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish` // oh-my-fish
 
 // copy pre-commit git hook
 await $`cp ./.hooks/pre-commit ./.git/hooks/`
