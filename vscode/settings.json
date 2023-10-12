@@ -25,6 +25,7 @@
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.stickyScroll.enabled": true,
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   "workbench.editor.empty.hint": "hidden",
   "workbench.list.smoothScrolling": true,
   "security.workspace.trust.untrustedFiles": "open",
@@ -32,6 +33,7 @@
   "audioCues.lineHasError": "off",
   "audioCues.lineHasFoldedArea": "off",
   "editor.guides.bracketPairs": "active",
+  "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
   "workbench.editor.highlightModifiedTabs": true,
   "window.newWindowDimensions": "maximized",
@@ -82,7 +84,15 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
+
+  // terminal
   "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontWeight": "300",
+  "terminal.integrated.fontWeightBold": "400",
+  "terminal.integrated.lineHeight": 1.1,
+  "terminal.integrated.cursorBlinking": true,
 
   // search
   "search.exclude": {
