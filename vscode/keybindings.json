@@ -22,7 +22,8 @@
   },
   {
     "key": "cmd+j",
-    "command": "workbench.action.terminal.toggleTerminal"
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
   },
   {
     "key": "shift+cmd+n",
