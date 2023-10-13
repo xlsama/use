@@ -54,22 +54,24 @@ const link_map = [
     source: `${HOME_DIR}/code/use/vscode/global.code-snippets`,
     target: `${HOME_DIR}/Library/Application Support/Code/User/snippets/global.code-snippets`,
   },
-  // for work
-  {
-    source: `${HOME_DIR}/code/use/vscode/semi.code-snippets`,
-    target: `${HOME_DIR}/Library/Application Support/Code/User/snippets/semi.code-snippets`,
-  },
 ]
 
-// link config files
-console.log(chalk.blue('ln -s files'))
+function print(msg) {
+  console.log(chalk.magenta(msg))
+  console.log(
+    chalk.white(
+      '---------------------------------------------------------------------------------------------------------------------------',
+    ),
+  )
+}
+
+print('link config files')
 link_map.forEach(async ({ source, target }) => {
   await $`rm -rf ${target}`
-  await $`ln -s ${source} ${target}`
+  await $`ln -s -F ${source} ${target}`
 })
 
-// set macOS system settings
-console.log(chalk.blue('set macOS system settings'))
+print('set macOS system settings')
 // finder
 await $`defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
 await $`defaults write com.apple.finder ShowPathbar -bool true`
@@ -77,17 +79,10 @@ await $`defaults write com.apple.finder _FXSortFoldersFirst -bool true`
 // keyboard
 await $`defaults write ApplePressAndHoldEnabled -bool false`
 
-// install vscode extensions
-console.log(chalk.blue('install vscode extensions'))
+print('install vscode extensions')
 const { recommendations } = await fs.readJson('./vscode/extensions.json')
 recommendations.forEach(async name => {
   await $`code --install-extension ${name}`
 })
 
-// install package
-await $`curl -fsSL https://bun.sh/install | bash` // bun
-await $`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` // rust
-await $`curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish` // oh-my-fish
-
-// copy pre-commit git hook
 await $`cp ./.hooks/pre-commit ./.git/hooks/`

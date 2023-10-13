@@ -1,8 +1,5 @@
 {
-  // visual
-  "editor.fontSize": 15,
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
+  // Workbench
   "workbench.colorTheme": "Vitesse Dark",
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
@@ -17,8 +14,16 @@
       "editor.selectionHighlightBackground": "#eeeeee20"
     }
   },
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.startupEditor": "none",
 
-  // editor
+  // Editor
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
@@ -26,8 +31,6 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.stickyScroll.enabled": true,
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.list.smoothScrolling": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.accessibilitySupport": "off",
   "audioCues.lineHasError": "off",
@@ -35,10 +38,8 @@
   "editor.guides.bracketPairs": "active",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
-  "workbench.editor.highlightModifiedTabs": true,
   "window.newWindowDimensions": "maximized",
   "window.nativeTabs": true, // this is great, macOS only
-  "workbench.startupEditor": "none",
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
@@ -85,7 +86,7 @@
     "*.css": "tailwindcss"
   },
 
-  // terminal
+  // Terminal
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
   "terminal.integrated.fontSize": 13,
@@ -94,7 +95,17 @@
   "terminal.integrated.lineHeight": 1.1,
   "terminal.integrated.cursorBlinking": true,
 
-  // search
+  // Git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.allowNoVerifyCommit": true,
+  "git.confirmNoVerifyCommit": false,
+  "git.allowForcePush": true,
+  "git.confirmForcePush": false,
+  "git.openRepositoryInParentFolders": "always",
+
+  // Search
   "search.exclude": {
     "**/.git": true,
     "**/.github": true,
@@ -114,17 +125,7 @@
     "**/yarn.lock": true
   },
 
-  // git
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "git.allowNoVerifyCommit": true,
-  "git.confirmNoVerifyCommit": false,
-  "git.allowForcePush": true,
-  "git.confirmForcePush": false,
-  "git.openRepositoryInParentFolders": "always",
-
-  // extension configs
+  // Extension configs
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
   "code-runner.runInTerminal": true,
@@ -153,7 +154,7 @@
     "vscodevim.vim": 1
   },
 
-  // vim
+  // Vim
   "vim.leader": ",",
   "vim.useSystemClipboard": true,
   "vim.incsearch": true,
