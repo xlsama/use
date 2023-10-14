@@ -42,7 +42,7 @@ alias l='ls -1A'
 
 alias v='nvim'
 alias o='open'
-alias c='code -r'
+alias c='code -n'
 
 alias python='python3'
 alias nv='fnm'
