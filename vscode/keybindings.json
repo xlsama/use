@@ -34,12 +34,12 @@
     "command": "-workbench.action.newWindow"
   },
   {
-    "key": "ctrl+s =",
-    "command": "workbench.action.splitEditor"
+    "key": "ctrl+cmd+j",
+    "command": "code-runner.run"
   },
   {
-    "key": "ctrl+s -",
-    "command": "workbench.action.splitEditorDown"
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
   },
   {
     "key": "a",
