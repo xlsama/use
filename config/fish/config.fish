@@ -39,6 +39,7 @@ alias s='nr start'
 
 alias ls='lsd'
 alias l='ls -1A'
+alias cat='bat'
 
 alias v='nvim'
 alias o='open'
