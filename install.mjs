@@ -56,6 +56,8 @@ const link_map = [
   },
 ]
 
+const global_npm_pkg_list = ['@antfu/ni', 'vite']
+
 function print(msg) {
   console.log(chalk.magenta(msg))
   console.log(
@@ -83,6 +85,12 @@ print('install vscode extensions')
 const { recommendations } = await fs.readJson('./vscode/extensions.json')
 recommendations.forEach(async name => {
   await $`code --install-extension ${name}`
+})
+
+print('install npm packages')
+await $`npm set registry https://registry.npmjs.org/`
+global_npm_pkg_list.forEach(async name => {
+  await $`npm i -g ${name}`
 })
 
 await $`cp ./.hooks/pre-commit ./.git/hooks/`

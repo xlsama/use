@@ -43,7 +43,7 @@ alias cat='bat'
 
 alias v='nvim'
 alias o='open'
-alias c='code -n'
+alias c='code'
 
 alias python='python3'
 alias nv='fnm'
