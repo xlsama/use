@@ -2,17 +2,17 @@ env:
   TERM: xterm-256color
 
 window:
-  dimensions:
-   columns: 120
-   lines: 37
+  # dimensions:
+  #  columns: 120
+  #  lines: 37
 
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
-  position:
-   x: 930
-   y: 350
+  # position:
+  #  x: 930
+  #  y: 350
 
   # Window padding (changes require restart)
   padding:
@@ -48,7 +48,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   # - SimpleFullscreen
-  startup_mode: Windowed
+  startup_mode: Maximized
 
   # Window title
   #title: Alacritty
