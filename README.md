@@ -25,9 +25,11 @@ brew bundle --file=./Brewfile
 ## Hardware
 
 - MacBook Pro 16 M1 Max / 32GB RAM
-- Monitor: Dell U2723QX
 - Keyboard: MX Keys Mini
-- Mouse: MX Master 3s
+- Mouse: MX Anywhere 3S
+- Monitor: Dell U2723QX
+- Monitor Mount: Ergotron 45-490-216
+- Router: Xiaomi AX6000 (OpenWrt)
 
 ## CLI
 
@@ -36,7 +38,3 @@ Shell: [fish](https://fishshell.com/)
 Package Manager: [Homebrew](https://brew.sh/)
 
 Terminal multiplexer: [tmux](https://github.com/tmux/tmux)
-
-## Other
-
-Soft Router: [OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
