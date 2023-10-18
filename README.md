@@ -31,6 +31,7 @@ brew bundle --file=./Brewfile
 - Monitor Mount: Ergotron 45-490-216
 - Router: Xiaomi AX6000 (OpenWrt)
 - Desk: Loctek E4/1.4m
+- Desk Lamp: Panasonic HHLT0633
 
 ## CLI
 
