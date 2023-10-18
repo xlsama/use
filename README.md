@@ -30,6 +30,7 @@ brew bundle --file=./Brewfile
 - Monitor: Dell U2723QX
 - Monitor Mount: Ergotron 45-490-216
 - Router: Xiaomi AX6000 (OpenWrt)
+- Desk: Loctek E4/1.4m
 
 ## CLI
 
