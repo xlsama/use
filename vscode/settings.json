@@ -37,6 +37,7 @@
   "audioCues.lineHasError": "off",
   "audioCues.lineHasFoldedArea": "off",
   "editor.guides.bracketPairs": "active",
+  "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
   "window.newWindowDimensions": "fullscreen",
