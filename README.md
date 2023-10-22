@@ -26,9 +26,9 @@ brew bundle --file=./Brewfile
 
 - MacBook Pro 16 M1 Max / 32GB RAM
 - Keyboard: MX Keys Mini
-- Mouse: MX Anywhere 3S
+- Mouse: MX Master 3S
 - Monitor: Dell U2723QX
-- Monitor Mount: Ergotron 45-490-216
+- Monitor Mount: Ergotron 45-241-224
 - Router: Xiaomi AX6000 (OpenWrt)
 - Desk: Loctek E4/1.4m
 - Desk Lamp: Panasonic HHLT0633
@@ -40,3 +40,8 @@ Shell: [fish](https://fishshell.com/)
 Package Manager: [Homebrew](https://brew.sh/)
 
 Terminal multiplexer: [tmux](https://github.com/tmux/tmux)
+
+## Service
+
+- [Dler Cloud](https://dlercloud.com/) - Bypass GFW (Pass Silver Year)
+
