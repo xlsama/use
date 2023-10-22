@@ -1,8 +1,11 @@
 {
   // Workbench
-  "workbench.colorTheme": "Vitesse Dark",
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
+  "window.autoDetectColorScheme": true,
+  "workbench.colorTheme": "Bluloco Light",
+  "workbench.preferredLightColorTheme": "Bluloco Light",
+  "workbench.preferredDarkColorTheme": "Vitesse Dark",
   "workbench.colorCustomizations": {
     "[Vitesse Dark]": {
       "list.hoverBackground": "#282828",
@@ -37,7 +40,6 @@
   "audioCues.lineHasError": "off",
   "audioCues.lineHasFoldedArea": "off",
   "editor.guides.bracketPairs": "active",
-  "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
   "window.newWindowDimensions": "fullscreen",
