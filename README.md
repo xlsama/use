@@ -17,7 +17,7 @@ brew bundle --file=./Brewfile
 - [Raycast](https://raycast.com) - Launcher
 - [Feishu](https://www.feishu.cn/) - Meeting, Screenshot and recording
 - [PopClip](https://pilotmoon.com/popclip/) - Quick jump
-- [Mac Mouse Fix](https://mousefix.org/) - Mouse Manager
+- [Logi Options+](https://mousefix.org/) - Mouse Manager
 - [KeyboardHolder](https://github.com/leaves615/KeyboardHolder) - Auto Switch Input Source
 - [微信输入法](https://z.weixin.qq.com/) - Chinese input method
 - [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public) - Bypass GFW
@@ -35,13 +35,11 @@ brew bundle --file=./Brewfile
 
 ## CLI
 
-Shell: [fish](https://fishshell.com/)
-
-Package Manager: [Homebrew](https://brew.sh/)
-
-Terminal multiplexer: [tmux](https://github.com/tmux/tmux)
+- [fish](https://fishshell.com/) - shell
+- [tmux](https://github.com/tmux/tmux) - Terminal multiplexer
+- [Homebrew](https://brew.sh/) - Package Manager for macOS
 
 ## Service
 
-- [Dler Cloud](https://dlercloud.com/) - Bypass GFW (Pass Silver Year)
-
+- [Dler Cloud](https://dlercloud.com/) - Bypass GFW (Pass Silver)
+- [TickTick](https://ticktick.com/) - Todo
