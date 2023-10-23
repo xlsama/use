@@ -1,5 +1,30 @@
 [
   {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "y",
+    "command": "filesExplorer.copy",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
     "key": "shift+cmd+a",
     "command": "workbench.view.scm"
   },
@@ -42,28 +67,22 @@
     "command": "-code-runner.run"
   },
   {
-    "key": "a",
-    "command": "explorer.newFile",
-    "when": "filesExplorerFocus && !inputFocus"
+    "key": "shift+cmd+c",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        { "command": "workbench.action.terminal.new" },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "touch $HOME/.tmp.http && code $HOME/.tmp.http && exit\n"
+          }
+        }
+      ]
+    }
   },
   {
-    "key": "r",
-    "command": "renameFile",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "y",
-    "command": "filesExplorer.copy",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "p",
-    "command": "filesExplorer.paste",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "d",
-    "command": "deleteFile",
-    "when": "filesExplorerFocus && !inputFocus"
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole"
   }
 ]

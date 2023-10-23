@@ -7,6 +7,7 @@
   "workbench.preferredLightColorTheme": "Bluloco Light",
   "workbench.preferredDarkColorTheme": "Vitesse Dark",
   "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#eee",
     "[Vitesse Dark]": {
       "list.hoverBackground": "#282828",
       "list.inactiveSelectionBackground": "#282828",
@@ -28,6 +29,7 @@
   "editor.fontSize": 15,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
+  "editor.rulers": [80],
   "editor.minimap.enabled": false,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
@@ -69,9 +71,6 @@
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
-  },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[yaml]": {
     "editor.formatOnSave": false
@@ -146,11 +145,10 @@
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
-  "svelte.enable-ts-plugin": true,
   "eslint.quiet": true,
   "prettier.semi": false,
   "prettier.tabWidth": 2,
-  "prettier.printWidth": 100,
+  "prettier.printWidth": 80,
   "prettier.singleQuote": true,
   "prettier.arrowParens": "avoid",
   "prettier.bracketSpacing": true,
