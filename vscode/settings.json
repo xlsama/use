@@ -150,7 +150,7 @@
   "eslint.quiet": true,
   "prettier.semi": false,
   "prettier.tabWidth": 2,
-  "prettier.printWidth": 80,
+  "prettier.printWidth": 100,
   "prettier.singleQuote": true,
   "prettier.arrowParens": "avoid",
   "prettier.bracketSpacing": true,
