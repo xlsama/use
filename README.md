@@ -39,7 +39,7 @@ brew bundle --file=./Brewfile
 - [tmux](https://github.com/tmux/tmux) - Terminal multiplexer
 - [Homebrew](https://brew.sh/) - Package Manager for macOS
 
-## Service
+## Subscription Services
 
 - [Dler Cloud](https://dlercloud.com/) - Bypass GFW (Pass Silver)
 - [TickTick](https://ticktick.com/) - Todo
