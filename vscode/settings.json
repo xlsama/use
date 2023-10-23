@@ -1,9 +1,8 @@
 {
   // Workbench
+  "workbench.colorTheme": "Vitesse Dark",
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
-  "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Vitesse Dark",
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#222",
     "[Vitesse Dark]": {
