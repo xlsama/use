@@ -3,11 +3,9 @@
   "workbench.iconTheme": "file-icons",
   "workbench.productIconTheme": "icons-carbon",
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Bluloco Light",
-  "workbench.preferredLightColorTheme": "Bluloco Light",
-  "workbench.preferredDarkColorTheme": "Vitesse Dark",
+  "workbench.colorTheme": "Vitesse Dark",
   "workbench.colorCustomizations": {
-    "editorRuler.foreground": "#eee",
+    "editorRuler.foreground": "#222",
     "[Vitesse Dark]": {
       "list.hoverBackground": "#282828",
       "list.inactiveSelectionBackground": "#282828",
