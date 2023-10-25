@@ -15,12 +15,15 @@ brew bundle --file=./Brewfile
 - [Alacritty](https://github.com/alacritty/alacritty) - Terminal
 - [TickTick](https://dida365.com/) - Todo(`Web`) Pin in Chrome
 - [Raycast](https://raycast.com) - Launcher
-- [Feishu](https://www.feishu.cn/) - Meeting, Screenshot and recording
 - [PopClip](https://pilotmoon.com/popclip/) - Quick jump
-- [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse Manager
-- [KeyboardHolder](https://github.com/leaves615/KeyboardHolder) - Auto Switch Input Source
+- [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse manager
+- [SmoothScroll](https://www.smoothscroll.net/mac/) - Smooth scrolling
+- [KeyboardHolder](https://github.com/leaves615/KeyboardHolder) - Auto switch input source
 - [微信输入法](https://z.weixin.qq.com/) - Chinese input method
 - [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public) - Bypass GFW
+- [MonitorControl](https://github.com/MonitorControl/MonitorControl) - Control display's brightness
+- [Spacedrive](https://github.com/spacedriveapp/spacedrive) - File explorer
+- [Feishu](https://www.feishu.cn/) - Meeting, Screenshot and recording
 
 ## Hardware
 

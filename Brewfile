@@ -17,6 +17,7 @@ brew "gitui"
 brew "fnm"
 brew "ripgrep"
 brew "im-select"
+brew "MonitorControl"
 
 # 'brew install --cask'
 cask "font-fira-code"
