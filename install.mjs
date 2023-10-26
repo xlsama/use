@@ -5,10 +5,6 @@ const HOME_DIR = os.homedir()
 const link_map = [
   // config
   {
-    source: `${HOME_DIR}/code/use/config/alacritty`,
-    target: `${HOME_DIR}/.config/alacritty`,
-  },
-  {
     source: `${HOME_DIR}/code/use/config/fish`,
     target: `${HOME_DIR}/.config/fish`,
   },

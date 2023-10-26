@@ -12,7 +12,6 @@ brew bundle --file=./Brewfile
 
 - [Chrome](Chrome/Chrome.md) - Browser
 - [VSCode](https://code.visualstudio.com/) - Editor
-- [Alacritty](https://github.com/alacritty/alacritty) - Terminal
 - [TickTick](https://dida365.com/) - Todo(`Web`) Pin in Chrome
 - [Raycast](https://raycast.com) - Launcher
 - [PopClip](https://pilotmoon.com/popclip/) - Quick jump
