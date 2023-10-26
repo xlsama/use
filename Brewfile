@@ -4,12 +4,10 @@ tap "daipeihust/tap"
 
 # 'brew install'
 brew "fish"
-brew "tmux"
 brew "starship"
 brew "neovim"
 brew "lua"
 brew "python"
-brew "you-get"
 brew "lsd"
 brew "bat"
 brew "jq"

@@ -38,7 +38,6 @@ brew bundle --file=./Brewfile
 ## CLI
 
 - [fish](https://fishshell.com/) - shell
-- [tmux](https://github.com/tmux/tmux) - Terminal multiplexer
 - [Homebrew](https://brew.sh/) - Package Manager for macOS
 
 ## Subscription Services

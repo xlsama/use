@@ -17,10 +17,6 @@ const link_map = [
     target: `${HOME_DIR}/.config/omf`,
   },
   {
-    source: `${HOME_DIR}/code/use/config/tmux`,
-    target: `${HOME_DIR}/.config/tmux`,
-  },
-  {
     source: `${HOME_DIR}/code/use/config/starship.toml`,
     target: `${HOME_DIR}/.config/starship.toml`,
   },
