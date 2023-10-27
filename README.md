@@ -12,6 +12,7 @@ brew bundle --file=./Brewfile
 
 - [Chrome](Chrome/Chrome.md) - Browser
 - [VSCode](https://code.visualstudio.com/) - Editor
+- [Obsidian](https://obsidian.md/) - Writing
 - [TickTick](https://dida365.com/) - Todo(`Web`) Pin in Chrome
 - [Raycast](https://raycast.com) - Launcher
 - [PopClip](https://pilotmoon.com/popclip/) - Quick jump
@@ -21,7 +22,6 @@ brew bundle --file=./Brewfile
 - [微信输入法](https://z.weixin.qq.com/) - Chinese input method
 - [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public) - Bypass GFW
 - [MonitorControl](https://github.com/MonitorControl/MonitorControl) - Control display's brightness
-- [Spacedrive](https://github.com/spacedriveapp/spacedrive) - File explorer
 - [Feishu](https://www.feishu.cn/) - Meeting, Screenshot and recording
 
 ## Hardware
