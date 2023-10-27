@@ -1,6 +1,8 @@
 [user]
 	name = xlsama
 	email = im.xlsama@gmail.com
+[pull]
+	rebase = true
 [core]
 	excludesfile = /Users/xlsama/.gitignore
 	editor = nvim
