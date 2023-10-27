@@ -25,10 +25,6 @@
     "when": "filesExplorerFocus && !inputFocus"
   },
   {
-    "key": "shift+cmd+a",
-    "command": "workbench.view.scm"
-  },
-  {
     "key": "cmd+w",
     "command": "-workbench.action.closeWindow",
     "when": "!editorIsOpen && !multipleEditorGroups"
@@ -47,8 +43,12 @@
     "when": "terminal.active"
   },
   {
-    "key": "ctrl+cmd+j",
-    "command": "code-runner.run"
+    "key": "shift+cmd+a",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "workbench.action.newWindowTab"
   },
   {
     "key": "shift+cmd+j",
@@ -56,20 +56,15 @@
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
   {
-    "key": "shift+cmd+j",
-    "command": "-workbench.action.search.toggleQueryDetails",
-    "when": "inSearchEditor || searchViewletFocus"
-  },
-  {
-    "key": "shift+cmd+n",
-    "command": "workbench.action.newWindowTab"
-  },
-  {
-    "key": "shift+cmd+n",
-    "command": "-workbench.action.newWindow"
+    "key": "cmd+k d",
+    "command": "git.openChange"
   },
   {
     "key": "cmd+k r",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "cmd+k c",
     "command": "runCommands",
     "args": {
       "commands": [
