@@ -13,16 +13,16 @@ brew bundle --file=./Brewfile
 - [Chrome](Chrome/Chrome.md) - Browser
 - [VSCode](https://code.visualstudio.com/) - Editor
 - [Obsidian](https://obsidian.md/) - Writing
-- [Feishu](https://www.feishu.cn/) - Meeting, Screenshot and recording
 - [TickTick](https://ticktick.com/) - To Do
+- [Feishu](https://www.feishu.cn/) - Meeting, Screenshot and recording
 - [Raycast](https://raycast.com) - Launcher
 - [PopClip](https://pilotmoon.com/popclip/) - Quick jump
 - [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse manager
 - [SmoothScroll](https://www.smoothscroll.net/mac/) - Smooth scrolling
 - [KeyboardHolder](https://github.com/leaves615/KeyboardHolder) - Auto switch input source
 - [微信输入法](https://z.weixin.qq.com/) - Chinese input method
-- [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public) - Bypass GFW
 - [MonitorControl](https://github.com/MonitorControl/MonitorControl) - Control display's brightness
+- [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public) - Bypass GFW
 
 ## Hardware
 
