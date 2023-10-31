@@ -38,22 +38,12 @@
     "command": "workbench.action.toggleCenteredLayout"
   },
   {
-    "key": "cmd+j",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
-  },
-  {
     "key": "shift+cmd+a",
     "command": "workbench.view.scm"
   },
   {
     "key": "shift+cmd+n",
     "command": "workbench.action.newWindowTab"
-  },
-  {
-    "key": "shift+cmd+j",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
   {
     "key": "cmd+k d",
