@@ -65,17 +65,11 @@
   },
   {
     "key": "cmd+k c",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        { "command": "workbench.action.terminal.new" },
-        {
-          "command": "workbench.action.terminal.sendSequence",
-          "args": {
-            "text": "touch $HOME/.tmp.http && code $HOME/.tmp.http && exit\n"
-          }
-        }
-      ]
-    }
+    "command": "htmlRelatedLinks.openFile",
+    "args": ["/Users/xlsama/.tmp.http"]
+  },
+  {
+    "key": "cmd+k",
+    "command": "command-helper.run"
   }
 ]
