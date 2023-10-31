@@ -97,6 +97,7 @@
   "terminal.integrated.lineHeight": 1.1,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.scrollback": 10000,
 
   // Git
   "git.autofetch": true,
@@ -210,11 +211,11 @@
     },
     {
       "before": ["<C-d>"],
-      "after": ["1", "0", "j", "<leader>", "z"]
+      "after": ["1", "0", "j", "<leader>", "d"]
     },
     {
       "before": ["<C-u>"],
-      "after": ["1", "0", "k", "<leader>", "z"]
+      "after": ["1", "0", "k", "<leader>", "d"]
     },
     {
       "before": ["<leader>", "b"],
@@ -255,7 +256,7 @@
       "after": ["c", "c"]
     },
     {
-      "before": ["<leader>", "z"],
+      "before": ["<leader>", "d"],
       "after": ["z", "z"]
     },
     {
