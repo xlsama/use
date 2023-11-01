@@ -46,10 +46,6 @@ const link_map = [
     source: `${HOME_DIR}/code/use/vscode/global.code-snippets`,
     target: `${HOME_DIR}/Library/Application Support/Code/User/snippets/global.code-snippets`,
   },
-  {
-    source: `${HOME_DIR}/code/use/vscode/state.vscdb`,
-    target: `${HOME_DIR}/Library/Application Support/Code/User/globalStorage/state.vscdb`,
-  },
 ]
 
 const global_npm_pkg_list = ['@antfu/ni', 'vite']
