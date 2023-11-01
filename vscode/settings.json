@@ -259,6 +259,11 @@
       "after": ["%"]
     },
     {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"],
+      "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
       "before": ["g", "["],
       "commands": ["editor.fold"],
       "when": "editorTextFocus && foldingEnabled"
