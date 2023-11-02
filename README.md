@@ -44,3 +44,4 @@ brew bundle --file=./Brewfile
 
 - [Dler Cloud](https://dlercloud.com/) - Bypass GFW (Pass Silver)
 - [TickTick](https://ticktick.com/) - To Do
+- [GitHub Copilot](https://github.com/features/copilot)

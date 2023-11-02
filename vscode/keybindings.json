@@ -46,6 +46,10 @@
     "command": "workbench.action.newWindowTab"
   },
   {
+    "key": "cmd+k s",
+    "command": "git.sync"
+  },
+  {
     "key": "cmd+k d",
     "command": "git.openChange"
   },
@@ -54,16 +58,13 @@
     "command": "code-runner.run"
   },
   {
-    "key": "cmd+k s",
-    "command": "git.sync"
-  },
-  {
     "key": "cmd+k c",
     "command": "htmlRelatedLinks.openFile",
     "args": ["/Users/xlsama/.tmp.http"]
   },
   {
-    "key": "cmd+k",
-    "command": "command-helper.run"
+    "key": "cmd+i",
+    "command": "-inlineChat.start",
+    "when": "inlineChatHasProvider && !editorReadonly"
   }
 ]
