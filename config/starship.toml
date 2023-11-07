@@ -18,5 +18,3 @@ symbol = ' '
 
 [git_status]
 modified = ''
-ahead = ''
-behind = ''
