@@ -3,7 +3,6 @@ set -g fish_greeting
 starship init fish | source
 
 # aliases
-alias g='gitui'
 alias gst='git status'
 alias ga='git add'
 alias ga.='git add .'
@@ -18,7 +17,7 @@ alias gp='git push'
 alias gpf='git push --force'
 alias gl='git pull'
 alias glr='git pull --rebase'
-alias gcl='git clone'
+alias gcl='git clone --depth 1'
 alias gf='git fetch'
 alias gd='git diff'
 alias gb='git branch'
