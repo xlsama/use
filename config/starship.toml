@@ -17,5 +17,6 @@ disabled = true
 symbol = ' '
 
 [git_status]
-modified = ""
-ahead = '🏎💨'
+modified = ''
+ahead = ''
+behind = ''
