@@ -3,7 +3,6 @@
     "antfu.icons-carbon",
     "antfu.theme-vitesse",
     "antfu.unocss",
-    "bradlc.vscode-tailwindcss",
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
     "esbenp.prettier-vscode",
@@ -28,7 +27,6 @@
     "vscodevim.vim",
     "Vue.volar",
     "Vue.vscode-typescript-vue-plugin",
-    "vunguyentuan.vscode-postcss",
     "yoavbls.pretty-ts-errors"
   ]
 }

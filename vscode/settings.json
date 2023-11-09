@@ -22,7 +22,6 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
-  "workbench.editor.centeredLayoutFixedWidth": true,
 
   // Editor
   "editor.fontSize": 15,
@@ -144,9 +143,6 @@
   "leetcode.endpoint": "leetcode-cn",
   "leetcode.workspaceFolder": "/Users/xlsama/code/practice/algorithm",
   "leetcode.defaultLanguage": "typescript",
-  "tailwindCSS.includeLanguages": {
-    "plaintext": "html"
-  },
   "eslint.quiet": true,
   "prettier.semi": false,
   "prettier.tabWidth": 2,
