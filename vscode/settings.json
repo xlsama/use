@@ -24,7 +24,7 @@
   "workbench.sideBar.location": "right",
 
   // Editor
-  "editor.fontSize": 16,
+  "editor.fontSize": 16.5,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.rulers": [80],
