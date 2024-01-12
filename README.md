@@ -39,9 +39,3 @@ brew bundle --file=./Brewfile
 
 - [fish](https://fishshell.com/) - shell
 - [Homebrew](https://brew.sh/) - Package Manager for macOS
-
-## Subscription Services
-
-- [Dler Cloud](https://dlercloud.com/) - Bypass GFW (Pass Silver)
-- [TickTick](https://ticktick.com/) - To Do
-- [GitHub Copilot](https://github.com/features/copilot)
