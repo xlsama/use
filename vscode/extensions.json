@@ -3,15 +3,13 @@
     "antfu.icons-carbon",
     "antfu.theme-vitesse",
     "antfu.unocss",
+    "Codeium.codeium",
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
     "esbenp.prettier-vscode",
     "file-icons.file-icons",
     "formulahendry.code-runner",
-    "GitHub.copilot",
-    "GitHub.copilot-chat",
     "humao.rest-client",
-    "LeetCode.vscode-leetcode",
     "llvm-vs-code-extensions.vscode-clangd",
     "meganrogge.template-string-converter",
     "ms-python.black-formatter",
@@ -21,12 +19,13 @@
     "naumovs.color-highlight",
     "rioj7.html-related-links",
     "rust-lang.rust-analyzer",
+    "smulyono.reveal",
     "tamasfe.even-better-toml",
     "usernamehw.errorlens",
     "vadimcn.vscode-lldb",
     "vscodevim.vim",
     "Vue.volar",
     "Vue.vscode-typescript-vue-plugin",
-    "yoavbls.pretty-ts-errors"
+    "YoavBls.pretty-ts-errors"
   ]
 }

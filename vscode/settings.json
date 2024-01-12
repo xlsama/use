@@ -24,7 +24,7 @@
   "workbench.sideBar.location": "right",
 
   // Editor
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.rulers": [80],
@@ -87,6 +87,11 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
 
   // Terminal
   "terminal.integrated.enableMultiLinePasteWarning": false,
@@ -140,9 +145,6 @@
     "python": "python3"
   },
   "C_Cpp.intelliSenseEngine": "disabled",
-  "leetcode.endpoint": "leetcode-cn",
-  "leetcode.workspaceFolder": "/Users/xlsama/code/practice/algorithm",
-  "leetcode.defaultLanguage": "typescript",
   "eslint.quiet": true,
   "prettier.semi": false,
   "prettier.tabWidth": 2,
@@ -209,11 +211,11 @@
     },
     {
       "before": ["<C-d>"],
-      "after": ["1", "0", "j", "<leader>", "d"]
+      "after": ["1", "0", "j", "z", "z"]
     },
     {
       "before": ["<C-u>"],
-      "after": ["1", "0", "k", "<leader>", "d"]
+      "after": ["1", "0", "k", "z", "z"]
     },
     {
       "before": ["<C-h>"],
@@ -226,39 +228,8 @@
       "silent": true
     },
     {
-      "before": ["<C-k>"],
-      "commands": ["workbench.action.navigateUp"],
-      "silent": true
-    },
-    {
-      "before": ["<C-j>"],
-      "commands": ["workbench.action.navigateDown"],
-      "silent": true
-    },
-    {
       "before": ["<leader>", "v"],
       "after": ["V"]
-    },
-    {
-      "before": ["<leader>", "c"],
-      "after": ["c", "c"]
-    },
-    {
-      "before": ["<leader>", "d"],
-      "after": ["z", "z"]
-    },
-    {
-      "before": ["<leader>", "g"],
-      "after": ["G"]
-    },
-    {
-      "before": ["<leader>", "s"],
-      "after": ["%"]
-    },
-    {
-      "before": ["<leader>", "r"],
-      "commands": ["editor.action.rename"],
-      "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
     },
     {
       "before": ["g", "["],

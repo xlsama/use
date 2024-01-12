@@ -38,6 +38,10 @@
     "command": "workbench.action.toggleCenteredLayout"
   },
   {
+    "key": "cmd+i",
+    "command": "editor.action.triggerSuggest"
+  },
+  {
     "key": "shift+cmd+a",
     "command": "workbench.view.scm"
   },
@@ -46,12 +50,9 @@
     "command": "workbench.action.newWindowTab"
   },
   {
-    "key": "cmd+k s",
-    "command": "git.sync"
-  },
-  {
-    "key": "cmd+k d",
-    "command": "git.openChange"
+    "key": "shift+cmd+j",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
   },
   {
     "key": "cmd+k r",
@@ -61,15 +62,5 @@
     "key": "cmd+k c",
     "command": "htmlRelatedLinks.openFile",
     "args": ["/Users/xlsama/.tmp.http"]
-  },
-  {
-    "key": "cmd+i",
-    "command": "-inlineChat.start",
-    "when": "inlineChatHasProvider && !editorReadonly"
-  },
-  {
-    "key": "shift+cmd+j",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
   }
 ]
