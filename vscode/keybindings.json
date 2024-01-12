@@ -59,6 +59,10 @@
     "command": "code-runner.run"
   },
   {
+    "key": "cmd+k s",
+    "command": "git.sync"
+  },
+  {
     "key": "cmd+k c",
     "command": "htmlRelatedLinks.openFile",
     "args": ["/Users/xlsama/.tmp.http"]
