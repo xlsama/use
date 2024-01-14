@@ -66,5 +66,15 @@
     "key": "cmd+k c",
     "command": "htmlRelatedLinks.openFile",
     "args": ["/Users/xlsama/.tmp.http"]
+  },
+  {
+    "key": "alt+f",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
   }
 ]

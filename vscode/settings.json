@@ -27,7 +27,6 @@
   "editor.fontSize": 16.5,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "editor.rulers": [80],
   "editor.minimap.enabled": false,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
