@@ -139,7 +139,7 @@
   "extensions.ignoreRecommendations": true,
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
-    "javascript": "bun",
+    "javascript": "node",
     "typescript": "bun",
     "python": "python3"
   },
