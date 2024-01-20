@@ -51,12 +51,11 @@
     "package.json": ".*, tsconfig.json, tailwind.config.*, pnpm*, package*, yarn*, eden*, *.sh, bun.lockb",
     "cargo.toml": "*.toml, cargo*"
   },
-  "editor.formatOnSave": true,
   "editor.tabSize": 2,
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
-    "source.fixAll.sortJSON": "explicit",
     "source.organizeImports": "never"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -74,9 +73,6 @@
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
-  },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
   },
   "emmet.showSuggestionsAsSnippets": true,
   "editor.linkedEditing": true,
@@ -144,7 +140,7 @@
     "python": "python3"
   },
   "C_Cpp.intelliSenseEngine": "disabled",
-  "eslint.quiet": true,
+  "eslint.format.enable": true,
   "prettier.semi": false,
   "prettier.tabWidth": 2,
   "prettier.printWidth": 80,
