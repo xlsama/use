@@ -140,6 +140,7 @@
     "python": "python3"
   },
   "C_Cpp.intelliSenseEngine": "disabled",
+  "eslint.quiet": true,
   "eslint.format.enable": true,
   "prettier.semi": false,
   "prettier.tabWidth": 2,
