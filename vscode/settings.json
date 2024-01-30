@@ -149,6 +149,7 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
+  "codeium.enableCodeLens": false,
 
   // Vim
   "vim.leader": ",",
