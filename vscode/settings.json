@@ -22,6 +22,9 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
 
   // Editor
   "editor.fontSize": 16.5,
@@ -43,7 +46,6 @@
   "files.simpleDialog.enable": true,
   "window.newWindowDimensions": "fullscreen",
   "window.restoreFullscreen": true,
-  "window.nativeTabs": true, // this is great, macOS only
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
