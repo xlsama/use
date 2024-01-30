@@ -23,6 +23,8 @@
     "usernamehw.errorlens",
     "vadimcn.vscode-lldb",
     "vscodevim.vim",
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
     "YoavBls.pretty-ts-errors"
   ]
 }

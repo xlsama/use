@@ -47,11 +47,16 @@
   },
   {
     "key": "shift+cmd+n",
-    "command": "workbench.action.newWindowTab"
+    "command": "workbench.action.newWindow"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
   },
   {
     "key": "shift+cmd+j",
-    "command": "workbench.action.terminal.toggleTerminal",
+    "command": "workbench.action.terminal.new",
     "when": "terminal.active"
   },
   {
