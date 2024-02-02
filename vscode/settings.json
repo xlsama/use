@@ -46,6 +46,10 @@
   "files.simpleDialog.enable": true,
   "window.newWindowDimensions": "fullscreen",
   "window.restoreFullscreen": true,
+  "window.nativeTabs": true, // this is great, macOS only
+  "window.titleBarStyle": "native",
+  "window.customTitleBarVisibility": "windowed",
+  "window.systemColorTheme": "auto",
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {

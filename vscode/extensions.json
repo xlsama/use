@@ -12,6 +12,7 @@
     "llvm-vs-code-extensions.vscode-clangd",
     "meganrogge.template-string-converter",
     "ms-python.black-formatter",
+    "ms-python.debugpy",
     "ms-python.python",
     "ms-python.vscode-pylance",
     "ms-vscode.cpptools",

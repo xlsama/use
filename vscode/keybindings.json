@@ -47,7 +47,7 @@
   },
   {
     "key": "shift+cmd+n",
-    "command": "workbench.action.newWindow"
+    "command": "workbench.action.newWindowTab"
   },
   {
     "key": "shift+cmd+j",
