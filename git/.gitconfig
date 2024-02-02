@@ -2,7 +2,7 @@
 	name = xlsama
 	email = im.xlsama@gmail.com
 [pull]
-	rebase = true
+	rebase = false
 [core]
 	excludesfile = /Users/xlsama/.gitignore
 	editor = nvim
