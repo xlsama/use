@@ -18,13 +18,18 @@
   },
   "workbench.list.smoothScrolling": true,
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.editor.empty.hint": "hidden",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
-  "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "window.newWindowDimensions": "fullscreen",
+  "window.restoreFullscreen": true,
+  "window.nativeTabs": true, // this is great, macOS only
+  "window.titleBarStyle": "native",
+  "window.customTitleBarVisibility": "windowed",
+  "window.systemColorTheme": "auto",
 
   // Editor
   "editor.fontSize": 16.5,
@@ -44,12 +49,6 @@
   "editor.guides.bracketPairs": "active",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
-  "window.newWindowDimensions": "fullscreen",
-  "window.restoreFullscreen": true,
-  "window.nativeTabs": true, // this is great, macOS only
-  "window.titleBarStyle": "native",
-  "window.customTitleBarVisibility": "windowed",
-  "window.systemColorTheme": "auto",
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
@@ -90,7 +89,7 @@
   },
 
   // Terminal
-  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.fontWeight": "300",
@@ -100,7 +99,7 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.scrollback": 10000,
 
-  // Git
+  // Source Control
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
