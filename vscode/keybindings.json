@@ -81,5 +81,9 @@
     "key": "shift+alt+f",
     "command": "editor.unfoldAll",
     "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+g",
+    "command": "workbench.action.experimental.quickTextSearch"
   }
 ]

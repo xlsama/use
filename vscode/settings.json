@@ -21,7 +21,6 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
-  "workbench.activityBar.location": "top",
   "workbench.layoutControl.enabled": false,
   "window.commandCenter": false,
   "window.newWindowDimensions": "fullscreen",
