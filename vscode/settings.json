@@ -31,7 +31,7 @@
   "window.systemColorTheme": "auto",
 
   // Editor
-  "editor.fontSize": 16.5,
+  "editor.fontSize": 17,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
