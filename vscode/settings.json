@@ -1,7 +1,7 @@
 {
   // Workbench
   "workbench.colorTheme": "Vitesse Dark",
-  "workbench.iconTheme": "file-icons",
+  "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#222",
@@ -86,6 +86,7 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
+  "security.promptForLocalFileProtocolHandling": false,
 
   // Terminal
   "terminal.integrated.enableMultiLinePasteWarning": "never",
