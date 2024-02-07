@@ -2,6 +2,7 @@
   "recommendations": [
     "antfu.icons-carbon",
     "antfu.theme-vitesse",
+    "bradlc.vscode-tailwindcss",
     "codeium.codeium",
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
@@ -26,6 +27,7 @@
     "vscodevim.vim",
     "vue.volar",
     "vue.vscode-typescript-vue-plugin",
+    "vunguyentuan.vscode-postcss",
     "yoavbls.pretty-ts-errors"
   ]
 }
