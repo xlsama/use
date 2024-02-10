@@ -1,7 +1,10 @@
 {
   // Workbench
-  "workbench.colorTheme": "Vitesse Dark",
-  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.colorTheme": "Catppuccin Latte",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.preferredDarkColorTheme": "Vitesse Dark",
+  "workbench.iconTheme": "catppuccin-latte",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#222",
