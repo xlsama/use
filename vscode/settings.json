@@ -1,10 +1,11 @@
 {
   // Workbench
-  "workbench.colorTheme": "Catppuccin Latte",
+  "workbench.colorTheme": "Vitesse Dark",
   "window.autoDetectColorScheme": true,
+  "window.systemColorTheme": "default",
   "workbench.preferredLightColorTheme": "Catppuccin Latte",
   "workbench.preferredDarkColorTheme": "Vitesse Dark",
-  "workbench.iconTheme": "catppuccin-latte",
+  "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#222",
@@ -31,7 +32,6 @@
   "window.nativeTabs": true, // this is great, macOS only
   "window.titleBarStyle": "native",
   "window.customTitleBarVisibility": "windowed",
-  "window.systemColorTheme": "auto",
 
   // Editor
   "editor.fontSize": 17,
