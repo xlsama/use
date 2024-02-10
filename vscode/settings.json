@@ -90,6 +90,7 @@
     "*.css": "tailwindcss"
   },
   "security.promptForLocalFileProtocolHandling": false,
+  "editor.semanticHighlighting.enabled": true,
 
   // Terminal
   "terminal.integrated.enableMultiLinePasteWarning": "never",
@@ -101,6 +102,7 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.minimumContrastRatio": 1,
 
   // Source Control
   "git.autofetch": true,
@@ -156,6 +158,7 @@
     "vscodevim.vim": 1
   },
   "codeium.enableCodeLens": false,
+  "catppuccin.italicKeywords": false,
 
   // Vim
   "vim.leader": ",",
