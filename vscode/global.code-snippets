@@ -11,12 +11,12 @@
   },
   "import from": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "im",
+    "prefix": "if",
     "body": ["import $2 from '$1'"]
   },
   "import { } from": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "imm",
+    "prefix": "iff",
     "body": ["import { $2 } from '$1'"]
   },
   "export {}": {
