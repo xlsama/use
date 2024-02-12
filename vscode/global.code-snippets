@@ -52,7 +52,7 @@
   "init react template": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "ir",
-    "body": "const $1 = () => {\n  return (\n    <>\n      $2\n    </>\n  )\n}\n\nexport default $1"
+    "body": "const $1 = () => {\n  return (\n    <>\n      $1\n    </>\n  )\n}\n\nexport default $1"
   },
   "useState": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
