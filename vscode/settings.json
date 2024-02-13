@@ -1,12 +1,21 @@
 {
   // Workbench
-  "workbench.colorTheme": "Catppuccin Latte",
-  "window.autoDetectColorScheme": true,
-  "window.systemColorTheme": "default",
-  "workbench.preferredLightColorTheme": "Catppuccin Latte",
-  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "catppuccin-latte",
+  "workbench.colorTheme": "Vitesse Dark",
+  "window.systemColorTheme": "auto",
+  "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "icons-carbon",
+  "workbench.colorCustomizations": {
+    "[Vitesse Dark]": {
+      "list.hoverBackground": "#282828",
+      "list.inactiveSelectionBackground": "#282828",
+      "list.activeSelectionBackground": "#282828",
+      "list.focusBackground": "#282828",
+      "quickInputList.focusBackground": "#4d937599",
+      "editor.selectionBackground": "#eeeeee25",
+      "editor.selectionHighlightBackground": "#eeeeee20",
+      "terminal.selectionBackground": "#eeeeee25"
+    }
+  },
   "workbench.list.smoothScrolling": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.empty.hint": "hidden",
