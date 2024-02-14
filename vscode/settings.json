@@ -51,7 +51,7 @@
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
     "README.md": "*.md, LICENCE",
-    "package.json": ".*, tsconfig*, tailwind.config.*, pnpm*, package*, yarn*, eden*, *.sh, bun.lockb",
+    "package.json": ".*, tsconfig*, *.config.js, *.config.ts, pnpm*, package*, yarn*, *.sh, bun.lockb",
     "cargo.toml": "*.toml, cargo*"
   },
   "editor.tabSize": 2,
