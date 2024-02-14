@@ -77,6 +77,9 @@
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   "emmet.showSuggestionsAsSnippets": true,
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {
@@ -154,7 +157,6 @@
     "vscodevim.vim": 1
   },
   "codeium.enableCodeLens": false,
-  "catppuccin.italicKeywords": false,
 
   // Vim
   "vim.leader": ",",

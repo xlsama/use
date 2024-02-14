@@ -20,6 +20,7 @@
     "ms-python.vscode-pylance",
     "ms-vscode.cpptools",
     "naumovs.color-highlight",
+    "prisma.prisma",
     "rioj7.html-related-links",
     "rust-lang.rust-analyzer",
     "smulyono.reveal",
