@@ -11,9 +11,9 @@
       "list.activeSelectionBackground": "#282828",
       "list.focusBackground": "#282828",
       "quickInputList.focusBackground": "#4d937599",
-      "editor.selectionBackground": "#eeeeee25",
-      "editor.selectionHighlightBackground": "#eeeeee20",
-      "terminal.selectionBackground": "#eeeeee25"
+      "editor.selectionBackground": "#eeeeee50",
+      "editor.selectionHighlightBackground": "#eeeeee30",
+      "terminal.selectionBackground": "#eeeeee30"
     }
   },
   "workbench.list.smoothScrolling": true,
