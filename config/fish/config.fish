@@ -35,6 +35,7 @@ alias grc='git rebase --continue'
 alias gra='git rebase --abort'
 alias grhs='git reset HEAD^ --soft'
 alias grhh='git reset HEAD^ --hard'
+alias gcp='git cherry-pick'
 
 alias d='nr dev'
 alias b='nr build'
