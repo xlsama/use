@@ -57,7 +57,6 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
