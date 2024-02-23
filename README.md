@@ -29,8 +29,7 @@ brew bundle --file=./Brewfile
 - MacBook Pro 16 M1 Max / 32GB RAM
 - Keyboard: MX Keys Mini
 - Mouse: MX Master 3S
-- Monitor: Dell U2723QX
-- Monitor Mount: Ergotron 45-241-224
+- Monitor: W2886IDJUY/SJ
 - Router: Xiaomi AX6000 (OpenWrt)
 
 ## CLI
