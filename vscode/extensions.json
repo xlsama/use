@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "aaron-bond.better-comments",
     "antfu.icons-carbon",
     "antfu.theme-vitesse",
     "antfu.unocss",
@@ -11,6 +12,8 @@
     "esbenp.prettier-vscode",
     "formulahendry.code-runner",
     "humao.rest-client",
+    "jasonnutter.search-node-modules",
+    "jock.svg",
     "llvm-vs-code-extensions.vscode-clangd",
     "meganrogge.template-string-converter",
     "ms-python.black-formatter",
