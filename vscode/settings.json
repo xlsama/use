@@ -241,6 +241,11 @@
       "before": ["g", "]"],
       "commands": ["editor.unfold"],
       "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.emmet.action.matchTag"],
+      "when": "editorTextFocus"
     }
   ],
   "vim.visualModeKeyBindings": [
