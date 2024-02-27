@@ -40,6 +40,7 @@ alias gcp='git cherry-pick'
 alias d='nr dev'
 alias b='nr build'
 alias s='nr start'
+alias t='nr test'
 
 alias ls='lsd'
 alias l='ls -1A'
