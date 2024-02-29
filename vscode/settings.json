@@ -141,6 +141,7 @@
     "python": "python3"
   },
   "C_Cpp.intelliSenseEngine": "disabled",
+  "errorLens.excludeBySource": ["eslint"],
   "eslint.quiet": true,
   "eslint.format.enable": true,
   "eslint.experimental.useFlatConfig": true,
