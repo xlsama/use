@@ -28,6 +28,7 @@
   "window.nativeTabs": true, // this is great, macOS only
   "window.titleBarStyle": "native",
   "window.customTitleBarVisibility": "windowed",
+  "workbench.editor.labelFormat": "short",
 
   // Editor
   "editor.fontSize": 16,
@@ -41,9 +42,6 @@
   "editor.stickyScroll.enabled": true,
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   "security.workspace.trust.untrustedFiles": "open",
-  "editor.accessibilitySupport": "off",
-  "audioCues.lineHasError": "off",
-  "audioCues.lineHasFoldedArea": "off",
   "editor.guides.bracketPairs": "active",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
@@ -157,6 +155,8 @@
     "vscodevim.vim": 1
   },
   "codeium.enableCodeLens": false,
+  "gitlens.graph.minimap.additionalTypes": [],
+  "gitlens.graph.minimap.enabled": false,
 
   // Vim
   "vim.leader": ",",
