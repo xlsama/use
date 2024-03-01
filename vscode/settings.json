@@ -29,9 +29,6 @@
   "window.titleBarStyle": "native",
   "window.customTitleBarVisibility": "windowed",
   "workbench.editor.labelFormat": "short",
-  "accessibility.signals.clear": {
-    "sound": "off"
-  },
 
   // Editor
   "editor.fontSize": 16,
@@ -90,6 +87,10 @@
   },
   "security.promptForLocalFileProtocolHandling": false,
   "editor.semanticHighlighting.enabled": true,
+  "editor.accessibilitySupport": "on",
+  "accessibility.signals.clear": {
+    "sound": "off"
+  },
 
   // Terminal
   "terminal.integrated.enableMultiLinePasteWarning": "never",
