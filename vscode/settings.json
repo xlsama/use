@@ -145,7 +145,7 @@
     "python": "python3"
   },
   "C_Cpp.intelliSenseEngine": "disabled",
-  "errorLens.excludeBySource": ["eslint"],
+  "errorLens.excludeBySource": ["eslint", "cSpell"],
   "eslint.quiet": true,
   "eslint.format.enable": true,
   "eslint.experimental.useFlatConfig": true,
@@ -162,6 +162,8 @@
   "codeium.enableCodeLens": false,
   "gitlens.graph.minimap.additionalTypes": [],
   "gitlens.graph.minimap.enabled": false,
+  "cSpell.language": "en,en-US",
+  "cSpell.allowCompoundWords": true,
 
   // Vim
   "vim.leader": ",",
