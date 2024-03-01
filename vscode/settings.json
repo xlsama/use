@@ -87,7 +87,7 @@
   },
   "security.promptForLocalFileProtocolHandling": false,
   "editor.semanticHighlighting.enabled": true,
-  "editor.accessibilitySupport": "on",
+  "editor.accessibilitySupport": "off",
   "accessibility.signals.clear": {
     "sound": "off"
   },
