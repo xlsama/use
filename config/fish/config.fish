@@ -41,6 +41,8 @@ alias d='nr dev'
 alias b='nr build'
 alias s='nr start'
 alias t='nr test'
+alias lint="nr lint"
+alias lintf="nr lint --fix"
 
 alias ls='lsd'
 alias l='ls -1A'
