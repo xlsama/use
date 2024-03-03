@@ -13,6 +13,8 @@
       "quickInputList.focusBackground": "#4d937599",
       "editor.selectionBackground": "#eeeeee40",
       "editor.selectionHighlightBackground": "#eeeeee25",
+      "editor.lineHighlightBackground": "#282828",
+      "editorGroup.border": "#121212",
       "terminal.selectionBackground": "#eeeeee25"
     }
   },
