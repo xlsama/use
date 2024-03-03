@@ -28,7 +28,6 @@
   "window.nativeTabs": true, // this is great, macOS only
   "window.titleBarStyle": "native",
   "window.customTitleBarVisibility": "windowed",
-  "workbench.editor.labelFormat": "short",
 
   // Editor
   "editor.fontSize": 16,
