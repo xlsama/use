@@ -18,11 +18,8 @@
       "terminal.selectionBackground": "#eeeeee25"
     }
   },
-  "workbench.list.smoothScrolling": true,
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
   "workbench.layoutControl.enabled": false,
   "window.commandCenter": false,
   "window.newWindowDimensions": "fullscreen",
@@ -30,6 +27,10 @@
   "window.nativeTabs": true, // this is great, macOS only
   "window.titleBarStyle": "native",
   "window.customTitleBarVisibility": "windowed",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.startupEditor": "none",
 
   // Editor
   "editor.fontSize": 16,
