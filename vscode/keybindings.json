@@ -87,7 +87,7 @@
     "command": "workbench.action.experimental.quickTextSearch"
   },
   {
-    "key": "cmd+l",
+    "key": "cmd+m",
     "command": "workbench.action.toggleMaximizedPanel"
   }
 ]

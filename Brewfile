@@ -15,6 +15,7 @@ brew "fnm"
 brew "ripgrep"
 brew "im-select"
 brew "MonitorControl"
+brew "zoxide"
 
 # 'brew install --cask'
 cask "google-chrome"

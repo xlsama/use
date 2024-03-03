@@ -1,6 +1,7 @@
 set -g fish_greeting
 
 starship init fish | source
+zoxide init fish | source
 
 # aliases
 alias glog='git log --oneline --decorate --color --graph'
