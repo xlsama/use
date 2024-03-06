@@ -17,4 +17,12 @@ disabled = true
 symbol = ' '
 
 [git_status]
+style = 'bold yellow'
 modified = '✨'
+conflicted = '🏳'
+stashed = '📦'
+staged = '[++\($count\)](green)'
+deleted = '🗑'
+ahead = '⇡${count}'
+behind = '⇣${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
