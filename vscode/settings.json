@@ -92,6 +92,7 @@
   "accessibility.signals.clear": {
     "sound": "off"
   },
+  "editor.lineNumbers": "interval",
 
   // Terminal
   "terminal.integrated.enableMultiLinePasteWarning": "never",
