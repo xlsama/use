@@ -5,6 +5,7 @@ zoxide init fish | source
 
 # aliases
 alias glog='git log --oneline --decorate --color --graph'
+alias grl='git reflog'
 alias gst='git status'
 alias gd='git diff'
 alias gcl='git clone --depth 1'
@@ -34,7 +35,6 @@ alias gma='git merge --abort'
 alias gr='git reabse'
 alias grc='git rebase --continue'
 alias gra='git rebase --abort'
-alias grhs='git reset HEAD^ --soft'
 alias grhh='git reset HEAD^ --hard'
 alias gcp='git cherry-pick'
 
