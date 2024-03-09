@@ -14,10 +14,11 @@
       "editor.selectionBackground": "#eeeeee40",
       "editor.selectionHighlightBackground": "#eeeeee25",
       "editor.lineHighlightBackground": "#282828",
-      "editorGroup.border": "#121212",
-      "terminal.selectionBackground": "#eeeeee25"
+      "terminal.selectionBackground": "#eeeeee25",
+      "editorGroup.border": "#121212"
     }
   },
+  "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
   "workbench.layoutControl.enabled": false,
   "window.commandCenter": false,
