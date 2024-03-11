@@ -89,5 +89,9 @@
   {
     "key": "cmd+m",
     "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "cmd+r",
+    "command": "git.refresh"
   }
 ]
