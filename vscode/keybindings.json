@@ -93,5 +93,14 @@
   {
     "key": "cmd+r",
     "command": "git.refresh"
+  },
+  {
+    "key": ";",
+    "command": "workbench.action.showCommands",
+    "when": "!inputFocus || (editorTextFocus && vim.mode === 'Normal')"
+  },
+  {
+    "key": "cmd+l",
+    "command": ""
   }
 ]
