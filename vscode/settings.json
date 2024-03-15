@@ -94,6 +94,7 @@
     "sound": "off"
   },
   "editor.lineNumbers": "interval",
+  "explorer.confirmPasteNative": false,
 
   // Terminal
   "terminal.integrated.enableMultiLinePasteWarning": "never",

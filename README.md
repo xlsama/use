@@ -27,7 +27,7 @@ brew bundle --file=./Brewfile
 ## Hardware
 
 - MacBook Pro 16 M1 Max / 32GB RAM
-- Keyboard: MX Keys Mini
+- Keyboard: Keychron K14 Pro ([Manager](https://usevia.app/#/))
 - Mouse: MX Master 3S
 - Monitor: W2886IDJUY/SJ
 - Router: Xiaomi AX6000 (OpenWrt)
