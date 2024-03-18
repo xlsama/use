@@ -35,3 +35,9 @@ brew bundle --file=./Brewfile
 
 - [fish](https://fishshell.com/) - shell
 - [Homebrew](https://brew.sh/) - Package Manager for macOS
+
+## Subscription Service
+
+- [Dler Cloud](https://dlercloud.com/)
+- 京东 Plus
+- 网易云音乐
