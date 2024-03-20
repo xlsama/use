@@ -101,7 +101,7 @@
   },
   {
     "key": "cmd+l",
-    "command": "",
-    "when": ""
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   }
 ]
