@@ -17,7 +17,8 @@ brew bundle --file=./Brewfile
 - [Feishu](https://www.feishu.cn/) - Meeting, Screenshot and Recording
 - [Raycast](https://raycast.com) - Launcher
 - [PopClip](https://pilotmoon.com/popclip/) - Quick Jump
-- [Mac Mouse Fix](https://github.com/noah-nuebling/mac-mouse-fix) - Mouse Manager
+- [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse manager
+- [SmoothScroll](https://www.smoothscroll.net/mac/) - Smooth scrolling
 - [KeyboardHolder](https://github.com/leaves615/KeyboardHolder) - Auto switch input source
 - [微信输入法](https://z.weixin.qq.com/) - Chinese input method
 - [MonitorControl](https://github.com/MonitorControl/MonitorControl) - Control display's brightness
@@ -27,7 +28,7 @@ brew bundle --file=./Brewfile
 
 - MacBook Pro 16 M1 Max / 32GB RAM
 - Keyboard: Keychron K14 Pro ([Manager](https://usevia.app/#/))
-- Mouse: Keychron M3 Mini
+- Mouse: MX Master 3S
 - Monitor: W2886IDJUY/SJ
 - Router: Xiaomi AX6000 (OpenWrt)
 
