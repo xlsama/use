@@ -149,7 +149,6 @@
   },
   "C_Cpp.intelliSenseEngine": "disabled",
   "errorLens.excludeBySource": ["eslint", "cSpell"],
-  "eslint.quiet": true,
   "eslint.format.enable": true,
   "eslint.experimental.useFlatConfig": true,
   "prettier.semi": false,
