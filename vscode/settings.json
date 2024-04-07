@@ -161,8 +161,6 @@
     "vscodevim.vim": 1
   },
   "codeium.enableCodeLens": false,
-  "gitlens.graph.minimap.additionalTypes": [],
-  "gitlens.graph.minimap.enabled": false,
   "gitlens.codeLens.enabled": false,
   "cSpell.language": "en,en-US",
   "cSpell.allowCompoundWords": true,
