@@ -103,9 +103,5 @@
     "key": "cmd+l",
     "command": "editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+h",
-    "command": "workbench.action.toggleAuxiliaryBar"
   }
 ]
