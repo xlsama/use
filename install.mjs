@@ -66,7 +66,7 @@ await $`defaults write ApplePressAndHoldEnabled -bool false`
 
 print('install npm packages...')
 
-const GLOBAL_NPM_PKG_LIST = ['vite', '@antfu/ni', 'pnpm']
+const GLOBAL_NPM_PKG_LIST = ['vite', '@antfu/ni']
 
 await $`npm set registry https://registry.npmjs.org/`
 await Promise.all(
