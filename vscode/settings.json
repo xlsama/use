@@ -166,6 +166,8 @@
   "gitlens.codeLens.enabled": false,
   "cSpell.language": "en,en-US",
   "cSpell.allowCompoundWords": true,
+  "projectManager.git.baseFolders": ["~/code", "~/Documents"],
+  "projectManager.sortList": "Recent",
 
   // Vim
   "vim.leader": ",",
