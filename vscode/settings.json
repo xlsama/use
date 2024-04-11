@@ -162,7 +162,6 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
-  "codeium.enableCodeLens": false,
   "gitlens.codeLens.enabled": false,
   "cSpell.language": "en,en-US",
   "cSpell.allowCompoundWords": true,
