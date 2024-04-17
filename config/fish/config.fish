@@ -44,6 +44,7 @@ alias d='nr dev'
 alias b='nr build'
 alias s='nr start'
 alias t='nr test'
+alias up='taze -I'
 alias lint="nr lint"
 alias lintf="nr lint --fix"
 
