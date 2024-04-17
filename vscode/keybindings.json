@@ -106,6 +106,6 @@
   },
   {
     "key": "ctrl+r",
-    "command": "projectManager.listProjectsNewWindow"
+    "command": "workbench.action.openRecent"
   }
 ]
