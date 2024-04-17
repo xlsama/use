@@ -41,12 +41,12 @@
   },
   "const x = x": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "con",
+    "prefix": "co",
     "body": ["const $1 = $2"]
   },
   "const { x } = x": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "conn",
+    "prefix": "coo",
     "body": ["const { $2 } = $1"]
   },
   "init react template": {
