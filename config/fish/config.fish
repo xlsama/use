@@ -8,7 +8,7 @@ alias glog='git log --oneline --decorate --color --graph'
 alias grl='git reflog'
 alias gst='git status'
 alias gd='git diff'
-alias gcl='git clone'
+alias clone='git clone'
 alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit'
@@ -60,6 +60,21 @@ alias cr='code -r'
 alias python='python3'
 alias nv='fnm'
 # aliases end
+
+# Git Clone to ~/code Directory and Open with VSCode
+function clonec
+  set project_name (basename $argv)
+  git clone $argv ~/code/$project_name
+  code ~/code/$project_name
+end
+
+# Git Clone to ~/code/work Directory and Open with VSCode
+function clonew
+  set project_name (basename $argv)
+  git clone $argv ~/code/work/$project_name
+  code ~/code/work/$project_name
+end
+
 
 # pnpm
 set -gx PNPM_HOME "/Users/xlsama/Library/pnpm"
