@@ -55,10 +55,8 @@ alias cat='bat'
 alias v='nvim'
 alias o='open'
 alias c='code'
-alias cr='code -r'
-
+alias nv='fnm' # node version
 alias python='python3'
-alias nv='fnm'
 # aliases end
 
 # Git Clone to ~/code Directory and Open with VSCode
