@@ -51,6 +51,7 @@ alias lintf="nr lint --fix"
 alias ls='lsd'
 alias l='ls -1A'
 alias cat='bat'
+alias dl='cd ~/Downloads'
 
 alias v='nvim'
 alias o='open'
