@@ -52,6 +52,7 @@ alias ls='lsd'
 alias l='ls -1A'
 alias cat='bat'
 alias dl='cd ~/Downloads'
+alias work='cd ~/code/work'
 
 alias v='nvim'
 alias o='open'
