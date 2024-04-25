@@ -64,9 +64,12 @@ await $`defaults write com.apple.finder _FXSortFoldersFirst -bool true`
 // keyboard
 await $`defaults write ApplePressAndHoldEnabled -bool false`
 
-print('install npm packages...')
+print('corepack enable...')
+await $`corepack enable`
 
-const GLOBAL_NPM_PKG_LIST = ['vite', '@antfu/ni', 'degit']
+print('install npm global packages...')
+
+const GLOBAL_NPM_PKG_LIST = ['vite', '@antfu/ni', 'degit', 'nrm']
 
 await $`npm set registry https://registry.npmjs.org/`
 await Promise.all(
