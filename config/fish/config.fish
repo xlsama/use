@@ -66,6 +66,7 @@ function clonec
   set project_name (basename $argv)
   git clone $argv ~/code/$project_name
   code ~/code/$project_name
+  exit
 end
 
 # Git Clone to ~/code/work Directory and Open with VSCode
@@ -73,6 +74,7 @@ function clonew
   set project_name (basename $argv)
   git clone $argv ~/code/work/$project_name
   code ~/code/work/$project_name
+  exit
 end
 
 
