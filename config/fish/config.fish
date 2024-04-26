@@ -50,6 +50,7 @@ alias v='nvim'
 alias o='open'
 alias nv='fnm' # node version
 alias python='python3'
+alias reload='source ~/.config/fish/config.fish'
 
 alias d='nr dev'
 alias b='nr build'
