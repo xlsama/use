@@ -7,7 +7,7 @@ alias glog='git log --oneline --decorate --color --graph'
 alias grl='git reflog'
 alias gst='git status'
 alias gd='git diff'
-alias clone='git clone'
+alias gcl='git clone'
 alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit'
@@ -40,25 +40,24 @@ alias grh2='git reset --hard HEAD~2'
 alias gcp='git cherry-pick'
 
 alias i='cd ~/i'
-alias work='cd ~/work'
+alias w='cd ~/w' # work
 alias dl='cd ~/Downloads'
 
 alias ls='lsd'
 alias l='ls -1A'
 alias cat='bat'
+alias v='nvim'
+alias o='open'
+alias nv='fnm' # node version
+alias python='python3'
 
 alias d='nr dev'
 alias b='nr build'
 alias s='nr start'
 alias t='nr test'
-alias up='taze -I'
 alias lint="nr lint"
 alias lintf="nr lint --fix"
-
-alias v='nvim'
-alias o='open'
-alias nv='fnm' # node version
-alias python='python3'
+alias up='taze -I'
 
 function c
   code $argv
@@ -66,7 +65,7 @@ function c
 end
 
 # Git Clone to ~/i Directory and Open with VSCode
-function clonei
+function gcli
   set project_name (basename $argv)
   set project_name (string replace .git '' $project_name)
   git clone $argv ~/i/$project_name
@@ -74,12 +73,12 @@ function clonei
   exit
 end
 
-# Git Clone to ~/i/work Directory and Open with VSCode
-function clonew
+# Git Clone to ~/w Directory and Open with VSCode
+function gclw
   set project_name (basename $argv)
   set project_name (string replace .git '' $project_name)
-  git clone $argv ~/work/$project_name
-  code ~/work/$project_name
+  git clone $argv ~/w/$project_name
+  code ~/w/$project_name
   exit
 end
 
