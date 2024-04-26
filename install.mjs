@@ -3,41 +3,41 @@
 const LINK_MAP = [
   // config
   {
-    source: '~/code/use/config/fish',
+    source: '~/i/use/config/fish',
     target: `~/.config/fish`,
   },
   {
-    source: `~/code/use/config/nvim`,
+    source: `~/i/use/config/nvim`,
     target: `~/.config/nvim`,
   },
   {
-    source: `~/code/use/config/starship.toml`,
+    source: `~/i/use/config/starship.toml`,
     target: `~/.config/starship.toml`,
   },
   // git
   {
-    source: `~/code/use/git/.gitconfig`,
+    source: `~/i/use/git/.gitconfig`,
     target: `~/.gitconfig`,
   },
   {
-    source: `~/code/use/git/.gitconfig_work`,
+    source: `~/i/use/git/.gitconfig_work`,
     target: `~/.gitconfig_work`,
   },
   {
-    source: `~/code/use/git/.gitignore`,
+    source: `~/i/use/git/.gitignore`,
     target: `~/.gitignore`,
   },
   // vscode
   {
-    source: `~/code/use/vscode/settings.json`,
+    source: `~/i/use/vscode/settings.json`,
     target: `~/Library/Application Support/Code/User/settings.json`,
   },
   {
-    source: `~/code/use/vscode/keybindings.json`,
+    source: `~/i/use/vscode/keybindings.json`,
     target: `~/Library/Application Support/Code/User/keybindings.json`,
   },
   {
-    source: `~/code/use/vscode/global.code-snippets`,
+    source: `~/i/use/vscode/global.code-snippets`,
     target: `~/Library/Application Support/Code/User/snippets/global.code-snippets`,
   },
 ]
