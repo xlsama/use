@@ -64,6 +64,7 @@ alias python='python3'
 # Git Clone to ~/code Directory and Open with VSCode
 function clonec
   set project_name (basename $argv)
+  set project_name (string replace .git '' $project_name)
   git clone $argv ~/code/$project_name
   code ~/code/$project_name
   exit
@@ -72,6 +73,7 @@ end
 # Git Clone to ~/code/work Directory and Open with VSCode
 function clonew
   set project_name (basename $argv)
+  set project_name (string replace .git '' $project_name)
   git clone $argv ~/code/work/$project_name
   code ~/code/work/$project_name
   exit
