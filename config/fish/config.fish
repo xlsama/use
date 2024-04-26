@@ -3,7 +3,6 @@ set -g fish_greeting
 starship init fish | source
 zoxide init fish | source
 
-# aliases
 alias glog='git log --oneline --decorate --color --graph'
 alias grl='git reflog'
 alias gst='git status'
@@ -40,6 +39,14 @@ alias grh1='git reset --hard HEAD~1'
 alias grh2='git reset --hard HEAD~2'
 alias gcp='git cherry-pick'
 
+alias i='cd ~/i'
+alias work='cd ~/work'
+alias dl='cd ~/Downloads'
+
+alias ls='lsd'
+alias l='ls -1A'
+alias cat='bat'
+
 alias d='nr dev'
 alias b='nr build'
 alias s='nr start'
@@ -48,34 +55,31 @@ alias up='taze -I'
 alias lint="nr lint"
 alias lintf="nr lint --fix"
 
-alias ls='lsd'
-alias l='ls -1A'
-alias cat='bat'
-alias dl='cd ~/Downloads'
-alias work='cd ~/code/work'
-
 alias v='nvim'
 alias o='open'
-alias c='code'
 alias nv='fnm' # node version
 alias python='python3'
-# aliases end
 
-# Git Clone to ~/code Directory and Open with VSCode
-function clonec
-  set project_name (basename $argv)
-  set project_name (string replace .git '' $project_name)
-  git clone $argv ~/code/$project_name
-  code ~/code/$project_name
+function c
+  code $argv
   exit
 end
 
-# Git Clone to ~/code/work Directory and Open with VSCode
+# Git Clone to ~/i Directory and Open with VSCode
+function clonei
+  set project_name (basename $argv)
+  set project_name (string replace .git '' $project_name)
+  git clone $argv ~/i/$project_name
+  code ~/i/$project_name
+  exit
+end
+
+# Git Clone to ~/i/work Directory and Open with VSCode
 function clonew
   set project_name (basename $argv)
   set project_name (string replace .git '' $project_name)
-  git clone $argv ~/code/work/$project_name
-  code ~/code/work/$project_name
+  git clone $argv ~/work/$project_name
+  code ~/work/$project_name
   exit
 end
 
