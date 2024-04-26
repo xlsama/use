@@ -96,6 +96,7 @@
   },
   "editor.lineNumbers": "interval",
   "explorer.confirmPasteNative": false,
+  "svg.preview.background": "transparent",
 
   // Terminal
   "terminal.integrated.enableMultiLinePasteWarning": "never",
