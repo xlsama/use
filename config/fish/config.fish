@@ -52,6 +52,7 @@ alias nv='fnm' # node version
 alias python='python3'
 alias reload='exec fish'
 
+alias nid='ni -D'
 alias d='nr dev'
 alias b='nr build'
 alias s='nr start'
