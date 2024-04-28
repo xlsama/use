@@ -13,14 +13,18 @@ error_symbol = '[➜](bold red)'     # 将 'error_symbol' 片段设置成颜色�
 [package]
 disabled = true
 
+[nodejs]
+symbol = '🐢 '
+
 [git_branch]
 symbol = ' '
 
 [git_status]
-style = 'bold yellow'
+format = '([$all_status$ahead_behind]($style) )'
+style = 'bold red'
 modified = '✨'
-conflicted = '🏳 '
 stashed = '📦'
+staged = '[++\($count\)](green)'
 ahead = '⇡${count}'
 behind = '⇣${count}'
 diverged = '⇕⇡${ahead_count}⇣${behind_count}'
