@@ -21,7 +21,7 @@ symbol = ' '
 
 [git_status]
 format = '([$all_status$ahead_behind]($style) )'
-style = 'bold red'
+style = 'bold yellow'
 modified = '✨'
 stashed = '📦'
 staged = '[++\($count\)](green)'
