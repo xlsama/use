@@ -70,7 +70,7 @@
   {
     "key": "cmd+k c",
     "command": "htmlRelatedLinks.openFile",
-    "args": ["/Users/xlsama/.tmp.http"]
+    "args": ["${env:HOME}/.tmp.http"]
   },
   {
     "key": "alt+f",

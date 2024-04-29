@@ -80,6 +80,9 @@
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
+  "[fish]": {
+    "editor.defaultFormatter": "bmalehorn.vscode-fish"
+  },
   "emmet.showSuggestionsAsSnippets": true,
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {

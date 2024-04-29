@@ -2,6 +2,7 @@ set -g fish_greeting
 
 starship init fish | source
 zoxide init fish | source
+fnm env --use-on-cd | source
 
 alias glog='git log --oneline --decorate --color --graph'
 alias grl='git reflog'
@@ -62,35 +63,34 @@ alias lintf="nr lint --fix"
 alias up='taze -I'
 
 function c
-  code $argv
-  exit
+    code $argv
+    exit
 end
 
 # Git Clone to ~/i Directory and Open with VSCode
 function gcli
-  set project_name (basename $argv)
-  set project_name (string replace .git '' $project_name)
-  git clone $argv ~/i/$project_name
-  code ~/i/$project_name
-  exit
+    set project_name (basename $argv)
+    set project_name (string replace .git '' $project_name)
+    git clone $argv ~/i/$project_name
+    code ~/i/$project_name
+    exit
 end
 
 # Git Clone to ~/w Directory and Open with VSCode
 function gclw
-  set project_name (basename $argv)
-  set project_name (string replace .git '' $project_name)
-  git clone $argv ~/w/$project_name
-  code ~/w/$project_name
-  exit
+    set project_name (basename $argv)
+    set project_name (string replace .git '' $project_name)
+    git clone $argv ~/w/$project_name
+    code ~/w/$project_name
+    exit
 end
 
 
 # pnpm
-set -gx PNPM_HOME "/Users/xlsama/Library/pnpm"
+set -gx PNPM_HOME "$HOME/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
-# pnpm end
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
