@@ -123,6 +123,7 @@
   "git.allowForcePush": true,
   "git.confirmForcePush": false,
   "git.openRepositoryInParentFolders": "always",
+  "scm.workingSets.enabled": true,
 
   // Search
   "search.exclude": {

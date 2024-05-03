@@ -84,7 +84,7 @@
   },
   {
     "key": "cmd+g",
-    "command": "workbench.action.experimental.quickTextSearch"
+    "command": "workbench.action.quickTextSearch"
   },
   {
     "key": "cmd+m",
