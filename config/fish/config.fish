@@ -72,6 +72,7 @@ alias s='nr start'
 alias t='nr test'
 alias lint="nr lint"
 alias lintf="nr lint --fix"
+alias release="nr release"
 alias up='taze -I'
 
 function c
