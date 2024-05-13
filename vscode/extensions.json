@@ -24,6 +24,7 @@
     "ms-python.vscode-pylance",
     "ms-vscode.cpptools",
     "naumovs.color-highlight",
+    "npm-install-button.vscode-npm-install-button",
     "prisma.prisma",
     "rioj7.html-related-links",
     "rust-lang.rust-analyzer",

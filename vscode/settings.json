@@ -24,6 +24,7 @@
   "window.newWindowDimensions": "fullscreen",
   "window.restoreFullscreen": true,
   "window.nativeTabs": true, // this is great, macOS only
+  "window.title": "${rootName}",
   "window.titleBarStyle": "native",
   "window.customTitleBarVisibility": "windowed",
   "workbench.editor.highlightModifiedTabs": true,
@@ -31,6 +32,7 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
+  "workbench.editor.tabActionLocation": "left",
 
   // Editor
   "editor.fontSize": 16,
