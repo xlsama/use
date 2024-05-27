@@ -32,7 +32,6 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
-  "workbench.editor.tabActionLocation": "left",
 
   // Editor
   "editor.fontSize": 16,
