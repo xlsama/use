@@ -159,7 +159,7 @@
   "C_Cpp.intelliSenseEngine": "disabled",
   "errorLens.excludeBySource": ["eslint", "cSpell"],
   "eslint.format.enable": true,
-  "eslint.experimental.useFlatConfig": true,
+  "eslint.useFlatConfig": true,
   "prettier.semi": false,
   "prettier.tabWidth": 2,
   "prettier.printWidth": 80,
@@ -173,8 +173,10 @@
   "gitlens.codeLens.enabled": false,
   "cSpell.language": "en,en-US",
   "cSpell.allowCompoundWords": true,
-  "prisma.showPrismaDataPlatformNotification": false,
-  "github.copilot.editor.enableAutoCompletions": true,
+  "marscode.chatLanguage": "cn",
+  "marscode.codeCompletionPro": {
+    "enableCodeCompletionPro": true
+  },
 
   // Vim
   "vim.leader": ",",
