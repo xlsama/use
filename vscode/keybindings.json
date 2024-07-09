@@ -95,11 +95,6 @@
     "command": "git.refresh"
   },
   {
-    "key": ";",
-    "command": "workbench.action.showCommands",
-    "when": "!inputFocus || (editorTextFocus && vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine')"
-  },
-  {
     "key": "cmd+l",
     "command": "editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"

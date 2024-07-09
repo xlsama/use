@@ -126,6 +126,7 @@
   "git.confirmForcePush": false,
   "git.openRepositoryInParentFolders": "always",
   "scm.workingSets.enabled": true,
+  "scm.experimental.showHistoryGraph": true,
 
   // Search
   "search.exclude": {
@@ -174,15 +175,6 @@
   "gitlens.codeLens.enabled": false,
   "cSpell.language": "en,en-US",
   "cSpell.allowCompoundWords": true,
-  "marscode.chatLanguage": "cn",
-  "marscode.codeCompletionPro": {
-    "enableCodeCompletionPro": true
-  },
-  "marscode.enableCodelens": {
-    "enableInlineDocumentation": false,
-    "enableInlineUnitTest": false,
-    "enableInlineExplain": false
-  },
 
   // Vim
   "vim.leader": ",",
