@@ -60,12 +60,11 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.sortPackageJson": "explicit",
     "source.organizeImports": "never",
     "quickfix.biome": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript][typescript][javascriptreact][typescriptreact][json][md]": {
+  "[javascript][typescript][javascriptreact][typescriptreact][json][markdown]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[c][cpp]": {
@@ -126,7 +125,7 @@
   "git.confirmForcePush": false,
   "git.openRepositoryInParentFolders": "always",
   "scm.workingSets.enabled": true,
-  "scm.experimental.showHistoryGraph": true,
+  // "scm.experimental.showHistoryGraph": true,
 
   // Search
   "search.exclude": {
