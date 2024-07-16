@@ -125,6 +125,7 @@
   "git.confirmForcePush": false,
   "git.openRepositoryInParentFolders": "always",
   "scm.workingSets.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": true,
   // "scm.experimental.showHistoryGraph": true,
 
   // Search
