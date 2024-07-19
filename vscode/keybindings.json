@@ -60,6 +60,10 @@
     "when": "terminal.active"
   },
   {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole"
+  },
+  {
     "key": "cmd+k r",
     "command": "code-runner.run"
   },
