@@ -126,7 +126,6 @@
   "git.openRepositoryInParentFolders": "always",
   "scm.workingSets.enabled": true,
   "diffEditor.ignoreTrimWhitespace": true,
-  // "scm.experimental.showHistoryGraph": true,
 
   // Search
   "search.exclude": {
