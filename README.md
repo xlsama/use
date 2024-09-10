@@ -41,3 +41,4 @@ brew bundle --file=./Brewfile
 
 - [Dler Cloud](https://dlercloud.com/)
 - 网易云音乐
+- 京东 Plus
