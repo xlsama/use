@@ -20,17 +20,14 @@ brew bundle --file=./Brewfile
 - [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse manager
 - [SmoothScroll](https://www.smoothscroll.net/mac/) - Smooth scrolling
 - [KeyboardHolder](https://github.com/leaves615/KeyboardHolder) - Auto switch input source
-- [微信输入法](https://z.weixin.qq.com/) - Chinese input method
 - [MonitorControl](https://github.com/MonitorControl/MonitorControl) - Control display's brightness
 - [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public) - Bypass GFW
 
 ## Hardware
 
-- MacBook Pro 16 M1 Max / 32GB RAM
-- Keyboard: Keychron K14 Pro ([Manager](https://usevia.app/#/))
+- MacBook Pro 14 M3 Pro / 36GB RAM
 - Mouse: MX Master 3S
-- Monitor: W2886IDJUY/SJ
-- Router: Xiaomi AX6000 (OpenWrt)
+- Monitor: Dell U2723QX
 
 ## CLI
 
