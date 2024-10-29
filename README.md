@@ -37,4 +37,3 @@ brew bundle --file=./Brewfile
 ## Subscription Service
 
 - [Dler Cloud](https://dlercloud.com/)
-- 网易云音乐
