@@ -10,5 +10,5 @@
 	defaultBranch = main
 [includeIf "gitdir:/Users/xlsama/w/"]
   path = ~/.gitconfig_work
-[url "https://github.com/"]
-	insteadOf = git://github.com/
+[credential]
+	helper = store

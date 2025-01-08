@@ -1,51 +1,51 @@
 {
   "console.log": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
     "prefix": "cl",
     "body": ["console.log($1)"]
   },
   "console.log('x:', x)": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
     "prefix": "cll",
     "body": ["console.log('$1:', $1)"]
   },
   "import from": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
     "prefix": "im",
     "body": ["import $2 from '$1'"]
   },
   "import { } from": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
     "prefix": "imm",
     "body": ["import { $2 } from '$1'"]
   },
   "export {}": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
     "prefix": "em",
     "body": ["export { $1 }"]
   },
   "export default": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
     "prefix": "ed",
     "body": ["export default $1"]
   },
   "export * from": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
     "prefix": "ef",
     "body": ["export * from '$1'"]
   },
   "export { } from": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
     "prefix": "eff",
     "body": ["export { $2 } from '$1'"]
   },
   "const x = x": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
     "prefix": "co",
     "body": ["const $1 = $2"]
   },
   "const { x } = x": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
     "prefix": "coo",
     "body": ["const { $2 } = $1"]
   },
