@@ -66,16 +66,10 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript][typescript][javascriptreact][typescriptreact][json][markdown]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[vue]": {
     "editor.formatOnSave": true
-  },
-  "[c][cpp]": {
-    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[yaml]": {
     "editor.formatOnSave": false
@@ -161,7 +155,6 @@
     "typescript": "bun",
     "python": "python3"
   },
-  "C_Cpp.intelliSenseEngine": "disabled",
   "errorLens.excludeBySource": ["eslint", "cSpell"],
   "eslint.format.enable": true,
   "eslint.useFlatConfig": true,
@@ -372,6 +365,5 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false
-  },
-  "lldb.suppressUpdateNotifications": true
+  }
 }
