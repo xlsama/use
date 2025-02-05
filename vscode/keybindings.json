@@ -77,6 +77,10 @@
     "args": ["${env:HOME}/.tmp.http"]
   },
   {
+    "key": "cmd+k d",
+    "command": "git.viewChanges"
+  },
+  {
     "key": "alt+f",
     "command": "editor.foldAll",
     "when": "editorTextFocus && foldingEnabled"
