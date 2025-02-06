@@ -171,6 +171,12 @@
   "gitlens.codeLens.enabled": false,
   "cSpell.language": "en,en-US",
   "cSpell.allowCompoundWords": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
 
   // Vim
   "vim.leader": ",",
@@ -359,11 +365,5 @@
       "before": ["<"],
       "after": ["i", "<"]
     }
-  ],
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  }
+  ]
 }
