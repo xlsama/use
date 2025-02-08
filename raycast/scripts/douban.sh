@@ -6,6 +6,7 @@
 # @raycast.mode silent
 
 # Optional parameters:
+# @raycast.icon images/douban.png
 # @raycast.packageName Link
 
 # Documentation:
