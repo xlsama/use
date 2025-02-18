@@ -63,5 +63,18 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "ue",
     "body": "useEffect(() => {\n  $1\n}, [])\n"
-  }
+  },
+  "init-vue-template": {
+    "scope": "vue",
+    "prefix": "vue",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "",
+      "</template>",
+    ]
+  },
 }

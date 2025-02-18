@@ -80,6 +80,9 @@
   "[fish]": {
     "editor.defaultFormatter": "bmalehorn.vscode-fish"
   },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
   "emmet.showSuggestionsAsSnippets": true,
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {
@@ -179,6 +182,7 @@
     "markdown": false,
     "scminput": false
   },
+  "svelte.enable-ts-plugin": true,
 
   // Vim
   "vim.leader": ",",
