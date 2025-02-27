@@ -3,6 +3,8 @@
 	email = im.xlsama@gmail.com
 [pull]
 	rebase = false
+[push]
+	autoSetupRemote = true
 [core]
 	excludesfile = /Users/xlsama/.gitignore
 	editor = nvim
@@ -12,3 +14,4 @@
   path = ~/.gitconfig_work
 [credential]
 	helper = store
+

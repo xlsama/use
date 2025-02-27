@@ -74,9 +74,6 @@
   "[yaml]": {
     "editor.formatOnSave": false
   },
-  "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
-  },
   "[fish]": {
     "editor.defaultFormatter": "bmalehorn.vscode-fish"
   },
@@ -116,7 +113,7 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.minimumContrastRatio": 1,
-  "terminal.integrated.stickyScroll.enabled": true,
+  "terminal.integrated.stickyScroll.enabled": false,
 
   // Source Control
   "git.autofetch": true,
@@ -183,6 +180,7 @@
     "scminput": false
   },
   "svelte.enable-ts-plugin": true,
+  "gitlens.views.commits.files.layout": "list",
 
   // Vim
   "vim.leader": ",",
