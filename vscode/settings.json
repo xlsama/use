@@ -98,7 +98,6 @@
   "accessibility.signals.clear": {
     "sound": "off"
   },
-  "editor.lineNumbers": "interval",
   "explorer.confirmPasteNative": false,
   "svg.preview.background": "transparent",
 
@@ -169,7 +168,8 @@
   "prettier.bracketSpacing": true,
   "prettier.trailingComma": "all",
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
+    "asvetliakov.vscode-neovim": 1,
+    "dbaeumer.vscode-eslint": 1
   },
   "gitlens.codeLens.enabled": false,
   "cSpell.language": "en,en-US",
@@ -182,193 +182,16 @@
   },
   "svelte.enable-ts-plugin": true,
   "gitlens.views.commits.files.layout": "list",
-
-  // Vim
-  "vim.leader": ",",
-  "vim.useSystemClipboard": true,
-  "vim.incsearch": true,
-  "vim.hlsearch": true,
-  "vim.foldfix": true,
-  "vim.showMarksInGutter": true,
-  // auto switch input method    im-select https://github.com/daipeihust/im-select
-  "vim.autoSwitchInputMethod.enable": true,
-  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
-  "vim.autoSwitchInputMethod.obtainIMCmd": "/Users/xlsama/bin/im-select",
-  "vim.autoSwitchInputMethod.switchIMCmd": "/Users/xlsama/bin/im-select com.apple.keylayout.ABC {im}",
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-e>": false,
-    "<C-f>": false,
-    "<C-b>": false
-  },
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
+  "vscode-neovim.compositeKeys": {
+    "jk": {
+      "command": "vscode-neovim.lua",
+      "args": [
+        [
+          "local code = require('vscode')",
+          "code.action('vscode-neovim.escape')",
+          "code.action('workbench.action.files.save')"
+        ]
+      ]
     }
-  ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["<space>"],
-      "after": [":"]
-    },
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"],
-      "silent": true
-    },
-    {
-      "before": ["u"],
-      "commands": ["undo"],
-      "silent": true
-    },
-    {
-      "before": ["<C-r>"],
-      "commands": ["redo"],
-      "silent": true
-    },
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    },
-    {
-      "before": ["<C-d>"],
-      "after": ["1", "0", "j", "z", "z"]
-    },
-    {
-      "before": ["<C-u>"],
-      "after": ["1", "0", "k", "z", "z"]
-    },
-    {
-      "before": ["<C-h>"],
-      "commands": ["workbench.action.navigateLeft"],
-      "silent": true
-    },
-    {
-      "before": ["<C-l>"],
-      "commands": ["workbench.action.navigateRight"],
-      "silent": true
-    },
-    {
-      "before": ["<leader>", "v"],
-      "after": ["V"]
-    },
-    {
-      "before": ["g", "["],
-      "commands": ["editor.fold"],
-      "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-      "before": ["g", "]"],
-      "commands": ["editor.unfold"],
-      "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-      "before": ["g", "t"],
-      "commands": ["editor.emmet.action.matchTag"],
-      "when": "editorTextFocus"
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    },
-    {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"],
-      "silent": true
-    },
-    {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"],
-      "silent": true
-    }
-  ],
-  "vim.operatorPendingModeKeyBindings": [
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    }
-  ],
-  "vim.operatorPendingModeKeyBindingsNonRecursive": [
-    {
-      "before": ["w"],
-      "after": ["i", "w"]
-    },
-    {
-      "before": ["("],
-      "after": ["i", "("]
-    },
-    {
-      "before": ["["],
-      "after": ["i", "["]
-    },
-    {
-      "before": ["{"],
-      "after": ["i", "{"]
-    },
-    {
-      "before": ["'"],
-      "after": ["i", "'"]
-    },
-    {
-      "before": ["\""],
-      "after": ["i", "\""]
-    },
-    {
-      "before": ["`"],
-      "after": ["i", "`"]
-    },
-    {
-      "before": ["<"],
-      "after": ["i", "<"]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["w"],
-      "after": ["i", "w"]
-    },
-    {
-      "before": ["("],
-      "after": ["i", "("]
-    },
-    {
-      "before": ["["],
-      "after": ["i", "["]
-    },
-    {
-      "before": ["{"],
-      "after": ["i", "{"]
-    },
-    {
-      "before": ["'"],
-      "after": ["i", "'"]
-    },
-    {
-      "before": ["\""],
-      "after": ["i", "\""]
-    },
-    {
-      "before": ["`"],
-      "after": ["i", "`"]
-    },
-    {
-      "before": ["<"],
-      "after": ["i", "<"]
-    }
-  ]
+  }
 }
