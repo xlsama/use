@@ -67,3 +67,21 @@ vim.api.nvim_create_autocmd("InsertLeave", {
         os.execute(im_select_cmd .. " " .. default_im)
     end,
 })
+
+
+-- folding
+vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = false, silent = true })
+vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = false, silent = true })
+
+local function map(mode, lhs, rhs)
+  vim.keymap.set(mode, lhs, function() vscode.call(rhs) end, { silent = true, noremap = true })
+end
+
+-- Remap folding keys
+map('n', 'zM', 'editor.foldAll')
+map('n', 'zR', 'editor.unfoldAll')
+map('n', 'zc', 'editor.fold')
+map('n', 'zC', 'editor.foldRecursively')
+map('n', 'zo', 'editor.unfold')
+map('n', 'zO', 'editor.unfoldRecursively')
+map('n', 'za', 'editor.toggleFold')
