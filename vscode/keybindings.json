@@ -30,30 +30,8 @@
     "when": "terminal.active"
   },
   {
-    "key": "shift+cmd+k",
-    "command": "workbench.action.terminal.new",
-    "when": "terminal.active"
-  },
-  {
     "key": "shift+cmd+c",
     "command": "-workbench.action.terminal.openNativeConsole"
-  },
-  {
-    "key": "cmd+k r",
-    "command": "code-runner.run"
-  },
-  {
-    "key": "cmd+k s",
-    "command": "git.sync"
-  },
-  {
-    "key": "cmd+k c",
-    "command": "htmlRelatedLinks.openFile",
-    "args": ["${env:HOME}/.tmp.http"]
-  },
-  {
-    "key": "cmd+k d",
-    "command": "git.viewChanges"
   },
   {
     "key": "alt+f",
@@ -85,5 +63,13 @@
   {
     "key": "ctrl+r",
     "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "cmd+d",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "cmd+t",
+    "command": "git.openChange"
   }
 ]
