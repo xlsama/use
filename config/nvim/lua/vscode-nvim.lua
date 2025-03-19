@@ -17,9 +17,12 @@ keymap({'n', 'v'}, 'L', '$', opts)
 keymap('n', '<leader>v', 'V', opts)
 keymap('n', '<leader>a', '%', opts)
 
--- 删除到行首和行尾
 keymap('n', 'dH', 'd^', opts)
 keymap('n', 'dL', 'd$', opts)
+keymap('n', 'cH', 'c^', opts)
+keymap('n', 'cL', 'c$', opts)
+keymap('n', 'yH', 'y^', opts)
+keymap('n', 'yL', 'y$', opts)
 
 keymap({'n', 'v'}, '<C-h>', "<Cmd>lua require('vscode').call('workbench.action.navigateLeft')<CR>", opts)
 keymap({'n', 'v'}, '<C-l>', "<Cmd>lua require('vscode').call('workbench.action.navigateRight')<CR>", opts)
