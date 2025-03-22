@@ -70,6 +70,29 @@
   },
   {
     "key": "cmd+t",
-    "command": "git.openChange"
+    "command": "git.viewChanges"
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        {
+          "command": "workbench.scm.focus"
+        },
+        {
+          "command": "git.stageAll"
+        },
+        {
+          "command": "cursor.generateGitCommitMessage"
+        },
+        {
+          "command": "git.commitAll"
+        },
+        {
+          "command": "git.push"
+        }
+      ]
+    }
   }
 ]
