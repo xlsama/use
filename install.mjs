@@ -30,19 +30,18 @@ const LINK_MAP = [
   // vscode
   {
     source: `~/i/use/vscode/settings.json`,
-    target: `~/Library/Application Support/Code/User/settings.json`,
+    target: `~/Library/Application Support/Cursor/User/settings.json`,
   },
   {
     source: `~/i/use/vscode/keybindings.json`,
-    target: `~/Library/Application Support/Code/User/keybindings.json`,
+    target: `~/Library/Application Support/Cursor/User/keybindings.json`,
   },
   {
     source: `~/i/use/vscode/global.code-snippets`,
-    target: `~/Library/Application Support/Code/User/snippets/global.code-snippets`,
+    target: `~/Library/Application Support/Cursor/User/snippets/global.code-snippets`,
   },
 ]
 
-console.log()
 print('link config files...')
 
 const HOME_DIR = os.homedir()
@@ -84,7 +83,7 @@ const { recommendations } = await fs.readJson('./vscode/extensions.json')
 
 await Promise.all(
   recommendations.map(async name => {
-    await $`code --install-extension ${name}`
+    await $`cursor --install-extension ${name}`
   }),
 )
 
