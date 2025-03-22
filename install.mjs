@@ -68,7 +68,7 @@ await $`corepack enable`
 
 print('install npm global packages...')
 
-const GLOBAL_NPM_PKG_LIST = ['vite', '@antfu/ni', 'degit', 'nrm']
+const GLOBAL_NPM_PKG_LIST = ['vite', '@antfu/ni', 'nrm', 'taze', 'eslint', 'oxlint']
 
 await $`npm set registry https://registry.npmjs.org/`
 await Promise.all(
