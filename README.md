@@ -27,7 +27,6 @@ brew bundle --file=./Brewfile
 
 - MacBook Pro 14 M3 Pro / 36GB RAM
 - Mouse: MX Master 3S
-- Monitor: Dell U2723QX
 
 ## CLI
 

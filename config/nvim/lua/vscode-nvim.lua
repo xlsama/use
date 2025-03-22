@@ -9,7 +9,7 @@ vim.opt.clipboard = 'unnamedplus'
 -- jkhl 移动时光标周围保留10行
 vim.o.scrolloff = 10
 vim.o.sidescrolloff = 10
-vim.opt.iskeyword:append({'-', '#'})
+vim.opt.iskeyword:append({'-'})
 
 keymap({'n', 'v'}, 'H', '^', opts)
 keymap({'n', 'v'}, 'L', '$', opts)
