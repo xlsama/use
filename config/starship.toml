@@ -14,7 +14,7 @@ error_symbol = '[➜](bold red)'     # 将 'error_symbol' 片段设置成颜色�
 disabled = true
 
 [nodejs]
-symbol = '😼 '
+symbol = ' '
 
 # https://www.nerdfonts.com/cheat-sheet
 [git_branch]
