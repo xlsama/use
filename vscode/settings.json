@@ -36,7 +36,7 @@
   // Editor
   "editor.fontSize": 14,
   "editor.lineHeight": 1.55,
-  "editor.fontFamily": "'Monaspace Neon', monospace",
+  "editor.fontFamily": "Maple Mono Normal CN",
   "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'liga'",
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
@@ -105,7 +105,7 @@
 
   // Terminal
   "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "terminal.integrated.fontFamily": "Maple Mono Normal CN",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.fontWeightBold": "400",
