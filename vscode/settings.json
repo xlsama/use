@@ -102,6 +102,7 @@
   "explorer.confirmPasteNative": false,
   "svg.preview.background": "transparent",
   "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.wrappingStrategy": "advanced",
 
   // Terminal
   "terminal.integrated.enableMultiLinePasteWarning": "never",

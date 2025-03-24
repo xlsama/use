@@ -16,6 +16,7 @@ disabled = true
 [nodejs]
 symbol = '😼 '
 
+# https://www.nerdfonts.com/cheat-sheet
 [git_branch]
 symbol = ' '
 
