@@ -43,7 +43,7 @@
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.stickyScroll.enabled": true,
-  "editor.wordSeparators": "`~!@%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.wordSeparators": "`~!#@%^&*()=+[{]}\\|;:'\",.<>/?",
   "security.workspace.trust.untrustedFiles": "open",
   "editor.guides.bracketPairs": "active",
   "editor.minimap.enabled": true,
