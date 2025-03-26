@@ -14,6 +14,7 @@ set --export PATH $BUN_INSTALL/bin $PATH
 starship init fish | source
 zoxide init fish | source
 fnm env --use-on-cd | source
+source "$HOME/.local/bin/env.fish"
 
 alias glog='git log --oneline --decorate --color --graph'
 alias grl='git reflog'
@@ -59,17 +60,15 @@ alias dl='cd ~/Downloads'
 
 alias ls='lsd'
 alias l='ls -1A'
-alias cat='bat'
 alias v='nvim'
 alias o='open'
 alias nv='fnm' # node version manager
-alias python='python3'
 alias reload='exec fish'
+alias copy='pbcopy'
 
 alias nid='ni -D'
 alias d='nr dev'
 alias b='nr build'
-alias s='nr start'
 alias t='nr test'
 alias lint="nr lint"
 alias release="nr release"
