@@ -157,7 +157,7 @@
   "code-runner.executorMap": {
     "javascript": "node",
     "typescript": "bun",
-    "python": "python3"
+    "python": "uv run"
   },
   "errorLens.excludeBySource": ["eslint", "cSpell"],
   "eslint.format.enable": true,
