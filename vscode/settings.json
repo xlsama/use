@@ -190,5 +190,7 @@
       ]
     }
   },
-  "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"]
+  "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
+  "tailwind-fold.foldStyle": "QUOTES",
+  "tailwind-fold.unfoldIfLineSelected": true
 }
