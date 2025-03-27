@@ -92,3 +92,5 @@ map('n', 'zC', 'editor.foldRecursively')
 map('n', 'zo', 'editor.unfold')
 map('n', 'zO', 'editor.unfoldRecursively')
 map('n', 'za', 'editor.toggleFold')
+
+map('n', 'gt', 'editor.emmet.action.matchTag')
