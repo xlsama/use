@@ -34,16 +34,6 @@
     "command": "-workbench.action.terminal.openNativeConsole"
   },
   {
-    "key": "alt+f",
-    "command": "editor.foldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "shift+alt+f",
-    "command": "editor.unfoldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
     "key": "cmd+g",
     "command": "workbench.action.quickTextSearch"
   },
