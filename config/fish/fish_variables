@@ -4,7 +4,7 @@ SETUVAR --export ZLUA_LUAEXE:/opt/homebrew/bin/lua
 SETUVAR --export ZLUA_SCRIPT:/Users/xlsama/\x2elocal/share/omf/pkg/zlua/z\x2elua
 SETUVAR --export _ZL_DATA:/Users/xlsama/\x2elocal/share/zlua/zlua\x2etxt
 SETUVAR _ZL_DATA_DIR:/Users/xlsama/\x2elocal/share/zlua
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue
