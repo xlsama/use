@@ -4,11 +4,6 @@
     "prefix": "cl",
     "body": ["console.log($1)"]
   },
-  "console.log('x:', x)": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
-    "prefix": "cll",
-    "body": ["console.log('$1:', $1)"]
-  },
   "import from": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
     "prefix": "im",
