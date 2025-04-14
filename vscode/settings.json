@@ -32,6 +32,8 @@
   "workbench.view.showQuietly": {
     "workbench.panel.output": true
   },
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 5,
 
   // Editor
   "editor.fontSize": 14,
@@ -202,5 +204,6 @@
   "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "turboConsoleLog.includeFilename": true,
-  "turboConsoleLog.includeLineNum": true
+  "turboConsoleLog.includeLineNum": true,
+  "console-ninja.featureSet": "Community"
 }
