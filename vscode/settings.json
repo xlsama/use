@@ -32,8 +32,6 @@
   "workbench.view.showQuietly": {
     "workbench.panel.output": true
   },
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.value": 5,
 
   // Editor
   "editor.fontSize": 14,
