@@ -72,7 +72,7 @@ alias b='nr build'
 alias t='nr test'
 alias lint="nr lint"
 alias release="nr release"
-alias up='taze -I -r'
+alias up='nlx taze -I -r'
 
 function c
     code $argv
