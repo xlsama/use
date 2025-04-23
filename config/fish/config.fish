@@ -16,43 +16,71 @@ zoxide init fish | source
 fnm env --use-on-cd | source
 source "$HOME/.local/bin/env.fish"
 
-alias glog='git log --oneline --decorate --color --graph'
-alias grl='git reflog'
+# --- 状态 & 日志 & 差异 ---
 alias gst='git status'
 alias gd='git diff'
-alias gcl='git clone'
+alias glog='git log --oneline --decorate --graph --all'
+
+# --- 添加 & 提交 ---
 alias ga='git add'
-alias gaa='git add --all'
-alias gco='git checkout'
+alias gaa='git add -A'
 alias gc='git commit'
 alias gcm='git commit -m'
-alias gac='git add --all && git commit'
 alias gca='git commit --amend'
+alias gac='git add -A && git commit'
+
+# --- 分支 & 切换 ---
 alias gb='git branch'
 alias gba='git branch -a'
 alias gbr='git branch --remote'
+alias gbd='git branch -d'
+alias gbD='git branch -D'
 alias gs='git switch'
-alias gsc='git switch --create'
-alias gf='git fetch'
-alias gp='git push'
-alias gpf='git push --force'
-alias gpd='git push origin -d'
+alias gsc='git switch -c'
+
+# --- 远程交互 (Fetch, Pull, Push) ---
+alias gf='git fetch --all --prune --tags'
 alias gl='git pull'
 alias glr='git pull --rebase'
-alias gsh='git stash'
+alias gp='git push'
+alias gpu='git push -u origin HEAD'
+alias gpf='git push --force'
+alias gpd='git push origin --delete'
+alias grv='git remote -v'
+
+# --- Stash (暂存) ---
+alias gsh='git stash push -m'
+alias gsha='git stash apply'
 alias gshp='git stash pop'
 alias gshl='git stash list'
+alias gshd='git stash drop'
 alias gshc='git stash clear'
+
+# --- 合并 & 变基 (Merge & Rebase) ---
 alias gm='git merge'
 alias gmc='git merge --continue'
 alias gma='git merge --abort'
-alias gr='git reabse'
+alias gr='git rebase'
 alias grc='git rebase --continue'
 alias gra='git rebase --abort'
+alias gri='git rebase -i'
+
+# --- Reset & Restore (重置 & 恢复) ---
+# 'Reset' 通常用于移动HEAD指针, 'Restore' 用于恢复文件内容
 alias grh='git reset --hard'
 alias grh1='git reset --hard HEAD~1'
 alias grh2='git reset --hard HEAD~2'
+alias gres='git restore'
+alias grss='git restore --staged'
+alias greso='git restore --ours'
+alias grest='git restore --theirs'
+
+# --- 其他常用 ---
+alias gcl='git clone'
 alias gcp='git cherry-pick'
+alias gcpc='git cherry-pick --continue'
+alias gcpa='git cherry-pick --abort'
+alias gsl='git shortlog -sn' # 按作者统计提交数量
 
 alias i='cd ~/i'
 alias w='cd ~/w' # work
