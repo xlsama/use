@@ -15,6 +15,7 @@ brew "ripgrep"
 brew "im-select"
 brew "MonitorControl"
 brew "zoxide"
+brew 'difftastic'
 
 # 'brew install --cask'
 cask "google-chrome"
