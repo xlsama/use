@@ -74,6 +74,9 @@
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
+  "[markdown]": {
+    "editor.defaultFormatter": "mervin.markdown-formatter"
+  },
   "emmet.showSuggestionsAsSnippets": true,
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {
@@ -185,6 +188,7 @@
   },
   "turboConsoleLog.includeFilename": true,
   "turboConsoleLog.includeLineNum": true,
+  "markdownFormatter.formatCodes": false,
   "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
   "cursor.composer.shouldChimeAfterChatFinishes": true
 }
