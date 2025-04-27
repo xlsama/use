@@ -27,7 +27,7 @@ const LINK_MAP = [
     source: `~/i/use/git/.gitignore`,
     target: `~/.gitignore`,
   },
-  // vscode
+  // cursor
   {
     source: `~/i/use/vscode/settings.json`,
     target: `~/Library/Application Support/Cursor/User/settings.json`,
@@ -39,6 +39,10 @@ const LINK_MAP = [
   {
     source: `~/i/use/vscode/global.code-snippets`,
     target: `~/Library/Application Support/Cursor/User/snippets/global.code-snippets`,
+  },
+  {
+    source: `~/i/use/vscode/mcp.json`,
+    target: `~/.cursor/mcp.json`,
   },
 ]
 
@@ -68,7 +72,7 @@ await $`corepack enable`
 
 print('install npm global packages...')
 
-const GLOBAL_NPM_PKG_LIST = ['vite', '@antfu/ni', 'nrm', 'taze', 'eslint', 'oxlint']
+const GLOBAL_NPM_PKG_LIST = ['vite', '@antfu/ni', 'nrm', 'eslint', 'oxlint']
 
 await $`npm set registry https://registry.npmjs.org/`
 await Promise.all(

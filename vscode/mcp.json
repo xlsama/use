@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest", "--headless"]
+    },
+    "amap-maps": {
+      "command": "npx",
+      "args": ["-y", "@amap/amap-maps-mcp-server"],
+      "env": {
+        "AMAP_MAPS_API_KEY": "e9276d0d482a5882f817894acdacfb1b"
+      }
+    }
+  }
+}
