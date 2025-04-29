@@ -16,7 +16,7 @@
       "editor.lineHighlightBackground": "#282828",
       "terminal.selectionBackground": "#eeeeee25",
       "editorGroup.border": "#121212",
-      "sideBar.border": "#eeeeee40"
+      "sideBar.border": "#eeeeee25"
     }
   },
   "workbench.layoutControl.enabled": false,
