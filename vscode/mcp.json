@@ -25,6 +25,10 @@
     "mcp-deepwiki": {
       "command": "nlx",
       "args": ["mcp-deepwiki@latest"]
+    },
+    "prisma": {
+      "command": "nlx",
+      "args": ["prisma", "mcp"]
     }
   }
 }
