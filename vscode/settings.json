@@ -72,11 +72,11 @@
   "[fish]": {
     "editor.defaultFormatter": "bmalehorn.vscode-fish"
   },
-  "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
-  },
   "[markdown]": {
     "editor.defaultFormatter": "mervin.markdown-formatter"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
   },
   "emmet.showSuggestionsAsSnippets": true,
   "editor.linkedEditing": true,
@@ -191,5 +191,10 @@
   "turboConsoleLog.includeLineNum": true,
   "markdownFormatter.formatCodes": false,
   "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
-  "cursor.composer.shouldChimeAfterChatFinishes": true
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cSpell.enabledNotifications": {
+    "Maximum Word Length Exceeded": false,
+    "Average Word Length too Long": false,
+    "Lines too Long": false
+  }
 }

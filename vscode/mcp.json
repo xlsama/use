@@ -1,22 +1,30 @@
 {
   "mcpServers": {
     "github": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "command": "nlx",
+      "args": ["@modelcontextprotocol/server-github"],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
       }
     },
     "playwright": {
-      "command": "npx",
+      "command": "nlx",
       "args": ["@playwright/mcp@latest", "--headless"]
     },
     "amap-maps": {
-      "command": "npx",
-      "args": ["-y", "@amap/amap-maps-mcp-server"],
+      "command": "nlx",
+      "args": ["@amap/amap-maps-mcp-server"],
       "env": {
         "AMAP_MAPS_API_KEY": "e9276d0d482a5882f817894acdacfb1b"
       }
+    },
+    "filesystem": {
+      "command": "nlx",
+      "args": ["@modelcontextprotocol/server-filesystem", "/Users/xlsama/"]
+    },
+    "mcp-deepwiki": {
+      "command": "nlx",
+      "args": ["mcp-deepwiki@latest"]
     }
   }
 }
