@@ -29,6 +29,10 @@
     "prisma": {
       "command": "nlx",
       "args": ["prisma", "mcp"]
-    }
+    },
+    "eslint": {
+			"command": "nlx",
+			"args": ["eslint", "--mcp"]
+		}
   }
 }
