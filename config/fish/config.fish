@@ -27,7 +27,7 @@ alias gaa='git add -A'
 alias gc='git commit'
 alias gcm='git commit -m'
 alias gca='git commit --amend'
-alias gac='git add -A && git commit'
+alias gac='git add -A && git commit -m'
 
 # --- 分支 & 切换 ---
 alias gb='git branch'
@@ -101,6 +101,7 @@ alias t='nr test'
 alias lint="nr lint"
 alias release="nr release"
 alias up='nlx taze -I -r'
+alias giget='nlx giget@latest'
 
 function c
     code $argv
@@ -124,3 +125,7 @@ function gclw
     code ~/w/$project_name
     exit
 end
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :

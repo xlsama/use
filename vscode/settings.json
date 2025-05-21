@@ -78,6 +78,9 @@
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
   "emmet.showSuggestionsAsSnippets": true,
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {
@@ -190,6 +193,7 @@
   },
   "turboConsoleLog.includeFilename": true,
   "turboConsoleLog.includeLineNum": true,
+  "turboConsoleLog.quote": "'",
   "markdownFormatter.formatCodes": false,
   "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
   "cursor.composer.shouldChimeAfterChatFinishes": true,
