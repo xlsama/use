@@ -4,6 +4,7 @@
   "window.systemColorTheme": "dark",
   "workbench.iconTheme": "catppuccin-perfect-mocha",
   "workbench.productIconTheme": "icons-carbon",
+  "workbench.sideBar.location": "right",
   "workbench.colorCustomizations": {
     "[Vitesse Dark]": {
       "list.hoverBackground": "#282828",
@@ -195,11 +196,13 @@
   "turboConsoleLog.includeLineNum": true,
   "turboConsoleLog.quote": "'",
   "markdownFormatter.formatCodes": false,
-  "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
+  "cursor.cpp.disabledLanguages": [],
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "cSpell.enabledNotifications": {
     "Maximum Word Length Exceeded": false,
     "Average Word Length too Long": false,
     "Lines too Long": false
-  }
+  },
+  "cursor.composer.textSizeScale": 0.85,
+  "typescript.experimental.useTsgo": false
 }
