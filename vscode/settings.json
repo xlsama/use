@@ -34,6 +34,7 @@
   "workbench.view.showQuietly": {
     "workbench.panel.output": true
   },
+  "workbench.startupEditor": "none",
 
   // Editor
   "editor.fontSize": 14,
@@ -152,7 +153,6 @@
   "search.smartCase": true,
 
   // Extension configs
-  "update.releaseTrack": "prerelease",
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
   "code-runner.runInTerminal": true,
@@ -175,11 +175,9 @@
     "asvetliakov.vscode-neovim": 1,
     "dbaeumer.vscode-eslint": 1
   },
-  "gitlens.codeLens.enabled": false,
   "cSpell.language": "en,en-US",
   "cSpell.allowCompoundWords": true,
   "svelte.enable-ts-plugin": true,
-  "gitlens.views.commits.files.layout": "list",
   "vscode-neovim.compositeKeys": {
     "jk": {
       "command": "vscode-neovim.lua",
@@ -192,17 +190,11 @@
       ]
     }
   },
-  "turboConsoleLog.includeFilename": true,
-  "turboConsoleLog.includeLineNum": true,
-  "turboConsoleLog.quote": "'",
   "markdownFormatter.formatCodes": false,
-  "cursor.cpp.disabledLanguages": [],
-  "cursor.composer.shouldChimeAfterChatFinishes": true,
   "cSpell.enabledNotifications": {
     "Maximum Word Length Exceeded": false,
     "Average Word Length too Long": false,
     "Lines too Long": false
   },
-  "cursor.composer.textSizeScale": 0.85,
-  "typescript.experimental.useTsgo": true
+  "typescript.experimental.useTsgo": false
 }

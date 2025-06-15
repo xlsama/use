@@ -102,6 +102,7 @@ alias lint="nr lint"
 alias release="nr release"
 alias up='nlx taze -I -r'
 alias giget='nlx giget@latest'
+alias claude="/Users/xlsama/.claude/local/claude"
 alias ai='claude'
 
 function c
