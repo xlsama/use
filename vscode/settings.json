@@ -196,5 +196,11 @@
     "Average Word Length too Long": false,
     "Lines too Long": false
   },
-  "typescript.experimental.useTsgo": false
+  "typescript.experimental.useTsgo": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": true
+  }
 }
