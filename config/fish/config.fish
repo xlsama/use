@@ -102,10 +102,10 @@ alias lint="nr lint"
 alias release="nr release"
 alias up='nlx taze -I -r'
 alias giget='nlx giget@latest'
+alias ai='claude'
 
 function c
     code $argv
-    exit
 end
 
 # Git Clone to ~/i Directory and Open with VSCode
@@ -113,7 +113,7 @@ function gcli
     set project_name (basename $argv)
     set project_name (string replace .git '' $project_name)
     git clone $argv ~/i/$project_name
-    code ~/i/$project_name
+    c ~/i/$project_name
     exit
 end
 
@@ -122,10 +122,6 @@ function gclw
     set project_name (basename $argv)
     set project_name (string replace .git '' $project_name)
     git clone $argv ~/w/$project_name
-    code ~/w/$project_name
+    c ~/w/$project_name
     exit
 end
-
-# Added by OrbStack: command-line tools and integration
-# This won't be added again if you remove it.
-source ~/.orbstack/shell/init2.fish 2>/dev/null || :

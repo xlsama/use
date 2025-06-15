@@ -204,5 +204,5 @@
     "Lines too Long": false
   },
   "cursor.composer.textSizeScale": 0.85,
-  "typescript.experimental.useTsgo": false
+  "typescript.experimental.useTsgo": true
 }
