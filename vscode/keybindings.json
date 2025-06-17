@@ -63,26 +63,18 @@
     "command": "git.viewChanges"
   },
   {
-    "key": "shift+cmd+enter",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        {
-          "command": "workbench.scm.focus"
-        },
-        {
-          "command": "git.stageAll"
-        },
-        {
-          "command": "cursor.generateGitCommitMessage"
-        },
-        {
-          "command": "git.commitAll"
-        },
-        {
-          "command": "git.push"
-        }
-      ]
-    }
+    "key": "tab",
+    "command": "-vscode-neovim.send-cmdline",
+    "when": "neovim.init && neovim.mode == 'cmdline'"
+  },
+  {
+    "key": "tab",
+    "command": "-vscode-neovim.send",
+    "when": "neovim.init && neovim.recording || editorTextFocus && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "tab",
+    "command": "-togglePeekWidgetFocus",
+    "when": "referenceSearchVisible || inReferenceSearchEditor && neovim.mode == 'normal'"
   }
 ]
