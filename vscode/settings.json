@@ -1,206 +1,186 @@
 {
-  // Workbench
-  "workbench.colorTheme": "Vitesse Dark",
-  "window.systemColorTheme": "dark",
-  "workbench.iconTheme": "catppuccin-perfect-mocha",
-  "workbench.productIconTheme": "icons-carbon",
-  "workbench.sideBar.location": "right",
-  "workbench.colorCustomizations": {
-    "[Vitesse Dark]": {
-      "list.hoverBackground": "#282828",
-      "list.inactiveSelectionBackground": "#282828",
-      "list.activeSelectionBackground": "#282828",
-      "list.focusBackground": "#282828",
-      "quickInputList.focusBackground": "#4d937599",
-      "editor.selectionBackground": "#eeeeee40",
-      "editor.selectionHighlightBackground": "#eeeeee25",
-      "editor.lineHighlightBackground": "#282828",
-      "terminal.selectionBackground": "#eeeeee25",
-      "editorGroup.border": "#121212",
-      "sideBar.border": "#eeeeee25"
-    }
-  },
-  "workbench.layoutControl.enabled": false,
-  "window.commandCenter": false,
-  "window.newWindowDimensions": "fullscreen",
-  "window.restoreFullscreen": true,
-  "window.nativeTabs": true, // this is great, macOS only
-  "window.title": "${rootName}",
-  "window.titleBarStyle": "native",
-  "window.customTitleBarVisibility": "windowed",
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.list.smoothScrolling": true,
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.view.showQuietly": {
-    "workbench.panel.output": true
-  },
-  "workbench.startupEditor": "none",
+	// Workbench
+	"workbench.colorTheme": "Vitesse Black",
+	"window.systemColorTheme": "dark",
+	"workbench.iconTheme": "catppuccin-perfect-mocha",
+	"workbench.productIconTheme": "icons-carbon",
+	"workbench.sideBar.location": "right",
+	"workbench.colorCustomizations": {
+		"[Vitesse Black]": {
+			"list.hoverBackground": "#282828",
+			"list.inactiveSelectionBackground": "#282828",
+			"list.activeSelectionBackground": "#282828",
+			"list.focusBackground": "#282828",
+			"quickInputList.focusBackground": "#4d937599",
+			"editor.selectionBackground": "#eeeeee40",
+			"editor.selectionHighlightBackground": "#eeeeee25",
+			"editor.lineHighlightBackground": "#282828",
+			"terminal.selectionBackground": "#eeeeee25",
+			"editorGroup.border": "#121212",
+			"sideBar.border": "#eeeeee25"
+		}
+	},
+	"workbench.layoutControl.enabled": false,
+	"window.commandCenter": false,
+	"window.newWindowDimensions": "fullscreen",
+	"window.restoreFullscreen": true,
+	"window.nativeTabs": true, // this is great, macOS only
+	"window.title": "${rootName}",
+	"window.titleBarStyle": "native",
+	"window.customTitleBarVisibility": "windowed",
+	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.list.smoothScrolling": true,
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.startupEditor": "none",
 
-  // Editor
-  "editor.fontSize": 14,
-  "editor.lineHeight": 1.55,
-  "editor.fontFamily": "Maple Mono Normal NF CN",
-  "editor.fontLigatures": true,
-  "explorer.compactFolders": false,
-  "explorer.confirmDelete": false,
-  "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.stickyScroll.enabled": true,
-  "editor.wordSeparators": "`~!#@%^&*()=+[{]}\\|;:'\",.<>/?",
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.guides.bracketPairs": "active",
-  "editor.minimap.enabled": true,
-  "files.insertFinalNewline": true,
-  "files.simpleDialog.enable": true,
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.expand": false,
-  "explorer.fileNesting.patterns": {
-    "README.md": "*.md, LICENCE",
-    "package.json": "pnpm*, package*, yarn*, *.sh, bun*, webpack*, biome*, .browserslist*, *.d.ts, Docker*, .prettier*, .git*, .editorconfig, .eslint*, eslint*, .github*, .stylelint*, .oxlint*",
-    "cargo.toml": "*.toml, cargo*",
-    "tsconfig.json": "tsconfig*",
-    "rsbuild.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*, rsbuild.config.*"
-  },
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.fixAll.oxc": "explicit",
-    "source.organizeImports": "never",
-    "source.fixAll.ruff": "explicit",
-    "source.organizeImports.ruff": "explicit"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[fish]": {
-    "editor.defaultFormatter": "bmalehorn.vscode-fish"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "mervin.markdown-formatter"
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
-  },
-  "emmet.showSuggestionsAsSnippets": true,
-  "editor.linkedEditing": true,
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
-  "files.associations": {
-    "*.css": "tailwindcss",
-    "*.cjson": "jsonc",
-    "*.wxss": "css",
-    "*.wxs": "javascript"
-  },
-  "security.promptForLocalFileProtocolHandling": false,
-  "editor.semanticHighlighting.enabled": true,
-  "editor.accessibilitySupport": "off",
-  "accessibility.signals.clear": {
-    "sound": "off"
-  },
-  "explorer.confirmPasteNative": false,
-  "svg.preview.background": "transparent",
-  "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.wrappingStrategy": "advanced",
+	// Editor
+	"editor.fontSize": 14,
+	"editor.lineHeight": 1.55,
+	"editor.fontFamily": "Maple Mono Normal NF CN",
+	"editor.fontLigatures": true,
+	"explorer.compactFolders": false,
+	"explorer.confirmDelete": false,
+	"editor.smoothScrolling": true,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.stickyScroll.enabled": true,
+	"editor.wordSeparators": "`~!#@%^&*()=+[{]}\\|;:'\",.<>/?",
+	"security.workspace.trust.untrustedFiles": "open",
+	"editor.guides.bracketPairs": "active",
+	"editor.minimap.enabled": true,
+	"files.insertFinalNewline": true,
+	"files.simpleDialog.enable": true,
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.expand": false,
+	"explorer.fileNesting.patterns": {
+		"README.md": "*.md, LICENCE",
+		"package.json": "pnpm*, package*, yarn*, *.sh, bun*, webpack*, biome*, .browserslist*, *.d.ts, Docker*, .prettier*, .git*, .editorconfig, .eslint*, eslint*, .github*, .stylelint*, .oxlint*",
+		"cargo.toml": "*.toml, cargo*",
+		"tsconfig.json": "tsconfig*",
+		"rsbuild.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*, rsbuild.config.*"
+	},
+	"editor.tabSize": 2,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.oxc": "explicit",
+		"source.fixAll.ruff": "explicit",
+		"source.organizeImports.ruff": "explicit"
+	},
+	"editor.defaultFormatter": "biomejs.biome",
+	"[fish]": {
+		"editor.defaultFormatter": "bmalehorn.vscode-fish"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "mervin.markdown-formatter"
+	},
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	},
+	"[python]": {
+		"editor.defaultFormatter": "charliermarsh.ruff"
+	},
+	"emmet.showSuggestionsAsSnippets": true,
+	"editor.linkedEditing": true,
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+	"files.associations": {
+		"*.css": "tailwindcss",
+		"*.cjson": "jsonc",
+		"*.wxss": "css",
+		"*.wxs": "javascript"
+	},
+	"security.promptForLocalFileProtocolHandling": false,
+	"editor.semanticHighlighting.enabled": true,
+	"editor.accessibilitySupport": "off",
+	"accessibility.signals.clear": {
+		"sound": "off"
+	},
+	"explorer.confirmPasteNative": false,
+	"svg.preview.background": "transparent",
+	"editor.gotoLocation.multipleDefinitions": "goto",
+	"editor.wrappingStrategy": "advanced",
 
-  // Terminal
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "terminal.integrated.fontFamily": "Maple Mono Normal NF CN",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontWeight": "300",
-  "terminal.integrated.fontWeightBold": "400",
-  "terminal.integrated.lineHeight": 1.1,
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.scrollback": 10000,
-  "terminal.integrated.minimumContrastRatio": 1,
-  "terminal.integrated.stickyScroll.enabled": false,
-  "terminal.integrated.showExitAlert": false,
+	// Terminal
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
+	"terminal.integrated.fontFamily": "Maple Mono Normal NF CN",
+	"terminal.integrated.fontSize": 12,
+	"terminal.integrated.fontWeight": "300",
+	"terminal.integrated.fontWeightBold": "400",
+	"terminal.integrated.lineHeight": 1.1,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.scrollback": 10000,
+	"terminal.integrated.minimumContrastRatio": 1,
+	"terminal.integrated.stickyScroll.enabled": false,
+	"terminal.integrated.showExitAlert": false,
 
-  // Source Control
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "git.allowNoVerifyCommit": true,
-  "git.confirmNoVerifyCommit": false,
-  "git.allowForcePush": true,
-  "git.confirmForcePush": false,
-  "git.openRepositoryInParentFolders": "always",
-  "scm.workingSets.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": true,
+	// Source Control
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	"git.allowNoVerifyCommit": true,
+	"git.confirmNoVerifyCommit": false,
+	"git.allowForcePush": true,
+	"git.confirmForcePush": false,
+	"git.openRepositoryInParentFolders": "always",
+	"scm.workingSets.enabled": true,
+	"diffEditor.ignoreTrimWhitespace": true,
 
-  // Search
-  "search.exclude": {
-    "**/.git": true,
-    "**/.github": true,
-    "**/.nuxt": true,
-    "**/.output": true,
-    "**/.pnpm": true,
-    "**/.vscode": true,
-    "**/.yarn": true,
-    "**/bower_components": true,
-    "**/dist/**": true,
-    "**/logs": true,
-    "**/node_modules": true,
-    "**/out/**": true,
-    "**/package-lock.json": true,
-    "**/pnpm-lock.yaml": true,
-    "**/tmp": true,
-    "**/yarn.lock": true
-  },
-  "search.smartCase": true,
+	// Search
+	"search.exclude": {
+		"**/.git": true,
+		"**/.github": true,
+		"**/.nuxt": true,
+		"**/.output": true,
+		"**/.pnpm": true,
+		"**/.vscode": true,
+		"**/.yarn": true,
+		"**/bower_components": true,
+		"**/dist/**": true,
+		"**/logs": true,
+		"**/node_modules": true,
+		"**/out/**": true,
+		"**/package-lock.json": true,
+		"**/pnpm-lock.yaml": true,
+		"**/tmp": true,
+		"**/yarn.lock": true
+	},
+	"search.smartCase": true,
 
-  // Extension configs
-  "extensions.autoUpdate": "onlyEnabledExtensions",
-  "extensions.ignoreRecommendations": true,
-  "code-runner.runInTerminal": true,
-  "code-runner.executorMap": {
-    "javascript": "node",
-    "typescript": "bun",
-    "python": "uv run"
-  },
-  "errorLens.excludeBySource": ["eslint", "cSpell"],
-  "eslint.format.enable": true,
-  "eslint.useFlatConfig": true,
-  "prettier.semi": false,
-  "prettier.tabWidth": 2,
-  "prettier.printWidth": 80,
-  "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
-  "prettier.bracketSpacing": true,
-  "prettier.trailingComma": "all",
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1,
-    "dbaeumer.vscode-eslint": 1
-  },
-  "cSpell.language": "en,en-US",
-  "cSpell.allowCompoundWords": true,
-  "svelte.enable-ts-plugin": true,
-  "vscode-neovim.compositeKeys": {
-    "jk": {
-      "command": "vscode-neovim.lua",
-      "args": [
-        [
-          "local code = require('vscode')",
-          "code.action('vscode-neovim.escape')",
-          "code.action('workbench.action.files.save')"
-        ]
-      ]
-    }
-  },
-  "markdownFormatter.formatCodes": false,
-  "cSpell.enabledNotifications": {
-    "Maximum Word Length Exceeded": false,
-    "Average Word Length too Long": false,
-    "Lines too Long": false
-  },
-  "typescript.experimental.useTsgo": false,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true,
-    "scminput": true
-  }
+	// Extension configs
+	"extensions.autoUpdate": "onlyEnabledExtensions",
+	"extensions.ignoreRecommendations": true,
+	"code-runner.runInTerminal": true,
+	"code-runner.executorMap": {
+		"javascript": "node",
+		"typescript": "bun",
+		"python": "uv run"
+	},
+	"errorLens.excludeBySource": ["eslint", "cSpell"],
+	"extensions.experimental.affinity": {
+		"asvetliakov.vscode-neovim": 1
+	},
+	"cSpell.language": "en,en-US",
+	"cSpell.allowCompoundWords": true,
+	"svelte.enable-ts-plugin": true,
+	"vscode-neovim.compositeKeys": {
+		"jk": {
+			"command": "vscode-neovim.lua",
+			"args": [
+				[
+					"local code = require('vscode')",
+					"code.action('vscode-neovim.escape')",
+					"code.action('workbench.action.files.save')"
+				]
+			]
+		}
+	},
+	"markdownFormatter.formatCodes": false,
+	"cSpell.enabledNotifications": {
+		"Maximum Word Length Exceeded": false,
+		"Average Word Length too Long": false,
+		"Lines too Long": false
+	},
+	"typescript.experimental.useTsgo": false,
+	"todo-tree.tree.flat": true
 }

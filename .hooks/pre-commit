@@ -4,7 +4,7 @@
 project_root=$(pwd)
 
 # 执行code --list-extensions命令，并将结果保存到变量extensions中
-extensions=$(cursor --list-extensions)
+extensions=$(code --list-extensions)
 
 # 将变量extensions中的字符串转换为JSON数组
 json="{\"recommendations\": ["

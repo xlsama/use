@@ -108,6 +108,7 @@ alias aic="claude -p '生成提交信息并推送代码'"
 
 function c
     code $argv
+    exit
 end
 
 # Git Clone to ~/i Directory and Open with VSCode
