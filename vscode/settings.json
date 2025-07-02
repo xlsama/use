@@ -182,5 +182,6 @@
 		"Lines too Long": false
 	},
 	"typescript.experimental.useTsgo": false,
-	"todo-tree.tree.flat": true
+	"todo-tree.tree.flat": true,
+	"augment.completions.disableCompletionsByLanguage": []
 }

@@ -1,5 +1,8 @@
 #!/usr/bin/env zx
 
+// Force zx to use bash instead of fish
+$.shell = "/bin/bash";
+
 const LINK_MAP = [
 	// config
 	{
