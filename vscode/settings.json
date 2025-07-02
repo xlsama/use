@@ -189,5 +189,38 @@
 		"plaintext": true,
 		"markdown": true,
 		"scminput": true
+	},
+
+	// MCP
+	"mcp": {
+		"servers": {
+			"github": {
+				"gallery": true,
+				"url": "https://api.githubcopilot.com/mcp/"
+			},
+			"playwright": {
+				"gallery": true,
+				"command": "npx",
+				"args": ["@playwright/mcp@latest"]
+			},
+			"huggingface": {
+				"gallery": true,
+				"url": "https://hf.co/mcp"
+			},
+			"deepwiki": {
+				"gallery": true,
+				"url": "https://api.deepwiki.com/mcp/sse"
+			},
+			"markitdown": {
+				"gallery": true,
+				"command": "docker",
+				"args": ["run", "--rm", "-i", "markitdown-mcp:latest"]
+			},
+			"context7": {
+				"gallery": true,
+				"command": "npx",
+				"args": ["-y", "@upstash/context7-mcp@latest"]
+			}
+		}
 	}
 }
