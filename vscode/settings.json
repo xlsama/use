@@ -60,6 +60,7 @@
 	},
 	"editor.tabSize": 2,
 	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.oxc": "explicit",
 		"source.fixAll.ruff": "explicit",
@@ -182,6 +183,5 @@
 		"Lines too Long": false
 	},
 	"typescript.experimental.useTsgo": false,
-	"todo-tree.tree.flat": true,
-	"augment.completions.disableCompletionsByLanguage": []
+	"todo-tree.tree.flat": true
 }
