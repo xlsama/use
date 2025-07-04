@@ -34,7 +34,7 @@
 	"workbench.startupEditor": "none",
 
 	// Editor
-	"editor.fontSize": 14,
+	"editor.fontSize": 15,
 	"editor.lineHeight": 1.55,
 	"editor.fontFamily": "Maple Mono Normal NF CN",
 	"editor.fontLigatures": true,
