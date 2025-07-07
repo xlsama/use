@@ -102,6 +102,8 @@ alias lint="nr lint"
 alias release="nr release"
 alias up='nlx taze -I -r'
 alias giget='nlx giget@latest'
+alias venv='source .venv/bin/activate.fish'
+
 alias claude="/Users/xlsama/.claude/local/claude"
 alias ai='claude'
 alias aic="claude -p '生成提交信息并推送代码'"
