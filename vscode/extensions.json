@@ -23,7 +23,6 @@
     "jock.svg",
     "meganrogge.template-string-converter",
     "mervin.markdown-formatter",
-    "mhutchie.git-graph",
     "ms-ossdata.vscode-pgsql",
     "ms-python.debugpy",
     "ms-python.python",
@@ -41,8 +40,6 @@
     "usernamehw.errorlens",
     "vue.volar",
     "vunguyentuan.vscode-postcss",
-    "waderyan.gitblame",
-    "yoavbls.pretty-ts-errors",
-    "zxh404.vscode-proto3"
+    "yoavbls.pretty-ts-errors"
   ]
 }

@@ -1,12 +1,12 @@
 {
 	// Workbench
-	"workbench.colorTheme": "Vitesse Black",
+	"workbench.colorTheme": "Vitesse Dark",
 	"window.systemColorTheme": "dark",
 	"workbench.iconTheme": "catppuccin-perfect-mocha",
 	"workbench.productIconTheme": "icons-carbon",
 	"workbench.sideBar.location": "right",
 	"workbench.colorCustomizations": {
-		"[Vitesse Black]": {
+		"[Vitesse Dark]": {
 			"list.hoverBackground": "#282828",
 			"list.inactiveSelectionBackground": "#282828",
 			"list.activeSelectionBackground": "#282828",
@@ -66,7 +66,7 @@
 		"source.fixAll.ruff": "explicit",
 		"source.organizeImports.ruff": "explicit"
 	},
-	"editor.defaultFormatter": "biomejs.biome",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"[fish]": {
 		"editor.defaultFormatter": "bmalehorn.vscode-fish"
 	},
@@ -114,6 +114,7 @@
 	"terminal.integrated.minimumContrastRatio": 1,
 	"terminal.integrated.stickyScroll.enabled": false,
 	"terminal.integrated.showExitAlert": false,
+	"terminal.external.osxExec": "Ghostty.app",
 
 	// Source Control
 	"git.autofetch": true,
@@ -126,6 +127,8 @@
 	"git.openRepositoryInParentFolders": "always",
 	"scm.workingSets.enabled": true,
 	"diffEditor.ignoreTrimWhitespace": true,
+	"git.blame.statusBarItem.enabled": false,
+	"git.blame.editorDecoration.enabled": true,
 
 	// Search
 	"search.exclude": {
@@ -222,5 +225,32 @@
 				"args": ["-y", "@upstash/context7-mcp@latest"]
 			}
 		}
-	}
+	},
+	"pgsql.serverGroups": [
+		{
+			"name": "Servers",
+			"id": "7DC5DF68-CC7C-41F1-93D2-0D70F7F473C4",
+			"isDefault": true
+		}
+	],
+	"pgsql.connections": [
+		{
+			"id": "32338A16-79C1-438B-A566-892BE40A3311",
+			"groupId": "7DC5DF68-CC7C-41F1-93D2-0D70F7F473C4",
+			"authenticationType": "SqlLogin",
+			"connectTimeout": 15,
+			"applicationName": "vscode-pgsql",
+			"clientEncoding": "utf8",
+			"sslmode": "prefer",
+			"server": "localhost",
+			"profileName": "PlayBooks Dev",
+			"user": "playbooks_user",
+			"password": "",
+			"savePassword": true,
+			"database": "playbooks_db",
+			"expiresOn": 0
+		}
+	],
+	"pgsql.enableQueryHistoryCapture": false,
+	"pgsql.openQueryResultsInTabByDefaultDoNotShowPrompt": true
 }
