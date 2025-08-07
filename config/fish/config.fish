@@ -93,6 +93,7 @@ alias o='open'
 alias nv='fnm' # node version manager
 alias reload='exec fish'
 alias copy='pbcopy'
+alias cpwd='pwd | copy'
 
 alias nid='ni -D'
 alias d='nr dev'
@@ -100,17 +101,15 @@ alias b='nr build'
 alias t='nr test'
 alias lint="nr lint"
 alias release="nr release"
+
 alias up='nlx taze -I -r'
-alias giget='nlx giget@latest'
 alias venv='source .venv/bin/activate.fish'
 
 alias claude="/Users/xlsama/.claude/local/claude"
-alias ai='claude'
-alias aic="claude -p '生成提交信息并推送代码'"
+alias ai='claude --dangerously-skip-permissions'
 
 function c
     code $argv
-    exit
 end
 
 # Git Clone to ~/i Directory and Open with VSCode
