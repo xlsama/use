@@ -129,3 +129,8 @@ function gclw
     c ~/w/$project_name
     exit
 end
+
+# claude code
+set -gx ANTHROPIC_AUTH_TOKEN sk-075aPaOCXZIXjdAyoXxHsYr6D5VK5idH9shknsXliG8tOtvC
+set -gx ANTHROPIC_API_KEY sk-075aPaOCXZIXjdAyoXxHsYr6D5VK5idH9shknsXliG8tOtvC
+set -gx ANTHROPIC_BASE_URL https://code.ppchat.vip
