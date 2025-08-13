@@ -71,5 +71,10 @@
 			"$1",
 			"</template>"
 		]
-	}
+	},
+	"create ref": {
+		"scope": "vue,javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "ref",
+		"body": "const $1 = ref($2)\n$3"
+	},
 }

@@ -73,9 +73,6 @@
   "[markdown]": {
     "editor.defaultFormatter": "mervin.markdown-formatter"
   },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
@@ -218,5 +215,8 @@
     }
   ],
   "pgsql.enableQueryHistoryCapture": false,
-  "pgsql.openQueryResultsInTabByDefaultDoNotShowPrompt": true
+  "pgsql.openQueryResultsInTabByDefaultDoNotShowPrompt": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "chat.mcp.autostart": "newAndOutdated",
+  "typescript.preferences.preferTypeOnlyAutoImports": true
 }
