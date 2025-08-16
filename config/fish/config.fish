@@ -7,13 +7,10 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
 
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
-
 starship init fish | source
 zoxide init fish | source
 fnm env --use-on-cd | source
+fzf --fish | source
 source "$HOME/.local/bin/env.fish"
 
 # --- 状态 & 日志 & 差异 ---
@@ -107,6 +104,7 @@ alias venv='source .venv/bin/activate.fish'
 
 alias claude="/Users/xlsama/.claude/local/claude"
 alias ai='codex'
+# alias ai='codex --ask-for-approval never'
 
 function c
     code $argv
