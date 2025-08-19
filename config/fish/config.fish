@@ -103,8 +103,7 @@ alias up='nlx taze -I -r'
 alias venv='source .venv/bin/activate.fish'
 
 alias claude="/Users/xlsama/.claude/local/claude"
-alias ai='codex'
-# alias ai='codex --ask-for-approval never'
+alias ai='codex --ask-for-approval never --sandbox danger-full-access -c model_reasoning_effort="high"'
 
 function c
     code $argv
