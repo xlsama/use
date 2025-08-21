@@ -91,6 +91,7 @@ alias nv='fnm' # node version manager
 alias reload='exec fish'
 alias copy='pbcopy'
 alias cpwd='pwd | copy'
+alias speedtest='networkQuality'
 
 alias nid='ni -D'
 alias d='nr dev'
@@ -103,6 +104,7 @@ alias up='nlx taze -I -r'
 alias venv='source .venv/bin/activate.fish'
 
 alias claude="/Users/xlsama/.claude/local/claude"
+alias codex='codex-aarch64-apple-darwin'
 alias ai='codex --ask-for-approval never --sandbox danger-full-access -c model_reasoning_effort="high"'
 
 function c
