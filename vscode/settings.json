@@ -218,5 +218,6 @@
   "pgsql.openQueryResultsInTabByDefaultDoNotShowPrompt": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "chat.mcp.autostart": "newAndOutdated",
-  "typescript.preferences.preferTypeOnlyAutoImports": true
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "github.copilot.nextEditSuggestions.enabled": true
 }

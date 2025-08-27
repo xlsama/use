@@ -91,6 +91,7 @@ alias nv='fnm' # node version manager
 alias reload='exec fish'
 alias copy='pbcopy'
 alias cpwd='pwd | copy'
+alias cgb='gb --show-current | copy'
 alias speedtest='networkQuality'
 
 alias nid='ni -D'
