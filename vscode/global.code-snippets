@@ -24,6 +24,11 @@
 		"prefix": "ed",
 		"body": ["export default $1"]
 	},
+	"export interface": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
+		"prefix": "ei",
+		"body": ["export interface $1 {\n  $2\n}"]
+	},
 	"export * from": {
 		"scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
 		"prefix": "ef",

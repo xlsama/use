@@ -76,6 +76,9 @@
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
   "emmet.showSuggestionsAsSnippets": true,
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {
@@ -219,5 +222,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "chat.mcp.autostart": "newAndOutdated",
   "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "github.copilot.nextEditSuggestions.enabled": true
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "redhat.telemetry.enabled": true
 }
