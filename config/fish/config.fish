@@ -16,7 +16,7 @@ source "$HOME/.local/bin/env.fish"
 # --- 状态 & 日志 & 差异 ---
 alias gst='git status'
 alias gd='git diff'
-alias glog='git log --oneline --decorate --graph --all | fzf'
+alias glog='git log --oneline --decorate --graph --all'
 
 # --- 添加 & 提交 ---
 alias ga='git add'
@@ -27,9 +27,9 @@ alias gca='git commit --amend'
 alias gac='git add -A && git commit -m'
 
 # --- 分支 & 切换 ---
-alias gb='git branch | fzf'
-alias gba='git branch -a | fzf'
-alias gbr='git branch --remote | fzf'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gbr='git branch --remote'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
 alias gs='git switch'
@@ -49,7 +49,7 @@ alias grv='git remote -v'
 alias gsh='git stash push -m'
 alias gsha='git stash apply'
 alias gshp='git stash pop'
-alias gshl='git stash list | fzf'
+alias gshl='git stash list'
 alias gshd='git stash drop'
 alias gshc='git stash clear'
 
