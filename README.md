@@ -17,6 +17,7 @@ brew bundle --file=./Brewfile
 ### Editor
 
 - [Cursor](https://cursor.com/)
+
 - [VSCode](https://code.visualstudio.com/)
 
 ### Writing
