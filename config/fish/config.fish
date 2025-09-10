@@ -106,10 +106,11 @@ alias venv='source .venv/bin/activate.fish'
 
 alias claude="/Users/xlsama/.claude/local/claude"
 alias codex='codex-aarch64-apple-darwin'
-alias ai='codex --ask-for-approval never --sandbox danger-full-access -c model_reasoning_effort="high"'
+alias ai='codex --ask-for-approval never --sandbox danger-full-access -c model_reasoning_effort="high" --search'
 
 function c
-    code $argv
+    # code $argv
+    cursor $argv
 end
 
 # Git Clone to ~/i Directory and Open with VSCode
