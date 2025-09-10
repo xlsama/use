@@ -56,8 +56,11 @@ brew bundle --file=./Brewfile
 ## Hardware
 
 - MacBook Pro 16 M1 Max / 32GB RAM
+
 - Mouse: MX Master 3S
+
 - Keyboard: Keychron K14Pro
+
 - Display: 海信 27G7K Pro
 
 ## CLI
