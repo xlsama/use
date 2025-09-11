@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "aaron-bond.better-comments",
+    "antfu.file-nesting",
     "antfu.goto-alias",
     "antfu.icons-carbon",
     "antfu.pnpm-catalog-lens",

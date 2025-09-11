@@ -20,6 +20,12 @@ brew bundle --file=./Brewfile
 
 - [VSCode](https://code.visualstudio.com/)
 
+### Chat
+
+- [飞书](https://www.feishu.cn/) - Meeting, Screenshot and Recording
+
+- [微信](https://www.wechat.com/) - Chat
+
 ### Writing
 
 - [Obsidian](https://obsidian.md/)
@@ -27,8 +33,6 @@ brew bundle --file=./Brewfile
 ### Productivity
 
 - [TickTick](https://ticktick.com/) - To Do
-
-- [Feishu](https://www.feishu.cn/) - Meeting, Screenshot and Recording
 
 - [Raycast](https://raycast.com) - Launcher
 
@@ -52,7 +56,11 @@ brew bundle --file=./Brewfile
 
 - [UU 远程](https://uuyc.163.com/) - Remote Control
 
-- [剪映](https://www.capcut.cn/) - Video Editing
+- [剪映专业版](https://www.capcut.cn/) - Video Editing
+
+- [像素蛋糕](https://www.pixcake.cn/) - Photo Editing
+
+- [QQ Music](https://y.qq.com/) - Music
 
 ## Hardware
 
