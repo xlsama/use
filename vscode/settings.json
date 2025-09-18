@@ -52,7 +52,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "//": "Last update at 9/15/2025, 9:17:04 AM",
+    "//": "Last update at 9/18/2025, 6:01:46 PM",
     ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
     ".env": "*.env, .env.*, .envrc, env.d.ts",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
@@ -283,33 +283,6 @@
     "markdown": true,
     "scminput": true
   },
-  "pgsql.serverGroups": [
-    {
-      "name": "Servers",
-      "id": "7DC5DF68-CC7C-41F1-93D2-0D70F7F473C4",
-      "isDefault": true
-    }
-  ],
-  "pgsql.connections": [
-    {
-      "id": "32338A16-79C1-438B-A566-892BE40A3311",
-      "groupId": "7DC5DF68-CC7C-41F1-93D2-0D70F7F473C4",
-      "authenticationType": "SqlLogin",
-      "connectTimeout": 15,
-      "applicationName": "vscode-pgsql",
-      "clientEncoding": "utf8",
-      "sslmode": "prefer",
-      "server": "localhost",
-      "profileName": "PlayBooks Dev",
-      "user": "playbooks_user",
-      "password": "",
-      "savePassword": true,
-      "database": "playbooks_db",
-      "expiresOn": 0
-    }
-  ],
-  "pgsql.enableQueryHistoryCapture": false,
-  "pgsql.openQueryResultsInTabByDefaultDoNotShowPrompt": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "chat.mcp.autostart": "newAndOutdated",
   "typescript.preferences.preferTypeOnlyAutoImports": true,
