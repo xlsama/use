@@ -170,7 +170,6 @@
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
-  "emmet.showSuggestionsAsSnippets": true,
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {
     "strings": "on"
@@ -180,6 +179,10 @@
     "*.cjson": "jsonc",
     "*.wxss": "css",
     "*.wxs": "javascript"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.includeLanguages": {
+    "postcss": "css"
   },
   "security.promptForLocalFileProtocolHandling": false,
   "editor.semanticHighlighting.enabled": true,
