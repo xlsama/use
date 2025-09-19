@@ -110,7 +110,7 @@ alias ai='codex --ask-for-approval never --sandbox danger-full-access -m gpt-5-c
 
 function c
     # code $argv
-    cursor $argv
+    code $argv
 end
 
 # Git Clone to ~/i Directory and Open with VSCode
