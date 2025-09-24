@@ -96,6 +96,7 @@ alias speedtest='networkQuality'
 
 alias nid='ni -D'
 alias d='nr dev'
+alias do='nr dev --open'
 alias b='nr build'
 alias t='nr test'
 alias lint="nr lint"
