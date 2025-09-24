@@ -52,7 +52,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "//": "Last update at 9/18/2025, 6:01:46 PM",
+    "//": "Last update at 9/21/2025, 7:01:25 PM",
     ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
     ".env": "*.env, .env.*, .envrc, env.d.ts",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
@@ -219,7 +219,7 @@
   "git.confirmForcePush": false,
   "git.openRepositoryInParentFolders": "always",
   "scm.workingSets.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "git.blame.statusBarItem.enabled": false,
   "git.blame.editorDecoration.enabled": true,
 
@@ -250,7 +250,6 @@
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
     "javascript": "node",
-    "typescript": "bun",
     "python": "uv run"
   },
   "errorLens.excludeBySource": ["eslint", "cSpell"],
@@ -279,7 +278,6 @@
     "Lines too Long": false
   },
   "typescript.experimental.useTsgo": false,
-  "todo-tree.tree.tagsOnly": true,
   "github.copilot.enable": {
     "*": true,
     "plaintext": true,

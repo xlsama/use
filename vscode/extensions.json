@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "aaron-bond.better-comments",
+    "ahmadalli.vscode-nginx-conf",
     "antfu.file-nesting",
     "antfu.goto-alias",
     "antfu.icons-carbon",
@@ -16,7 +17,6 @@
     "formulahendry.code-runner",
     "github.copilot",
     "github.copilot-chat",
-    "gruntfuggly.todo-tree",
     "huacnlee.autocorrect",
     "jasonnutter.search-node-modules",
     "jock.svg",
@@ -27,6 +27,7 @@
     "ms-python.vscode-pylance",
     "ms-python.vscode-python-envs",
     "naumovs.color-highlight",
+    "openai.chatgpt",
     "oxc.oxc-vscode",
     "pucelle.vscode-css-navigation",
     "redhat.vscode-yaml",
