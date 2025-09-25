@@ -53,8 +53,9 @@ await Promise.all(
 	LINK_MAP.map(async ({ source, target }) => {
 		source = source.replace("~", HOME_DIR);
 		target = target.replace("~", HOME_DIR);
+		await $`mkdir -p ${path.dirname(target)}`;
 		await $`rm -rf ${target}`;
-		await $`ln -s -F ${source} ${target}`;
+		await $`ln -s -f ${source} ${target}`;
 	}),
 );
 
