@@ -287,6 +287,5 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "chat.mcp.autostart": "newAndOutdated",
   "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "redhat.telemetry.enabled": true
+  "github.copilot.nextEditSuggestions.enabled": true
 }
