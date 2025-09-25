@@ -14,6 +14,7 @@ brew "ripgrep"
 brew "im-select"
 brew "zoxide"
 brew 'difftastic'
+brew 'fzf'
 
 # 'brew install --cask'
 cask "visual-studio-code"
