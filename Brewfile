@@ -15,6 +15,7 @@ brew "im-select"
 brew "zoxide"
 brew 'difftastic'
 brew 'fzf'
+brew 'zx'
 
 # 'brew install --cask'
 cask "visual-studio-code"
