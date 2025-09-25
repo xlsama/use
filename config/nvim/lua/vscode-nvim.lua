@@ -65,7 +65,7 @@ for _, mode in ipairs(modes) do
 end
 
 -- 定义 im-select 路径和目标输入法
-local im_select_cmd = "/Users/xlsama/bin/im-select"
+local im_select_cmd = "/opt/homebrew/bin/im-select"
 local default_im = "com.apple.keylayout.ABC"
 
 -- 在退出插入模式时切换到 ABC 输入法
