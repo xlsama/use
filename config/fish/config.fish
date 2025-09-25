@@ -82,6 +82,7 @@ alias i='cd ~/i'
 alias w='cd ~/w' # work
 alias dl='cd ~/Downloads'
 
+alias ls='lsd'
 alias l='lsd -1A'
 alias v='nvim'
 alias o='open'
