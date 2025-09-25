@@ -87,7 +87,7 @@ const { recommendations } = await fs.readJson("./vscode/extensions.json");
 
 await Promise.all(
 	recommendations.map(async (name) => {
-		await $`code --install-extension ${name}`;
+		await $`code --install-extension -f ${name}`;
 	}),
 );
 
