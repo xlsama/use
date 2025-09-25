@@ -16,6 +16,7 @@ brew "zoxide"
 brew 'difftastic'
 brew 'fzf'
 brew 'zx'
+brew 'popclip'
 
 # 'brew install --cask'
 cask "visual-studio-code"
