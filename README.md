@@ -34,6 +34,10 @@ brew bundle --file=./Brewfile
 
 * [Raycast](https://raycast.com) - Launcher
 
+* [Ghostty]() - Terminal
+
+* [Passwords]() - MacOS Internal Password Manager
+
 * [PopClip](https://pilotmoon.com/popclip/) - Quick Jump
 
 * [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse manager
@@ -60,6 +64,10 @@ brew bundle --file=./Brewfile
 
 * [QQ Music](https://y.qq.com/) - Music
 
+## Other
+
+* [Telegram]() 
+
 ## Hardware
 
 * MacBook Pro 16 M1 Max / 32GB RAM
@@ -76,4 +84,4 @@ brew bundle --file=./Brewfile
 
 * [Homebrew](https://brew.sh/) - Package Manager
 
-* [Codex](https://github.com/openai/codex) - Coding Agent
+* [Codex](https://github.com/openai/codex) - Coding Agent in VSCode

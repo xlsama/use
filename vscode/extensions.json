@@ -1,6 +1,5 @@
 {
   "recommendations": [
-    "aaron-bond.better-comments",
     "ahmadalli.vscode-nginx-conf",
     "antfu.file-nesting",
     "antfu.goto-alias",
@@ -13,6 +12,7 @@
     "charliermarsh.ruff",
     "dbaeumer.vscode-eslint",
     "donjayamanne.githistory",
+    "edwinhuish.better-comments-next",
     "esbenp.prettier-vscode",
     "formulahendry.code-runner",
     "github.copilot",

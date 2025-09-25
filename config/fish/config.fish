@@ -83,8 +83,7 @@ alias i='cd ~/i'
 alias w='cd ~/w' # work
 alias dl='cd ~/Downloads'
 
-alias ls='lsd'
-alias l='ls -1A'
+alias l='lsd -1A'
 alias v='nvim'
 alias o='open'
 alias nv='fnm' # node version manager
