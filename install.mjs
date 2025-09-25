@@ -66,6 +66,7 @@ await $`defaults write com.apple.finder ShowPathbar -bool true`;
 await $`defaults write com.apple.finder _FXSortFoldersFirst -bool true`;
 // keyboard
 await $`defaults write ApplePressAndHoldEnabled -bool false`;
+await $`defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false`;
 
 print("corepack enable...");
 await $`corepack enable`;
