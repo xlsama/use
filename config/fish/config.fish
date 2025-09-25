@@ -11,7 +11,6 @@ starship init fish | source
 zoxide init fish | source
 fnm env --use-on-cd | source
 fzf --fish | source
-source "$HOME/.local/bin/env.fish"
 
 # --- 状态 & 日志 & 差异 ---
 alias gst='git status'
@@ -104,7 +103,6 @@ alias release="nr release"
 alias up='nlx taze -I -r'
 alias venv='source .venv/bin/activate.fish'
 
-alias claude="/Users/xlsama/.claude/local/claude"
 alias codex='codex-aarch64-apple-darwin'
 alias ai='codex --ask-for-approval never --sandbox danger-full-access -m gpt-5-codex -c model_reasoning_effort="high" --search'
 
