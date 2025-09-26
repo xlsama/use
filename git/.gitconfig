@@ -13,6 +13,7 @@
 [includeIf "gitdir:/Users/xlsama/w/"]
   path = ~/.gitconfig_work
 [credential]
-	helper = store
+	helper = osxkeychain
+	useHttpPath = true
 [diff]
 	external = difft

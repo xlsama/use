@@ -67,6 +67,9 @@ await $`defaults write com.apple.finder _FXSortFoldersFirst -bool true`;
 // keyboard
 await $`defaults write -g ApplePressAndHoldEnabled -bool false`;
 
+print("create .hushlogin to disable login messages...");
+await $`touch ~/.hushlogin`;
+
 print("corepack enable...");
 await $`corepack enable`;
 
