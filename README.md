@@ -19,7 +19,7 @@ mkdir -p ~/i && cd ~/i && git clone git@github.com:xlsama/use.git --depth=1 && c
 ```
 
 ```bash
-zx ./install.mjs
+zx install.mjs
 ```
 
 ## Software
