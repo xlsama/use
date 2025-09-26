@@ -5,31 +5,13 @@ $.shell = "/bin/bash";
 
 const LINK_MAP = [
   // config
-  {
-    source: "~/i/use/config/fish",
-    target: `~/.config/fish`,
-  },
-  {
-    source: `~/i/use/config/nvim`,
-    target: `~/.config/nvim`,
-  },
-  {
-    source: `~/i/use/config/starship.toml`,
-    target: `~/.config/starship.toml`,
-  },
+  { source: "~/i/use/config/fish", target: `~/.config/fish` },
+  { source: `~/i/use/config/nvim`, target: `~/.config/nvim` },
+  { source: `~/i/use/config/starship.toml`, target: `~/.config/starship.toml` },
   // git
-  {
-    source: `~/i/use/git/.gitconfig`,
-    target: `~/.gitconfig`,
-  },
-  {
-    source: `~/i/use/git/.gitconfig_work`,
-    target: `~/.gitconfig_work`,
-  },
-  {
-    source: `~/i/use/git/.gitignore`,
-    target: `~/.gitignore`,
-  },
+  { source: `~/i/use/git/.gitconfig`, target: `~/.gitconfig` },
+  { source: `~/i/use/git/.gitconfig_work`, target: `~/.gitconfig_work` },
+  { source: `~/i/use/git/.gitignore`, target: `~/.gitignore` },
   // vscode
   {
     source: `~/i/use/vscode/settings.json`,
