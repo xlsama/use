@@ -1,8 +1,18 @@
-## Installation
+## Setup
+
+### Install Homebrew
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### Install Apps, CLI, Fonts from Brewfile
 
 ```bash
 brew bundle --file=./Brewfile
 ```
+
+### Init
 
 ```bash
 zx ./install.mjs

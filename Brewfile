@@ -2,13 +2,23 @@
 tap "homebrew/cask-fonts"
 tap "daipeihust/tap"
 
-# software
-brew 'popclip'
+# apps
+cask 'google-chrome'
 cask "visual-studio-code"
 cask 'ghostty'
+cask 'surge'
+cask 'obsidian'
+cask 'ticktick'
+cask 'raycast'
+brew 'popclip'
 cask 'mos'
 cask "keyboardholder"
 cask 'betterdisplay'
+cask 'yaak'
+cask 'orbstack'
+cask 'dataflare'
+cask 'qqmusic'
+cask 'telegram'
 
 # command line tools
 brew 'zx'
