@@ -1,28 +1,36 @@
 ## Installation
 
-```shell
-zx ./install.mjs
+```bash
+brew bundle --file=./Brewfile
 ```
 
-```shell
-brew bundle --file=./Brewfile
+```bash
+zx ./install.mjs
 ```
 
 ## Software
 
 ### Browser
 
-* [Chrome](Chrome/Chrome.md)
+* [Chrome](https://www.google.com/chrome/)
 
 ### Editor
 
 * [VSCode](https://code.visualstudio.com/)
 
+### Terminal
+
+* [Ghostty](https://ghostty.org/)
+
+### Network
+
+* [Surge](https://nssurge.com/) - Bypass GFW
+
 ### Chat
 
 * [飞书](https://www.feishu.cn/) - Meeting, Screenshot and Recording
 
-* [微信](https://www.wechat.com/) - Chat
+* [微信](https://weixin.qq.com/)
 
 ### Writing
 
@@ -34,11 +42,9 @@ brew bundle --file=./Brewfile
 
 * [Raycast](https://raycast.com) - Launcher
 
-* [Ghostty]() - Terminal
+* [Passwords](https://apps.apple.com/us/app/passwords/id6473799789) - MacOS Internal Password Manager
 
-* [Passwords]() - MacOS Internal Password Manager
-
-* [PopClip](https://pilotmoon.com/popclip/) - Quick Jump
+* [PopClip](https://pilotmoon.com/popclip/) - Quick Open
 
 * [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse manager
 
@@ -47,8 +53,6 @@ brew bundle --file=./Brewfile
 * [KeyboardHolder](https://github.com/leaves615/KeyboardHolder) - Auto switch input source
 
 * [Better Display](https://github.com/waydabber/BetterDisplay) - Control displays
-
-* [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev) - Bypass GFW
 
 * [Yaak](https://yaak.app/) - API client
 
@@ -66,7 +70,7 @@ brew bundle --file=./Brewfile
 
 ## Other
 
-* [Telegram]() 
+* [Telegram](https://telegram.org/) 
 
 ## Hardware
 
@@ -84,4 +88,4 @@ brew bundle --file=./Brewfile
 
 * [Homebrew](https://brew.sh/) - Package Manager
 
-* [Codex](https://github.com/openai/codex) - Coding Agent in VSCode
+More: [Brewfile](./Brewfile)

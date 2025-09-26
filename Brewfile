@@ -1,8 +1,17 @@
-# 'brew tap'
+# fetch registry
 tap "homebrew/cask-fonts"
 tap "daipeihust/tap"
 
-# 'brew install'
+# software
+brew 'popclip'
+cask "visual-studio-code"
+cask 'ghostty'
+cask 'mos'
+cask "keyboardholder"
+cask 'betterdisplay'
+
+# command line tools
+brew 'zx'
 brew "fish"
 brew "starship"
 brew "neovim"
@@ -11,14 +20,10 @@ brew "lsd"
 brew "jq"
 brew "fnm"
 brew "ripgrep"
-brew "im-select"
 brew "zoxide"
 brew 'difftastic'
 brew 'fzf'
-brew 'zx'
-brew 'popclip'
+brew "im-select"
 
-# 'brew install --cask'
-cask "visual-studio-code"
-cask "keyboardholder"
+# fonts
 cask "font-maple-mono-normal-nf-cn"
