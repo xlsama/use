@@ -31,10 +31,7 @@ const LINK_MAP = [
 ];
 
 // ---------- create folders ----------
-// code folder
-await $`mkdir -p ~/i`;
-// work code folder
-await $`mkdir -p ~/w`;
+await $`mkdir -p ~/w`; // Working code directory
 
 log("link config files...");
 await Promise.all(

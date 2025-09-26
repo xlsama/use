@@ -15,6 +15,10 @@ brew bundle --file=./Brewfile
 ### Run install script
 
 ```bash
+mkdir -p ~/i && cd ~/i && git clone git@github.com:xlsama/use.git
+```
+
+```bash
 zx ./install.mjs
 ```
 
