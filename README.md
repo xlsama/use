@@ -12,7 +12,7 @@
 brew bundle --file=./Brewfile
 ```
 
-### Init
+### Run install script
 
 ```bash
 zx ./install.mjs

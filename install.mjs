@@ -3,6 +3,9 @@
 // Force zx to use bash instead of fish
 $.shell = "/bin/bash";
 
+const HOME_DIR = os.homedir();
+
+// ---------- linking ----------
 const LINK_MAP = [
   // config
   { source: "~/i/use/config/fish", target: `~/.config/fish` },
@@ -27,10 +30,13 @@ const LINK_MAP = [
   },
 ];
 
-print("link config files...");
+// ---------- create folders ----------
+// code folder
+await $`mkdir -p ~/i`;
+// work code folder
+await $`mkdir -p ~/w`;
 
-const HOME_DIR = os.homedir();
-
+log("link config files...");
 await Promise.all(
   LINK_MAP.map(async ({ source, target }) => {
     source = source.replace("~", HOME_DIR);
@@ -41,44 +47,38 @@ await Promise.all(
   })
 );
 
-print("set macOS system settings...");
-// finder
+// ---------- macOS defaults ----------
+log("set macOS system settings...");
 await $`defaults write NSGlobalDomain AppleShowAllExtensions -bool true`;
 await $`defaults write com.apple.finder ShowPathbar -bool true`;
 await $`defaults write com.apple.finder _FXSortFoldersFirst -bool true`;
-// keyboard
 await $`defaults write -g ApplePressAndHoldEnabled -bool false`;
-
-print("create .hushlogin to disable login messages...");
 await $`touch ~/.hushlogin`;
+// restart finder to apply settings
+await $({ nothrow: true })`killall Finder`;
 
-print("corepack enable...");
+// ---------- corepack/npm ----------
+log("corepack enable...");
 await $`corepack enable`;
-
-print("install npm global packages...");
-
-const GLOBAL_NPM_PKG_LIST = ["@antfu/ni", "nrm"];
-
 await $`npm set registry https://registry.npmjs.org/`;
-await Promise.all(
-  GLOBAL_NPM_PKG_LIST.map(async (name) => {
-    await $`npm i -g ${name}`;
-  })
-);
 
-print("install vscode extensions...");
+log("install npm global packages ...");
+for (const name of ["@antfu/ni", "nrm"]) {
+  await $({ nothrow: true })`npm i -g ${name}`;
+}
 
+// ---------- VS Code extensions ----------
+log("install vscode extensions...");
 const { recommendations } = await fs.readJson("./vscode/extensions.json");
-
 await Promise.all(
   recommendations.map(async (name) => {
     await $`code --install-extension ${name} --force`;
   })
 );
 
+// ---------- git hook ----------
 await $`cp ./.hooks/pre-commit ./.git/hooks/`;
 
-function print(msg) {
-  console.log(chalk.magenta(msg));
-  console.log();
+function log(msg) {
+  console.log(chalk.magenta(msg), "\n");
 }
