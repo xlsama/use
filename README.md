@@ -15,7 +15,7 @@ brew bundle --file=./Brewfile
 ### Run install script
 
 ```bash
-mkdir -p ~/i && cd ~/i && git clone git@github.com:xlsama/use.git
+mkdir -p ~/i && cd ~/i && git clone git@github.com:xlsama/use.git --depth=1 && cd use
 ```
 
 ```bash
