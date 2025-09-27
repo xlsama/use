@@ -11,6 +11,7 @@ const LINK_MAP = [
   { source: "~/i/use/config/fish", target: `~/.config/fish` },
   { source: `~/i/use/config/nvim`, target: `~/.config/nvim` },
   { source: `~/i/use/config/starship.toml`, target: `~/.config/starship.toml` },
+  { source: "~/i/use/codex/config.toml", target: "~/.codex/config.toml" },
   // git
   { source: `~/i/use/git/.gitconfig`, target: `~/.gitconfig` },
   { source: `~/i/use/git/.gitconfig_work`, target: `~/.gitconfig_work` },
