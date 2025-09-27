@@ -12,6 +12,16 @@
 brew bundle --file=./Brewfile
 ```
 
+### Set fish as default shell
+
+```bash
+echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+```
+
+```bash
+chsh -s /opt/homebrew/bin/fish
+```
+
 ### Run install script
 
 ```bash
