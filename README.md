@@ -102,4 +102,78 @@ zx install.mjs
 
 * [Homebrew](https://brew.sh/) - Package Manager
 
-More: [Brewfile](./Brewfile)
+* More: [Brewfile](./Brewfile)
+
+## MacOS Config 
+
+### Battery
+
+* On power adapter: High Power
+
+### General
+
+#### Date & Time
+
+* 24-hour time: open
+
+#### Language & Region
+
+* Region: China mainland (Raycast Currency Exchange)
+
+* Temperature: Celsius
+
+* First day of week: Monday
+
+### Acessibility
+
+#### Pointer Control
+
+##### Trackpad Options
+
+* Dragging style: Three Finger Drag
+
+### Appearance
+
+* Show scroll bars: When scrolling
+
+### Siri
+
+* Siri: off
+
+### Desktop & Dock
+
+* Dock position on screen: Left
+
+* Show suggested and recent apps in Dock: off
+
+### Keyboard
+
+* Key repeat rate: Fast
+
+* Delay until repeat: Short
+
+#### Keyboard Shortcuts
+
+##### Modifier Keys
+
+* Caps Lock key -> Control
+
+#### Input Sources
+
+##### All Input Sources
+
+* Show Input menu in menu bar: off
+
+##### Shuangpin - Simplified
+
+* Shuangpin layout: Xiaohe
+
+### Trackpad
+
+#### Point & Click
+
+* Tap to click: on
+
+#### More Gestures
+
+* Swipe between pages: Scroll Left or Right with Two Fingers
