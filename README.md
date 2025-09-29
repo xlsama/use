@@ -60,6 +60,8 @@ zx install.mjs
 
 * [Obsidian](https://obsidian.md/)
 
+* [Refine](https://refine.sh/) - Grammar Checker, Very good.
+
 ### Productivity
 
 * [TickTick](https://ticktick.com/) - To Do
@@ -67,8 +69,6 @@ zx install.mjs
 * [Raycast](https://raycast.com) - Launcher
 
 * [Passwords](https://apps.apple.com/us/app/passwords/id6473799789) - MacOS Internal Password Manager
-
-* [Refine](https://refine.sh/) - Grammar Checker
 
 * [Input Source Pro](https://inputsource.pro/) - Auto switch input source
 
