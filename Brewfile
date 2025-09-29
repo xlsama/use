@@ -12,7 +12,7 @@ cask 'ticktick'
 cask 'raycast'
 brew 'popclip'
 cask 'mos'
-cask "keyboardholder"
+cask 'input-source-pro'
 cask 'betterdisplay'
 cask 'yaak'
 cask 'orbstack'
