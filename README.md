@@ -68,13 +68,15 @@ zx install.mjs
 
 * [Passwords](https://apps.apple.com/us/app/passwords/id6473799789) - MacOS Internal Password Manager
 
+* [Refine](https://refine.sh/) - Grammar Checker
+
+* [Input Source Pro](https://inputsource.pro/) - Auto switch input source
+
 * [PopClip](https://pilotmoon.com/popclip/) - Quick Open
 
 * [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse manager
 
 * [Mos](https://mos.caldis.me/) - Mouse Smooth Scroll
-
-* [KeyboardHolder](https://github.com/leaves615/KeyboardHolder) - Auto switch input source
 
 * [Better Display](https://github.com/waydabber/BetterDisplay) - Control displays
 
