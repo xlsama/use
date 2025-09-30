@@ -60,7 +60,7 @@ zx install.mjs
 
 * [Obsidian](https://obsidian.md/)
 
-* [Refine](https://refine.sh/) - Grammar Checker, Very good.
+* [Refine](https://refine.sh/) - Grammar Checker, Very good2.
 
 ### Productivity
 
