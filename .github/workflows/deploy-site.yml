@@ -1,0 +1,15 @@
+name: Trigger site rebuild on change to README.md
+on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Netlify build hook
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          curl -X POST -s -o /dev/null -w "%{http_code}\n" "$NETLIFY_BUILD_HOOK"
