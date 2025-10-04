@@ -40,7 +40,7 @@ zx install.mjs
 
 ### Editor
 
-* [VSCode](https://code.visualstudio.com/)
+* [Cursor](https://code.visualstudio.com/)
 
 ### Terminal
 
@@ -48,7 +48,7 @@ zx install.mjs
 
 ### Network
 
-* [Surge](https://nssurge.com/) - Bypass GFW
+* [Loon for Mac](https://nssurge.com/) - Bypass GFW
 
 ### Chat
 
@@ -93,10 +93,6 @@ zx install.mjs
 * [像素蛋糕](https://www.pixcakeai.com/) - Photo Editing
 
 * [QQ Music](https://y.qq.com/) - Music
-
-## Other
-
-* [Telegram](https://telegram.org/) 
 
 ## Hardware
 
