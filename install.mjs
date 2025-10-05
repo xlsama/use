@@ -47,13 +47,25 @@ await Promise.all(
 
 // ---------- macOS defaults ----------
 log("set macOS system settings...");
-await $`defaults write NSGlobalDomain AppleShowAllExtensions -bool true`;
+// docs: https://macos-defaults.com/
+// Show path bar
 await $`defaults write com.apple.finder ShowPathbar -bool true`;
+// Keep folders on top
 await $`defaults write com.apple.finder _FXSortFoldersFirst -bool true`;
+// Repeats the key as long as it is held down.
 await $`defaults write -g ApplePressAndHoldEnabled -bool false`;
+// Put the Dock on the left of the screen
+await $`defaults write com.apple.dock "orientation" -string left`;
+// Do not display recent apps in the Dock
+await $`defaults write com.apple.dock "show-recents" -bool false`;
+// Dragging with three finger drag
+await $`defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"`;
+// Show all file extensions inside the Finder
+await $`defaults write NSGlobalDomain "AppleShowAllExtensions" -bool true`;
 await $`touch ~/.hushlogin`;
-// restart finder to apply settings
+// restart to apply settings
 await $({ nothrow: true })`killall Finder`;
+await $({ nothrow: true })`killall Dock`;
 
 // ---------- corepack/npm ----------
 log("corepack enable...");

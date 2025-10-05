@@ -36,152 +36,138 @@ zx install.mjs
 
 ### Browser
 
-* [Chrome](https://www.google.com/chrome/)
+- [Chrome](https://www.google.com/chrome/)
 
 ### Editor
 
-* [Cursor](https://code.visualstudio.com/)
+- [Cursor](https://cursor.com/home)
 
 ### Terminal
 
-* [Ghostty](https://ghostty.org/)
+- [Ghostty](https://ghostty.org/)
 
 ### Network
 
-* [Loon for Mac](https://nssurge.com/) - Bypass GFW
+- [Loon for Mac](https://github.com/Loon0x00/Loon4Mac) - Bypass GFW
 
 ### Chat
 
-* [飞书](https://www.feishu.cn/) - Meeting, Screenshot and Recording
+- [飞书](https://www.feishu.cn/) - Meeting, Screenshot and Recording
 
-* [微信](https://weixin.qq.com/)
+- [微信](https://weixin.qq.com/)
 
 ### Writing
 
-* [Obsidian](https://obsidian.md/)
+- [Obsidian](https://obsidian.md/)
 
-* [Refine](https://refine.sh/) - Grammar Checker, Very good.
+- [Refine](https://refine.sh/) - Grammar Checker, Very good.
 
 ### Productivity
 
-* [TickTick](https://ticktick.com/) - To Do
+- [TickTick](https://ticktick.com/) - To Do
 
-* [Raycast](https://raycast.com) - Launcher
+- [Raycast](https://raycast.com) - Launcher
 
-* [Passwords](https://apps.apple.com/us/app/passwords/id6473799789) - MacOS Internal Password Manager
+- [Passwords](https://apps.apple.com/us/app/passwords/id6473799789) - MacOS Internal Password Manager
 
-* [Input Source Pro](https://inputsource.pro/) - Auto switch input source
+- [Input Source Pro](https://inputsource.pro/) - Auto switch input source
 
-* [PopClip](https://pilotmoon.com/popclip/) - Quick Open
+- [PopClip](https://pilotmoon.com/popclip/) - Quick Open
 
-* [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse manager
+- [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse manager
 
-* [Mos](https://mos.caldis.me/) - Mouse Smooth Scroll
+- [Mos](https://mos.caldis.me/) - Mouse Smooth Scroll
 
-* [Better Display](https://github.com/waydabber/BetterDisplay) - Control displays
+- [Better Display](https://github.com/waydabber/BetterDisplay) - Control displays
 
-* [Yaak](https://yaak.app/) - API client
+- [Yaak](https://yaak.app/) - API client
 
-* [OrbStack](https://orbstack.dev/) - Docker
+- [OrbStack](https://orbstack.dev/) - Docker
 
-* [Dataflare](https://dataflare.app/) - Database Management
+- [Dataflare](https://dataflare.app/) - Database Management
 
-* [UU 远程](https://uuyc.163.com/) - Remote Control
+- [UU 远程](https://uuyc.163.com/) - Remote Control
 
-* [剪映专业版](https://www.capcut.cn/) - Video Editing
+- [剪映专业版](https://www.capcut.cn/) - Video Editing
 
-* [像素蛋糕](https://www.pixcakeai.com/) - Photo Editing
+- [像素蛋糕](https://www.pixcakeai.com/) - Photo Editing
 
-* [QQ Music](https://y.qq.com/) - Music
+- [QQ Music](https://y.qq.com/) - Music
 
 ## Hardware
 
-* MacBook Pro 16 M1 Max / 32GB RAM
+- MacBook Pro 16 M1 Max / 32GB RAM
 
-* Mouse: MX Master 3S
+- Mouse: MX Master 3S
 
-* Keyboard: Keychron K14Pro
+- Keyboard: Keychron K14Pro
 
-* Display: 海信 27G7K Pro
+- Display: 海信 27G7K Pro
 
 ## CLI
 
-* [fish](https://fishshell.com/) - Shell
+- [fish](https://fishshell.com/) - Shell
 
-* [Homebrew](https://brew.sh/) - Package Manager
+- [Homebrew](https://brew.sh/) - Package Manager
 
-* More: [Brewfile](./Brewfile)
+- More: [Brewfile](./Brewfile)
 
-## MacOS Config 
+## MacOS Config
 
 ### Battery
 
-* On power adapter: High Power
+- On power adapter: High Power
 
 ### General
 
 #### Date & Time
 
-* 24-hour time: open
+- 24-hour time: open
 
 #### Language & Region
 
-* Region: China mainland (Raycast Currency Exchange)
+- Region: China mainland (Raycast Currency Exchange)
 
-* Temperature: Celsius
+- Temperature: Celsius
 
-* First day of week: Monday
-
-### Acessibility
-
-#### Pointer Control
-
-##### Trackpad Options
-
-* Dragging style: Three Finger Drag
+- First day of week: Monday
 
 ### Appearance
 
-* Show scroll bars: When scrolling
+- Show scroll bars: When scrolling
 
 ### Siri
 
-* Siri: off
-
-### Desktop & Dock
-
-* Dock position on screen: Left
-
-* Show suggested and recent apps in Dock: off
+- Siri: off
 
 ### Keyboard
 
-* Key repeat rate: Fast
+- Key repeat rate: Fast
 
-* Delay until repeat: Short
+- Delay until repeat: Short
 
 #### Keyboard Shortcuts
 
 ##### Modifier Keys
 
-* Caps Lock key -> Control
+- Caps Lock key -> Control
 
 #### Input Sources
 
 ##### All Input Sources
 
-* Show Input menu in menu bar: off
+- Show Input menu in menu bar: off
 
 ##### Shuangpin - Simplified
 
-* Shuangpin layout: Xiaohe
+- Shuangpin layout: Xiaohe
 
 ### Trackpad
 
 #### Point & Click
 
-* Tap to click: on
+- Tap to click: on
 
 #### More Gestures
 
-* Swipe between pages: Scroll Left or Right with Two Fingers
+- Swipe between pages: Scroll Left or Right with Two Fingers
