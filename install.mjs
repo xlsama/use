@@ -62,6 +62,8 @@ await $`defaults write com.apple.dock "show-recents" -bool false`;
 await $`defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"`;
 // Show all file extensions inside the Finder
 await $`defaults write NSGlobalDomain "AppleShowAllExtensions" -bool true`;
+// Set language to zh-CN for Maps
+await $`defaults write com.apple.Maps AppleLanguages '("zh-CN")'`;
 await $`touch ~/.hushlogin`;
 // restart to apply settings
 await $({ nothrow: true })`killall Finder`;
