@@ -36,7 +36,7 @@ zx install.mjs
 
 ### Browser
 
-- [Chrome](https://www.google.com/chrome/)
+- [Google Chrome](https://www.google.com/chrome/)
 
 ### Editor
 
@@ -48,7 +48,7 @@ zx install.mjs
 
 ### Network
 
-- [Loon for Mac](https://github.com/Loon0x00/Loon4Mac) - Bypass GFW
+- [Loon](https://github.com/Loon0x00/Loon4Mac) - Bypass GFW
 
 ### Chat
 
