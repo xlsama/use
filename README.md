@@ -1,5 +1,11 @@
 ## Setup
 
+### Clone repository
+
+```bash
+mkdir -p ~/i && cd ~/i && git clone git@github.com:xlsama/use.git --depth=1 && cd use
+```
+
 ### Install Homebrew
 
 ```bash
@@ -23,10 +29,6 @@ chsh -s /opt/homebrew/bin/fish
 ```
 
 ### Run install script
-
-```bash
-mkdir -p ~/i && cd ~/i && git clone git@github.com:xlsama/use.git --depth=1 && cd use
-```
 
 ```bash
 zx install.mjs
