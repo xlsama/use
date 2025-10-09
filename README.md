@@ -80,11 +80,15 @@ zx install.mjs
 
 - [Better Display](https://github.com/waydabber/BetterDisplay) - Control displays
 
+### Developer Tools
+
 - [Yaak](https://yaak.app/) - API client
 
 - [OrbStack](https://orbstack.dev/) - Docker
 
 - [Dataflare](https://dataflare.app/) - Database Management
+
+### Other
 
 - [UU 远程](https://uuyc.163.com/) - Remote Control
 
