@@ -75,7 +75,7 @@ await $`corepack enable`;
 await $`npm set registry https://registry.npmjs.org/`;
 
 log("install npm global packages ...");
-for (const name of ["@antfu/ni", "nrm"]) {
+for (const name of ["@antfu/ni", "nnrm"]) {
   await $({ nothrow: true })`npm i -g ${name}`;
 }
 

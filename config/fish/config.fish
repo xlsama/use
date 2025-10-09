@@ -94,6 +94,7 @@ alias cgb='gb --show-current | copy'
 alias speedtest='networkQuality'
 
 alias nid='ni -D'
+alias nir='rm -rf node_modules pnpm-lock.yaml package-lock.json yarn.lock && ni'
 alias d='nr dev'
 alias do='nr dev --open'
 alias b='nr build'
