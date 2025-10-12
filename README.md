@@ -84,15 +84,13 @@ zx install.mjs
 
 ### Developer Tools
 
-- [Yaak](https://yaak.app/) - API client
+- [Yaak](https://yaak.app/) - API Client
 
 - [OrbStack](https://orbstack.dev/) - Docker
 
 - [Dataflare](https://dataflare.app/) - Database Management
 
 ### Other
-
-- [UU 远程](https://uuyc.163.com/) - Remote Control
 
 - [剪映专业版](https://www.capcut.cn/) - Video Editing
 
