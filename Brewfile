@@ -6,7 +6,6 @@ tap "daipeihust/tap"
 cask 'google-chrome'
 cask "visual-studio-code"
 cask 'ghostty'
-cask 'surge'
 cask 'obsidian'
 cask 'ticktick'
 cask 'raycast'
@@ -18,7 +17,6 @@ cask 'yaak'
 cask 'orbstack'
 cask 'dataflare'
 cask 'qqmusic'
-cask 'telegram'
 
 # command line tools
 brew 'zx'
