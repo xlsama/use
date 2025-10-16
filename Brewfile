@@ -6,6 +6,7 @@ tap "daipeihust/tap"
 cask 'google-chrome'
 cask "visual-studio-code"
 cask 'ghostty'
+cask 'surge'
 cask 'obsidian'
 cask 'ticktick'
 cask 'raycast'

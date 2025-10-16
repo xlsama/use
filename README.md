@@ -34,6 +34,16 @@ chsh -s /opt/homebrew/bin/fish
 zx install.mjs
 ```
 
+## Hardware
+
+- MacBook Pro 16 M1 Max / 32GB RAM
+
+- Mouse: MX Master 3S
+
+- Keyboard: Keychron K14Pro
+
+- Display: 海信 27G7K Pro
+
 ## Software
 
 ### Browser
@@ -50,7 +60,7 @@ zx install.mjs
 
 ### Network
 
-- [Loon](https://github.com/Loon0x00/Loon4Mac) - Bypass GFW
+- [Surge](https://nssurge.com/) - Bypass GFW
 
 ### Chat
 
@@ -97,16 +107,6 @@ zx install.mjs
 - [像素蛋糕](https://www.pixcakeai.com/) - Photo Editing
 
 - [QQ Music](https://y.qq.com/) - Music
-
-## Hardware
-
-- MacBook Pro 16 M1 Max / 32GB RAM
-
-- Mouse: MX Master 3S
-
-- Keyboard: Keychron K14Pro
-
-- Display: 海信 27G7K Pro
 
 ## CLI
 
