@@ -34,6 +34,10 @@ alias gbD='git branch -D'
 alias gs='git switch'
 alias gsc='git switch -c'
 
+# --- 标签 ---
+alias gt='git tag'
+alias gtl='git tag -l'
+
 # --- 远程交互 (Fetch, Pull, Push) ---
 alias gf='git fetch --all --prune --tags'
 alias gl='git pull'
