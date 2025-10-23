@@ -12,8 +12,7 @@
   "buffer_font_family": "Maple Mono Normal NF CN",
   "agent": {
     "always_allow_tool_actions": true,
-    "play_sound_when_agent_done": true,
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-sonnet-4-5"
