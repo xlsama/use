@@ -1,0 +1,92 @@
+[
+  {
+    "bindings": {
+      "alt-h": "workspace::ActivatePaneLeft",
+      "alt-l": "workspace::ActivatePaneRight",
+      "alt-k": "workspace::ActivatePaneUp",
+      "alt-j": "workspace::ActivatePaneDown",
+      "cmd-e": "workspace::ToggleRightDock",
+      "cmd-shift-a": "git_panel::ToggleFocus",
+      "ctrl-r": "projects::OpenRecent"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-i": "editor::ShowCompletions"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "A": "project_panel::NewDirectory",
+      "r": "project_panel::Rename",
+      "d": "project_panel::Delete",
+      "q": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": ["workspace::SendKeystrokes", "escape cmd-s"]
+    }
+  },
+  {
+    "context": "Editor && VimControl",
+    "bindings": {
+      "H": ["workspace::SendKeystrokes", "^"],
+      "L": ["workspace::SendKeystrokes", "$"],
+      "space v": ["workspace::SendKeystrokes", "V"]
+    }
+  },
+  {
+    "context": "Editor && vim_operator == d",
+    "bindings": {
+      "h": ["workspace::SendKeystrokes", "d ^"],
+      "l": ["workspace::SendKeystrokes", "d $"],
+      "w": ["workspace::SendKeystrokes", "d i w"],
+      "(": ["workspace::SendKeystrokes", "d i ("],
+      "b": ["workspace::SendKeystrokes", "d i b"],
+      "[": ["workspace::SendKeystrokes", "d i ["],
+      "{": ["workspace::SendKeystrokes", "d i {"],
+      "'": ["workspace::SendKeystrokes", "d i '"],
+      "\"": ["workspace::SendKeystrokes", "d i \""],
+      "`": ["workspace::SendKeystrokes", "d i `"],
+      "<": ["workspace::SendKeystrokes", "d i <"]
+    }
+  },
+  {
+    "context": "Editor && vim_operator == c",
+    "bindings": {
+      "h": ["workspace::SendKeystrokes", "c ^"],
+      "l": ["workspace::SendKeystrokes", "c $"],
+      "r": "editor::Rename",
+      "w": ["workspace::SendKeystrokes", "c i w"],
+      "(": ["workspace::SendKeystrokes", "c i ("],
+      "b": ["workspace::SendKeystrokes", "c i b"],
+      "[": ["workspace::SendKeystrokes", "c i ["],
+      "{": ["workspace::SendKeystrokes", "c i {"],
+      "'": ["workspace::SendKeystrokes", "c i '"],
+      "\"": ["workspace::SendKeystrokes", "c i \""],
+      "`": ["workspace::SendKeystrokes", "c i `"],
+      "<": ["workspace::SendKeystrokes", "c i <"]
+    }
+  },
+  {
+    "context": "Editor && vim_operator == y",
+    "bindings": {
+      "h": ["workspace::SendKeystrokes", "y ^"],
+      "l": ["workspace::SendKeystrokes", "y $"],
+      "w": ["workspace::SendKeystrokes", "y i w"],
+      "(": ["workspace::SendKeystrokes", "y i ("],
+      "b": ["workspace::SendKeystrokes", "y i b"],
+      "[": ["workspace::SendKeystrokes", "y i ["],
+      "{": ["workspace::SendKeystrokes", "y i {"],
+      "'": ["workspace::SendKeystrokes", "y i '"],
+      "\"": ["workspace::SendKeystrokes", "y i \""],
+      "`": ["workspace::SendKeystrokes", "y i `"],
+      "<": ["workspace::SendKeystrokes", "y i <"]
+    }
+  }
+]
