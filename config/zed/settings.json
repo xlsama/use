@@ -98,6 +98,18 @@
     "cursor_position_button": false
   },
   "when_closing_with_no_tabs": "keep_window_open",
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/pnpm-lock.yaml"
+  ],
   "languages": {
     "CSS": {
       "language_servers": ["tailwindcss-language-server"]
