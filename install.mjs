@@ -16,6 +16,10 @@ const LINK_MAP = [
   { source: `~/i/use/git/.gitconfig`, target: `~/.gitconfig` },
   { source: `~/i/use/git/.gitconfig_work`, target: `~/.gitconfig_work` },
   { source: `~/i/use/git/.gitignore`, target: `~/.gitignore` },
+  // zed
+  { source: "~/i/use/config/zed/settings.json", target: `~/.config/zed/settings.json` },
+  { source: "~/i/use/config/zed/keymap.json", target: `~/.config/zed/keymap.json` },
+  { source: "~/i/use/config/zed/snippets", target: `~/.config/zed/snippets` },
   // vscode
   {
     source: `~/i/use/vscode/settings.json`,

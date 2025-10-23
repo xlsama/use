@@ -5,6 +5,7 @@ tap "daipeihust/tap"
 # apps
 cask 'google-chrome'
 cask "visual-studio-code"
+cask 'zed@preview'
 cask 'ghostty'
 cask 'surge'
 cask 'obsidian'
