@@ -20,6 +20,8 @@ const LINK_MAP = [
   { source: "~/i/use/config/zed/settings.json", target: `~/.config/zed/settings.json` },
   { source: "~/i/use/config/zed/keymap.json", target: `~/.config/zed/keymap.json` },
   { source: "~/i/use/config/zed/snippets", target: `~/.config/zed/snippets` },
+  // ghostty
+  { source: "~/i/use/config/ghostty/config", target: `~/.config/ghostty/config` },
   // vscode
   {
     source: `~/i/use/vscode/settings.json`,

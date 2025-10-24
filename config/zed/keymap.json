@@ -11,12 +11,6 @@
     }
   },
   {
-    "context": "Editor",
-    "bindings": {
-      "cmd-i": "editor::ShowCompletions"
-    }
-  },
-  {
     "context": "ProjectPanel && not_editing",
     "bindings": {
       "a": "project_panel::NewFile",
@@ -24,6 +18,12 @@
       "r": "project_panel::Rename",
       "d": "project_panel::Delete",
       "q": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-i": "editor::ShowCompletions"
     }
   },
   {
@@ -87,6 +87,24 @@
       "\"": ["workspace::SendKeystrokes", "y i \""],
       "`": ["workspace::SendKeystrokes", "y i `"],
       "<": ["workspace::SendKeystrokes", "y i <"]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-t": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "(BufferSearchBar && !in_replace)",
+    "bindings": {
+      "enter": null
+    }
+  },
+  {
+    "context": "BufferSearchBar",
+    "bindings": {
+      "enter": "search::SelectNextMatch"
     }
   }
 ]
