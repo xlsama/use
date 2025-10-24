@@ -85,6 +85,7 @@ alias gsl='git shortlog -sn' # 按作者统计提交数量
 alias i='cd ~/i'
 alias w='cd ~/w' # work
 alias dl='cd ~/Downloads'
+alias conf='cd ~/.config'
 
 alias ls='lsd'
 alias l='lsd -1A'
