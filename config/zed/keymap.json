@@ -41,6 +41,12 @@
     }
   },
   {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "g space": ["workspace::SendKeystrokes", "g space z z"]
+    }
+  },
+  {
     "context": "Editor && vim_operator == d",
     "bindings": {
       "h": ["workspace::SendKeystrokes", "d ^"],

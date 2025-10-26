@@ -58,18 +58,19 @@
   },
   "project_panel": {
     "dock": "right",
-    "default_width": 360,
+    "default_width": 400,
     "entry_spacing": "standard",
     "indent_size": 12
   },
   "git_panel": {
+    "dock": "right",
     "button": true,
-    "dock": "right"
+    "default_width": 400
   },
   "outline_panel": {
     "dock": "right",
     "button": true,
-    "default_width": 360
+    "default_width": 400
   },
   "notification_panel": {
     "button": false
