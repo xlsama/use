@@ -13,7 +13,3 @@ args = [
   "--api-key",
   "ctx7sk-372b01b4-fc80-42d3-8798-9a2be0a35073",
 ]
-
-[mcp_servers.nuxt]
-command = "npx"
-args = ["mcp-remote", "https://mcp.nuxt.com/sse"]
