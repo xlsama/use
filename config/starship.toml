@@ -6,8 +6,8 @@ add_newline = true
 
 # 将提示符中的 '❯' 替换为 '➜'
 [character] # 此模块名称为 'character'
-success_symbol = '[➜](bold green)' # 将 'success_symbol' 片段设置成颜色为 'bold green' 的 '➜'  
-error_symbol = '[➜](bold red)'     # 将 'error_symbol' 片段设置成颜色为 'bold red' 的 '➜'  
+success_symbol = '[➜](bold green)' # 将 'success_symbol' 片段设置成颜色为 'bold green' 的 '➜'
+error_symbol = '[➜](bold red)'     # 将 'error_symbol' 片段设置成颜色为 'bold red' 的 '➜'
 
 # 禁用 'package' 组件，将其隐藏
 [package]

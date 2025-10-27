@@ -1,102 +1,80 @@
 #!/usr/bin/env zx
 
 // Force zx to use bash instead of fish
-$.shell = "/bin/bash";
+$.shell = '/bin/bash'
 
-const HOME_DIR = os.homedir();
+const HOME_DIR = os.homedir()
 
 // ---------- linking ----------
 const LINK_MAP = [
-  // config
-  { source: "~/i/use/config/fish", target: `~/.config/fish` },
-  { source: `~/i/use/config/nvim`, target: `~/.config/nvim` },
-  { source: `~/i/use/config/starship.toml`, target: `~/.config/starship.toml` },
-  { source: "~/i/use/codex/config.toml", target: "~/.codex/config.toml" },
   // git
-  { source: `~/i/use/git/.gitconfig`, target: `~/.gitconfig` },
-  { source: `~/i/use/git/.gitconfig_work`, target: `~/.gitconfig_work` },
-  { source: `~/i/use/git/.gitignore`, target: `~/.gitignore` },
-  // zed
-  { source: "~/i/use/config/zed/settings.json", target: `~/.config/zed/settings.json` },
-  { source: "~/i/use/config/zed/keymap.json", target: `~/.config/zed/keymap.json` },
-  { source: "~/i/use/config/zed/snippets", target: `~/.config/zed/snippets` },
+  { source: '~/i/use/git/.gitconfig', target: '~/.gitconfig' },
+  { source: '~/i/use/git/.gitconfig_work', target: '~/.gitconfig_work' },
+  { source: '~/i/use/git/.gitignore', target: '~/.gitignore' },
+  // fish
+  { source: '~/i/use/config/fish', target: '~/.config/fish' },
+  // nvim
+  { source: '~/i/use/config/nvim', target: '~/.config/nvim' },
   // ghostty
-  { source: "~/i/use/config/ghostty/config", target: `~/.config/ghostty/config` },
-  // vscode
-  {
-    source: `~/i/use/vscode/settings.json`,
-    target: `~/Library/Application Support/Code/User/settings.json`,
-  },
-  {
-    source: `~/i/use/vscode/keybindings.json`,
-    target: `~/Library/Application Support/Code/User/keybindings.json`,
-  },
-  {
-    source: `~/i/use/vscode/global.code-snippets`,
-    target: `~/Library/Application Support/Code/User/snippets/global.code-snippets`,
-  },
-];
+  { source: '~/i/use/config/ghostty/config', target: '~/.config/ghostty/config' },
+  // starship
+  { source: '~/i/use/config/starship.toml', target: '~/.config/starship.toml' },
+  // codex
+  { source: '~/i/use/config/codex/config.toml', target: '~/.codex/config.toml' },
+  // zed
+  { source: '~/i/use/config/zed/settings.json', target: '~/.config/zed/settings.json' },
+  { source: '~/i/use/config/zed/keymap.json', target: '~/.config/zed/keymap.json' },
+  { source: '~/i/use/config/zed/snippets', target: '~/.config/zed/snippets' },
+]
 
 // ---------- create folders ----------
-await $`mkdir -p ~/w`; // Working code directory
+await $`mkdir -p ~/w` // Working code directory
 
-log("link config files...");
+log('link config files...')
 await Promise.all(
   LINK_MAP.map(async ({ source, target }) => {
-    source = source.replace("~", HOME_DIR);
-    target = target.replace("~", HOME_DIR);
-    await $`mkdir -p ${path.dirname(target)}`;
-    await $`rm -rf ${target}`;
-    await $`ln -s -f ${source} ${target}`;
-  })
-);
+    source = source.replace('~', HOME_DIR)
+    target = target.replace('~', HOME_DIR)
+    await $`mkdir -p ${path.dirname(target)}`
+    await $`rm -rf ${target}`
+    await $`ln -s -f ${source} ${target}`
+  }),
+)
 
 // ---------- macOS defaults ----------
-log("set macOS system settings...");
+log('set macOS system settings...')
 // docs: https://macos-defaults.com/
 // Show path bar
-await $`defaults write com.apple.finder ShowPathbar -bool true`;
+await $`defaults write com.apple.finder ShowPathbar -bool true`
 // Keep folders on top
-await $`defaults write com.apple.finder _FXSortFoldersFirst -bool true`;
+await $`defaults write com.apple.finder _FXSortFoldersFirst -bool true`
 // Repeats the key as long as it is held down.
-await $`defaults write -g ApplePressAndHoldEnabled -bool false`;
+await $`defaults write -g ApplePressAndHoldEnabled -bool false`
 // Put the Dock on the left of the screen
-await $`defaults write com.apple.dock "orientation" -string left`;
+await $`defaults write com.apple.dock "orientation" -string left`
 // Do not display recent apps in the Dock
-await $`defaults write com.apple.dock "show-recents" -bool false`;
+await $`defaults write com.apple.dock "show-recents" -bool false`
 // Dragging with three finger drag
-await $`defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"`;
+await $`defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"`
 // Show all file extensions inside the Finder
-await $`defaults write NSGlobalDomain "AppleShowAllExtensions" -bool true`;
+await $`defaults write NSGlobalDomain "AppleShowAllExtensions" -bool true`
 // Set language to zh-CN for Maps
-await $`defaults write com.apple.Maps AppleLanguages '("zh-CN")'`;
-await $`touch ~/.hushlogin`;
+await $`defaults write com.apple.Maps AppleLanguages '("zh-CN")'`
+await $`touch ~/.hushlogin`
 // restart to apply settings
-await $({ nothrow: true })`killall Finder`;
-await $({ nothrow: true })`killall Dock`;
+await $({ nothrow: true })`killall Finder`
+await $({ nothrow: true })`killall Dock`
 
 // ---------- corepack/npm ----------
-log("corepack enable...");
-await $`corepack enable`;
-await $`npm set registry https://registry.npmjs.org/`;
+log('corepack enable...')
+await $`corepack enable`
+await $`npm set registry https://registry.npmjs.org/`
 
-log("install npm global packages ...");
-for (const name of ["@antfu/ni", "nnrm"]) {
-  await $({ nothrow: true })`npm i -g ${name}`;
+log('install npm global packages ...')
+for (const name of ['@antfu/ni', 'nnrm']) {
+  await $({ nothrow: true })`npm i -g ${name}`
 }
 
-// ---------- VS Code extensions ----------
-log("install vscode extensions...");
-const { recommendations } = await fs.readJson("./vscode/extensions.json");
-await Promise.all(
-  recommendations.map(async (name) => {
-    await $`code --install-extension ${name} --force`;
-  })
-);
-
-// ---------- git hook ----------
-await $`cp ./.hooks/pre-commit ./.git/hooks/`;
-
 function log(msg) {
-  console.log(chalk.magenta(msg), "\n");
+  console.log(chalk.magenta(msg), '\n')
 }

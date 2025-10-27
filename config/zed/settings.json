@@ -1,4 +1,20 @@
 {
+  "context_servers": {
+    "mcp-server-context7": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "context7_api_key": "ctx7sk-8848a459-15de-4da8-8a14-4cc066dc9540"
+      }
+    },
+    "nuxt-ui": {
+      "source": "custom",
+      "enabled": true,
+      "command": "npx",
+      "args": ["mcp-remote", "https://ui.nuxt.com/mcp"],
+      "env": {}
+    }
+  },
   "use_smartcase_search": true,
   "diagnostics": {
     "inline": {
@@ -12,7 +28,7 @@
   "buffer_font_family": "Maple Mono Normal NF CN",
   "agent": {
     "always_allow_tool_actions": true,
-    "default_profile": "write",
+    "default_profile": "ask",
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-sonnet-4-5"
@@ -120,7 +136,14 @@
         {
           "external": {
             "command": "prettier",
-            "arguments": ["--stdin-filepath", "{buffer_path}"]
+            "arguments": [
+              "--print-width",
+              "120",
+              "--single-quote",
+              "--no-semi",
+              "--stdin-filepath",
+              "{buffer_path}"
+            ]
           }
         }
       ]
@@ -131,7 +154,14 @@
         {
           "external": {
             "command": "prettier",
-            "arguments": ["--stdin-filepath", "{buffer_path}"]
+            "arguments": [
+              "--print-width",
+              "120",
+              "--single-quote",
+              "--no-semi",
+              "--stdin-filepath",
+              "{buffer_path}"
+            ]
           }
         }
       ]
@@ -142,7 +172,32 @@
         {
           "external": {
             "command": "prettier",
-            "arguments": ["--stdin-filepath", "{buffer_path}"]
+            "arguments": [
+              "--print-width",
+              "120",
+              "--single-quote",
+              "--no-semi",
+              "--stdin-filepath",
+              "{buffer_path}"
+            ]
+          }
+        }
+      ]
+    },
+    "Svelte": {
+      "formatter": [
+        { "code_action": "source.fixAll.eslint" },
+        {
+          "external": {
+            "command": "prettier",
+            "arguments": [
+              "--print-width",
+              "120",
+              "--single-quote",
+              "--no-semi",
+              "--stdin-filepath",
+              "{buffer_path}"
+            ]
           }
         }
       ]
