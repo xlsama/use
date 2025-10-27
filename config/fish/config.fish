@@ -12,6 +12,7 @@ zoxide init fish | source
 fnm env --use-on-cd | source
 fzf --fish | source
 
+alias g='git'
 # --- 状态 & 日志 & 差异 ---
 alias gst='git status'
 alias gd='git diff'
@@ -82,21 +83,27 @@ alias gcpc='git cherry-pick --continue'
 alias gcpa='git cherry-pick --abort'
 alias gsl='git shortlog -sn' # 按作者统计提交数量
 
+# cd
 alias i='cd ~/i'
 alias w='cd ~/w' # work
 alias dl='cd ~/Downloads'
 alias conf='cd ~/.config'
 
+# ls
 alias ls='lsd'
 alias l='lsd -1A'
+
 alias v='nvim'
 alias o='open'
 alias nv='fnm' # node version manager
 alias reload='exec fish'
+
 alias copy='pbcopy'
 alias cpwd='pwd | copy'
 alias cgb='gb --show-current | copy'
+
 alias speedtest='networkQuality'
+alias serve='nlx serve'
 
 alias nid='ni -D'
 alias nir='rm -rf node_modules pnpm-lock.yaml package-lock.json yarn.lock && ni'
@@ -106,19 +113,17 @@ alias b='nr build'
 alias t='nr test'
 alias lint="nr lint"
 alias release="nr release"
-
 alias up='nlx taze -I -r'
 alias venv='source .venv/bin/activate.fish'
 
 alias ai='codex --ask-for-approval never --sandbox danger-full-access -m gpt-5-codex'
 
 function c
-    # code $argv
-    code $argv
+    zed $argv
     exit
 end
 
-# Git Clone to ~/i Directory and Open with VSCode
+# Git Clone to ~/i Directory and Open with Editor
 function gcli
     set project_name (basename $argv)
     set project_name (string replace .git '' $project_name)
@@ -127,7 +132,7 @@ function gcli
     exit
 end
 
-# Git Clone to ~/w Directory and Open with VSCode
+# Git Clone to ~/w Directory and Open with Editor
 function gclw
     set project_name (basename $argv)
     set project_name (string replace .git '' $project_name)
