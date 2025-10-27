@@ -110,7 +110,7 @@ alias release="nr release"
 alias up='nlx taze -I -r'
 alias venv='source .venv/bin/activate.fish'
 
-alias ai='codex --ask-for-approval never --sandbox danger-full-access -m gpt-5-codex -c model_reasoning_effort="high" --search'
+alias ai='codex --ask-for-approval never --sandbox danger-full-access -m gpt-5-codex'
 
 function c
     # code $argv
