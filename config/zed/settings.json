@@ -1,20 +1,4 @@
 {
-  "context_servers": {
-    "mcp-server-context7": {
-      "source": "extension",
-      "enabled": true,
-      "settings": {
-        "context7_api_key": "ctx7sk-8848a459-15de-4da8-8a14-4cc066dc9540"
-      }
-    },
-    "nuxt-ui": {
-      "source": "custom",
-      "enabled": true,
-      "command": "npx",
-      "args": ["mcp-remote", "https://ui.nuxt.com/mcp"],
-      "env": {}
-    }
-  },
   "use_smartcase_search": true,
   "diagnostics": {
     "inline": {
@@ -126,6 +110,9 @@
     "**/.classpath",
     "**/.settings"
   ],
+  "file_types": {
+    "Git Config": ["**/*.conf"]
+  },
   "languages": {
     "CSS": {
       "language_servers": ["tailwindcss-language-server"]
@@ -219,6 +206,22 @@
           "classRegex": ["[cls|className|ui]\\s\\:\\=\\s\"([^\"]*)"]
         }
       }
+    }
+  },
+  "context_servers": {
+    "mcp-server-context7": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "context7_api_key": "ctx7sk-8848a459-15de-4da8-8a14-4cc066dc9540"
+      }
+    },
+    "nuxt-ui": {
+      "source": "custom",
+      "enabled": true,
+      "command": "npx",
+      "args": ["mcp-remote", "https://ui.nuxt.com/mcp"],
+      "env": {}
     }
   }
 }
