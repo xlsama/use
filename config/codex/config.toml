@@ -9,7 +9,7 @@ args = ["chrome-devtools-mcp@latest"]
 command = "npx"
 args = [
   "-y",
-  "@upstash/context7-mcp",
+"@upstash/context7-mcp",
   "--api-key",
-  "ctx7sk-372b01b4-fc80-42d3-8798-9a2be0a35073",
+  "ctx7sk-8848a459-15de-4da8-8a14-4cc066dc9540",
 ]
