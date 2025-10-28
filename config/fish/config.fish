@@ -47,7 +47,6 @@ alias gp='git push'
 alias gpu='git push -u origin HEAD'
 alias gpf='git push --force'
 alias gpd='git push origin --delete'
-alias grv='git remote -v'
 
 # --- Stash (暂存) ---
 alias gsh='git stash push -m'
@@ -67,20 +66,21 @@ alias gra='git rebase --abort'
 alias gri='git rebase -i'
 
 # --- Reset & Restore (重置 & 恢复) ---
-# 'Reset' 通常用于移动HEAD指针, 'Restore' 用于恢复文件内容
+# 'Reset' 通常用于移动HEAD指针, 'Restore' 用于撤回/还原文件内容（工作区、暂存区）
 alias grh='git reset --hard'
 alias grh1='git reset --hard HEAD~1'
 alias grh2='git reset --hard HEAD~2'
-alias gres='git restore'
-alias grss='git restore --staged'
-alias greso='git restore --ours'
-alias grest='git restore --theirs'
+alias gre='git restore' # 丢弃工作区改动
+alias gres='git restore --staged' # 撤销已暂存
+alias greo='git restore --ours' # 解决冲突时用“当前”的版本覆盖工作区
+alias gret='git restore --theirs' # 解决冲突时用“传入”的版本覆盖工作区
 
 # --- 其他常用 ---
 alias gcl='git clone'
 alias gcp='git cherry-pick'
 alias gcpc='git cherry-pick --continue'
 alias gcpa='git cherry-pick --abort'
+alias gco='git checkout'
 alias gsl='git shortlog -sn' # 按作者统计提交数量
 
 # cd
