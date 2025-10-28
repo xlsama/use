@@ -6,8 +6,7 @@
       "alt-k": "workspace::ActivatePaneUp",
       "alt-j": "workspace::ActivatePaneDown",
       "cmd-e": "workspace::ToggleRightDock",
-      "cmd-shift-a": "git_panel::ToggleFocus",
-      "ctrl-r": "projects::OpenRecent"
+      "cmd-shift-a": "git_panel::ToggleFocus"
     }
   },
   {
@@ -99,6 +98,12 @@
     "context": "Terminal",
     "bindings": {
       "cmd-t": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "!Terminal",
+    "bindings": {
+      "ctrl-r": "projects::OpenRecent"
     }
   },
   {
