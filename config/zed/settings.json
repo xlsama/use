@@ -24,23 +24,9 @@
     "disabled_globs": []
   },
   "theme": {
-    "mode": "system",
-    "light": "Tailwind Syntax",
-    "dark": "Tailwind Syntax"
-  },
-  "experimental.theme_overrides": {
-    "syntax": {
-      "property.json_key": { "color": "#CDE6A4" },
-      "keyword": { "color": "#F472B6" },
-      "variable": { "color": "#FDBA74" },
-      "constant": { "color": "#A5F3FC" },
-      "type": { "color": "#FDBA74" },
-      "attribute": { "color": "#FDBA74" },
-      "property": { "color": "#CDE6A4" },
-      "function": { "color": "#7DD3FC" },
-      "function.method": { "color": "#7DD3FC" },
-      "function.definition": { "color": "#7DD3FC" }
-    }
+    "mode": "dark",
+    "light": "Ayu Dark",
+    "dark": "Ayu Dark"
   },
   "icon_theme": {
     "mode": "system",
