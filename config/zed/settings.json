@@ -100,12 +100,10 @@
     "Fish": ["*Brewfile", "*.conf"]
   },
   "prettier": {
-    "tabWidth": 2,
     "semi": false,
     "singleQuote": true,
-    "printWidth": 100,
     "arrowParens": "avoid",
-    "bracketSpacing": true
+    "printWidt": 100
   },
   "languages": {
     "CSS": {
