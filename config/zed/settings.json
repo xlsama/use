@@ -97,83 +97,31 @@
     "**/.settings"
   ],
   "file_types": {
-    "Git Config": ["**/*.conf"]
+    "Fish": ["*Brewfile", "*.conf"]
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 100,
+    "arrowParens": "avoid",
+    "bracketSpacing": true
   },
   "languages": {
     "CSS": {
       "language_servers": ["tailwindcss-language-server"]
     },
     "JavaScript": {
-      "formatter": [
-        { "code_action": "source.fixAll.eslint" },
-        {
-          "external": {
-            "command": "prettier",
-            "arguments": [
-              "--print-width",
-              "120",
-              "--single-quote",
-              "--no-semi",
-              "--stdin-filepath",
-              "{buffer_path}"
-            ]
-          }
-        }
-      ]
+      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
     },
     "TypeScript": {
-      "formatter": [
-        { "code_action": "source.fixAll.eslint" },
-        {
-          "external": {
-            "command": "prettier",
-            "arguments": [
-              "--print-width",
-              "120",
-              "--single-quote",
-              "--no-semi",
-              "--stdin-filepath",
-              "{buffer_path}"
-            ]
-          }
-        }
-      ]
+      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
     },
     "Vue.js": {
-      "formatter": [
-        { "code_action": "source.fixAll.eslint" },
-        {
-          "external": {
-            "command": "prettier",
-            "arguments": [
-              "--print-width",
-              "120",
-              "--single-quote",
-              "--no-semi",
-              "--stdin-filepath",
-              "{buffer_path}"
-            ]
-          }
-        }
-      ]
+      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
     },
     "Svelte": {
-      "formatter": [
-        { "code_action": "source.fixAll.eslint" },
-        {
-          "external": {
-            "command": "prettier",
-            "arguments": [
-              "--print-width",
-              "120",
-              "--single-quote",
-              "--no-semi",
-              "--stdin-filepath",
-              "{buffer_path}"
-            ]
-          }
-        }
-      ]
+      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
     },
     "Shell Script": {
       "formatter": {
@@ -209,5 +157,30 @@
       "args": ["mcp-remote", "https://ui.nuxt.com/mcp"],
       "env": {}
     }
+  },
+  "auto_install_extensions": {
+    "basher": true,
+    "comment": true,
+    "catppuccin-icons": true,
+    "dart": true,
+    "docker-compose": true,
+    "dockerfile": true,
+    "emmet": true,
+    "fish": true,
+    "git-firefly": true,
+    "html": true,
+    "kotlin": true,
+    "log": true,
+    "lua": true,
+    "mcp-server-context7": true,
+    "nginx": true,
+    "one-dark-pro": true,
+    "scss": true,
+    "sql": true,
+    "svelte": true,
+    "swift": true,
+    "toml": true,
+    "vue": true,
+    "xml": true
   }
 }
