@@ -95,7 +95,7 @@ alias l='lsd -1A'
 
 alias v='nvim'
 alias o='open'
-alias nv='fnm' # node version manager
+alias n='fnm' # node version manager
 alias reload='exec fish'
 
 alias copy='pbcopy'
