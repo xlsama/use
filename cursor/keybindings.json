@@ -1,5 +1,21 @@
 [
   {
+    "key": "alt+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
     "key": "cmd+w",
     "command": "-workbench.action.closeWindow",
     "when": "!editorIsOpen && !multipleEditorGroups"
@@ -17,17 +33,13 @@
     "command": "workbench.view.scm"
   },
   {
-    "key": "shift+cmd+n",
+    "key": "cmd+n",
     "command": "workbench.action.newWindowTab"
   },
   {
     "key": "shift+cmd+j",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
-  },
-  {
-    "key": "shift+cmd+c",
-    "command": "-workbench.action.terminal.openNativeConsole"
   },
   {
     "key": "cmd+g",
@@ -38,37 +50,15 @@
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
-    "key": "cmd+r",
-    "command": "git.refresh"
-  },
-  {
-    "key": "cmd+l",
-    "command": "editor.action.rename",
-    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+r",
     "command": "workbench.action.openRecent"
   },
   {
-    "key": "cmd+d",
+    "key": "cmd+b",
     "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
     "key": "cmd+t",
     "command": "git.viewChanges"
-  },
-  {
-    "key": "tab",
-    "command": "-vscode-neovim.send",
-    "when": "neovim.init && neovim.recording || editorTextFocus && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
-  },
-  {
-    "key": "shift+enter",
-    "command": "workbench.action.terminal.sendSequence",
-    "args": {
-      "text": "\\\r\n"
-    },
-    "when": "terminalFocus"
   }
 ]

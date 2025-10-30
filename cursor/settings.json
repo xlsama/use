@@ -31,6 +31,7 @@
   "workbench.startupEditor": "none",
   "workbench.list.smoothScrolling": true,
   "workbench.editor.empty.hint": "hidden",
+  "workbench.activityBar.orientation": "vertical",
 
   // sidebar
   "workbench.sideBar.location": "right",
@@ -45,6 +46,29 @@
   "editor.wordSeparators": "`~!#@%^&*()=+[{]}\\|;:'\",.<>/?",
   "editor.guides.bracketPairs": "active",
   "editor.minimap.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "security.promptForLocalFileProtocolHandling": false,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "accessibility.signals.clear": {
+    "sound": "off"
+  },
+  "svg.preview.background": "transparent",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.wrappingStrategy": "advanced",
 
   // explorer
   "explorer.compactFolders": false,
@@ -52,6 +76,7 @@
   "security.workspace.trust.untrustedFiles": "open",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
+  "explorer.confirmPasteNative": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
@@ -153,10 +178,9 @@
     "*.xaml": "$(capture).xaml.cs"
   },
 
-  // format
+  // format & linting
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.oxc": "explicit",
     "source.fixAll.ruff": "explicit",
@@ -176,30 +200,6 @@
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
-  "editor.linkedEditing": true,
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
-  "files.associations": {
-    "*.css": "tailwindcss",
-    "*.cjson": "jsonc",
-    "*.wxss": "css",
-    "*.wxs": "javascript"
-  },
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.includeLanguages": {
-    "postcss": "css"
-  },
-  "security.promptForLocalFileProtocolHandling": false,
-  "editor.semanticHighlighting.enabled": true,
-  "editor.accessibilitySupport": "off",
-  "accessibility.signals.clear": {
-    "sound": "off"
-  },
-  "explorer.confirmPasteNative": false,
-  "svg.preview.background": "transparent",
-  "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.wrappingStrategy": "advanced",
 
   // terminal
   "terminal.integrated.enableMultiLinePasteWarning": "never",
@@ -251,7 +251,6 @@
   "search.smartCase": true,
 
   // extension config
-  "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
@@ -292,5 +291,9 @@
   },
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  },
+  "redhat.telemetry.enabled": false,
+
+  // cursor ide
+  "update.releaseTrack": "prerelease"
 }

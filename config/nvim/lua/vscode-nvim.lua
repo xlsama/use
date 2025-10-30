@@ -1,96 +1,75 @@
 local vscode = require('vscode')
-local keymap = vim.keymap.set
-local opts = { noremap = true, silent = true }
 
+-------------------- 基础配置 -----------------
 vim.g.mapleader = " "
-
+vim.o.timeoutlen = 300
 vim.notify = vscode.notify
 vim.opt.clipboard = 'unnamedplus'
 -- jkhl 移动时光标周围保留10行
 vim.o.scrolloff = 10
 vim.o.sidescrolloff = 10
+-- 将 - 视为单词的一部分
 vim.opt.iskeyword:append({'-'})
 
-keymap({'n', 'v'}, 'H', '^', opts)
-keymap({'n', 'v'}, 'L', '$', opts)
+-------------------- 辅助函数 -----------------
+local function keymap(mode, lhs, rhs, opts)
+  opts = opts or { noremap = true, silent = true }
+  vim.keymap.set(mode, lhs, rhs, opts)
+end
 
-keymap('n', '<leader>v', 'V', opts)
-keymap('n', '<leader>a', '%', opts)
+local function map(mode, lhs, rhs, opts)
+  opts = opts or { noremap = true, silent = true }
+  vim.keymap.set(mode, lhs, function() vscode.call(rhs) end, opts)
+end
 
-keymap('n', 'dH', 'd^', opts)
-keymap('n', 'dL', 'd$', opts)
-keymap('n', 'cH', 'c^', opts)
-keymap('n', 'cL', 'c$', opts)
-keymap('n', 'yH', 'y^', opts)
-keymap('n', 'yL', 'y$', opts)
+------------------ Vim 原生映射 ---------------
+keymap({'n', 'v'}, 'H', '^')
+keymap({'n', 'v'}, 'L', '$')
+keymap('n', 'dH', 'd^')
+keymap('n', 'dL', 'd$')
+keymap('n', 'cH', 'c^')
+keymap('n', 'cL', 'c$')
+keymap('n', 'yH', 'y^')
+keymap('n', 'yL', 'y$')
+keymap('n', '<leader>v', 'V')
+keymap('n', '<leader>a', '%')
+keymap("n", "<Esc>", "<Esc>:noh<CR>")
 
-keymap({'n', 'v'}, '<C-h>', "<Cmd>lua require('vscode').call('workbench.action.navigateLeft')<CR>", opts)
-keymap({'n', 'v'}, '<C-l>', "<Cmd>lua require('vscode').call('workbench.action.navigateRight')<CR>", opts)
+----------------- VSCode 命令映射 --------------
+map('n', '<leader>r', 'editor.action.rename')
+map('n', '<leader>t', 'editor.emmet.action.matchTag')
+map('n', '<leader>z', 'editor.toggleFold')
 
--- removes highlighting after escaping vim search
-keymap("n", "<Esc>", "<Esc>:noh<CR>", opts)
-
----- better indent handling
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
-
--- move text up and down
-keymap("v", "J", ":m .+1<CR>==", opts)
-keymap("v", "K", ":m .-2<CR>==", opts)
-keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
-
--- 定义模式和映射
+------------------ Text Objects ---------------
 local modes = {'o', 'x'}
 local mappings = {
   ['w'] = 'iw',
   ['('] = 'i(',
   ['b'] = 'ib',
   ['['] = 'i[',
-  [']'] = 'i]',
   ['{'] = 'i{',
-  ['}'] = 'i}',
   ["'"] = "i'",
   ['"'] = 'i"',
   ['`'] = 'i`',
   ['<'] = 'i<',
-  ['>'] = 'i>',
 }
 
--- 应用映射
 for _, mode in ipairs(modes) do
   for key, value in pairs(mappings) do
-    keymap(mode, key, value, opts)
+    keymap(mode, key, value)
   end
 end
 
--- 定义 im-select 路径和目标输入法
+----------------- 可视模式缩进 --------------
+keymap('x', '<', '<gv', { noremap = false, silent = true })
+keymap('x', '>', '>gv', { noremap = false, silent = true })
+
+---------------- 输入法自动切换 -------------
 local im_select_cmd = "/opt/homebrew/bin/im-select"
 local default_im = "com.apple.keylayout.ABC"
 
--- 在退出插入模式时切换到 ABC 输入法
 vim.api.nvim_create_autocmd("InsertLeave", {
     callback = function()
         os.execute(im_select_cmd .. " " .. default_im)
     end,
 })
-
-
--- folding
-vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = false, silent = true })
-vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = false, silent = true })
-
-local function map(mode, lhs, rhs)
-  vim.keymap.set(mode, lhs, function() vscode.call(rhs) end, { silent = true, noremap = true })
-end
-
--- Remap folding keys
-map('n', 'zM', 'editor.foldAll')
-map('n', 'zR', 'editor.unfoldAll')
-map('n', 'zc', 'editor.fold')
-map('n', 'zC', 'editor.foldRecursively')
-map('n', 'zo', 'editor.unfold')
-map('n', 'zO', 'editor.unfoldRecursively')
-map('n', 'za', 'editor.toggleFold')
-
-map('n', 'gt', 'editor.emmet.action.matchTag')
