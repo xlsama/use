@@ -4,7 +4,7 @@ tap "daipeihust/tap"
 
 # apps
 cask 'google-chrome'
-cask 'zed@preview'
+cask 'cursor'
 cask 'ghostty'
 cask 'surge'
 cask 'obsidian'

@@ -20,11 +20,23 @@ const LINK_MAP = [
   // starship
   { source: '~/i/use/config/starship.toml', target: '~/.config/starship.toml' },
   // codex
-  { source: '~/i/use/config/codex/config.toml', target: '~/.codex/config.toml' },
-  // zed
-  { source: '~/i/use/config/zed/settings.json', target: '~/.config/zed/settings.json' },
-  { source: '~/i/use/config/zed/keymap.json', target: '~/.config/zed/keymap.json' },
-  { source: '~/i/use/config/zed/snippets', target: '~/.config/zed/snippets' },
+  {
+    source: '~/i/use/config/codex/config.toml',
+    target: '~/.codex/config.toml',
+  },
+  // cursor
+  {
+    source: `~/i/use/cursor/settings.json`,
+    target: '~/Library/Application Support/Cursor/User/settings.json',
+  },
+  {
+    source: `~/i/use/cursor/keybindings.json`,
+    target: '~/Library/Application Support/Cursor/User/keybindings.json',
+  },
+  {
+    source: `~/i/use/cursor/global.code-snippets`,
+    target: '~/Library/Application Support/Cursor/User/snippets/global.code-snippets',
+  },
 ]
 
 // ---------- create folders ----------
@@ -38,7 +50,7 @@ await Promise.all(
     await $`mkdir -p ${path.dirname(target)}`
     await $`rm -rf ${target}`
     await $`ln -s -f ${source} ${target}`
-  }),
+  })
 )
 
 // ---------- macOS defaults ----------
