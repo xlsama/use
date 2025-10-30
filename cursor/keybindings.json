@@ -33,7 +33,7 @@
     "command": "workbench.view.scm"
   },
   {
-    "key": "cmd+n",
+    "key": "cmd+shift+n",
     "command": "workbench.action.newWindowTab"
   },
   {
