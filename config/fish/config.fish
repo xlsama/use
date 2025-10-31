@@ -111,6 +111,7 @@ alias do='nr dev --open'
 alias b='nr build'
 alias t='nr test'
 alias lint="nr lint"
+alias format="nr format"
 alias release="nr release"
 alias up='nlx taze -I -r'
 alias venv='source .venv/bin/activate.fish'

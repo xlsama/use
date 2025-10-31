@@ -73,5 +73,10 @@
     "scope": "vue,javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "ref",
     "body": "const $1 = ref($2)\n$3"
+  },
+  "watchEffect": {
+    "scope": "vue,javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "we",
+    "body": "watchEffect(() => {\n  $1\n})\n"
   }
 }
