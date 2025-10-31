@@ -56,5 +56,10 @@
   {
     "key": "cmd+t",
     "command": "git.viewChanges"
+  },
+  {
+    "key": "cmd+b",
+    "command": "cursor.toggleAgentWindowIDEUnification",
+    "when": "cursor.agentIdeUnification.featureGate && workbenchState != 'empty'"
   }
 ]
