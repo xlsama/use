@@ -181,12 +181,13 @@
   // format & linting
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
+  "oxc.fmt.experimental": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.oxc": "explicit",
     "source.fixAll.ruff": "explicit",
     "source.organizeImports.ruff": "explicit"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "oxc.oxc-vscode",
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.arrowParens": "avoid",
