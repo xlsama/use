@@ -1,0 +1,184 @@
+{
+  "use_smartcase_search": true,
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
+  "hover_popover_delay": 50,
+  "confirm_quit": true,
+  "ui_font_size": 15,
+  "buffer_font_size": 14.0,
+  "buffer_font_family": "Maple Mono Normal NF CN",
+  "agent": {
+    "always_allow_tool_actions": true,
+    "default_profile": "write",
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-5"
+    },
+    "model_parameters": [],
+    "dock": "left"
+  },
+  "edit_predictions": {
+    "disabled_globs": []
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "One Dark Pro",
+    "dark": "One Dark Pro"
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Frappé",
+    "dark": "Catppuccin Mocha"
+  },
+  "terminal": {
+    "font_size": 12.0,
+    "font_family": "Maple Mono Normal NF CN",
+    "cursor_shape": "bar",
+    "blinking": "on",
+    "env": {
+      "GIT_EDITOR": "zed --wait"
+    }
+  },
+  "project_panel": {
+    "dock": "right",
+    "default_width": 400,
+    "entry_spacing": "standard",
+    "indent_size": 12
+  },
+  "git_panel": {
+    "dock": "right",
+    "button": true,
+    "default_width": 400
+  },
+  "outline_panel": {
+    "dock": "right",
+    "button": true,
+    "default_width": 400
+  },
+  "notification_panel": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "right"
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": true
+    }
+  },
+  "minimap": {
+    "show": "auto"
+  },
+  "use_system_window_tabs": true,
+  "use_system_path_prompts": true,
+  "auto_indent_on_paste": true,
+  "linked_edits": true,
+  "ensure_final_newline_on_save": true,
+  "tab_size": 2,
+  "vim_mode": true,
+  "status_bar": {
+    "active_language_button": true,
+    "cursor_position_button": false
+  },
+  "when_closing_with_no_tabs": "keep_window_open",
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings"
+  ],
+  "file_types": {
+    "Fish": ["*Brewfile", "*.conf"]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "printWidt": 100
+  },
+  "languages": {
+    "CSS": {
+      "language_servers": ["tailwindcss-language-server"]
+    },
+    "JavaScript": {
+      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
+    },
+    "TypeScript": {
+      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
+    },
+    "Vue.js": {
+      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
+    },
+    "Svelte": {
+      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
+    },
+    "Shell Script": {
+      "formatter": {
+        "external": {
+          "command": "shfmt",
+          "arguments": ["--filename", "{buffer_path}", "--indent", "2"]
+        }
+      }
+    }
+  },
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "classFunctions": ["cva", "cx", "cn", "clsx"],
+        "experimental": {
+          "classRegex": ["[cls|className|ui]\\s\\:\\=\\s\"([^\"]*)"]
+        }
+      }
+    }
+  },
+  "context_servers": {
+    "mcp-server-context7": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "context7_api_key": "ctx7sk-8848a459-15de-4da8-8a14-4cc066dc9540"
+      }
+    },
+    "nuxt-ui": {
+      "source": "custom",
+      "enabled": true,
+      "command": "npx",
+      "args": ["mcp-remote", "https://ui.nuxt.com/mcp"],
+      "env": {}
+    }
+  },
+  "auto_install_extensions": {
+    "basher": true,
+    "comment": true,
+    "catppuccin-icons": true,
+    "dart": true,
+    "docker-compose": true,
+    "dockerfile": true,
+    "emmet": true,
+    "fish": true,
+    "git-firefly": true,
+    "html": true,
+    "kotlin": true,
+    "log": true,
+    "lua": true,
+    "mcp-server-context7": true,
+    "nginx": true,
+    "one-dark-pro": true,
+    "scss": true,
+    "sql": true,
+    "svelte": true,
+    "swift": true,
+    "toml": true,
+    "vue": true,
+    "xml": true
+  }
+}
