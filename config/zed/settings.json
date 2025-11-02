@@ -103,7 +103,7 @@
     "semi": false,
     "singleQuote": true,
     "arrowParens": "avoid",
-    "printWidt": 100
+    "printWidth": 100
   },
   "languages": {
     "CSS": {
