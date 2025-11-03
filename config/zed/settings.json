@@ -121,6 +121,9 @@
     "Svelte": {
       "formatter": [{ "code_action": "source.fixAll" }, "prettier"]
     },
+    "Python": {
+      "language_servers": ["ty", "!basedpyright"]
+    },
     "Shell Script": {
       "formatter": {
         "external": {

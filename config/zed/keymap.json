@@ -36,7 +36,8 @@
     "bindings": {
       "H": ["workspace::SendKeystrokes", "^"],
       "L": ["workspace::SendKeystrokes", "$"],
-      "space v": ["workspace::SendKeystrokes", "V"]
+      "space v": ["workspace::SendKeystrokes", "V"],
+      "space a": ["workspace::SendKeystrokes", "%"]
     }
   },
   {
