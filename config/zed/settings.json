@@ -110,16 +110,16 @@
       "language_servers": ["tailwindcss-language-server"]
     },
     "JavaScript": {
-      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
+      "formatter": [{ "code_action": "source.fixAll" }, "prettier"]
     },
     "TypeScript": {
-      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
+      "formatter": [{ "code_action": "source.fixAll" }, "prettier"]
     },
     "Vue.js": {
-      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
+      "formatter": [{ "code_action": "source.fixAll" }, "prettier"]
     },
     "Svelte": {
-      "formatter": [{ "code_action": "source.fixAll.eslint" }, "prettier"]
+      "formatter": [{ "code_action": "source.fixAll" }, "prettier"]
     },
     "Shell Script": {
       "formatter": {
