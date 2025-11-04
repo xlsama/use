@@ -1,23 +1,27 @@
 # fetch registry
 tap "homebrew/cask-fonts"
-tap "daipeihust/tap"
+tap "daipeihust/tap" # for im-select
 
 # apps
 cask 'google-chrome'
 cask 'zed@preview'
 cask 'ghostty'
 cask 'surge'
+cask 'feishu'
+cask 'wechat'
 cask 'obsidian'
+cask 'refine'
 cask 'ticktick'
 cask 'raycast'
-brew 'popclip'
-cask 'mos'
 cask 'input-source-pro'
+brew 'popclip'
+cask 'logi-options+'
+cask 'mos'
 cask 'betterdisplay'
 cask 'yaak'
 cask 'orbstack'
 cask 'dataflare'
-cask 'qqmusic'
+cask 'spotify'
 
 # command line tools
 brew 'zx'

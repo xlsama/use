@@ -102,11 +102,12 @@ zx install.mjs
 
 ### Other
 
+- [Spotify](https://open.spotify.com/) - Music
+
 - [剪映专业版](https://www.capcut.cn/) - Video Editing
 
 - [像素蛋糕](https://www.pixcakeai.com/) - Photo Editing
 
-- [QQ Music](https://y.qq.com/) - Music
 
 ## CLI
 

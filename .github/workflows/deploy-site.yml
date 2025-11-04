@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "README.md"
+      - 'README.md'
 jobs:
   trigger:
     runs-on: ubuntu-latest
