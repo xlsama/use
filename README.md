@@ -52,7 +52,7 @@ zx install.mjs
 
 ### Editor
 
-- [Zed](https://zed.dev/)
+- [Cursor](https://cursor.com/)
 
 ### Terminal
 
@@ -107,7 +107,6 @@ zx install.mjs
 - [剪映专业版](https://www.capcut.cn/) - Video Editing
 
 - [像素蛋糕](https://www.pixcakeai.com/) - Photo Editing
-
 
 ## CLI
 

@@ -1,0 +1,65 @@
+[
+  {
+    "key": "alt+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+i",
+    "command": "editor.action.triggerSuggest"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "cmd+shift+n",
+    "command": "workbench.action.newWindowTab"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "cmd+g",
+    "command": "workbench.action.quickTextSearch"
+  },
+  {
+    "key": "cmd+m",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "cmd+t",
+    "command": "git.viewChanges"
+  },
+  {
+    "key": "cmd+b",
+    "command": "cursor.toggleAgentWindowIDEUnification",
+    "when": "cursor.agentIdeUnification.featureGate && workbenchState != 'empty'"
+  }
+]
