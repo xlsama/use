@@ -28,15 +28,21 @@ brew 'zx'
 brew "fish"
 brew "starship"
 brew "neovim"
-brew "lua"
 brew "lsd"
 brew "jq"
-brew "fnm"
 brew "ripgrep"
 brew "zoxide"
 brew 'difftastic'
 brew 'fzf'
 brew "im-select"
+brew "fnm" # node version manager
+brew "uv" # python package and project manager
+
+# programming languages
+brew "go"
+brew "rust"
+brew "swift"
+brew "lua"
 
 # fonts
 cask "font-maple-mono-normal-nf-cn"
