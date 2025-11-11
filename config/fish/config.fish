@@ -12,6 +12,12 @@ zoxide init fish | source
 fnm env --use-on-cd | source
 fzf --fish | source
 
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+# rust
+source "$HOME/.cargo/env.fish"
+
 alias g='git'
 # --- 状态 & 日志 & 差异 ---
 alias gst='git status'
@@ -116,8 +122,6 @@ alias release="nr release"
 alias up='nlx taze -I -r'
 alias venv='source .venv/bin/activate.fish'
 
-alias ai='codex --ask-for-approval never --sandbox danger-full-access -m gpt-5-codex'
-
 function c
     cursor $argv
     exit
@@ -140,8 +144,3 @@ function gclw
     c ~/w/$project_name
     exit
 end
-
-# Added by OrbStack: command-line tools and integration
-# This won't be added again if you remove it.
-source ~/.orbstack/shell/init2.fish 2>/dev/null || :
-source "$HOME/.cargo/env.fish"
