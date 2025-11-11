@@ -259,7 +259,6 @@
   "extensions.ignoreRecommendations": true,
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
-    "javascript": "node",
     "python": "uv run"
   },
   "errorLens.excludeBySource": ["eslint", "cSpell"],
