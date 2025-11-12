@@ -57,8 +57,12 @@
     "command": "git.refresh"
   },
   {
-    "key": "cmd+t",
+    "key": "cmd+d",
     "command": "git.viewChanges"
+  },
+  {
+    "key": "cmd+t",
+    "command": "git.openFile"
   },
   {
     "key": "cmd+b",
