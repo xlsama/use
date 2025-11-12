@@ -65,6 +65,11 @@
     "command": "git.openFile"
   },
   {
+    "key": "cmd+t",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
     "key": "cmd+b",
     "command": "cursor.toggleAgentWindowIDEUnification",
     "when": "cursor.agentIdeUnification.featureGate && workbenchState != 'empty'"
