@@ -19,25 +19,19 @@ const LINK_MAP = [
   { source: '~/i/use/config/ghostty', target: '~/.config/ghostty' },
   // starship
   { source: '~/i/use/config/starship.toml', target: '~/.config/starship.toml' },
-  // codex
+  // cursor
   {
-    source: '~/i/use/config/codex/config.toml',
-    target: '~/.codex/config.toml',
+    source: `~/i/use/cursor/settings.json`,
+    target: '~/Library/Application Support/Cursor/User/settings.json',
   },
- // cursor
- {
-  source: `~/i/use/cursor/settings.json`,
-  target: "~/Library/Application Support/Cursor/User/settings.json",
-},
-{
-  source: `~/i/use/cursor/keybindings.json`,
-  target: "~/Library/Application Support/Cursor/User/keybindings.json",
-},
-{
-  source: `~/i/use/cursor/global.code-snippets`,
-  target:
-    "~/Library/Application Support/Cursor/User/snippets/global.code-snippets",
-},
+  {
+    source: `~/i/use/cursor/keybindings.json`,
+    target: '~/Library/Application Support/Cursor/User/keybindings.json',
+  },
+  {
+    source: `~/i/use/cursor/global.code-snippets`,
+    target: '~/Library/Application Support/Cursor/User/snippets/global.code-snippets',
+  },
 ]
 
 // ---------- create folders ----------
@@ -51,7 +45,7 @@ await Promise.all(
     await $`mkdir -p ${path.dirname(target)}`
     await $`rm -rf ${target}`
     await $`ln -s -f ${source} ${target}`
-  }),
+  })
 )
 
 // ---------- macOS defaults ----------
