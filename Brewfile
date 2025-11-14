@@ -39,8 +39,8 @@ brew "fnm" # node version manager
 brew "uv" # python package and project manager
 
 # programming languages
-brew "go"
 brew "rust"
+brew "go"
 brew "swift"
 brew "lua"
 
