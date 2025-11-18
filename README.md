@@ -104,7 +104,7 @@ zx install.mjs
 
 - [Spotify](https://open.spotify.com/) - Music
 
-- [剪映专业版](https://www.capcut.cn/) - Video Editing
+- [CapCut](https://www.capcut.com/) - Video Editing
 
 - [像素蛋糕](https://www.pixcakeai.com/) - Photo Editing
 
