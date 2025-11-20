@@ -99,14 +99,16 @@ alias conf='cd ~/.config'
 alias ls='lsd'
 alias l='lsd -1A'
 
-alias v='nvim'
 alias o='open'
-alias n='fnm' # node version manager
-alias reload='exec fish'
-
 alias copy='pbcopy'
 alias cpwd='pwd | copy'
 alias cgb='gb --show-current | copy'
+
+alias v='nvim'
+alias n='fnm' # node version manager
+alias py='python3'
+alias reload='exec fish'
+alias venv='source .venv/bin/activate.fish'
 
 alias speedtest='networkQuality'
 alias serve='nlx serve'
@@ -120,7 +122,6 @@ alias lint="nr lint"
 alias format="nr format"
 alias release="nr release"
 alias up='nlx taze -I -r'
-alias venv='source .venv/bin/activate.fish'
 
 function c
     cursor $argv
