@@ -96,9 +96,9 @@ zx install.mjs
 
 - [Yaak](https://yaak.app/) - API Client
 
-- [OrbStack](https://orbstack.dev/) - Docker
-
 - [Dataflare](https://dataflare.app/) - Database Management
+
+- [OrbStack](https://orbstack.dev/) - Docker
 
 ### Other
 
