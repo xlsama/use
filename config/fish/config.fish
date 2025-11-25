@@ -52,6 +52,7 @@ alias glr='git pull --rebase'
 alias gp='git push'
 alias gpu='git push -u origin HEAD'
 alias gpf='git push --force'
+alias gpt='git push --tags'
 alias gpd='git push origin --delete'
 
 # --- Stash (暂存) ---
