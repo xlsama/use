@@ -35,6 +35,7 @@ alias gac='git add -A && git commit -m'
 # --- 分支 & 切换 ---
 alias gb='git branch'
 alias gba='git branch -a'
+alias gbv='git branch -vv'
 alias gbr='git branch --remote'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
