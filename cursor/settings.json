@@ -56,10 +56,6 @@
     "*.wxss": "css",
     "*.wxs": "javascript"
   },
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.includeLanguages": {
-    "postcss": "css"
-  },
   "security.promptForLocalFileProtocolHandling": false,
   "editor.semanticHighlighting.enabled": true,
   "editor.accessibilitySupport": "off",
@@ -69,6 +65,105 @@
   "svg.preview.background": "transparent",
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.wrappingStrategy": "advanced",
+
+  // format & linting
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "oxc.fmt.experimental": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.printWidth": 100,
+  "[fish]": {
+    "editor.defaultFormatter": "bmalehorn.vscode-fish"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
+  // languages
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  "svelte.enable-ts-plugin": true,
+
+  // search
+  "search.exclude": {
+    "**/.git": true,
+    "**/.github": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "**/yarn.lock": true
+  },
+  "search.smartCase": true,
+
+  // git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.allowNoVerifyCommit": true,
+  "git.confirmNoVerifyCommit": false,
+  "git.allowForcePush": true,
+  "git.confirmForcePush": false,
+  "git.openRepositoryInParentFolders": "always",
+  "scm.workingSets.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.blame.statusBarItem.enabled": false,
+  "git.blame.editorDecoration.enabled": true,
+
+  // terminal
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontFamily": "Maple Mono Normal NF CN",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontWeight": "300",
+  "terminal.integrated.fontWeightBold": "400",
+  "terminal.integrated.lineHeight": 1.1,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.minimumContrastRatio": 1,
+  "terminal.integrated.stickyScroll.enabled": false,
+  "terminal.integrated.showExitAlert": false,
 
   // explorer
   "explorer.compactFolders": false,
@@ -178,96 +273,10 @@
     "*.xaml": "$(capture).xaml.cs"
   },
 
-  // format & linting
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "oxc.fmt.experimental": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
-  "prettier.printWidth": 100,
-  "[fish]": {
-    "editor.defaultFormatter": "bmalehorn.vscode-fish"
-  },
-  "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
-  },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-
-  // terminal
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "terminal.integrated.fontFamily": "Maple Mono Normal NF CN",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontWeight": "300",
-  "terminal.integrated.fontWeightBold": "400",
-  "terminal.integrated.lineHeight": 1.1,
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.scrollback": 10000,
-  "terminal.integrated.minimumContrastRatio": 1,
-  "terminal.integrated.stickyScroll.enabled": false,
-  "terminal.integrated.showExitAlert": false,
-
-  // git
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "git.allowNoVerifyCommit": true,
-  "git.confirmNoVerifyCommit": false,
-  "git.allowForcePush": true,
-  "git.confirmForcePush": false,
-  "git.openRepositoryInParentFolders": "always",
-  "scm.workingSets.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "git.blame.statusBarItem.enabled": false,
-  "git.blame.editorDecoration.enabled": true,
-
-  // search
-  "search.exclude": {
-    "**/.git": true,
-    "**/.github": true,
-    "**/.nuxt": true,
-    "**/.output": true,
-    "**/.pnpm": true,
-    "**/.vscode": true,
-    "**/.yarn": true,
-    "**/bower_components": true,
-    "**/dist/**": true,
-    "**/logs": true,
-    "**/node_modules": true,
-    "**/out/**": true,
-    "**/package-lock.json": true,
-    "**/pnpm-lock.yaml": true,
-    "**/tmp": true,
-    "**/yarn.lock": true
-  },
-  "search.smartCase": true,
-
-  // extension config
-  "extensions.ignoreRecommendations": true,
-  "code-runner.runInTerminal": true,
-  "code-runner.executorMap": {
-    "python": "uv run"
-  },
-  "errorLens.excludeBySource": ["eslint", "cSpell"],
+  // vim
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "cSpell.language": "en,en-US",
-  "cSpell.allowCompoundWords": true,
-  "svelte.enable-ts-plugin": true,
   "vscode-neovim.compositeKeys": {
     "jk": {
       "command": "vscode-neovim.lua",
@@ -280,26 +289,22 @@
       ]
     }
   },
+
+  // extension config
+  "extensions.ignoreRecommendations": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "python": "uv run"
+  },
+  "errorLens.excludeBySource": ["eslint", "cSpell"],
+  "cSpell.language": "en,en-US",
+  "cSpell.allowCompoundWords": true,
   "cSpell.enabledNotifications": {
     "Maximum Word Length Exceeded": false,
     "Average Word Length too Long": false,
     "Lines too Long": false
   },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
   "redhat.telemetry.enabled": false,
-  "gopls": {
-    "ui.semanticTokens": true
-  },
 
   // cursor ide
   "update.releaseTrack": "prerelease"
