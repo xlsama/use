@@ -72,7 +72,7 @@ zx install.mjs
 
 - [Obsidian](https://obsidian.md/)
 
-- [Refine](https://refine.sh/) - Grammar Checker, Very good.
+- [Refine](https://refine.sh/) - Grammar Checker
 
 ### Productivity
 
@@ -104,9 +104,7 @@ zx install.mjs
 
 - [Spotify](https://open.spotify.com/) - Music
 
-- [CapCut](https://www.capcut.com/) - Video Editing
-
-- [像素蛋糕](https://www.pixcakeai.com/) - Photo Editing
+- [CapCut](https://www.capcut.com/) - Video Editor
 
 ## CLI
 
