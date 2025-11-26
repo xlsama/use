@@ -307,5 +307,6 @@
   "redhat.telemetry.enabled": false,
 
   // cursor ide
-  "update.releaseTrack": "prerelease"
+  "update.releaseTrack": "prerelease",
+  "cursor.cpp.disabledLanguages": []
 }
