@@ -108,9 +108,8 @@
   "emmet.includeLanguages": {
     "postcss": "css"
   },
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "typescript.referencesCodeLens.enabled": true,
+  "python.languageServer": "None",
   "gopls": {
     "ui.semanticTokens": true
   },
