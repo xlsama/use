@@ -76,7 +76,7 @@ zx install.mjs
 
 ### Productivity
 
-- [TickTick](https://ticktick.com/) - To Do
+- [TickTick](https://dida365.com/) - To Do(Use Web, Pin Tab in Browser)
 
 - [Raycast](https://raycast.com) - Launcher
 
@@ -110,9 +110,7 @@ zx install.mjs
 
 - [fish](https://fishshell.com/) - Shell
 
-- [Homebrew](https://brew.sh/) - Package Manager
-
-- More: [Brewfile](./Brewfile)
+- [Homebrew](https://brew.sh/) - Package Manager, More: [Brewfile](./Brewfile)
 
 ## MacOS Config
 
