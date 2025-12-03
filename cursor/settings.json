@@ -109,6 +109,7 @@
     "postcss": "css"
   },
   "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.experimental.useTsgo": false,
   "python.languageServer": "None",
   "gopls": {
     "ui.semanticTokens": true
