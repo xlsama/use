@@ -25,7 +25,6 @@
   "window.restoreFullscreen": true,
   "window.nativeTabs": true, // this is great, macOS only
   "window.title": "${rootName}",
-  "window.titleBarStyle": "native",
   "window.customTitleBarVisibility": "windowed",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.startupEditor": "none",
@@ -66,10 +65,10 @@
   // format & linting
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "oxc.fmt.experimental": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
+  "oxc.fmt.experimental": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.semi": false,
   "prettier.singleQuote": true,
