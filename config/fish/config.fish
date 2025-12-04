@@ -127,7 +127,6 @@ alias up='nlx taze -I -r'
 
 function c
     cursor $argv
-    exit
 end
 
 # Git Clone to ~/i Directory and Open with Editor
