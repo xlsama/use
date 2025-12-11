@@ -1,21 +1,5 @@
 [
   {
-    "key": "alt+h",
-    "command": "workbench.action.navigateLeft"
-  },
-  {
-    "key": "alt+j",
-    "command": "workbench.action.navigateDown"
-  },
-  {
-    "key": "alt+k",
-    "command": "workbench.action.navigateUp"
-  },
-  {
-    "key": "alt+l",
-    "command": "workbench.action.navigateRight"
-  },
-  {
     "key": "cmd+w",
     "command": "-workbench.action.closeWindow"
   },

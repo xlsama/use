@@ -30,7 +30,6 @@
   "workbench.startupEditor": "none",
   "workbench.list.smoothScrolling": true,
   "workbench.editor.empty.hint": "hidden",
-  "workbench.activityBar.orientation": "vertical",
 
   // editor
   "editor.fontSize": 14,
@@ -105,7 +104,7 @@
     "postcss": "css"
   },
   "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "typescript.experimental.useTsgo": true,
+  "typescript.experimental.useTsgo": false,
   "python.languageServer": "None",
   "gopls": {
     "ui.semanticTokens": true
