@@ -79,4 +79,69 @@ vim.o.showtabline = 2
 vim.o.showmode = false
 -- 复制到系统剪贴板
 vim.opt.clipboard = 'unnamedplus'
+-- 将 - 视为单词的一部分
+vim.opt.iskeyword:append({'-'})
 
+-------------------- 键位映射 -----------------
+vim.g.mapleader = " "
+
+-- 本地变量
+local map = vim.api.nvim_set_keymap
+
+local opt = { noremap = true, silent = true }
+
+-- normal 和 visual 模式
+map("n", "H", "^", opt)
+map("v", "H", "^", opt)
+map("n", "L", "$", opt)
+map("v", "L", "$", opt)
+
+-- 行首行尾操作
+map("n", "dH", "d^", opt)
+map("n", "dL", "d$", opt)
+map("n", "cH", "c^", opt)
+map("n", "cL", "c$", opt)
+map("n", "yH", "y^", opt)
+map("n", "yL", "y$", opt)
+
+-- 其他映射
+map("n", "<leader>v", "V", opt)
+map("n", "<leader>a", "%", opt)
+map("n", "<Esc>", "<Esc>:noh<CR>", opt)
+
+-- insert
+map("i", "jk", "<ESC>", opt)
+
+------------------ Text Objects ---------------
+local modes = {'o', 'x'}
+local mappings = {
+  ['w'] = 'iw',
+  ['('] = 'i(',
+  ['b'] = 'ib',
+  ['['] = 'i[',
+  ['{'] = 'i{',
+  ["'"] = "i'",
+  ['"'] = 'i"',
+  ['`'] = 'i`',
+  ['<'] = 'i<',
+}
+
+for _, mode in ipairs(modes) do
+  for key, value in pairs(mappings) do
+    map(mode, key, value, opt)
+  end
+end
+
+----------------- 可视模式缩进 --------------
+map('x', '<', '<gv', { noremap = false, silent = true })
+map('x', '>', '>gv', { noremap = false, silent = true })
+
+---------------- 输入法自动切换 -------------
+local im_select_cmd = "/opt/homebrew/bin/im-select"
+local default_im = "com.apple.keylayout.ABC"
+
+vim.api.nvim_create_autocmd("InsertLeave", {
+    callback = function()
+        os.execute(im_select_cmd .. " " .. default_im)
+    end,
+})
