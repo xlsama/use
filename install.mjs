@@ -61,6 +61,8 @@ await $`defaults write -g ApplePressAndHoldEnabled -bool false`
 await $`defaults write com.apple.dock "orientation" -string left`
 // Do not display recent apps in the Dock
 await $`defaults write com.apple.dock "show-recents" -bool false`
+// Auto hide Dock
+await $`defaults write com.apple.dock autohide -bool true`
 // Dragging with three finger drag
 await $`defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"`
 // Show all file extensions inside the Finder
