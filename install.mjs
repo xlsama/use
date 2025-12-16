@@ -57,8 +57,6 @@ await $`defaults write com.apple.finder ShowPathbar -bool true`
 await $`defaults write com.apple.finder _FXSortFoldersFirst -bool true`
 // Repeats the key as long as it is held down.
 await $`defaults write -g ApplePressAndHoldEnabled -bool false`
-// Put the Dock on the left of the screen
-await $`defaults write com.apple.dock "orientation" -string left`
 // Do not display recent apps in the Dock
 await $`defaults write com.apple.dock "show-recents" -bool false`
 // Auto hide Dock

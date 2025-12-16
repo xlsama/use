@@ -57,7 +57,9 @@
   "accessibility.signals.clear": {
     "sound": "off"
   },
-  "svg.preview.background": "transparent",
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.wrappingStrategy": "advanced",
 
