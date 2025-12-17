@@ -32,7 +32,7 @@
   "workbench.editor.empty.hint": "hidden",
 
   // editor
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "editor.lineHeight": 1.55,
   "editor.fontFamily": "Maple Mono Normal NF CN",
   "editor.fontLigatures": true,
@@ -151,7 +151,7 @@
   // terminal
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.fontFamily": "Maple Mono Normal NF CN",
-  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontSize": 11,
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.fontWeightBold": "400",
   "terminal.integrated.lineHeight": 1.1,
