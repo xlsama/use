@@ -8,9 +8,9 @@ const HOME_DIR = os.homedir()
 // ---------- linking ----------
 const LINK_MAP = [
   // git
-  { source: '~/i/use/git/.gitconfig', target: '~/.gitconfig' },
-  { source: '~/i/use/git/.gitconfig_work', target: '~/.gitconfig_work' },
-  { source: '~/i/use/git/.gitignore', target: '~/.gitignore' },
+  { source: '~/i/use/config/git/.gitconfig', target: '~/.gitconfig' },
+  { source: '~/i/use/config/git/.gitconfig_work', target: '~/.gitconfig_work' },
+  { source: '~/i/use/config/git/.gitignore', target: '~/.gitignore' },
   // fish
   { source: '~/i/use/config/fish', target: '~/.config/fish' },
   // nvim
