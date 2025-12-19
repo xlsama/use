@@ -24,8 +24,7 @@
       "provider": "zed.dev",
       "model": "claude-sonnet-4-5"
     },
-    "model_parameters": [],
-    "dock": "left"
+    "model_parameters": []
   },
   "agent_ui_font_size": 13.0,
   "agent_buffer_font_size": 13.0,
@@ -44,18 +43,15 @@
     }
   },
   "project_panel": {
-    "dock": "right",
     "default_width": 400,
     "entry_spacing": "standard",
     "indent_size": 12
   },
   "git_panel": {
-    "dock": "right",
     "button": true,
     "default_width": 400
   },
   "outline_panel": {
-    "dock": "right",
     "button": true,
     "default_width": 400
   },
@@ -63,8 +59,7 @@
     "button": false
   },
   "collaboration_panel": {
-    "button": false,
-    "dock": "right"
+    "button": false
   },
   "git": {
     "inline_blame": {
