@@ -77,6 +77,8 @@
     "cursor_position_button": false,
   },
   "when_closing_with_no_tabs": "keep_window_open",
+
+  // files
   "file_scan_exclusions": [
     "**/.git",
     "**/.svn",
@@ -91,6 +93,9 @@
   "file_types": {
     "Fish": ["*Brewfile", "*.conf"],
   },
+
+  // format
+  "format_on_save": "on",
   "prettier": {
     "semi": false,
     "singleQuote": true,
@@ -100,9 +105,6 @@
 
   // languages
   "languages": {
-    "CSS": {
-      "language_servers": ["tailwindcss-language-server"],
-    },
     "JavaScript": {
       "formatter": [{ "code_action": "source.fixAll" }, "prettier"],
     },
@@ -117,13 +119,12 @@
       "formatter": [{ "code_action": "source.fixAll" }, "prettier"],
     },
     "Python": {
-      "language_servers": ["ty", "!basedpyright"],
+      "language_servers": ["ty", "!basedpyright", "..."],
     },
-    "Shell Script": {
+    "Fish": {
       "formatter": {
         "external": {
-          "command": "shfmt",
-          "arguments": ["--filename", "{buffer_path}", "--indent", "2"],
+          "command": "fish_indent",
         },
       },
     },
@@ -141,6 +142,7 @@
     },
   },
 
+  // mcp
   "context_servers": {
     "mcp-server-context7": {
       "enabled": true,
@@ -155,6 +157,7 @@
       "env": {},
     },
   },
+
   "auto_install_extensions": {
     "basher": true,
     "comment": true,
