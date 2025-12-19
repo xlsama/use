@@ -80,7 +80,7 @@ vim.o.showmode = false
 -- 复制到系统剪贴板
 vim.opt.clipboard = 'unnamedplus'
 -- 将 - 视为单词的一部分
-vim.opt.iskeyword:append({'-'})
+vim.opt.iskeyword:append({ '-' })
 
 -------------------- 键位映射 -----------------
 vim.g.mapleader = " "
@@ -113,7 +113,7 @@ map("n", "<Esc>", "<Esc>:noh<CR>", opt)
 map("i", "jk", "<ESC>", opt)
 
 ------------------ Text Objects ---------------
-local modes = {'o', 'x'}
+local modes = { 'o', 'x' }
 local mappings = {
   ['w'] = 'iw',
   ['('] = 'i(',
@@ -141,7 +141,7 @@ local im_select_cmd = "/opt/homebrew/bin/im-select"
 local default_im = "com.apple.keylayout.ABC"
 
 vim.api.nvim_create_autocmd("InsertLeave", {
-    callback = function()
-        os.execute(im_select_cmd .. " " .. default_im)
-    end,
+  callback = function()
+    os.execute(im_select_cmd .. " " .. default_im)
+  end,
 })

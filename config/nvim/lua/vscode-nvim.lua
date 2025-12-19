@@ -9,7 +9,7 @@ vim.opt.clipboard = 'unnamedplus'
 vim.o.scrolloff = 10
 vim.o.sidescrolloff = 10
 -- 将 - 视为单词的一部分
-vim.opt.iskeyword:append({'-'})
+vim.opt.iskeyword:append({ '-' })
 
 -------------------- 辅助函数 -----------------
 local function keymap(mode, lhs, rhs, opts)
@@ -23,8 +23,8 @@ local function map(mode, lhs, rhs, opts)
 end
 
 ------------------ Vim 原生映射 ---------------
-keymap({'n', 'v'}, 'H', '^')
-keymap({'n', 'v'}, 'L', '$')
+keymap({ 'n', 'v' }, 'H', '^')
+keymap({ 'n', 'v' }, 'L', '$')
 keymap('n', 'dH', 'd^')
 keymap('n', 'dL', 'd$')
 keymap('n', 'cH', 'c^')
@@ -41,7 +41,7 @@ map('n', '<leader>t', 'editor.emmet.action.matchTag')
 map('n', '<leader>z', 'editor.toggleFold')
 
 ------------------ Text Objects ---------------
-local modes = {'o', 'x'}
+local modes = { 'o', 'x' }
 local mappings = {
   ['w'] = 'iw',
   ['('] = 'i(',
@@ -69,7 +69,7 @@ local im_select_cmd = "/opt/homebrew/bin/im-select"
 local default_im = "com.apple.keylayout.ABC"
 
 vim.api.nvim_create_autocmd("InsertLeave", {
-    callback = function()
-        os.execute(im_select_cmd .. " " .. default_im)
-    end,
+  callback = function()
+    os.execute(im_select_cmd .. " " .. default_im)
+  end,
 })

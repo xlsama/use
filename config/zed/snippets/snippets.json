@@ -1,66 +1,66 @@
 {
   "console.log": {
     "prefix": "cl",
-    "body": ["console.log('🚀 ~ $1', $1)"]
+    "body": ["console.log('🚀 ~ $1', $1)"],
   },
   "import from": {
     "prefix": "im",
-    "body": ["import $2 from '$1'"]
+    "body": ["import $2 from '$1'"],
   },
   "import { } from": {
     "prefix": "imm",
-    "body": ["import { $2 } from '$1'"]
+    "body": ["import { $2 } from '$1'"],
   },
   "export {}": {
     "prefix": "em",
-    "body": ["export { $1 }"]
+    "body": ["export { $1 }"],
   },
   "export default": {
     "prefix": "ed",
-    "body": ["export default $1"]
+    "body": ["export default $1"],
   },
   "export interface": {
     "prefix": "ei",
-    "body": ["export interface $1 {\n  $2\n}"]
+    "body": ["export interface $1 {\n  $2\n}"],
   },
   "export * from": {
     "prefix": "ef",
-    "body": ["export * from '$1'"]
+    "body": ["export * from '$1'"],
   },
   "export { } from": {
     "prefix": "eff",
-    "body": ["export { $2 } from '$1'"]
+    "body": ["export { $2 } from '$1'"],
   },
   "const x = x": {
     "prefix": "con",
-    "body": ["const $1 = $2"]
+    "body": ["const $1 = $2"],
   },
   "const { x } = x": {
     "prefix": "conn",
-    "body": ["const { $2 } = $1"]
+    "body": ["const { $2 } = $1"],
   },
   "init react template": {
     "prefix": "ir",
-    "body": "const $1 = () => {\n  return (\n    <>\n      $1\n    </>\n  )\n}\n\nexport default $1"
+    "body": "const $1 = () => {\n  return (\n    <>\n      $1\n    </>\n  )\n}\n\nexport default $1",
   },
   "useState": {
     "prefix": "us",
-    "body": "const [$1, $${1}] = useState($2)\n"
+    "body": "const [$1, $${1}] = useState($2)\n",
   },
   "useEffect": {
     "prefix": "ue",
-    "body": "useEffect(() => {\n  $1\n}, [])\n"
+    "body": "useEffect(() => {\n  $1\n}, [])\n",
   },
   "init-vue-template": {
     "prefix": "vue",
-    "body": ["<script setup lang=\"ts\">", "", "</script>", "", "<template>", "$1", "</template>"]
+    "body": ["<script setup lang=\"ts\">", "", "</script>", "", "<template>", "$1", "</template>"],
   },
   "create ref": {
     "prefix": "ref",
-    "body": "const $1 = ref($2)\n$3"
+    "body": "const $1 = ref($2)\n$3",
   },
   "watchEffect": {
     "prefix": "we",
-    "body": "watchEffect(() => {\n  $1\n})\n"
-  }
+    "body": "watchEffect(() => {\n  $1\n})\n",
+  },
 }
