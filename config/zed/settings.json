@@ -105,7 +105,6 @@
       "language_servers": ["tailwindcss-language-server"],
     },
     "JavaScript": {
-      "language_servers": ["tsgo", "vtsls"],
       "formatter": [{ "code_action": "source.fixAll" }, "prettier"],
     },
     "TypeScript": {

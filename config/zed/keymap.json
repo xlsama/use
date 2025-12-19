@@ -81,7 +81,6 @@
     "bindings": {
       "h": ["workspace::SendKeystrokes", "c ^"],
       "l": ["workspace::SendKeystrokes", "c $"],
-      "r": "editor::Rename",
       "w": ["workspace::SendKeystrokes", "c i w"],
       "(": ["workspace::SendKeystrokes", "c i ("],
       "b": ["workspace::SendKeystrokes", "c i b"],
