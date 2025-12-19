@@ -2,8 +2,8 @@
   "use_smartcase_search": true,
   "diagnostics": {
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "hover_popover_delay": 50,
   "autoscroll_on_clicks": true,
@@ -13,7 +13,7 @@
   "buffer_font_family": "Maple Mono Normal NF CN",
   "ui_font_family": "Maple Mono Normal NF CN",
   "sticky_scroll": {
-    "enabled": true
+    "enabled": true,
   },
   "expand_excerpt_lines": 7,
   "double_click_in_multibuffer": "open",
@@ -22,14 +22,14 @@
     "default_profile": "write",
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4-5"
+      "model": "claude-sonnet-4-5",
     },
-    "model_parameters": []
+    "model_parameters": [],
   },
   "agent_ui_font_size": 13.0,
   "agent_buffer_font_size": 13.0,
   "edit_predictions": {
-    "disabled_globs": []
+    "disabled_globs": [],
   },
   "theme": "One Dark Pro",
   "icon_theme": "Catppuccin Mocha",
@@ -39,35 +39,35 @@
     "cursor_shape": "bar",
     "blinking": "on",
     "env": {
-      "GIT_EDITOR": "zed --wait"
-    }
+      "GIT_EDITOR": "zed --wait",
+    },
   },
   "project_panel": {
-    "default_width": 400,
+    "default_width": 350,
     "entry_spacing": "standard",
-    "indent_size": 12
+    "indent_size": 12,
   },
   "git_panel": {
     "button": true,
-    "default_width": 400
+    "default_width": 350,
   },
   "outline_panel": {
     "button": true,
-    "default_width": 400
+    "default_width": 350,
   },
   "notification_panel": {
-    "button": false
+    "button": false,
   },
   "collaboration_panel": {
-    "button": false
+    "button": false,
   },
   "git": {
     "inline_blame": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "minimap": {
-    "show": "always"
+    "show": "always",
   },
   "use_system_window_tabs": true,
   "use_system_path_prompts": true,
@@ -79,7 +79,7 @@
   "vim_mode": true,
   "status_bar": {
     "active_language_button": true,
-    "cursor_position_button": false
+    "cursor_position_button": false,
   },
   "when_closing_with_no_tabs": "keep_window_open",
   "file_scan_exclusions": [
@@ -91,70 +91,70 @@
     "**/.DS_Store",
     "**/Thumbs.db",
     "**/.classpath",
-    "**/.settings"
+    "**/.settings",
   ],
   "file_types": {
-    "Fish": ["*Brewfile", "*.conf"]
+    "Fish": ["*Brewfile", "*.conf"],
   },
   "prettier": {
     "semi": false,
     "singleQuote": true,
     "arrowParens": "avoid",
-    "printWidth": 100
+    "printWidth": 100,
   },
   "languages": {
     "CSS": {
-      "language_servers": ["tailwindcss-language-server"]
+      "language_servers": ["tailwindcss-language-server"],
     },
     "JavaScript": {
       "language_servers": ["tsgo", "vtsls"],
-      "formatter": [{ "code_action": "source.fixAll" }, "prettier"]
+      "formatter": [{ "code_action": "source.fixAll" }, "prettier"],
     },
     "TypeScript": {
       "language_servers": ["tsgo", "vtsls"],
-      "formatter": [{ "code_action": "source.fixAll" }, "prettier"]
+      "formatter": [{ "code_action": "source.fixAll" }, "prettier"],
     },
     "Vue.js": {
-      "formatter": [{ "code_action": "source.fixAll" }, "prettier"]
+      "formatter": [{ "code_action": "source.fixAll" }, "prettier"],
     },
     "Svelte": {
-      "formatter": [{ "code_action": "source.fixAll" }, "prettier"]
+      "formatter": [{ "code_action": "source.fixAll" }, "prettier"],
     },
     "Python": {
-      "language_servers": ["ty", "!basedpyright"]
+      "language_servers": ["ty", "!basedpyright"],
     },
     "Shell Script": {
       "formatter": {
         "external": {
           "command": "shfmt",
-          "arguments": ["--filename", "{buffer_path}", "--indent", "2"]
-        }
-      }
-    }
+          "arguments": ["--filename", "{buffer_path}", "--indent", "2"],
+        },
+      },
+    },
   },
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
         "classFunctions": ["cva", "cx", "cn", "clsx"],
         "experimental": {
-          "classRegex": ["[cls|className|ui]\\s\\:\\=\\s\"([^\"]*)"]
-        }
-      }
-    }
+          "classRegex": ["[cls|className|ui]\\s\\:\\=\\s\"([^\"]*)"],
+        },
+      },
+    },
   },
   "context_servers": {
     "mcp-server-context7": {
       "enabled": true,
       "settings": {
-        "context7_api_key": "ctx7sk-8848a459-15de-4da8-8a14-4cc066dc9540"
-      }
+        "context7_api_key": "ctx7sk-8848a459-15de-4da8-8a14-4cc066dc9540",
+      },
     },
     "nuxt-ui": {
       "enabled": true,
       "command": "npx",
       "args": ["mcp-remote", "https://ui.nuxt.com/mcp"],
-      "env": {}
-    }
+      "env": {},
+    },
   },
   "auto_install_extensions": {
     "basher": true,
@@ -179,6 +179,6 @@
     "swift": true,
     "toml": true,
     "vue": true,
-    "xml": true
-  }
+    "xml": true,
+  },
 }
