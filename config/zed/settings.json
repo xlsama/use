@@ -8,8 +8,8 @@
   "hover_popover_delay": 50,
   "autoscroll_on_clicks": true,
   "confirm_quit": true,
-  "ui_font_size": 15,
-  "buffer_font_size": 14.0,
+  "ui_font_size": 14,
+  "buffer_font_size": 13.0,
   "buffer_font_family": "Maple Mono Normal NF CN",
   "ui_font_family": "Maple Mono Normal NF CN",
   "sticky_scroll": {
@@ -34,7 +34,7 @@
   "theme": "One Dark Pro",
   "icon_theme": "Catppuccin Mocha",
   "terminal": {
-    "font_size": 12.0,
+    "font_size": 11.0,
     "font_family": "Maple Mono Normal NF CN",
     "cursor_shape": "bar",
     "blinking": "on",
