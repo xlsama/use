@@ -97,6 +97,8 @@
     "arrowParens": "avoid",
     "printWidth": 100,
   },
+
+  // languages
   "languages": {
     "CSS": {
       "language_servers": ["tailwindcss-language-server"],
@@ -126,6 +128,8 @@
       },
     },
   },
+
+  // lsp
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
@@ -136,6 +140,7 @@
       },
     },
   },
+
   "context_servers": {
     "mcp-server-context7": {
       "enabled": true,
