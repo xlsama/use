@@ -149,5 +149,5 @@ end
 
 function zip-cur
     set dir_name (basename (pwd))
-    zip -r "$dir_name.zip" . -x "*/node_modules/*" "*/venv/*" "*.zip"
+    zip -r "$dir_name.zip" . -x "node_modules/*" ".venv/*" "*.zip" "*.DS_Store" "*.git*"
 end
