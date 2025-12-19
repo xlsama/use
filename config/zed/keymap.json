@@ -7,6 +7,8 @@
       "alt-j": "workspace::ActivatePaneDown",
       "cmd-e": "workspace::ToggleLeftDock",
       "cmd-shift-a": "git_panel::ToggleFocus",
+      "cmd-shift-j": "terminal_panel::Toggle",
+      "cmd-m": "workspace::ToggleZoom",
     },
   },
   {
@@ -16,13 +18,24 @@
       "A": "project_panel::NewDirectory",
       "r": "project_panel::Rename",
       "d": "project_panel::Delete",
-      "q": "workspace::ToggleRightDock",
     },
   },
   {
     "context": "Editor",
     "bindings": {
       "cmd-i": "editor::ShowCompletions",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-t": "workspace::NewTerminal",
+    },
+  },
+  {
+    "context": "!Terminal",
+    "bindings": {
+      "ctrl-r": "projects::OpenRecent",
     },
   },
   {
@@ -93,18 +106,6 @@
       "\"": ["workspace::SendKeystrokes", "y i \""],
       "`": ["workspace::SendKeystrokes", "y i `"],
       "<": ["workspace::SendKeystrokes", "y i <"],
-    },
-  },
-  {
-    "context": "Terminal",
-    "bindings": {
-      "cmd-t": "workspace::NewTerminal",
-    },
-  },
-  {
-    "context": "!Terminal",
-    "bindings": {
-      "ctrl-r": "projects::OpenRecent",
     },
   },
   {

@@ -1,4 +1,5 @@
 {
+  "colorize_brackets": true,
   "use_smartcase_search": true,
   "diagnostics": {
     "inline": {
@@ -6,7 +7,6 @@
     },
   },
   "hover_popover_delay": 50,
-  "autoscroll_on_clicks": true,
   "confirm_quit": true,
   "ui_font_size": 14,
   "buffer_font_size": 13.0,
@@ -15,7 +15,6 @@
   "sticky_scroll": {
     "enabled": true,
   },
-  "expand_excerpt_lines": 7,
   "double_click_in_multibuffer": "open",
   "agent": {
     "always_allow_tool_actions": true,
