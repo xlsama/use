@@ -15,7 +15,6 @@
   "sticky_scroll": {
     "enabled": true,
   },
-  "double_click_in_multibuffer": "open",
   "agent": {
     "always_allow_tool_actions": true,
     "default_profile": "write",

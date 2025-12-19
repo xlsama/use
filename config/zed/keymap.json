@@ -9,6 +9,7 @@
       "cmd-shift-a": "git_panel::ToggleFocus",
       "cmd-shift-j": "terminal_panel::Toggle",
       "cmd-m": "workspace::ToggleZoom",
+      "alt-d": "git::Diff",
     },
   },
   {
