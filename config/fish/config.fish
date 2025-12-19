@@ -146,3 +146,8 @@ function gclw
     c ~/w/$project_name
     exit
 end
+
+function zip-cur
+    set dir_name (basename (pwd))
+    zip -r "$dir_name.zip" . -x "*/node_modules/*" "*/venv/*" "*.zip"
+end
