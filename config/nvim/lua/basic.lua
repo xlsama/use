@@ -97,12 +97,12 @@ map("n", "L", "$", opt)
 map("v", "L", "$", opt)
 
 -- 行首行尾操作
-map("n", "dH", "d^", opt)
-map("n", "dL", "d$", opt)
-map("n", "cH", "c^", opt)
-map("n", "cL", "c$", opt)
-map("n", "yH", "y^", opt)
-map("n", "yL", "y$", opt)
+map("n", "dh", "d^", opt)
+map("n", "dl", "d$", opt)
+map("n", "ch", "c^", opt)
+map("n", "cl", "c$", opt)
+map("n", "yh", "y^", opt)
+map("n", "yl", "y$", opt)
 
 -- 其他映射
 map("n", "<leader>v", "V", opt)
