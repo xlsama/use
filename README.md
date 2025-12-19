@@ -52,11 +52,7 @@ zx install.mjs
 
 ### Editor
 
-- [Cursor](https://cursor.com/)
-
-### Terminal
-
-- [Ghostty](https://ghostty.org/)
+- [Zed](https://zed.dev/)
 
 ### Network
 

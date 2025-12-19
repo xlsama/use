@@ -4,8 +4,7 @@ tap "daipeihust/tap" # for im-select
 
 # apps
 cask 'google-chrome'
-cask 'cursor'
-cask 'ghostty'
+cask 'zed@preview'
 cask 'surge'
 cask 'feishu'
 cask 'wechat'

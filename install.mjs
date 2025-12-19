@@ -15,8 +15,6 @@ const LINK_MAP = [
   { source: '~/i/use/config/fish', target: '~/.config/fish' },
   // nvim
   { source: '~/i/use/config/nvim', target: '~/.config/nvim' },
-  // ghostty
-  { source: '~/i/use/config/ghostty', target: '~/.config/ghostty' },
   // starship
   { source: '~/i/use/config/starship.toml', target: '~/.config/starship.toml' },
   // cursor
@@ -55,7 +53,7 @@ await Promise.all(
     await $`mkdir -p ${path.dirname(target)}`
     await $`rm -rf ${target}`
     await $`ln -s -f ${source} ${target}`
-  })
+  }),
 )
 
 // ---------- macOS defaults ----------

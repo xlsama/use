@@ -126,7 +126,7 @@ alias release="nr release"
 alias up='nlx taze -I -r'
 
 function c
-    cursor $argv
+  zed $argv
 end
 
 # Git Clone to ~/i Directory and Open with Editor
