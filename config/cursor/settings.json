@@ -301,6 +301,7 @@
     "Lines too Long": false
   },
   "redhat.telemetry.enabled": false,
+  "vue.hover.rich": true,
 
   // cursor ide
   "update.releaseTrack": "prerelease",
