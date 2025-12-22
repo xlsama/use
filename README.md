@@ -122,7 +122,7 @@ zx install.mjs
 
 #### Language & Region
 
-- Region: China mainland (Raycast Currency Exchange)
+- Region: United States
 
 - Temperature: Celsius
 
