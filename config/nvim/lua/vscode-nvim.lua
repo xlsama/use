@@ -2,7 +2,7 @@ local vscode = require('vscode')
 
 -------------------- 基础配置 -----------------
 vim.g.mapleader = " "
-vim.o.timeoutlen = 1000
+vim.o.timeoutlen = 1500
 vim.notify = vscode.notify
 vim.opt.clipboard = 'unnamedplus'
 -- jkhl 移动时光标周围保留10行
