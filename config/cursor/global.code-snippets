@@ -53,10 +53,8 @@
     "scope": "vue",
     "prefix": "vue",
     "body": [
-      "<script setup lang=\"ts\">",
-      "",
-      "</script>",
-      "",
+      "<script setup lang=\"ts\">\n",
+      "</script>\n",
       "<template>",
       "\t<div>$1</div>",
       "</template>"
