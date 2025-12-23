@@ -52,7 +52,15 @@
   "init-vue-template": {
     "scope": "vue",
     "prefix": "vue",
-    "body": ["<script setup lang=\"ts\">", "", "</script>", "", "<template>", "$1", "</template>"]
+    "body": [
+      "<script setup lang=\"ts\">",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div>$1</div>",
+      "</template>"
+    ]
   },
   "create ref": {
     "scope": "vue,javascript,typescript,javascriptreact,typescriptreact",
