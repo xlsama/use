@@ -304,6 +304,7 @@
   "vue.hover.rich": true,
 
   // cursor ide
-  "update.releaseTrack": "prerelease",
-  "cursor.cpp.disabledLanguages": []
+  "update.releaseTrack": "dev",
+  "cursor.cpp.disabledLanguages": [],
+  "update.mode": "silentlyApplyOnQuit"
 }
