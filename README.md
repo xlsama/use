@@ -54,6 +54,10 @@ zx install.mjs
 
 - [Cursor](https://cursor.com/)
 
+### Terminal
+
+- [Ghostty](https://ghostty.org/)
+
 ### Network
 
 - [Surge](https://nssurge.com/) - Bypass GFW
