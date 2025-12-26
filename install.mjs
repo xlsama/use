@@ -17,6 +17,8 @@ const LINK_MAP = [
   { source: '~/i/use/config/nvim', target: '~/.config/nvim' },
   // starship
   { source: '~/i/use/config/starship.toml', target: '~/.config/starship.toml' },
+  // ghostty
+  { source: '~/i/use/config/ghostty', target: '~/.config/ghostty' },
   // cursor
   {
     source: `~/i/use/config/cursor/settings.json`,
