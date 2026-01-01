@@ -101,14 +101,19 @@ alias conf='cd ~/.config'
 alias ls='lsd'
 alias l='lsd -1A'
 
-alias o='open'
+# copy
 alias copy='pbcopy'
 alias cpwd='pwd | copy'
 alias cgb='gb --show-current | copy'
 
+alias o='open'
 alias v='nvim'
+
+# language
 alias n='fnm' # node version manager
 alias py='python3'
+
+# environment
 alias reload='exec fish'
 alias venv='source .venv/bin/activate.fish'
 
@@ -124,6 +129,9 @@ alias lint="nr lint"
 alias format="nr format"
 alias release="nr release"
 alias up='nlx taze -I -r'
+
+# ai
+alias ai='claude --dangerously-skip-permissions'
 
 function c
     cursor $argv

@@ -21,10 +21,9 @@
   },
 
   // window
-  "window.newWindowDimensions": "fullscreen",
-  "window.restoreFullscreen": true,
+  "window.newWindowDimensions": "inherit",
   "window.nativeTabs": true, // this is great, macOS only
-  "window.title": "${rootName}",
+  "window.dialogStyle": "custom",
   "window.customTitleBarVisibility": "windowed",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.startupEditor": "none",
