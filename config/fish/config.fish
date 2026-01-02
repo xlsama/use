@@ -45,6 +45,7 @@ alias gsc='git switch -c'
 # --- 标签 ---
 alias gt='git tag'
 alias gtl='git tag -l'
+alias gtd='git tag -d'
 
 # --- 远程交互 (Fetch, Pull, Push) ---
 alias gf='git fetch --all --prune --tags'
