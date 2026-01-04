@@ -132,7 +132,7 @@ alias release="nr release"
 alias up='nlx taze -I -r'
 
 # ai
-alias ai='claude --dangerously-skip-permissions'
+alias cc='claude --dangerously-skip-permissions'
 
 function c
     cursor $argv
