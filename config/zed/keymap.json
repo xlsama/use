@@ -9,8 +9,8 @@
       "cmd-shift-a": "git_panel::ToggleFocus",
       "cmd-shift-j": "terminal_panel::Toggle",
       "cmd-m": "workspace::ToggleZoom",
-      "alt-d": "git::Diff"
-    }
+      "alt-d": "git::Diff",
+    },
   },
   {
     "context": "ProjectPanel && not_editing",
@@ -18,32 +18,32 @@
       "a": "project_panel::NewFile",
       "A": "project_panel::NewDirectory",
       "r": "project_panel::Rename",
-      "d": "project_panel::Delete"
-    }
+      "d": "project_panel::Delete",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
-      "cmd-i": "editor::ShowCompletions"
-    }
+      "cmd-i": "editor::ShowCompletions",
+    },
   },
   {
     "context": "Terminal",
     "bindings": {
-      "cmd-t": "workspace::NewTerminal"
-    }
+      "cmd-t": "workspace::NewTerminal",
+    },
   },
   {
     "context": "!Terminal",
     "bindings": {
-      "ctrl-r": "projects::OpenRecent"
-    }
+      "ctrl-r": "projects::OpenRecent",
+    },
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "j k": ["workspace::SendKeystrokes", "escape cmd-s"]
-    }
+      "j k": ["workspace::SendKeystrokes", "escape cmd-s"],
+    },
   },
   {
     "context": "Editor && VimControl",
@@ -51,14 +51,14 @@
       "H": ["workspace::SendKeystrokes", "^"],
       "L": ["workspace::SendKeystrokes", "$"],
       "space v": ["workspace::SendKeystrokes", "V"],
-      "space a": ["workspace::SendKeystrokes", "%"]
-    }
+      "space a": ["workspace::SendKeystrokes", "%"],
+    },
   },
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "g space": ["workspace::SendKeystrokes", "g space z z"]
-    }
+      "g space": ["workspace::SendKeystrokes", "g space z z"],
+    },
   },
   {
     "context": "Editor && vim_operator == d",
@@ -73,8 +73,8 @@
       "'": ["workspace::SendKeystrokes", "d i '"],
       "\"": ["workspace::SendKeystrokes", "d i \""],
       "`": ["workspace::SendKeystrokes", "d i `"],
-      "<": ["workspace::SendKeystrokes", "d i <"]
-    }
+      "<": ["workspace::SendKeystrokes", "d i <"],
+    },
   },
   {
     "context": "Editor && vim_operator == c",
@@ -89,8 +89,8 @@
       "'": ["workspace::SendKeystrokes", "c i '"],
       "\"": ["workspace::SendKeystrokes", "c i \""],
       "`": ["workspace::SendKeystrokes", "c i `"],
-      "<": ["workspace::SendKeystrokes", "c i <"]
-    }
+      "<": ["workspace::SendKeystrokes", "c i <"],
+    },
   },
   {
     "context": "Editor && vim_operator == y",
@@ -105,19 +105,19 @@
       "'": ["workspace::SendKeystrokes", "y i '"],
       "\"": ["workspace::SendKeystrokes", "y i \""],
       "`": ["workspace::SendKeystrokes", "y i `"],
-      "<": ["workspace::SendKeystrokes", "y i <"]
-    }
+      "<": ["workspace::SendKeystrokes", "y i <"],
+    },
   },
   {
     "context": "(BufferSearchBar && !in_replace)",
     "bindings": {
-      "enter": null
-    }
+      "enter": null,
+    },
   },
   {
     "context": "BufferSearchBar",
     "bindings": {
-      "enter": "search::SelectNextMatch"
-    }
-  }
+      "enter": "search::SelectNextMatch",
+    },
+  },
 ]

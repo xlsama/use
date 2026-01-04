@@ -49,7 +49,7 @@ await Promise.all(
     await $`mkdir -p ${path.dirname(target)}`
     await $`rm -rf ${target}`
     await $`ln -s -f ${source} ${target}`
-  })
+  }),
 )
 
 // ---------- macOS defaults ----------

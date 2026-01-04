@@ -1,47 +1,47 @@
 # fetch registry
-tap "homebrew/cask-fonts"
-tap "daipeihust/tap" # for im-select
+tap homebrew/cask-fonts
+tap daipeihust/tap # for im-select
 
 # apps
-cask 'google-chrome'
-cask 'cursor'
-cask 'ghostty'
-cask 'surge'
-cask 'feishu'
-cask 'wechat'
-cask 'obsidian'
-cask 'refine'
-cask 'raycast'
-cask 'input-source-pro'
-brew 'popclip'
+cask google-chrome
+cask cursor
+cask ghostty
+cask surge
+cask feishu
+cask wechat
+cask obsidian
+cask refine
+cask raycast
+cask input-source-pro
+brew popclip
 cask 'logi-options+'
-cask 'mos'
-cask 'betterdisplay'
-cask 'yaak'
-cask 'dataflare'
-cask 'orbstack'
-cask 'spotify'
+cask mos
+cask betterdisplay
+cask yaak
+cask dataflare
+cask orbstack
+cask spotify
 
 # command line tools
-brew 'zx'
-brew "fish"
-brew "starship"
-brew "neovim"
-brew "lsd"
-brew "jq"
-brew "ripgrep"
-brew "zoxide"
-brew 'difftastic'
-brew 'fzf'
-brew "im-select"
-brew "fnm" # node version manager
-brew "uv" # python package and project manager
+brew zx
+brew fish
+brew starship
+brew neovim
+brew lsd
+brew jq
+brew ripgrep
+brew zoxide
+brew difftastic
+brew fzf
+brew im-select
+brew fnm # node version manager
+brew uv # python package and project manager
 
 # programming languages
-brew "rust"
-brew "go"
-brew "swift"
-brew "lua"
+brew rust
+brew go
+brew swift
+brew lua
 
 # fonts
-cask "font-maple-mono-normal-nf-cn"
+cask font-maple-mono-normal-nf-cn
