@@ -19,19 +19,6 @@ const LINK_MAP = [
   { source: '~/i/use/config/starship.toml', target: '~/.config/starship.toml' },
   // ghostty
   { source: '~/i/use/config/ghostty', target: '~/.config/ghostty' },
-  // cursor
-  {
-    source: `~/i/use/config/cursor/settings.json`,
-    target: '~/Library/Application Support/Cursor/User/settings.json',
-  },
-  {
-    source: `~/i/use/config/cursor/keybindings.json`,
-    target: '~/Library/Application Support/Cursor/User/keybindings.json',
-  },
-  {
-    source: `~/i/use/config/cursor/global.code-snippets`,
-    target: '~/Library/Application Support/Cursor/User/snippets/global.code-snippets',
-  },
   // zed
   { source: '~/i/use/config/zed/settings.json', target: '~/.config/zed/settings.json' },
   { source: '~/i/use/config/zed/keymap.json', target: '~/.config/zed/keymap.json' },

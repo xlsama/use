@@ -52,7 +52,7 @@ zx install.mjs
 
 ### Editor
 
-- [Cursor](https://cursor.com/)
+- [Zed](https://zed.dev/)
 
 ### Terminal
 
