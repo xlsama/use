@@ -35,12 +35,12 @@
     "font_family": "Maple Mono Normal NF CN",
     "cursor_shape": "bar",
     "blinking": "on",
-    "shell": {
-      "with_arguments": {
-        "program": "/usr/bin/open",
-        "args": ["-a", "Ghostty", "."],
-      },
-    },
+    // "shell": {
+    //   "with_arguments": {
+    //     "program": "/usr/bin/open",
+    //     "args": ["-a", "Ghostty", "."],
+    //   },
+    // },
     "env": {
       "GIT_EDITOR": "zed --wait",
     },
@@ -116,7 +116,6 @@
       "formatter": [{ "code_action": "source.fixAll" }, "prettier"],
     },
     "TypeScript": {
-      "language_servers": ["tsgo", "vtsls"],
       "formatter": [{ "code_action": "source.fixAll" }, "prettier"],
     },
     "Vue.js": {
