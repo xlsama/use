@@ -135,7 +135,7 @@ alias up='nlx taze -I -r'
 alias cc='claude --dangerously-skip-permissions'
 
 function c
-    cursor $argv
+    zed $argv
 end
 
 # Git Clone to ~/i Directory and Open with Editor
