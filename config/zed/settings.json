@@ -35,6 +35,12 @@
     "font_family": "Maple Mono Normal NF CN",
     "cursor_shape": "bar",
     "blinking": "on",
+    "shell": {
+      "with_arguments": {
+        "program": "/usr/bin/open",
+        "args": ["-a", "Ghostty", "."],
+      },
+    },
     "env": {
       "GIT_EDITOR": "zed --wait",
     },
