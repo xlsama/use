@@ -159,6 +159,7 @@
     },
   },
 
+  // extensions
   "auto_install_extensions": {
     "basher": true,
     "comment": true,
