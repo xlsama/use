@@ -21,15 +21,10 @@ symbol = ' '
 symbol = ' '
 
 [git_status]
-format = '([$all_status$ahead_behind]($style) )'
 style = 'bold yellow'
 modified = '✨'
 untracked = "?"
 staged = '+'
-ahead = '⇡${count}'
-behind = '⇣${count}'
-diverged = '⇕⇡${ahead_count}⇣${behind_count}'
-conflicted = 'conflicted '
-stashed = 'stashed '
-deleted = ''
-renamed = ''
+ahead = '↑${count}'
+behind = '↓${count}'
+diverged = '↕↑${ahead_count}↓${behind_count}'
