@@ -32,10 +32,6 @@ const LINK_MAP = [
     source: `~/i/use/config/vscode/global.code-snippets`,
     target: '~/Library/Application Support/Code/User/snippets/global.code-snippets',
   },
-  // zed
-  { source: '~/i/use/config/zed/settings.json', target: '~/.config/zed/settings.json' },
-  { source: '~/i/use/config/zed/keymap.json', target: '~/.config/zed/keymap.json' },
-  { source: '~/i/use/config/zed/snippets', target: '~/.config/zed/snippets' },
 ]
 
 // ---------- create folders ----------
@@ -49,7 +45,7 @@ await Promise.all(
     await $`mkdir -p ${path.dirname(target)}`
     await $`rm -rf ${target}`
     await $`ln -s -f ${source} ${target}`
-  }),
+  })
 )
 
 // ---------- macOS defaults ----------
