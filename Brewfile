@@ -4,7 +4,7 @@ tap daipeihust/tap # for im-select
 
 # apps
 cask google-chrome
-cask zed@preview
+cask visual-studio-code
 cask ghostty
 cask surge
 cask feishu

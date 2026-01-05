@@ -19,6 +19,19 @@ const LINK_MAP = [
   { source: '~/i/use/config/starship.toml', target: '~/.config/starship.toml' },
   // ghostty
   { source: '~/i/use/config/ghostty', target: '~/.config/ghostty' },
+  // vscode
+  {
+    source: `~/i/use/config/vscode/settings.json`,
+    target: '~/Library/Application Support/Code/User/settings.json',
+  },
+  {
+    source: `~/i/use/config/vscode/keybindings.json`,
+    target: '~/Library/Application Support/Code/User/keybindings.json',
+  },
+  {
+    source: `~/i/use/config/vscode/global.code-snippets`,
+    target: '~/Library/Application Support/Code/User/snippets/global.code-snippets',
+  },
   // zed
   { source: '~/i/use/config/zed/settings.json', target: '~/.config/zed/settings.json' },
   { source: '~/i/use/config/zed/keymap.json', target: '~/.config/zed/keymap.json' },

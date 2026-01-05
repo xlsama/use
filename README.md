@@ -52,7 +52,7 @@ zx install.mjs
 
 ### Editor
 
-- [Zed](https://zed.dev/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ### Terminal
 

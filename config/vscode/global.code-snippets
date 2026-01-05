@@ -1,0 +1,73 @@
+{
+  "console.log": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
+    "prefix": "cl",
+    "body": ["console.log('🚀 ~ $1', $1)"]
+  },
+  "import from": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
+    "prefix": "im",
+    "body": ["import $2 from '$1'"]
+  },
+  "import { } from": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
+    "prefix": "imm",
+    "body": ["import { $2 } from '$1'"]
+  },
+  "export {}": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
+    "prefix": "em",
+    "body": ["export { $1 }"]
+  },
+  "export default": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
+    "prefix": "ed",
+    "body": ["export default $1"]
+  },
+  "export interface": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
+    "prefix": "ei",
+    "body": ["export interface $1 {\n  $2\n}"]
+  },
+  "export * from": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
+    "prefix": "ef",
+    "body": ["export * from '$1'"]
+  },
+  "export { } from": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
+    "prefix": "eff",
+    "body": ["export { $2 } from '$1'"]
+  },
+  "const x = x": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
+    "prefix": "con",
+    "body": ["const $1 = $2"]
+  },
+  "const { x } = x": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact,vue",
+    "prefix": "conn",
+    "body": ["const { $2 } = $1"]
+  },
+  "init-vue-template": {
+    "scope": "vue",
+    "prefix": "vue",
+    "body": [
+      "<script setup lang=\"ts\">\n",
+      "</script>\n",
+      "<template>",
+      "\t<div>$1</div>",
+      "</template>"
+    ]
+  },
+  "create ref": {
+    "scope": "vue,javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ref",
+    "body": "const $1 = ref($2)\n$3"
+  },
+  "watchEffect": {
+    "scope": "vue,javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "we",
+    "body": "watchEffect(() => {\n  $1\n})\n"
+  }
+}
