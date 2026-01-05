@@ -133,6 +133,7 @@ alias up='nlx taze -I -r'
 
 # ai
 alias cc='claude --dangerously-skip-permissions'
+alias oc='opencode'
 
 function c
     code $argv
