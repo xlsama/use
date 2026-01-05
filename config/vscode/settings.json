@@ -21,7 +21,8 @@
   },
 
   // window
-  "window.newWindowDimensions": "inherit",
+  "window.newWindowDimensions": "fullscreen",
+  "window.restoreFullscreen": true,
   "window.nativeTabs": true, // this is great, macOS only
   "window.customTitleBarVisibility": "windowed",
   "workbench.editor.highlightModifiedTabs": true,
