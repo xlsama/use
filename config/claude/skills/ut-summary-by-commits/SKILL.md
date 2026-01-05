@@ -42,9 +42,12 @@ bun <skill_dir>/scripts/generate_ut_report.ts <startDate> <endDate> <user_cwd>/u
 
 ## Configuration
 
-脚本从全局配置文件 `~/.config/claude-skills-config.json` 读取配置。
+脚本从以下路径读取配置文件：
 
-首次使用前，需要创建配置文件并添加 `ut-summary-by-commits` 配置：
+- macOS/Linux: `~/.config/claude-skills-config.json`
+- Windows: `%USERPROFILE%\.config\claude-skills-config.json`（如 `C:\Users\用户名\.config\claude-skills-config.json`）
+
+如果配置文件不存在，请创建并填写以下内容：
 
 ```json
 {
