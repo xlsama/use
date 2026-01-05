@@ -162,3 +162,26 @@ function zip-cur
     set dir_name (basename (pwd))
     zip -r "$dir_name.zip" . -x "node_modules/*" ".venv/*" "*.zip" "*.DS_Store" "*.git*"
 end
+
+# Open git remote origin in browser
+function og
+    set remote_url (git remote get-url origin 2>/dev/null)
+    if test -z "$remote_url"
+        echo "No origin remote found"
+        return 1
+    end
+
+    # Convert SSH to HTTPS: git@host:path -> https://host/path
+    if string match -q "git@*" $remote_url
+        set url (string replace "git@" "" $remote_url)
+        set url (string replace ":" "/" $url)
+        set url "https://$url"
+    else
+        set url $remote_url
+    end
+
+    # Remove .git suffix
+    set url (string replace -r '\.git$' '' $url)
+
+    open $url
+end
