@@ -2,8 +2,8 @@
   // theme
   "workbench.colorTheme": "Vitesse Dark",
   "window.systemColorTheme": "dark",
-  "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "icons-carbon",
+  "workbench.iconTheme": "catppuccin-perfect-mocha",
   "workbench.colorCustomizations": {
     "[Vitesse Dark]": {
       "list.hoverBackground": "#282828",
@@ -25,9 +25,10 @@
   "window.nativeTabs": true, // this is great, macOS only
   "window.customTitleBarVisibility": "windowed",
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.startupEditor": "none",
   "workbench.list.smoothScrolling": true,
   "workbench.editor.empty.hint": "hidden",
+  "workbench.startupEditor": "none",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
 
   // editor
   "editor.fontSize": 13,
