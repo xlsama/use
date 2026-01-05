@@ -112,6 +112,8 @@ zx install.mjs
 
 - [Homebrew](https://brew.sh/) - Package Manager, More: [Brewfile](./Brewfile)
 
+- [Claude Code](https://www.claude.com/product/claude-code) - Agent
+
 ## MacOS Config
 
 ### Battery
