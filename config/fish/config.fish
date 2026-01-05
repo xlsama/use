@@ -133,7 +133,8 @@ alias up='nlx taze -I -r'
 
 # ai
 alias cc='claude --dangerously-skip-permissions'
-alias cm="cc --model haiku -p 'run auto-commit'"
+alias cch="cc --model haiku"
+alias cm="cch -p 'run auto-commit'"
 
 function c
     code $argv
