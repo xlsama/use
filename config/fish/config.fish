@@ -133,7 +133,7 @@ alias up='nlx taze -I -r'
 
 # ai
 alias cc='claude --dangerously-skip-permissions'
-alias commit="opencode run --command commit"
+alias cm="opencode run --command commit"
 
 function c
     code $argv
