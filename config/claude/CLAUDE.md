@@ -8,7 +8,7 @@
 
 ## 前端技术栈
 
-- 框架：React + TanStack Start
-- UI：shadcn/ui + Tailwind CSS
-- 动画：Motion
+- 框架：Vue、Nuxt
+- UI：Nuxt UI + Tailwind CSS
+- 动画：motion-v
 - 包管理：pnpm
