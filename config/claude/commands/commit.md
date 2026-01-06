@@ -1,16 +1,15 @@
 ---
-name: auto-commit
-description: 自动生成 commit 消息并推送到远程仓库。当用户想要提交代码、需要生成 commit 消息时触发此技能。
+description: 自动生成 git commit message 并 push 到远程仓库
 ---
 
-## 上下文
+## Context
 
 - 当前 git 状态：!`git status`
 - 当前变更内容：!`git diff HEAD`
 - 当前分支：!`git branch --show-current`
 - 最近提交记录：!`git log --oneline -10`
 
-## 任务
+## Tasks
 
 1. 分析 diff 内容，**深入理解代码的业务上下文和变更意图**
 2. 生成 3 个候选 commit 消息
@@ -20,7 +19,7 @@ description: 自动生成 commit 消息并推送到远程仓库。当用户想�
    - 结合代码上下文理解业务场景（如组件用途、功能模块、用户视角等）
 3. 从 3 个候选消息中选择最合适的一个，并说明选择理由
 
-### Commit 消息示例
+### Commit example
 
 **好的写法：**
 
