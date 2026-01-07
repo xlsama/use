@@ -1,119 +1,44 @@
 ---
 name: ut-summary-by-commits
-description: 根据云效 Git commits 生成每日工作汇总报告
+description: 根据云效 Git commits 生成每日工作汇总报告 (user)
 ---
 
 # UT Summary by Commits
 
-根据指定日期范围内的 Git commits 生成每日工作汇总（UT）报告。
+生成指定日期范围内的工作汇总（UT）报告。
 
-## When to Use
-
-当用户说以下内容时触发此 skill：
-
-- "生成当月 ut 报告"
-- "生成本月工作汇总"
-- "生成 2025-12-01 到 2025-12-31 的 ut 报告"
-- 或其他类似的日期范围 + ut/工作汇总的请求
-
-## How to Execute
-
-运行此 skill 目录下的 `scripts/generate_ut_report.ts` 脚本：
+## 使用方式
 
 ```bash
-# 指定日期范围和输出路径
-bun <skill_dir>/scripts/generate_ut_report.ts <startDate> <endDate> <user_cwd>/ut_report_<startDate>_<endDate>.md
+bun <skill_dir>/scripts/generate_ut_report.ts <startDate> <endDate> <outputPath>
 ```
 
-> **重要**：
->
-> - `<skill_dir>` 是此 SKILL.md 文件所在的目录路径
-> - `<user_cwd>` 是用户运行命令时的当前工作目录
-> - **必须始终传递全部三个参数**，确保报告生成到用户当前目录
-> - 如果用户没有指定日期范围，使用当月第一天和最后一天
+**示例**（假设用户在 ~/notes 目录，当前是 2025 年 1 月）：
 
-### 参数说明
+```bash
+# 用户说：生成当月 ut 报告
+bun <skill_dir>/scripts/generate_ut_report.ts 2025-01-01 2025-01-31 ~/notes/ut_report_2025-01-01_2025-01-31.md
 
-| 参数       | 必选 | 说明                                                          |
-| ---------- | ---- | ------------------------------------------------------------- |
-| startDate  | 否   | 开始日期，格式 YYYY-MM-DD，默认当月第一天                     |
-| endDate    | 否   | 结束日期，格式 YYYY-MM-DD，默认当月最后一天                   |
-| outputPath | 否   | 输出文件路径，默认当前目录下 `ut_report_开始日期_结束日期.md` |
+# 用户说：生成 2025-11 的 ut 报告
+bun <skill_dir>/scripts/generate_ut_report.ts 2025-11-01 2025-11-30 ~/notes/ut_report_2025-11-01_2025-11-30.md
+```
 
-## Configuration
+**注意**：
+- `<skill_dir>` = 此 SKILL.md 所在目录
+- 如用户未指定日期，使用当月第一天到最后一天
+- 输出到用户当前工作目录
 
-脚本从以下路径读取配置文件：
+## 配置
 
-- macOS/Linux: `~/.config/claude-skills-config.json`
-- Windows: `%USERPROFILE%\.config\claude-skills-config.json`（如 `C:\Users\用户名\.config\claude-skills-config.json`）
-
-如果配置文件不存在，请创建并填写以下内容：
+配置文件：`~/.config/claude-skills-config.json`
 
 ```json
 {
   "ut-summary-by-commits": {
-    "yunxiao": {
-      "token": "pt-your-token-here",
-      "orgId": "your-org-id"
-    },
-    "user": {
-      "email": "your-email@example.com"
-    }
+    "yunxiao": { "token": "pt-xxx", "orgId": "xxx" },
+    "user": { "email": "xxx@example.com" }
   }
 }
 ```
 
-| 配置项        | 必选 | 说明                                   |
-| ------------- | ---- | -------------------------------------- |
-| yunxiao.token | 是   | 云效 API Token                         |
-| yunxiao.orgId | 是   | 云效组织 ID                            |
-| user.email    | 否   | 用户邮箱，用于过滤只保留自己的 commits |
-
-## Output Format
-
-```markdown
-# UT Report: 2025 年 12 月
-
-## 2025-12-29
-
-### store-health-web
-
-- chore: release v1.2.0 - 新增 SVT 功能，Comparison 重构
-- chore: integrate API
-- feat: add checked
-- fix: resolve duplicate request issue
-
-### another-project
-
-- feat: add new feature
-- fix: bug fix
-
-## 2025-12-12
-
-### store-health-web
-
-- chore: release v1.1.0
-```
-
-## Important Notes
-
-1. **用户过滤**：只统计配置中 `user.email` 对应的 commits
-2. **去重**：同一天同一项目下，相同的 commit message 只显示一次
-
-## Example Interaction
-
-**User**: 生成当月 ut 报告
-
-**Assistant**:（假设当前是 2025 年 1 月，用户在 ~/notes 目录）
-
-```bash
-bun <skill_dir>/scripts/generate_ut_report.ts 2025-01-01 2025-01-31 ~/notes/ut_report_2025-01-01_2025-01-31.md
-```
-
-**User**: 生成 2025-11-01 到 2025-11-30 的 ut 报告
-
-**Assistant**:（假设用户在 ~/notes 目录）
-
-```bash
-bun <skill_dir>/scripts/generate_ut_report.ts 2025-11-01 2025-11-30 ~/notes/ut_report_2025-11-01_2025-11-30.md
-```
+若配置缺失，脚本会报错提示用户创建
