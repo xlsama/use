@@ -9,7 +9,8 @@
 ## 前端技术栈
 
 - 框架：React + TanStack Start
-- 数据请求：TanStack Query
+- 数据请求：TanStack Query + ofetch
+- 状态管理：Zustand
 - 表单：TanStack Form
 - UI 组件：shadcn/ui
 - 样式：Tailwind CSS
