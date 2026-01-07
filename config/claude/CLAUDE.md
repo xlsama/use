@@ -8,7 +8,7 @@
 
 ## 前端技术栈
 
-- 框架：React + TanStack Start
+- 框架：React + TanStack Router
 - 数据请求：TanStack Query + ofetch
 - 状态管理：Zustand
 - 表单：TanStack Form
