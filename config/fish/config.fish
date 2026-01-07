@@ -158,7 +158,7 @@ function gclw
     exit
 end
 
-function zip-cur
+function zip_cur
     set dir_name (basename (pwd))
     zip -r "$dir_name.zip" . -x "node_modules/*" ".venv/*" "*.zip" "*.DS_Store" "*.git*"
 end
