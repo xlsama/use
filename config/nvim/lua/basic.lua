@@ -90,6 +90,10 @@ local map = vim.api.nvim_set_keymap
 
 local opt = { noremap = true, silent = true }
 
+-- ; 和 : 互换
+map("n", ";", ":", { noremap = true })
+map("n", ":", ";", { noremap = true })
+
 -- normal 和 visual 模式
 map("n", "H", "^", opt)
 map("v", "H", "^", opt)

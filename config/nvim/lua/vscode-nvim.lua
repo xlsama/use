@@ -23,6 +23,10 @@ local function map(mode, lhs, rhs, opts)
 end
 
 ------------------ Vim 原生映射 ---------------
+-- ; 和 : 互换
+keymap('n', ';', ':')
+keymap('n', ':', ';')
+
 keymap({ 'n', 'v' }, 'H', '^')
 keymap({ 'n', 'v' }, 'L', '$')
 keymap('n', 'dh', 'd^')
