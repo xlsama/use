@@ -5,11 +5,7 @@ window-width = 170
 window-height = 55
 window-padding-x = 6
 
-keybind = super+\=new_split:right
-keybind = super+shift+\=new_split:down
 keybind = alt+h=goto_split:left
 keybind = alt+l=goto_split:right
 keybind = alt+k=goto_split:up
 keybind = alt+j=goto_split:down
-
-keybind = shift+enter=text:\x1b\r
