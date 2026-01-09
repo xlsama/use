@@ -97,6 +97,7 @@ alias i='cd ~/i'
 alias w='cd ~/w' # work
 alias dl='cd ~/Downloads'
 alias conf='cd ~/.config'
+alias notes='cd ~/Documents/notes'
 
 # ls
 alias ls='lsd'
