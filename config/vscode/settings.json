@@ -161,6 +161,7 @@
   "terminal.integrated.minimumContrastRatio": 1,
   "terminal.integrated.stickyScroll.enabled": false,
   "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.initialHint": false,
   "terminal.external.osxExec": "Ghostty.app",
 
   // explorer
@@ -312,5 +313,5 @@
     "plaintext": true,
     "markdown": true,
     "scminput": true
-  },
+  }
 }
