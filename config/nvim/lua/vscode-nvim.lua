@@ -2,13 +2,8 @@ local vscode = require('vscode')
 
 -------------------- 基础配置 -----------------
 vim.g.mapleader = " "
-vim.o.timeoutlen = 1500
+vim.o.timeoutlen = 400
 vim.notify = vscode.notify
-vim.opt.clipboard = 'unnamedplus'
--- jkhl 移动时光标周围保留10行
-vim.o.scrolloff = 10
-vim.o.sidescrolloff = 10
--- 将 - 视为单词的一部分
 vim.opt.iskeyword:append({ '-' })
 
 -------------------- 辅助函数 -----------------
@@ -37,7 +32,6 @@ keymap('n', 'yh', 'y^')
 keymap('n', 'yl', 'y$')
 keymap('n', '<leader>v', 'V')
 keymap('n', '<leader>a', '%')
-keymap("n", "<Esc>", "<Esc>:noh<CR>")
 
 ----------------- VSCode 命令映射 --------------
 map('n', '<leader>r', 'editor.action.rename')
@@ -65,15 +59,12 @@ for _, mode in ipairs(modes) do
 end
 
 ----------------- 可视模式缩进 --------------
-keymap('x', '<', '<gv', { noremap = false, silent = true })
-keymap('x', '>', '>gv', { noremap = false, silent = true })
+keymap('x', '<', '<gv')
+keymap('x', '>', '>gv')
 
 ---------------- 输入法自动切换 -------------
-local im_select_cmd = "/opt/homebrew/bin/im-select"
-local default_im = "com.apple.keylayout.ABC"
-
 vim.api.nvim_create_autocmd("InsertLeave", {
   callback = function()
-    os.execute(im_select_cmd .. " " .. default_im)
+    vim.fn.jobstart({ "/opt/homebrew/bin/im-select", "com.apple.keylayout.ABC" })
   end,
 })
