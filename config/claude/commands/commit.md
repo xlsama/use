@@ -40,6 +40,6 @@ description: 自动生成 git commit message 并 push 到远程仓库
 
 ## 约束
 
-- 请勿在提交记录中添加 Claude 的共同作者署名或 AI 生成标识
+- **请勿在提交记录中添加 Claude 的共同作者署名或 AI 生成标识**
 - 如果没有任何变更，告知用户并停止操作
 - 敏感文件（.env、credentials、密钥等）需提醒用户确认，不自动添加
