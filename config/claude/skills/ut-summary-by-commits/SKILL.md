@@ -10,20 +10,21 @@ description: 根据云效 Git commits 生成每日工作汇总报告 (user)
 ## 使用方式
 
 ```bash
-bun <skill_dir>/scripts/generate_ut_report.ts <startDate> <endDate> <outputPath>
+npx tsx <skill_dir>/scripts/generate_ut_report.ts <startDate> <endDate> <outputPath>
 ```
 
 **示例**（假设用户在 ~/notes 目录，当前是 2025 年 1 月）：
 
 ```bash
 # 用户说：生成当月 ut 报告
-bun <skill_dir>/scripts/generate_ut_report.ts 2025-01-01 2025-01-31 ~/notes/ut_report_2025-01-01_2025-01-31.md
+npx tsx <skill_dir>/scripts/generate_ut_report.ts 2025-01-01 2025-01-31 ~/notes/ut_report_2025-01-01_2025-01-31.md
 
 # 用户说：生成 2025-11 的 ut 报告
-bun <skill_dir>/scripts/generate_ut_report.ts 2025-11-01 2025-11-30 ~/notes/ut_report_2025-11-01_2025-11-30.md
+npx tsx <skill_dir>/scripts/generate_ut_report.ts 2025-11-01 2025-11-30 ~/notes/ut_report_2025-11-01_2025-11-30.md
 ```
 
 **注意**：
+
 - `<skill_dir>` = 此 SKILL.md 所在目录
 - 如用户未指定日期，使用当月第一天到最后一天
 - 输出到用户当前工作目录
