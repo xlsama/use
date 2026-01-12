@@ -2,7 +2,7 @@
 
 ## 编程语言
 
-- **首选**: TypeScript (Bun 运行时)
+- **首选**: TypeScript
 - **次选**: Python（使用 uv 管理项目和安装依赖）
 - **Shell**: fish
 
