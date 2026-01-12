@@ -16,3 +16,7 @@
 - 样式：Tailwind CSS
 - 动画：Motion
 - 包管理：pnpm
+
+## 技能使用
+
+- 编写前端 UI 时，使用 /ui-skill 技能
