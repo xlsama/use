@@ -126,6 +126,7 @@ alias nid='ni -D'
 alias d='nr dev'
 alias do='nr dev --open'
 alias b='nr build'
+alias s='nr start'
 alias t='nr test'
 alias lint="nr lint"
 alias format="nr format"
