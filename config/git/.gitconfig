@@ -16,4 +16,4 @@
 	helper = osxkeychain
 	useHttpPath = true
 [diff]
-	external = difft
+	external = difft --display=inline
