@@ -19,6 +19,7 @@ source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 source "$HOME/.cargo/env.fish"
 
 alias g='git'
+alias lg='lazygit'
 # --- 状态 & 日志 & 差异 ---
 alias gst='git status'
 alias gd='git diff'
