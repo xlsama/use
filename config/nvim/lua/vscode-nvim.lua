@@ -5,6 +5,7 @@ vim.g.mapleader = " "
 vim.o.timeoutlen = 400
 vim.notify = vscode.notify
 vim.opt.iskeyword:append({ '-' })
+vim.opt.clipboard = 'unnamedplus'
 
 -------------------- 辅助函数 -----------------
 local function keymap(mode, lhs, rhs, opts)
