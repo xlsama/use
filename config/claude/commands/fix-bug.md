@@ -15,7 +15,7 @@ description: 修复 Bug。进入 plan mode 分析问题根因，区分需求调�
 | Bug 修复 | 运行时错误、逻辑缺陷       | 定位根因，修复代码 |
 | 需求调整 | 功能与期望不符、需新增功能 | 确认变更，评估影响 |
 
-类型不明确时，使用 AskUserQuestion 询问用户确认。
+类型不明确时，使用 `AskUserQuestion` 询问用户确认。
 
 ## 3. 问题分析
 
@@ -29,4 +29,4 @@ description: 修复 Bug。进入 plan mode 分析问题根因，区分需求调�
 
 ## 4. 逐个修复
 
-按优先级逐项修复并验证；需要跟踪时再用 TodoWrite。
+按优先级逐项修复并验证；需要跟踪时再用 `TaskCreate` 创建任务。
