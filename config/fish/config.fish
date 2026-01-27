@@ -138,7 +138,7 @@ alias up='nlx taze -I -r'
 alias cc='claude --dangerously-skip-permissions'
 alias cch="cc --model haiku"
 alias cm="cch -p 'run /commit'"
-alias cx="codex --ask-for-approval never"
+alias cx="codex --sandbox danger-full-access"
 
 function c
     code $argv
