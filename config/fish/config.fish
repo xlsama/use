@@ -137,7 +137,7 @@ alias up='nlx taze -I -r'
 # ai
 alias cc='claude --dangerously-skip-permissions'
 alias cch="cc --model haiku"
-alias cm="cch -p 'run /commit'"
+alias ccr="cc --resume"
 alias cx="codex --sandbox danger-full-access"
 
 function c
