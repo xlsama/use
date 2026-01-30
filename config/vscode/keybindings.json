@@ -64,5 +64,13 @@
     "command": "vscode-neovim.send",
     "when": "neovim.init && neovim.recording || editorTextFocus && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions' && !inlineEditIsVisible",
     "args": "<Tab>"
+  },
+  {
+    "key": "shift+alt+n",
+    "command": "workbench.action.showNextWindowTab"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "workbench.action.showPreviousWindowTab"
   }
 ]
