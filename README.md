@@ -50,13 +50,13 @@ zx install.mjs
 
 - [Google Chrome](https://www.google.com/chrome/)
 
-### Editor
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-
 ### Terminal
 
 - [Ghostty](https://ghostty.org/)
+
+### Editor
+
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ### Network
 
@@ -79,6 +79,8 @@ zx install.mjs
 - [TickTick](https://dida365.com/) - To Do(Use Web, Pin Tab in Browser)
 
 - [Raycast](https://raycast.com) - Launcher
+
+- [LazyTyper](https://lazytyper.com/) - Voice Typing
 
 - [Passwords](https://apps.apple.com/us/app/passwords/id6473799789) - MacOS Internal Password Manager
 
@@ -113,6 +115,12 @@ zx install.mjs
 - [Homebrew](https://brew.sh/) - Package Manager, More: [Brewfile](./Brewfile)
 
 - [Claude Code](https://www.claude.com/product/claude-code) - Agent
+
+## Subscriptions
+
+- Claude Code Max 5x: $100/month
+
+- Google AI Ultra: $249.99/month
 
 ## MacOS Config
 

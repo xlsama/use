@@ -16,8 +16,8 @@
       "editor.lineHighlightBackground": "#282828",
       "terminal.selectionBackground": "#eeeeee25",
       "editorGroup.border": "#121212",
-      "sideBar.border": "#eeeeee25"
-    }
+      "sideBar.border": "#eeeeee25",
+    },
   },
 
   // window
@@ -44,22 +44,22 @@
   "editor.minimap.enabled": true,
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {
-    "strings": "on"
+    "strings": "on",
   },
   "files.associations": {
     "*.css": "tailwindcss",
     "*.cjson": "jsonc",
     "*.wxss": "css",
-    "*.wxs": "javascript"
+    "*.wxs": "javascript",
   },
   "security.promptForLocalFileProtocolHandling": false,
   "editor.semanticHighlighting.enabled": true,
   "editor.accessibilitySupport": "off",
   "accessibility.signals.clear": {
-    "sound": "off"
+    "sound": "off",
   },
   "workbench.editorAssociations": {
-    "*.svg": "default"
+    "*.svg": "default",
   },
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.wrappingStrategy": "advanced",
@@ -68,7 +68,7 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
+    "source.fixAll": "explicit",
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.semi": false,
@@ -76,40 +76,40 @@
   "prettier.arrowParens": "avoid",
   "prettier.printWidth": 100,
   "[fish]": {
-    "editor.defaultFormatter": "bmalehorn.vscode-fish"
+    "editor.defaultFormatter": "bmalehorn.vscode-fish",
   },
   "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
   },
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff",
   },
   "[go]": {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
   },
   "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
   },
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
 
   // languages
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.includeLanguages": {
-    "postcss": "css"
+    "postcss": "css",
   },
   "typescript.preferences.preferTypeOnlyAutoImports": true,
   "typescript.experimental.useTsgo": true,
   "python.languageServer": "None",
   "gopls": {
-    "ui.semanticTokens": true
+    "ui.semanticTokens": true,
   },
   "svelte.enable-ts-plugin": true,
 
@@ -130,7 +130,7 @@
     "**/package-lock.json": true,
     "**/pnpm-lock.yaml": true,
     "**/tmp": true,
-    "**/yarn.lock": true
+    "**/yarn.lock": true,
   },
   "search.smartCase": true,
 
@@ -174,7 +174,8 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "//": "Last update at 1/28/2026, 11:39:25 AM",
+    "//": "Last update at 2/2/2026, 12:37:23 PM",
+    ".agent": ".agent, .claude, .cline, .codebuddy, .codex, .commandcode, .continue, .crush, .cursor, .factory, .gemini, .goose, .junie, .kilocode, .kiro, .kode, .mcpjam, .mux, .neovate, .opencode, .openhands, .pi, .pochi, .qoder, .qwen, .roo, .trae, .windsurf, .zencoder",
     ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
     ".env": "*.env, .env.*, .envrc, env.d.ts",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
@@ -273,12 +274,12 @@
     "*.vue": "$(capture).*.ts, $(capture).*.js, $(capture).story.vue",
     "*.w": "$(capture).*.w, I$(capture).w",
     "*.wat": "$(capture).wasm",
-    "*.xaml": "$(capture).xaml.cs"
+    "*.xaml": "$(capture).xaml.cs",
   },
 
   // vim
   "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
+    "asvetliakov.vscode-neovim": 1,
   },
   "vscode-neovim.compositeKeys": {
     "jk": {
@@ -287,17 +288,17 @@
         [
           "local code = require('vscode')",
           "code.action('vscode-neovim.escape')",
-          "code.action('workbench.action.files.save')"
-        ]
-      ]
-    }
+          "code.action('workbench.action.files.save')",
+        ],
+      ],
+    },
   },
 
   // extension config
   "extensions.ignoreRecommendations": true,
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
-    "python": "uv run"
+    "python": "uv run",
   },
   "errorLens.excludeBySource": ["eslint", "cSpell"],
   "cSpell.language": "en,en-US",
@@ -305,13 +306,14 @@
   "cSpell.enabledNotifications": {
     "Maximum Word Length Exceeded": false,
     "Average Word Length too Long": false,
-    "Lines too Long": false
+    "Lines too Long": false,
   },
   "redhat.telemetry.enabled": false,
   "vue.hover.rich": true,
   "github.copilot.enable": {
     "plaintext": true,
     "markdown": true,
-    "scminput": true
-  }
+    "scminput": true,
+  },
+  "go.toolsManagement.autoUpdate": true,
 }
