@@ -141,7 +141,7 @@ alias ccr="cc --resume"
 alias cx="codex --sandbox danger-full-access"
 
 function c
-    cursor $argv
+    code $argv
 end
 
 # Git Clone to ~/i Directory and Open with Editor
