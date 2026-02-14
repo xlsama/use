@@ -60,7 +60,7 @@ zx install.mjs
 
 ### Network
 
-- [Surge](https://nssurge.com/) - Bypass GFW
+- [Loon](https://github.com/Loon0x00/Loon4Mac) - Bypass GFW
 
 ### Chat
 

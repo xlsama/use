@@ -6,7 +6,6 @@ tap daipeihust/tap # for im-select
 cask google-chrome
 cask visual-studio-code
 cask ghostty
-cask surge
 cask feishu
 cask wechat
 cask obsidian
