@@ -1,8 +1,8 @@
-font-size = 12
+font-size = 13
 font-family = "Maple Mono Normal NF CN"
 
-window-width = 180
-window-height = 58
+window-width = 214
+window-height = 61
 window-padding-x = 6
 
 keybind = alt+h=goto_split:left
@@ -11,4 +11,3 @@ keybind = alt+k=goto_split:up
 keybind = alt+j=goto_split:down
 
 auto-update-channel = tip
-
