@@ -40,10 +40,6 @@ zx install.mjs
 
 - Mouse: MX Master 3S
 
-- Keyboard: Keychron K14Pro
-
-- Display: 海信 27G7K Pro
-
 ## Software
 
 ### Browser
@@ -80,7 +76,7 @@ zx install.mjs
 
 - [Raycast](https://raycast.com) - Launcher
 
-- [LazyTyper](https://lazytyper.com/) - Voice Typing
+- [闪电说](https://shandianshuo.cn/) - Voice Typing
 
 - [Passwords](https://apps.apple.com/us/app/passwords/id6473799789) - MacOS Internal Password Manager
 
@@ -103,8 +99,6 @@ zx install.mjs
 - [OrbStack](https://orbstack.dev/) - Docker
 
 ### Other
-
-- [Spotify](https://open.spotify.com/) - Music
 
 - [CapCut](https://www.capcut.com/) - Video Editor
 
