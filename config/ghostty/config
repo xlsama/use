@@ -1,8 +1,8 @@
 font-size = 13
 font-family = "Maple Mono Normal NF CN"
 
-window-width = 214
-window-height = 61
+window-width = 9999
+window-height = 9999
 window-padding-x = 6
 
 keybind = alt+h=goto_split:left
