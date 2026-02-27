@@ -19,7 +19,7 @@ cask betterdisplay
 cask yaak
 cask dataflare
 cask orbstack
-cask spotify
+cask proxyman
 
 # command line tools
 brew zx
