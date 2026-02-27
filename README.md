@@ -98,6 +98,8 @@ zx install.mjs
 
 - [OrbStack](https://orbstack.dev/) - Docker
 
+- [Proxyman](https://proxyman.com/) - HTTP Debugging Proxy
+
 ### Other
 
 - [CapCut](https://www.capcut.com/) - Video Editor

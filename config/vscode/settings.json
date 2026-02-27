@@ -201,5 +201,4 @@
     "markdown": true,
     "scminput": true,
   },
-  "go.toolsManagement.autoUpdate": true,
 }
