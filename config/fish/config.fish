@@ -18,8 +18,7 @@ source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 # rust
 source "$HOME/.cargo/env.fish"
 
-alias g='git'
-alias lg='lazygit'
+alias g='lazygit'
 # --- 状态 & 日志 & 差异 ---
 alias gst='git status'
 alias gd='git diff'
@@ -188,4 +187,14 @@ function og
     set url (string replace -r '\.git$' '' $url)
 
     open $url
+end
+
+# yazi wrapper: exit to cwd
+function y
+	set tmp (mktemp -t "yazi-cwd.XXXXXX")
+	command yazi $argv --cwd-file="$tmp"
+	if read -z cwd < "$tmp"; and [ "$cwd" != "$PWD" ]; and test -d "$cwd"
+		builtin cd -- "$cwd"
+	end
+	rm -f -- "$tmp"
 end
