@@ -137,6 +137,7 @@ alias up='nlx taze -I -r'
 alias cc='claude --dangerously-skip-permissions'
 alias cch="cc --model haiku"
 alias ccr="cc --resume"
+alias cm="cch /commit"
 alias cx="codex --sandbox danger-full-access"
 
 function c
@@ -191,10 +192,10 @@ end
 
 # yazi wrapper: exit to cwd
 function y
-	set tmp (mktemp -t "yazi-cwd.XXXXXX")
-	command yazi $argv --cwd-file="$tmp"
-	if read -z cwd < "$tmp"; and [ "$cwd" != "$PWD" ]; and test -d "$cwd"
-		builtin cd -- "$cwd"
-	end
-	rm -f -- "$tmp"
+    set tmp (mktemp -t "yazi-cwd.XXXXXX")
+    command yazi $argv --cwd-file="$tmp"
+    if read -z cwd <"$tmp"; and [ "$cwd" != "$PWD" ]; and test -d "$cwd"
+        builtin cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
 end
