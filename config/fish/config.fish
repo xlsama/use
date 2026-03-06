@@ -133,6 +133,9 @@ alias fmt="nr fmt"
 alias release="nr release"
 alias up='nlx taze -I -r'
 
+alias us='uv sync'
+alias ur='uv run'
+
 # ai
 alias cc='claude --dangerously-skip-permissions'
 alias cch="cc --model haiku"
