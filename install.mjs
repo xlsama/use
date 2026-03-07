@@ -32,10 +32,14 @@ const LINK_MAP = [
     source: `~/i/use/config/vscode/global.code-snippets`,
     target: "~/Library/Application Support/Code/User/snippets/global.code-snippets",
   },
-  // claude
-  { source: "~/i/use/config/claude/CLAUDE.md", target: "~/.claude/CLAUDE.md" },
-  { source: "~/i/use/config/claude/commands", target: "~/.claude/commands" },
-  { source: "~/i/use/config/claude/skills", target: "~/.agents/skills" },
+  // agents - universal
+  { source: "~/i/use/config/agents/AGENTS.md", target: "~/.codex/AGENTS.md" },
+  { source: "~/i/use/config/agents/commands", target: "~/.agents/commands" },
+  { source: "~/i/use/config/agents/skills", target: "~/.agents/skills" },
+  // agents - claude
+  { source: "~/i/use/config/agents/AGENTS.md", target: "~/.claude/CLAUDE.md" },
+  { source: "~/i/use/config/agents/commands", target: "~/.claude/commands" },
+  { source: "~/i/use/config/agents/skills", target: "~/.claude/skills" },
 ];
 
 // ---------- create folders ----------
