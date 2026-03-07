@@ -9,15 +9,22 @@
 ## 前端技术栈
 
 - 框架：React + TanStack Router
+- 样式：Tailwind CSS
+- 构建工具: Vite, Vite Plugins: babel-plugin-react-compiler + tailwindcss + @tanstack/router-plugin/vite
 - 数据请求：TanStack Query + ofetch
 - 状态管理：Zustand
-- 表单：TanStack Form
 - UI 组件：shadcn/ui
-- 样式：Tailwind CSS
+- 类型与数据校验：TypeScript + Zod
+- 表单：TanStack Form
+- 表格: shadcn/ui + @tanstack/react-table
 - 动画：Motion
-- Lint: oxlint
-- format: oxfmt
 - 包管理：pnpm
+- React Hooks: ahooks
+- AI: Vercel AI SDK
+- Promise: better-all
+- Markdown: Streamdown
+- 富文本编辑器：@lexical/react
+- 文件拖拽：react-dropzone
 
 ## 后端技术栈
 
@@ -30,8 +37,7 @@
 - 异步任务队列：Celery
 - 日志：loguru
 - 环境配置：pydantic-settings
-- 鉴权：pyjwt
-- 代码质量 lint & format: ruff
+- 认证：pyjwt
 - task runner: poethepoet
 - 部署：Docker，开发环境 Uvicorn， 生产环境 Gunicorn + Uvicorn workers
 - JSON 库: orjson
