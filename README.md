@@ -114,14 +114,15 @@ zx install.mjs
 
 ## Subscriptions
 
-- 宽带：电信 500M - 每月 ¥59
 - 梯子：DMIT LAX.AN5.Pro.Pocket - 每年 ¥1,103
+- 宽带：电信 500M - 每月 ¥59
 - 滴答清单 - 每年 ¥139
 
-## AI
+### AI
 
-- Claude Code Max 5x - 每月 ¥772
+- ChatGPT Plus - 每月 ¥138
 - Google AI Pro - 每月 ¥138
+- Claude Code Max 5x - 每月 ¥772
 
 ## MacOS Config
 
