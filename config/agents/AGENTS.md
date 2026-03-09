@@ -26,7 +26,7 @@
 - 富文本编辑器：@lexical/react
 - 文件拖拽：react-dropzone
 
-## 后端技术栈
+## 后端技术栈（Python）
 
 - 框架：FastAPI
 - API 文档：OpenAPI, FastAPI 自带
@@ -41,3 +41,21 @@
 - task runner: poethepoet
 - 部署：Docker，开发环境 Uvicorn， 生产环境 Gunicorn + Uvicorn workers
 - JSON 库: orjson
+
+## 后端技术栈（Node.js）
+
+- 框架：Hono
+- 类型校验：Zod + @hono/zod-validator
+- API 文档：@hono/zod-openapi（基于 Zod schema 自动生成 OpenAPI 文档）
+- RPC：hono/client（前后端类型安全的 RPC 调用）
+- 数据库 & ORM：PostgreSQL, Drizzle ORM + postgres（postgres.js 驱动）+ drizzle-kit（迁移管理）
+- 缓存：ioredis
+- 请求：ofetch
+- AI：Vercel AI SDK
+- 认证：@hono/jwt
+- 环境配置：dotenv + Zod
+- 日志：pino + hono-pino
+- 测试：Vitest
+- 包管理：pnpm
+- TS 执行：tsx
+- 部署：Docker，开发环境 tsx watch，生产环境 Node.js
