@@ -7,6 +7,7 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
 
+fish_add_path /opt/homebrew/opt/postgresql@18/bin
 starship init fish | source
 zoxide init fish | source
 fnm env --use-on-cd | source
