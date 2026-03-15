@@ -99,8 +99,7 @@
   "emmet.includeLanguages": {
     "postcss": "css",
   },
-  "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "typescript.experimental.useTsgo": true,
+  "js/ts.experimental.useTsgo": true,
   "python.languageServer": "None",
   "svelte.enable-ts-plugin": true,
 
@@ -201,4 +200,5 @@
     "markdown": true,
     "scminput": true,
   },
+  "chat.viewSessions.orientation": "stacked",
 }
