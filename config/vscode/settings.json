@@ -84,15 +84,6 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
   },
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-  },
 
   // languages
   "emmet.showSuggestionsAsSnippets": true,
@@ -101,7 +92,6 @@
   },
   "js/ts.experimental.useTsgo": true,
   "python.languageServer": "None",
-  "svelte.enable-ts-plugin": true,
 
   // search
   "search.exclude": {
@@ -181,20 +171,7 @@
 
   // extension config
   "extensions.ignoreRecommendations": true,
-  "code-runner.runInTerminal": true,
-  "code-runner.executorMap": {
-    "python": "uv run",
-  },
-  "errorLens.excludeBySource": ["eslint", "cSpell"],
-  "cSpell.language": "en,en-US",
-  "cSpell.allowCompoundWords": true,
-  "cSpell.enabledNotifications": {
-    "Maximum Word Length Exceeded": false,
-    "Average Word Length too Long": false,
-    "Lines too Long": false,
-  },
   "redhat.telemetry.enabled": false,
-  "vue.hover.rich": true,
   "github.copilot.enable": {
     "plaintext": true,
     "markdown": true,

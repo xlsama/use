@@ -4,8 +4,8 @@ tap daipeihust/tap # for im-select
 
 # apps
 cask google-chrome
-cask visual-studio-code
 cask ghostty
+cask visual-studio-code
 cask feishu
 cask wechat
 cask obsidian
