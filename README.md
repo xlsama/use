@@ -120,7 +120,6 @@ zx install.mjs
 
 ### AI
 
-- ChatGPT Plus - 每月 ¥138
 - Google AI Pro - 每月 ¥138
 - Claude Code Max 5x - 每月 ¥772
 
