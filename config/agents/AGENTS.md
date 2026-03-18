@@ -10,20 +10,19 @@
 
 - 框架：React + TanStack Router
 - 样式：Tailwind CSS
-- 构建工具: Vite, Vite Plugins: babel-plugin-react-compiler + tailwindcss + @tanstack/router-plugin/vite
+- 构建工具: Vite
 - 数据请求：TanStack Query + ofetch
 - 状态管理：Zustand
 - UI 组件：shadcn/ui
 - 类型与数据校验：TypeScript + Zod
-- 表单：TanStack Form
-- 表格: shadcn/ui + @tanstack/react-table
-- 动画：Motion
-- 包管理：pnpm
+- Form：TanStack Form
+- Table: shadcn/ui + @tanstack/react-table
+- Animation：Motion
+- Package Manager: pnpm
 - React Hooks: ahooks
 - AI: Vercel AI SDK
-- Promise: better-all
-- Markdown: Streamdown
-- 富文本编辑器：@lexical/react
+- Markdown: [markstream-react](https://github.com/Simon-He95/markstream-vue/blob/main/packages/markstream-react/README.md)
+- Rich Text Editor：@lexical/react
 - 文件拖拽：react-dropzone
 
 ## 后端技术栈（Python）
