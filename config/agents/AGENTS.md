@@ -1,4 +1,4 @@
-# User Preferences
+# 项目规范
 
 ## 编程语言
 
@@ -6,7 +6,86 @@
 - **次选**: Python（使用 uv 管理项目和安装依赖）
 - **Shell**: fish
 
-## 前端技术栈
+## TypeScript 全栈项目结构
+
+基于 pnpm monorepo 的 TypeScript 全栈项目结构规范。
+
+### 目录结构
+
+```
+project/
+├── server/                  # 后端服务
+│   ├── src/
+│   │   ├── api/             # 路由 & 请求处理
+│   │   │   ├── auth.ts
+│   │   │   ├── users.ts
+│   │   │   └── index.ts
+│   │   ├── service/         # 业务逻辑
+│   │   │   ├── auth.service.ts
+│   │   │   └── user.service.ts
+│   │   ├── db/              # 数据库
+│   │   │   ├── schema/      # 表结构定义
+│   │   │   ├── migrations/  # 迁移文件
+│   │   │   └── index.ts     # 数据库连接
+│   │   ├── lib/             # 工具函数 & 通用模块
+│   │   │   ├── jwt.ts
+│   │   │   └── logger.ts
+│   │   ├── env.ts           # 环境变量配置
+│   │   └── main.ts          # 应用入口
+│   ├── Dockerfile           # 后端容器构建
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── cli/                     # 命令行工具
+│   ├── src/
+│   │   ├── main.ts
+│   │   └── env.ts
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── web/                     # 前端应用（可选）
+│   ├── public/              # 不经过构建处理的静态文件
+│   ├── src/
+│   │   ├── assets/          # 需要构建处理的资源（图片、字体等）
+│   │   ├── routes/          # 页面路由
+│   │   ├── components/      # UI 组件
+│   │   │   └── ui/          # 基础组件（shadcn/ui）
+│   │   ├── hooks/           # 自定义 Hooks
+│   │   ├── stores/          # 状态管理
+│   │   ├── lib/             # 工具函数
+│   │   ├── index.css        # 全局样式入口
+│   │   └── main.tsx
+│   ├── index.html
+│   ├── vite.config.ts
+│   ├── Dockerfile           # 前端容器构建
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── test/                    # 测试
+│   ├── api/                 # API 集成测试
+│   ├── e2e/                 # 端到端测试（可选）
+│   │   ├── case-1/
+│   │   └── case-2/
+│   ├── playwright.config.ts
+│   ├── vitest.config.ts
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── pnpm-lock.yaml           # 依赖锁定文件
+├── pnpm-workspace.yaml      # Workspace 配置
+├── tsconfig.json             # 根 TypeScript 配置
+├── .env.example
+└── package.json
+```
+
+### 核心思路
+
+- **server 为核心**，提供 RESTful API；**web**（给人用）和 **cli**（给 Agent 用）都是它的消费者
+- **完整模式**：server + cli + web + test（api + e2e）；**精简模式**：server + cli + test（api），去掉 web 和 e2e
+- server 内部分层：api（路由） → service（业务逻辑） → db（数据访问），lib 放通用工具，env.ts 管理环境变量（Zod 校验）
+- pnpm workspace 统一管理依赖，测试作为独立包存在
+
+## Web 技术栈
 
 - 框架：React + TanStack Router
 - 样式：Tailwind CSS
@@ -21,25 +100,9 @@
 - Package Manager: pnpm
 - React Hooks: ahooks
 - AI: Vercel AI SDK
-- Markdown: [markstream-react](https://github.com/Simon-He95/markstream-vue/blob/main/packages/markstream-react/README.md)
+- Markdown: Streamdown
 - Rich Text Editor：@lexical/react
 - 文件拖拽：react-dropzone
-
-## 后端技术栈（Python）
-
-- 框架：FastAPI
-- API 文档：OpenAPI, FastAPI 自带
-- 包管理：uv
-- 数据库 & ORM：PostgreSQL, SQLAlchemy 2.x asyncio + asyncpg + Alembic
-- 缓存：redis, redis.asyncio
-- 请求: httpx
-- 异步任务队列：Celery
-- 日志：loguru
-- 环境配置：pydantic-settings
-- 认证：pyjwt
-- task runner: poethepoet
-- 部署：Docker，开发环境 Uvicorn， 生产环境 Gunicorn + Uvicorn workers
-- JSON 库: orjson
 
 ## 后端技术栈（Node.js）
 
@@ -58,3 +121,19 @@
 - 包管理：pnpm
 - TS 执行：tsx
 - 部署：Docker，开发环境 tsx watch，生产环境 Node.js
+
+## 后端技术栈（Python）
+
+- 框架：FastAPI
+- API 文档：OpenAPI, FastAPI 自带
+- 包管理：uv
+- 数据库 & ORM：PostgreSQL, SQLAlchemy 2.x asyncio + asyncpg + Alembic
+- 缓存：redis, redis.asyncio
+- 请求: httpx
+- 异步任务队列：Celery
+- 日志：loguru
+- 环境配置：pydantic-settings
+- 认证：pyjwt
+- task runner: poethepoet
+- 部署：Docker，开发环境 Uvicorn， 生产环境 Gunicorn + Uvicorn workers
+- JSON 库: orjson
