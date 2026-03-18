@@ -91,7 +91,6 @@
     "postcss": "css",
   },
   "js/ts.experimental.useTsgo": true,
-  "python.languageServer": "None",
 
   // search
   "search.exclude": {
