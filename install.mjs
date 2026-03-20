@@ -28,10 +28,6 @@ const LINK_MAP = [
     source: `~/i/use/config/vscode/keybindings.json`,
     target: "~/Library/Application Support/Code/User/keybindings.json",
   },
-  {
-    source: `~/i/use/config/vscode/global.code-snippets`,
-    target: "~/Library/Application Support/Code/User/snippets/global.code-snippets",
-  },
   // agents - universal
   { source: "~/i/use/config/agents/AGENTS.md", target: "~/.codex/AGENTS.md" },
   { source: "~/i/use/config/agents/commands", target: "~/.agents/commands" },
