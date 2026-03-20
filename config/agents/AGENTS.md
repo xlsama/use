@@ -109,7 +109,7 @@ project/
 - 框架：Hono
 - 类型校验：Zod + @hono/zod-validator
 - RPC：hono/client（前后端类型安全的 RPC 调用）
-- 数据库 & ORM：PostgreSQL, Drizzle ORM + postgres（postgres.js 驱动）+ drizzle-kit（迁移管理）
+- 数据库 & ORM：PostgreSQL(pg + @types/pg) + Drizzle ORM + drizzle-kit
 - 缓存：ioredis
 - 请求：ofetch
 - AI：Vercel AI SDK
