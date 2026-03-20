@@ -131,7 +131,7 @@ project/
 - 缓存：redis, redis.asyncio
 - 请求: httpx
 - 异步任务队列：Celery
-- 日志：loguru
+- 日志：structlog
 - 环境配置：pydantic-settings
 - 认证：pyjwt
 - task runner: poethepoet
