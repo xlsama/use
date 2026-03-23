@@ -32,6 +32,10 @@ project/
 │   │   │   └── logger.ts
 │   │   ├── env.ts           # 环境变量配置
 │   │   └── main.ts          # 应用入口
+│   ├── tests/               # API 集成测试
+│   │   ├── auth.test.ts
+│   │   └── users.test.ts
+│   ├── vitest.config.ts
 │   ├── Dockerfile           # 后端容器构建
 │   ├── package.json
 │   └── tsconfig.json
@@ -61,16 +65,6 @@ project/
 │   ├── package.json
 │   └── tsconfig.json
 │
-├── test/                    # 测试
-│   ├── api/                 # API 集成测试
-│   ├── e2e/                 # 端到端测试（可选）
-│   │   ├── case-1/
-│   │   └── case-2/
-│   ├── playwright.config.ts
-│   ├── vitest.config.ts
-│   ├── package.json
-│   └── tsconfig.json
-│
 ├── pnpm-lock.yaml           # 依赖锁定文件
 ├── pnpm-workspace.yaml      # Workspace 配置
 ├── tsconfig.json             # 根 TypeScript 配置
@@ -81,9 +75,29 @@ project/
 ### 核心思路
 
 - **server 为核心**，提供 RESTful API；**web**（给人用）和 **cli**（给 Agent 用）都是它的消费者
-- **完整模式**：server + cli + web + test（api + e2e）；**精简模式**：server + cli + test（api），去掉 web 和 e2e
+- **完整模式**：server + cli + web；**精简模式**：server + cli，去掉 web
 - server 内部分层：api（路由） → service（业务逻辑） → db（数据访问），lib 放通用工具，env.ts 管理环境变量（Zod 校验）
-- pnpm workspace 统一管理依赖，测试作为独立包存在
+- 测试（tests/）放在 server 内部，与 src/ 平级，只做 API 集成测试
+- pnpm workspace 统一管理依赖
+
+## 测试驱动开发（TDD）
+
+后端 API 开发遵循 Red-Green TDD 流程：
+
+1. **Red**：先写测试，运行确认失败（测试描述期望的行为）
+2. **Green**：编写最少量的实现代码，使测试通过
+3. **Refactor**：在测试保护下重构代码，保持测试通过
+
+### 工作流
+
+- 新增功能：先为新 API 编写集成测试，再实现 API 路由和业务逻辑
+- 修复 Bug：先写能复现 Bug 的测试（红），再修复使其通过（绿）
+- 测试文件与 API 文件一一对应，放在 `server/tests/` 目录下
+
+### 测试框架
+
+- **Node.js（TypeScript）**：Vitest
+- **Python**：pytest
 
 ## Web 技术栈
 
@@ -131,6 +145,7 @@ project/
 - 请求: httpx
 - 异步任务队列：Celery
 - 日志：structlog
+- 测试：pytest
 - 环境配置：pydantic-settings
 - 认证：pyjwt
 - task runner: poethepoet
