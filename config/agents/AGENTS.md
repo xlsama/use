@@ -94,11 +94,6 @@ project/
 - 修复 Bug：先写能复现 Bug 的测试（红），再修复使其通过（绿）
 - 测试文件与 API 文件一一对应，放在 `server/tests/` 目录下
 
-### 测试框架
-
-- **Node.js（TypeScript）**：Vitest
-- **Python**：pytest
-
 ## Web 技术栈
 
 - 框架：React + TanStack Router
