@@ -136,6 +136,7 @@ alias up='nlx taze -I -r'
 
 alias us='uv sync'
 alias ur='uv run'
+alias uvup='uv lock --upgrade'
 
 # ai
 alias cc='claude --dangerously-skip-permissions'
