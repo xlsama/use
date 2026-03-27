@@ -121,8 +121,9 @@ alias reload='exec fish'
 alias venv='source .venv/bin/activate.fish'
 
 alias speedtest='networkQuality'
-alias serve='nlx serve'
+alias serve='nlx serve -s'
 
+# node
 alias nid='ni -D'
 alias d='nr dev'
 alias do='nr dev --open'
@@ -134,9 +135,12 @@ alias fmt="nr fmt"
 alias release="nr release"
 alias up='nlx taze -I -r'
 
-alias us='uv sync'
+# python
+alias ua='uv add'
 alias ur='uv run'
+alias ud='ur poe dev'
 alias uvup='uv lock --upgrade'
+alias us='uv sync'
 
 # ai
 alias cc='claude --dangerously-skip-permissions'
