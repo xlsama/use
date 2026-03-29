@@ -120,8 +120,7 @@ zx install.mjs
 
 ### AI
 
-- Google AI Pro - 每月 ¥138
-- Claude Code Max 5x - 每月 ¥772
+- Claude Code Max 5x - 每月 ¥795
 
 ## MacOS Config
 
