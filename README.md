@@ -90,6 +90,8 @@ zx install.mjs
 
 - [Better Display](https://github.com/waydabber/BetterDisplay) - Control displays
 
+- [Screen Studio](https://screen.studio/) - Screen Recording
+
 ### Developer Tools
 
 - [Yaak](https://yaak.app/) - API Client
