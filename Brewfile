@@ -15,7 +15,6 @@ cask input-source-pro
 brew popclip
 cask 'logi-options+'
 cask mos
-cask betterdisplay
 cask yaak
 cask dataflare
 cask orbstack

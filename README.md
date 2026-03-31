@@ -88,8 +88,6 @@ zx install.mjs
 
 - [Mos](https://mos.caldis.me/) - Mouse Smooth Scroll
 
-- [Better Display](https://github.com/waydabber/BetterDisplay) - Control displays
-
 - [Screen Studio](https://screen.studio/) - Screen Recording
 
 ### Developer Tools
