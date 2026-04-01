@@ -173,7 +173,7 @@ end
 
 function zip_cur
     set dir_name (basename (pwd))
-    zip -r "$dir_name.zip" . -x "node_modules/*" ".venv/*" "*.zip" "*.DS_Store" "*.git*" "*.netlify"
+    zip -r "$dir_name.zip" . -x "node_modules/*" ".venv/*" "*.zip" "*.DS_Store" "*.git*" ".netlify/*"
 end
 
 # Open git remote origin in browser
