@@ -4,21 +4,6 @@
   "window.systemColorTheme": "dark",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "catppuccin-perfect-mocha",
-  "workbench.colorCustomizations": {
-    "[Vitesse Dark]": {
-      "list.hoverBackground": "#282828",
-      "list.inactiveSelectionBackground": "#282828",
-      "list.activeSelectionBackground": "#282828",
-      "list.focusBackground": "#282828",
-      "quickInputList.focusBackground": "#4d937599",
-      "editor.selectionBackground": "#eeeeee40",
-      "editor.selectionHighlightBackground": "#eeeeee25",
-      "editor.lineHighlightBackground": "#282828",
-      "terminal.selectionBackground": "#eeeeee25",
-      "editorGroup.border": "#121212",
-      "sideBar.border": "#eeeeee25",
-    },
-  },
 
   // window
   "window.nativeTabs": true, // this is great, macOS only
