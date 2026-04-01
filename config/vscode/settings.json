@@ -1,6 +1,6 @@
 {
   // theme
-  "workbench.colorTheme": "Vitesse Dark",
+  "workbench.colorTheme": "Dark Modern",
   "window.systemColorTheme": "dark",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "catppuccin-perfect-mocha",
@@ -21,8 +21,6 @@
   },
 
   // window
-  "window.newWindowDimensions": "fullscreen",
-  "window.restoreFullscreen": true,
   "window.nativeTabs": true, // this is great, macOS only
   "window.title": "${rootName}",
   "window.customTitleBarVisibility": "windowed",
@@ -74,12 +72,6 @@
   },
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSaveMode": "file",
-  "[fish]": {
-    "editor.defaultFormatter": "bmalehorn.vscode-fish",
-  },
-  "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml",
-  },
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
   },
