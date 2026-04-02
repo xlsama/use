@@ -171,33 +171,35 @@ export async function queryCommits(
 }
 
 export function commitsToMarkdown(
-  commitsByDate: Map<string, Map<string, Set<string>>>
+  commitsByDate: Map<string, Map<string, Set<string>>>,
+  startDate: string,
+  endDate: string
 ): string {
-  const sortedDates = [...commitsByDate.keys()].sort();
-  const lines: string[] = [];
+  const formatDate = (s: string) => s.replaceAll("-", ".");
 
-  for (const date of sortedDates) {
-    lines.push(`## ${date}`, "");
+  const projectCommits = new Map<string, string[]>();
+  for (const date of [...commitsByDate.keys()].sort()) {
     const projects = commitsByDate.get(date)!;
-    for (const project of [...projects.keys()].sort()) {
-      lines.push(`### ${project}`, "");
-      for (const msg of [...projects.get(project)!].sort()) {
-        lines.push(`- ${msg}`);
+    for (const [project, messages] of projects) {
+      if (!projectCommits.has(project)) projectCommits.set(project, []);
+      for (const msg of [...messages].sort()) {
+        projectCommits.get(project)!.push(msg);
       }
-      lines.push("");
     }
   }
 
-  return lines.join("\n");
-}
+  const lines: string[] = [];
+  lines.push(`${formatDate(startDate)} - ${formatDate(endDate)}`, "");
 
-export async function exportCommitToMarkdown(
-  startDate: string,
-  endDate: string,
-  options?: CommitOptions
-): Promise<string> {
-  const commitsByDate = await queryCommits(startDate, endDate, options);
-  return commitsToMarkdown(commitsByDate);
+  for (const project of [...projectCommits.keys()].sort()) {
+    lines.push(`## ${project}`, "");
+    for (const msg of projectCommits.get(project)!) {
+      lines.push(`- ${msg}`);
+    }
+    lines.push("");
+  }
+
+  return lines.join("\n");
 }
 
 // CLI
@@ -221,11 +223,12 @@ if (import.meta.main) {
     process.exit(1);
   }
 
-  const markdown = await exportCommitToMarkdown(
+  const commitsByDate = await queryCommits(
     values.startDate,
     values.endDate,
     { email: values.email, all: values.all }
   );
+  const markdown = commitsToMarkdown(commitsByDate, values.startDate, values.endDate);
 
   if (values.export) {
     const startLabel = values.startDate.split("T")[0];

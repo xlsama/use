@@ -1,6 +1,6 @@
 ---
 name: pms
-description: 'PMS 工时与云效代码管理。触发词：查 UT、查工时、工时汇总、报工时、提交工时、驳回记录、未提交工时、导出 UT、导出工时、查提交、查 commits、导出提交、仓库列表、分支列表、代码提交汇总。'
+description: 'PMS 工时与云效代码管理。触发词：查 UT、查工时、工时汇总、报工时、提交工时、驳回记录、未提交工时、导出 UT、导出工时、查云效提交、查云效 commits、导出云效 commit、云效仓库列表、云效分支列表、云效代码提交汇总。'
 ---
 
 # PMS 工时与云效代码管理
@@ -66,7 +66,7 @@ ORIGINAL_CWD="<用户当前工作目录绝对路径>" bun scripts/ut-query.ts --
 bun scripts/yunxiao-commit.ts --startDate 2025-01-01 --endDate 2025-01-15
 ```
 
-### 导出提交
+### 导出 commit
 
 ```bash
 ORIGINAL_CWD="<用户当前工作目录绝对路径>" bun scripts/yunxiao-commit.ts --startDate 2025-01-01 --endDate 2025-01-15 --export
@@ -87,7 +87,7 @@ bun scripts/yunxiao-list-branch.ts --repoId <仓库ID>
 ## 工作流：月度工时提交
 
 1. **查询本月提交**：`bun scripts/yunxiao-commit.ts --startDate <月初> --endDate <月末> --export`
-2. **导出提交 markdown** 发给产品经理
+2. **导出 commit markdown** 发给产品经理
 3. PM 分配 UT 后，**查询剩余工时**：`bun scripts/ut-query.ts --remaining`
 4. 根据分配结果**提交 UT**：`bun scripts/ut-submit.ts --date <日期> --items '[...]'`
 
