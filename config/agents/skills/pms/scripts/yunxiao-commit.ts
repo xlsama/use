@@ -82,7 +82,7 @@ export async function queryCommits(
     const lastActivity = repo.lastActivityAt;
     if (!lastActivity) return false;
     const lastDt = new Date(lastActivity);
-    return startDt <= lastDt && lastDt <= endDt;
+    return lastDt >= startDt;
   });
 
   console.log(
