@@ -173,7 +173,7 @@ export async function queryCommits(
 export function commitsToMarkdown(
   commitsByDate: Map<string, Map<string, Set<string>>>
 ): string {
-  const sortedDates = [...commitsByDate.keys()].sort().reverse();
+  const sortedDates = [...commitsByDate.keys()].sort();
   const lines: string[] = [];
 
   for (const date of sortedDates) {
