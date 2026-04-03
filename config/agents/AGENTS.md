@@ -1,11 +1,5 @@
 # 项目规范
 
-## 编程语言
-
-- **首选**: TypeScript
-- **次选**: Python（使用 uv 管理项目和安装依赖）
-- **Shell**: fish
-
 ## TypeScript 全栈项目结构
 
 基于 pnpm monorepo 的 TypeScript 全栈项目结构规范。
@@ -115,34 +109,17 @@ project/
 
 ## 后端技术栈（Node.js）
 
-- 框架：Hono
+- 框架：Hono + Bun
 - 类型校验：Zod + @hono/zod-validator
 - RPC：hono/client（前后端类型安全的 RPC 调用）
 - 数据库 & ORM：PostgreSQL(pg + @types/pg) + Drizzle ORM + drizzle-kit
 - 缓存：ioredis
 - 请求：ofetch
 - AI：Vercel AI SDK
-- 认证：@hono/jwt
-- 环境配置：dotenv + Zod
+- 认证：jose
+- 环境配置：Zod
 - 日志：pino + hono-pino
 - 测试：Vitest
 - 包管理：pnpm
 - TS 执行：tsx
 - 部署：Docker，开发环境 tsx watch，生产环境 Node.js
-
-## 后端技术栈（Python）
-
-- 框架：FastAPI
-- API 文档：OpenAPI, FastAPI 自带
-- 包管理：uv
-- 数据库 & ORM：PostgreSQL, SQLAlchemy 2.x asyncio + asyncpg + Alembic
-- 缓存：redis, redis.asyncio
-- 请求: httpx
-- 异步任务队列：Celery
-- 日志：structlog
-- 测试：pytest
-- 环境配置：pydantic-settings
-- 认证：pyjwt
-- task runner: poethepoet
-- 部署：Docker，开发环境 Uvicorn， 生产环境 Gunicorn + Uvicorn workers
-- JSON 库: orjson
