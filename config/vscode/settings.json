@@ -52,13 +52,13 @@
   // format & linting
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSaveMode": "file",
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.format.oxc": "always",
     "source.fixAll.oxc": "always"
   },
-  "editor.defaultFormatter": "oxc.oxc-vscode",
-  "editor.formatOnSaveMode": "file",
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
   },
