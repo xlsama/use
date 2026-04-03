@@ -29,7 +29,6 @@ project/
 │   ├── tests/               # API 集成测试
 │   │   ├── auth.test.ts
 │   │   └── users.test.ts
-│   ├── vitest.config.ts
 │   ├── Dockerfile           # 后端容器构建
 │   ├── package.json
 │   └── tsconfig.json
@@ -112,14 +111,13 @@ project/
 - 框架：Hono + Bun
 - 类型校验：Zod + @hono/zod-validator
 - RPC：hono/client（前后端类型安全的 RPC 调用）
-- 数据库 & ORM：PostgreSQL(pg + @types/pg) + Drizzle ORM + drizzle-kit
-- 缓存：ioredis
+- 数据库 & ORM：PostgreSQL(bun:sql) + Drizzle ORM + drizzle-kit
 - 请求：ofetch
 - AI：Vercel AI SDK
 - 认证：jose
 - 环境配置：Zod
 - 日志：pino + hono-pino
-- 测试：Vitest
+- 测试：bun test
 - 包管理：pnpm
-- TS 执行：tsx
-- 部署：Docker，开发环境 tsx watch，生产环境 Node.js
+- 运行时：Bun
+- 部署：Docker，开发环境 bun --watch，生产环境 Bun
