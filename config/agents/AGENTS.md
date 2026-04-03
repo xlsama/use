@@ -10,10 +10,13 @@
 project/
 ├── server/                  # 后端服务
 │   ├── src/
-│   │   ├── api/             # 路由 & 请求处理
+│   │   ├── api/             # Hono REST 路由（流式、文件上传等非 RPC 场景）
+│   │   │   └── upload.ts
+│   │   ├── rpc/             # oRPC 过程定义
+│   │   │   ├── base.ts      # 基础设置（context, middleware, base procedures）
 │   │   │   ├── auth.ts
-│   │   │   ├── users.ts
-│   │   │   └── index.ts
+│   │   │   ├── user.ts
+│   │   │   └── router.ts    # 合并所有路由，导出 router
 │   │   ├── service/         # 业务逻辑
 │   │   │   ├── auth.ts
 │   │   │   └── user.ts
@@ -28,7 +31,7 @@ project/
 │   │   └── main.ts          # 应用入口
 │   ├── tests/               # API 集成测试
 │   │   ├── auth.test.ts
-│   │   └── users.test.ts
+│   │   └── user.test.ts
 │   ├── Dockerfile           # 后端容器构建
 │   ├── package.json
 │   └── tsconfig.json
@@ -50,6 +53,7 @@ project/
 │   │   ├── hooks/           # 自定义 Hooks
 │   │   ├── stores/          # 状态管理
 │   │   ├── lib/             # 工具函数
+│   │   │   └── orpc.ts      # oRPC 客户端 & TanStack Query utils
 │   │   ├── index.css        # 全局样式入口
 │   │   └── main.tsx
 │   ├── index.html
@@ -67,9 +71,10 @@ project/
 
 ### 核心思路
 
-- **server 为核心**，提供 RESTful API；**web**（给人用）和 **cli**（给 Agent 用）都是它的消费者
+- **server 为核心**，通过 oRPC 提供端到端类型安全的 API；**web**（给人用）和 **cli**（给 Agent 用）都是它的消费者
 - **完整模式**：server + cli + web；**精简模式**：server + cli，去掉 web
-- server 内部分层：api（路由） → service（业务逻辑） → db（数据访问），lib 放通用工具，env.ts 管理环境变量（Zod 校验）
+- server 内部分层：rpc（oRPC 过程定义） + api（Hono REST 路由） → service（业务逻辑） → db（数据访问），lib 放通用工具，env.ts 管理环境变量（Zod 校验）
+- 前后端主要通过 oRPC 通信：rpc/ 定义过程和 router，web/cli 通过 @orpc/client 调用；不适合 RPC 的场景（SSE、文件上传等）走 api/ 的 Hono 路由
 - 测试（tests/）放在 server 内部，与 src/ 平级，只做 API 集成测试
 - pnpm workspace 统一管理依赖
 
@@ -92,7 +97,8 @@ project/
 - 框架：React + TanStack Router
 - 样式：Tailwind CSS
 - 构建工具: Vite
-- 数据请求：TanStack Query + ofetch
+- RPC：oRPC (@orpc/client, @orpc/tanstack-query)
+- 数据请求：TanStack Query + oRPC（非 RPC 场景用 ofetch）
 - 状态管理：Zustand
 - UI 组件：shadcn/ui
 - 类型与数据校验：TypeScript + Zod
@@ -109,8 +115,8 @@ project/
 ## 后端技术栈（Node.js）
 
 - 框架：Hono + Bun
-- 类型校验：Zod + @hono/zod-validator
-- RPC：hono/client（前后端类型安全的 RPC 调用）
+- 类型校验：Zod
+- RPC：oRPC (@orpc/server, @orpc/server/fetch)，挂载到 Hono 作为中间件
 - 数据库 & ORM：PostgreSQL(bun:sql) + Drizzle ORM + drizzle-kit
 - 请求：ofetch
 - AI：Vercel AI SDK
