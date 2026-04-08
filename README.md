@@ -114,13 +114,13 @@ zx install.mjs
 
 ## Subscriptions
 
-- 梯子：DMIT LAX.AN5.Pro.Pocket - 每年 ¥1,103
+- 梯子：DMIT LAX.AN5.Pro.Pocket - 每年 $160
 - 宽带：电信 500M - 每月 ¥59
 - 滴答清单 - 每年 ¥139
 
 ### AI
 
-- Claude Code Max 5x - 每月 ¥795
+- Claude Code Max 20x - 每月 $200
 
 ## MacOS Config
 
