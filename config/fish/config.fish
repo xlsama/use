@@ -149,8 +149,47 @@ alias ccr="cc --resume"
 alias cm="cch /commit"
 alias cx="codex --sandbox danger-full-access"
 
-function c
-    code $argv
+function c --description "Open files with code; open directories in a new VS Code native tab"
+    if test (count $argv) -gt 1
+        command code $argv
+        return $status
+    end
+
+    set -l target $PWD
+    set -l should_open_in_tab 1
+
+    if test (count $argv) -eq 1
+        set -l arg $argv[1]
+
+        if string match -qr '^-' -- $arg
+            command code $argv
+            return $status
+        end
+
+        set target (path resolve -- $arg 2>/dev/null)
+        or begin
+            command code $argv
+            return $status
+        end
+
+        if test -f "$target"
+            set should_open_in_tab 0
+        else if not test -d "$target"
+            command code $argv
+            return $status
+        end
+    end
+
+    if test $should_open_in_tab -eq 0
+        command code $argv
+        return $status
+    end
+
+    osascript \
+        -e 'tell application "Visual Studio Code" to activate' \
+        -e 'tell application "System Events" to keystroke "N" using {command down, shift down}'
+
+    command code -r "$target"
 end
 
 # Git Clone to ~/i Directory and Open with Editor
