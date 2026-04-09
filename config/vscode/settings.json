@@ -8,7 +8,7 @@
   // window
   "window.nativeTabs": true, // this is great, macOS only
   "window.openFoldersInNewWindow": "on",
-  "window.newWindowDimensions": "default",
+  "window.newWindowDimensions": "fullscreen",
   "window.restoreFullscreen": true,
   "window.title": "${rootName}",
   "window.customTitleBarVisibility": "windowed",
