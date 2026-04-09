@@ -6,9 +6,10 @@
   "workbench.iconTheme": "catppuccin-perfect-mocha",
 
   // window
-  "window.newWindowDimensions": "fullscreen",
-  "window.restoreFullscreen": true,
   "window.nativeTabs": true, // this is great, macOS only
+  "window.openFoldersInNewWindow": "on",
+  "window.newWindowDimensions": "inherit",
+  "window.restoreFullscreen": false,
   "window.title": "${rootName}",
   "window.customTitleBarVisibility": "windowed",
   "workbench.editor.highlightModifiedTabs": true,
