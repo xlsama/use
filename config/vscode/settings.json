@@ -8,8 +8,8 @@
   // window
   "window.nativeTabs": true, // this is great, macOS only
   "window.openFoldersInNewWindow": "on",
-  "window.newWindowDimensions": "inherit",
-  "window.restoreFullscreen": false,
+  "window.newWindowDimensions": "default",
+  "window.restoreFullscreen": true,
   "window.title": "${rootName}",
   "window.customTitleBarVisibility": "windowed",
   "workbench.editor.highlightModifiedTabs": true,
