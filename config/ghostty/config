@@ -1,10 +1,77 @@
-font-size = 13
-font-family = "Maple Mono Normal NF CN"
+# ===========================
+# Ghostty 完整配置
+# ===========================
 
+# 背景透明度（0.0 ~ 1.0）
+background-opacity = 0.95
+
+# 背景模糊（配合透明度使用，毛玻璃效果）
+background-blur = 20
+
+# 标题栏集成 Tab 栏（比 hidden 多了 Tab 支持）
+macos-titlebar-style = tabs
+
+# 非活跃分屏的透明度（让你一眼看出焦点在哪）
+unfocused-split-opacity = 0.9
+
+# --- 字体 ---
+font-family = "Maple Mono NF CN"
+font-size = 13
+font-thicken = true
+
+# 连字支持
+font-feature = calt
+font-feature = liga
+
+# --- 窗口行为 ---
+# 永远记住窗口状态（分屏、Tab、目录）
+window-save-state = always
+
+# 新分屏继承当前目录
+window-inherit-working-directory = true
+
+# 新窗口继承字体大小
+window-inherit-font-size = true
+
+# 窗口
 window-width = 9999
 window-height = 9999
-window-padding-x = 6
 
+# 内边距
+window-padding-x = 4
+window-padding-y = 4
+window-padding-balance = true
+
+# --- Shell 集成 ---
+# 自动注入 shell 集成（光标样式、sudo、标题、SSH terminfo）
+shell-integration-features = cursor,sudo,title,ssh-terminfo,ssh-env
+
+# --- 滚动 ---
+# 滚动缓冲区大小，单位是字节（默认 10MB，这里设为 50MB）
+scrollback-limit = 50000000
+
+# --- 光标 ---
+cursor-style = block
+cursor-style-blink = false
+
+# 鼠标隐藏（打字时自动隐藏鼠标）
+mouse-hide-while-typing = true
+
+# --- 剪贴板 ---
+# 选中即复制到系统剪贴板（和 iTerm2 一样）
+copy-on-select = clipboard
+
+# 复制时自动去除行尾空格
+clipboard-trim-trailing-spaces = true
+
+# --- macOS 专属 ---
+# 退出时不弹确认框（如果你习惯了 Cmd+Q）
+confirm-close-surface = false
+
+# Option 键作为 Alt 使用（对 vim/emacs 用户很重要）
+macos-option-as-alt = true
+
+# keybind
 keybind = alt+h=goto_split:left
 keybind = alt+l=goto_split:right
 keybind = alt+k=goto_split:up
