@@ -3,7 +3,7 @@
 # ===========================
 
 # 背景透明度（0.0 ~ 1.0）
-background-opacity = 0.95
+background-opacity = 0.97
 
 # 背景模糊（配合透明度使用，毛玻璃效果）
 background-blur = 20
