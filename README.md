@@ -60,7 +60,7 @@ zx install.mjs
 
 ### Chat
 
-- [飞书](https://www.feishu.cn/) - Meeting, Screenshot and Recording
+- [飞书](https://www.feishu.cn/) - Meeting
 
 - [微信](https://weixin.qq.com/)
 
@@ -87,6 +87,8 @@ zx install.mjs
 - [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) - Mouse manager
 
 - [Mos](https://mos.caldis.me/) - Mouse Smooth Scroll
+
+- [CleanShot X](https://cleanshot.com/) - Screenshot
 
 - [Screen Studio](https://screen.studio/) - Screen Recording
 
