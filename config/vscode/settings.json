@@ -2,14 +2,10 @@
   // theme
   "workbench.colorTheme": "Dark Modern",
   "window.systemColorTheme": "dark",
-  "workbench.productIconTheme": "icons-carbon",
-  "workbench.iconTheme": "catppuccin-perfect-mocha",
 
   // window
   "window.nativeTabs": true, // this is great, macOS only
   "window.openFoldersInNewWindow": "on",
-  "window.newWindowDimensions": "default",
-  // "window.restoreFullscreen": false,
   "window.title": "${rootName}",
   "window.customTitleBarVisibility": "windowed",
   "workbench.editor.highlightModifiedTabs": true,
@@ -54,7 +50,6 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "oxc.oxc-vscode",
-  "editor.formatOnSaveMode": "file",
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.format.oxc": "always",
@@ -62,9 +57,6 @@
   },
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer",
   },
 
   // languages
@@ -133,23 +125,6 @@
   "files.simpleDialog.enable": true,
   "explorer.confirmPasteNative": false,
 
-  // vim
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1,
-  },
-  "vscode-neovim.compositeKeys": {
-    "jk": {
-      "command": "vscode-neovim.lua",
-      "args": [
-        [
-          "local code = require('vscode')",
-          "code.action('vscode-neovim.escape')",
-          "code.action('workbench.action.files.save')",
-        ],
-      ],
-    },
-  },
-
   // extension config
   "extensions.ignoreRecommendations": true,
   "redhat.telemetry.enabled": false,
@@ -159,4 +134,6 @@
     "scminput": true,
   },
   "chat.viewSessions.orientation": "stacked",
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.iconTheme": "catppuccin-mocha",
 }
