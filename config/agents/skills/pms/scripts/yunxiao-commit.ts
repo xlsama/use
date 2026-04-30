@@ -15,9 +15,7 @@ function normalizeDateTime(value: string, suffix: string): string {
 }
 
 function isMergeCommit(title: string): boolean {
-  return (
-    title.startsWith("Merge #") || title.toLowerCase().startsWith("merge #")
-  );
+  return title.trim().toLowerCase().startsWith("merge ");
 }
 
 function cleanMessage(title: string): string {
@@ -41,6 +39,7 @@ function yunxiaoFetch<T = any>(url: string, token: string): Promise<T> {
 interface CommitOptions {
   email?: string;
   all?: boolean;
+  includeMerge?: boolean;
 }
 
 export async function queryCommits(
@@ -149,7 +148,8 @@ export async function queryCommits(
 
       for (const commit of filtered) {
         const title = commit.title || commit.message || "";
-        if (!title || isMergeCommit(title)) continue;
+        if (!title || (!options?.includeMerge && isMergeCommit(title)))
+          continue;
 
         const committedDate = commit.committedDate;
         if (!committedDate) continue;
@@ -189,7 +189,10 @@ export function commitsToMarkdown(
   }
 
   const lines: string[] = [];
-  lines.push(`${formatDate(startDate)} - ${formatDate(endDate)}`, "");
+  lines.push(
+    `# ${formatDate(startDate)} - ${formatDate(endDate)} 云效 Commit 汇总`,
+    ""
+  );
 
   for (const project of [...projectCommits.keys()].sort()) {
     lines.push(`## ${project}`, "");
@@ -212,13 +215,14 @@ if (import.meta.main) {
       output: { type: "string" },
       email: { type: "string" },
       all: { type: "boolean", default: false },
+      includeMerge: { type: "boolean", default: false },
       export: { type: "boolean", default: false },
     },
   });
 
   if (!values.startDate || !values.endDate) {
     console.error(
-      "Usage: bun scripts/yunxiao-commit.ts --startDate YYYY-MM-DD --endDate YYYY-MM-DD [--export]"
+      "Usage: bun scripts/yunxiao-commit.ts --startDate YYYY-MM-DD --endDate YYYY-MM-DD [--includeMerge] [--export]"
     );
     process.exit(1);
   }
@@ -226,9 +230,17 @@ if (import.meta.main) {
   const commitsByDate = await queryCommits(
     values.startDate,
     values.endDate,
-    { email: values.email, all: values.all }
+    {
+      email: values.email,
+      all: values.all,
+      includeMerge: values.includeMerge,
+    }
   );
-  const markdown = commitsToMarkdown(commitsByDate, values.startDate, values.endDate);
+  const markdown = commitsToMarkdown(
+    commitsByDate,
+    values.startDate,
+    values.endDate
+  );
 
   if (values.export) {
     const startLabel = values.startDate.split("T")[0];
