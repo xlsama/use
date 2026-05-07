@@ -7,7 +7,7 @@
 
 ### Backend
 
-- TypeScript + Bun + Hono + @hono/zod-validator + Drizzle ORM + Postgres + Supabase + Better Auth
+- TypeScript + Bun + Hono + @hono/zod-validator + Drizzle ORM + PostgreSQL + Supabase + Better Auth
 
 ### Deploy
 
