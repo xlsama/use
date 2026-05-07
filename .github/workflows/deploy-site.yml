@@ -8,11 +8,6 @@ jobs:
   trigger:
     runs-on: ubuntu-latest
     steps:
-      - name: Dispatch to lixiaolong.me
-        env:
-          GH_TOKEN: ${{ secrets.SITE_REPO_TOKEN }}
+      - name: Trigger Cloudflare deploy
         run: |
-          gh api repos/xlsama/lixiaolong.me/dispatches \
-            -f event_type=content-changed \
-            -f 'client_payload[source]=${{ github.repository }}' \
-            -f 'client_payload[sha]=${{ github.sha }}'
+          curl -X POST -s -o /dev/null -w "%{http_code}\n" "${{ secrets.CF_DEPLOY_HOOK }}"
