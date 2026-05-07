@@ -1,4 +1,4 @@
-name: Trigger site rebuild on change to README.md
+name: Trigger lixiaolong.me rebuild
 on:
   push:
     branches: [main]
@@ -8,8 +8,11 @@ jobs:
   trigger:
     runs-on: ubuntu-latest
     steps:
-      - name: Call Netlify build hook
+      - name: Dispatch to lixiaolong.me
         env:
-          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+          GH_TOKEN: ${{ secrets.SITE_REPO_TOKEN }}
         run: |
-          curl -X POST -s -o /dev/null -w "%{http_code}\n" "$NETLIFY_BUILD_HOOK"
+          gh api repos/xlsama/lixiaolong.me/dispatches \
+            -f event_type=content-changed \
+            -f 'client_payload[source]=${{ github.repository }}' \
+            -f 'client_payload[sha]=${{ github.sha }}'
