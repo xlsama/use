@@ -6,16 +6,13 @@ tap daipeihust/tap # for im-select
 cask google-chrome
 cask ghostty
 cask visual-studio-code
-cask feishu
 cask wechat
-cask obsidian
 cask refine
 cask raycast
 cask input-source-pro
 brew popclip
 cask 'logi-options+'
 cask mos
-cask yaak
 cask dataflare
 cask orbstack
 cask proxyman
