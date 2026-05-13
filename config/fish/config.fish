@@ -144,10 +144,11 @@ alias uvup='uv lock --upgrade'
 alias us='uv sync'
 
 # ai
-alias cc='claude --dangerously-skip-permissions'
-alias cch="cc --model haiku"
+alias cc='claude --dangerously-skip-permissions --effort max'
+alias cch="claude --dangerously-skip-permissions --model haiku"
 alias ccr="cc --resume"
 alias cm="cch /commit"
+alias cca="claude agents"
 alias cx="codex --sandbox danger-full-access"
 
 function c --description "Open files with code; open directories in a new VS Code native tab"
