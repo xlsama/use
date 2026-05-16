@@ -1,1 +1,90 @@
-/Users/xlsama/i/use/config/zed/settings.json
+{
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+
+  // theme
+  "theme": "One Dark Pro",
+  "icon_theme": "Catppuccin Mocha",
+
+  // panel
+  "collaboration_panel": {
+    "button": false,
+  },
+
+  "cli_default_open_behavior": "new_window",
+  "on_last_window_closed": "quit_app",
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "ui_font_size": 15,
+  "buffer_font_size": 14,
+  "ui_font_family": "Maple Mono Normal NF CN",
+  "colorize_brackets": true,
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "hover_popover_delay": 50,
+  "sticky_scroll": {
+    "enabled": true,
+  },
+  "edit_predictions": {
+    "disabled_globs": [],
+  },
+  "minimap": {
+    "show": "always",
+  },
+  "tab_size": 2,
+  "preferred_line_length": 100,
+  "when_closing_with_no_tabs": "keep_window_open",
+
+  // terminal
+  "terminal": {
+    "font_size": 12,
+    "font_family": "Maple Mono Normal NF CN",
+    "cursor_shape": "bar",
+    "env": {
+      "GIT_EDITOR": "zed --wait",
+    },
+  },
+
+  // format
+  "format_on_save": "on",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "printWidth": 100,
+  },
+
+  // extensions
+  "auto_install_extensions": {
+    "basher": true,
+    "catppuccin-icons": true,
+    "comment": true,
+    "docker-compose": true,
+    "dockerfile": true,
+    "emmet": true,
+    "env": true,
+    "fish": true,
+    "git-firefly": true,
+    "html": true,
+    "ini": true,
+    "java": true,
+    "kotlin": true,
+    "log": true,
+    "lua": true,
+    "make": true,
+    "nginx": true,
+    "one-dark-pro": true,
+    "oxc": true,
+    "scss": true,
+    "sql": true,
+    "swift": true,
+    "toml": true,
+    "tsgo": true,
+    "vue": true,
+    "xml": true,
+  },
+}
