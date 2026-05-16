@@ -28,10 +28,16 @@ echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
 chsh -s /opt/homebrew/bin/fish
 ```
 
+### Install Bun
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
 ### Run install script
 
 ```bash
-zx install.mjs
+./install.ts
 ```
 
 ## Hardware

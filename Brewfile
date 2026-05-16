@@ -16,7 +16,6 @@ cask orbstack
 cask proxyman
 
 # command line tools
-brew zx
 brew fish
 brew starship
 brew neovim
