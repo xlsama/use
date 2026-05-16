@@ -5,7 +5,6 @@ tap daipeihust/tap # for im-select
 # apps
 cask google-chrome
 cask ghostty
-cask visual-studio-code
 cask wechat
 cask refine
 cask raycast
@@ -13,7 +12,6 @@ cask input-source-pro
 brew popclip
 cask 'logi-options+'
 cask mos
-cask dataflare
 cask orbstack
 cask proxyman
 
