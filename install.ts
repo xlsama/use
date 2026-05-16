@@ -34,7 +34,7 @@ const LINK_MAP = [
 ]
 
 // ---------- create folders ----------
-await $`mkdir -p ${HOME_DIR}/w` // Working code directory
+await $`mkdir -p ~/w` // Working code directory
 
 log('link config files...')
 await Promise.all(
@@ -66,7 +66,7 @@ await $`defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDra
 await $`defaults write NSGlobalDomain "AppleShowAllExtensions" -bool true`
 // Set language to zh-CN for Maps
 await $`defaults write com.apple.Maps AppleLanguages '("zh-CN")'`
-await $`touch ${HOME_DIR}/.hushlogin`
+await $`touch ~/.hushlogin`
 // restart to apply settings
 await $`killall Finder`.nothrow()
 await $`killall Dock`.nothrow()
@@ -77,9 +77,7 @@ await $`corepack enable`
 await $`npm set registry https://registry.npmjs.org/`
 
 log('install npm global packages ...')
-for (const name of ['@antfu/ni', 'nnrm', 'vite']) {
-  await $`npm i -g ${name}`.nothrow()
-}
+await $`npm i -g @antfu/ni nnrm vite`.nothrow()
 
 function log(msg: string) {
   console.log(`\x1b[35m${msg}\x1b[0m\n`)
