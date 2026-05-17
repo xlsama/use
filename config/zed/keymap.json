@@ -5,7 +5,7 @@
       "alt-l": "workspace::ActivatePaneRight",
       "alt-k": "workspace::ActivatePaneUp",
       "alt-j": "workspace::ActivatePaneDown",
-      "cmd-e": "workspace::ToggleRightDock",
+      "cmd-e": "workspace::ToggleLeftDock",
       "cmd-shift-a": "git_panel::ToggleFocus",
       "cmd-shift-j": "terminal_panel::Toggle",
       "cmd-m": "workspace::ToggleZoom",
