@@ -52,29 +52,31 @@ curl -fsSL https://bun.sh/install | bash
 
 - [Google Chrome](https://www.google.com/chrome/)
 
+### Agent
+
+- [Codex](https://chatgpt.com/codex/)
+
 ### Terminal
 
 - [Ghostty](https://ghostty.org/)
-
-### Editor
-
-- [Visual Studio Code](https://code.visualstudio.com/)
 
 ### Network
 
 - [Loon](https://github.com/Loon0x00/Loon4Mac) - Bypass GFW
 
-### Chat
+### Editor
 
-- [飞书](https://www.feishu.cn/) - Meeting
+- [Zed](https://zed.dev/)
+
+### Chat
 
 - [微信](https://weixin.qq.com/)
 
 ### Writing
 
-- [Obsidian](https://obsidian.md/)
-
 - [Refine](https://refine.sh/) - Grammar Checker
+
+- Vellum
 
 ### Productivity
 
@@ -84,7 +86,9 @@ curl -fsSL https://bun.sh/install | bash
 
 - [闪电说](https://shandianshuo.cn/) - Voice Typing
 
-- [Passwords](https://apps.apple.com/us/app/passwords/id6473799789) - MacOS Internal Password Manager
+- 豆包输入法 - Input Method
+
+- 1Password - Password Manage
 
 - [Input Source Pro](https://inputsource.pro/) - Auto switch input source
 
@@ -108,6 +112,8 @@ curl -fsSL https://bun.sh/install | bash
 
 - [Proxyman](https://proxyman.com/) - HTTP Debugging Proxy
 
+- 微信开发者工具 - 微信小程序
+
 ### Other
 
 - [CapCut](https://www.capcut.com/) - Video Editor
@@ -118,17 +124,17 @@ curl -fsSL https://bun.sh/install | bash
 
 - [Homebrew](https://brew.sh/) - Package Manager, More: [Brewfile](./Brewfile)
 
-- [Claude Code](https://www.claude.com/product/claude-code) - Agent
-
 ## Subscriptions
 
 - 梯子：DMIT LAX.AN5.Pro.Pocket - 每年 $160
+
 - 宽带：电信 500M - 每月 ¥59
+
 - 滴答清单 - 每年 ¥139
 
 ### AI
 
-- Claude Code Max 20x - 每月 $200
+- ChatGPT Pro 5x - 每月 $100
 
 ## MacOS Config
 
