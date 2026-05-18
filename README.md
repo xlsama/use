@@ -68,15 +68,17 @@ curl -fsSL https://bun.sh/install | bash
 
 - [Zed](https://zed.dev/)
 
-### Chat
+### Instant Messaging
 
 - [微信](https://weixin.qq.com/)
+
+- [腾讯会议](https://meeting.tencent.com/)
 
 ### Writing
 
 - [Refine](https://refine.sh/) - Grammar Checker
 
-- Vellum
+- Vellum - Markdown Editor
 
 ### Productivity
 
@@ -84,13 +86,13 @@ curl -fsSL https://bun.sh/install | bash
 
 - [Raycast](https://raycast.com) - Launcher
 
-- [闪电说](https://shandianshuo.cn/) - Voice Typing
+- [1Password](https://1password.com/) - Password Manager
 
-- 豆包输入法 - Input Method
-
-- 1Password - Password Manage
+- [豆包输入法](https://shurufa.doubao.com/pc) - Input Method
 
 - [Input Source Pro](https://inputsource.pro/) - Auto switch input source
+
+- [闪电说](https://shandianshuo.cn/) - Voice Typing
 
 - [PopClip](https://pilotmoon.com/popclip/) - Quick Open
 
@@ -104,19 +106,19 @@ curl -fsSL https://bun.sh/install | bash
 
 ### Developer Tools
 
-- [Yaak](https://yaak.app/) - API Client
-
-- [Dataflare](https://dataflare.app/) - Database Management
-
 - [OrbStack](https://orbstack.dev/) - Docker
 
 - [Proxyman](https://proxyman.com/) - HTTP Debugging Proxy
 
-- 微信开发者工具 - 微信小程序
+- [Yaak](https://yaak.app/) - API Client
+
+- [Dataflare](https://dataflare.app/) - Database Management
+
+- [微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html) - 微信小程序
 
 ### Other
 
-- [CapCut](https://www.capcut.com/) - Video Editor
+- [剪映](https://www.capcut.cn/) - Video Editor
 
 ## CLI
 
