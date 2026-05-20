@@ -72,6 +72,15 @@
     "printWidth": 100,
   },
 
+  // language servers
+  "lsp": {
+    "jdtls": {
+      "settings": {
+        "java_home": "/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home",
+      },
+    },
+  },
+
   // extensions
   "auto_install_extensions": {
     "basher": true,
