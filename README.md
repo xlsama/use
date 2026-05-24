@@ -110,8 +110,6 @@ curl -fsSL https://bun.sh/install | bash
 
 - [Proxyman](https://proxyman.com/) - HTTP Debugging Proxy
 
-- [Yaak](https://yaak.app/) - API Client
-
 - [Dataflare](https://dataflare.app/) - Database Management
 
 - [微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html) - 微信小程序
