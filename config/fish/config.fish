@@ -1,6 +1,15 @@
 set -g fish_greeting
 set -gx EDITOR nvim
 
+# Keep the terminal cursor as a vertical bar in Fish.
+set -g fish_cursor_default line
+set -g fish_cursor_insert line
+set -g fish_cursor_replace_one line
+set -g fish_cursor_replace line
+set -g fish_cursor_external line
+set -g fish_cursor_visual line
+set -g fish_vi_force_cursor 1
+
 # pnpm
 set -gx PNPM_HOME "$HOME/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
@@ -9,6 +18,11 @@ end
 
 fish_add_path /opt/homebrew/opt/postgresql@18/bin
 starship init fish | source
+functions -c fish_prompt __starship_fish_prompt
+function fish_prompt
+    __starship_fish_prompt $argv
+    printf '\e[6 q'
+end
 zoxide init fish | source
 fnm env --use-on-cd | source
 fzf --fish | source
@@ -57,6 +71,8 @@ alias gpu='git push -u origin HEAD'
 alias gpf='git push --force'
 alias gpt='git push --tags'
 alias gpd='git push origin --delete'
+alias gps='git push --force starbucks HEAD:stg'
+alias gpm='git push --force starbucks HEAD:master'
 
 # --- Stash (暂存) ---
 alias gsh='git stash push -m'
@@ -128,13 +144,15 @@ alias nid='ni -D'
 alias d='nr dev'
 alias do='nr dev --open'
 alias b='nr build'
-alias s='nr start'
 alias t='nr test'
 alias lint="nr lint"
 alias fmt="nr fmt"
 alias ck='nr check'
 alias release="nr release"
 alias up='nlx taze -I -r'
+
+# swift
+alias s='swift'
 
 # python
 alias ua='uv add'
@@ -155,21 +173,21 @@ function c
   zed $argv
 end
 
-# Git Clone to ~/i Directory and Open with Editor
+# Git Clone to ~/i Directory
 function gcli
     set project_name (basename $argv)
     set project_name (string replace .git '' $project_name)
     git clone $argv ~/i/$project_name
-    c ~/i/$project_name
+    cd ~/i/$project_name
     exit
 end
 
-# Git Clone to ~/w Directory and Open with Editor
+# Git Clone to ~/w Directory
 function gclw
     set project_name (basename $argv)
     set project_name (string replace .git '' $project_name)
     git clone $argv ~/w/$project_name
-    c ~/w/$project_name
+    cd ~/w/$project_name
     exit
 end
 
@@ -198,7 +216,7 @@ function og
     # Remove .git suffix
     set url (string replace -r '\.git$' '' $url)
 
-    open $url
+    open "$url/branches"
 end
 
 # yazi wrapper: exit to cwd

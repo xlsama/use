@@ -10,7 +10,7 @@ description: >-
 
 # Fireworks Tech Graph
 
-Generate production-quality SVG technical diagrams exported as PNG via `rsvg-convert`.
+Generate production-quality SVG technical diagrams exported as PNG via `cairosvg` (recommended), `rsvg-convert`, or `puppeteer`.
 
 ## Install Source
 
@@ -91,16 +91,17 @@ python3 ./scripts/generate-from-template.py architecture ./output/arch.svg '{"ti
 5. **Map nodes to shapes** — use Shape Vocabulary below
 6. **Check icon needs** — load `references/icons.md` for known products
 7. **Write SVG** with adaptive strategy (see SVG Generation Strategy below)
-8. **Validate**: Run `rsvg-convert file.svg -o /dev/null 2>&1` to check syntax
-9. **Export PNG**: `rsvg-convert -w 1920 file.svg -o file.png`
+8. **Validate**: Run `python3 -c "import xml.etree.ElementTree as ET; ET.parse('file.svg')"` to check XML syntax
+9. **Export PNG**: Use `cairosvg` (recommended). See **SVG → PNG Conversion** section below for full method comparison
 10. **Report** the generated file paths
 11. **(Optional) Visual self-review** — if your runtime can read images, load the exported PNG back and inspect it. Syntactic validity does not guarantee visual correctness: arrows may cross through component interiors, labels may collide with lifelines or other labels, boxes may overlap, alt-frame text may sit on top of a message, or a legend may cover content. If you see any of these, revise the SVG and re-export; repeat until the rendered image is clean. Common fixes:
     - Route arrows through gaps between boxes, not through box interiors
-    - Add background rects behind arrow labels (opacity 0.95, matching canvas color)
+    - Move arrow labels 6-8px away from the arrow line (offset-first); add background rects only when offset is insufficient
     - Widen inter-row/inter-column gutters so same-layer arrows have clear corridors
     - Collapse repeated cross-layer arrows into a single "delegates down" rail outside the content area
     - Move legend/notes out of any region where arrows or labels land
     - Increase viewBox height/width rather than packing elements tighter
+    - If a filtered element (drop-shadow, blur) is missing one side of its border, move it ≥30px away from that viewBox edge, or remove the filter and rely on color/contrast for visual separation
   Skip this step silently if image reading is unavailable — do not guess.
 
 ## Diagram Types & Layout Rules
@@ -322,7 +323,8 @@ Always include a **legend** when 2+ arrow types are used.
 - Snap to 8px grid: horizontal 120px intervals, vertical 120px intervals
 
 **Arrow Labels** (CRITICAL):
-- MUST have background rect: `<rect fill="canvas_bg" opacity="0.95"/>` with 4px horizontal, 2px vertical padding
+- **Offset-first** (default): place label 6-8px above horizontal arrows, or 8px left/right of vertical arrows — do not overlap the arrow line
+- **Background fallback**: add `<rect fill="canvas_bg" opacity="0.95"/>` only when the offset label still crosses another visual element (another arrow, a node edge, etc.)
 - Place mid-arrow, ≤3 words, stagger by 15-20px when multiple arrows converge
 - Maintain 10px safety distance from nodes
 
@@ -331,6 +333,36 @@ Always include a **legend** when 2+ arrow types are used.
 - Anchor arrows on component edges, not geometric centers
 - Route around dense node clusters, use different y-offsets for parallel arrows
 - Jump-over arcs (5px radius) for unavoidable crossings
+
+**Post-Generation Arrow Optimization**:
+
+When a user asks to "优化箭头" / "fix arrow routing" / "optimize the diagram" on an already-generated diagram, preserve all nodes, containers, styles, and layout — only modify the `arrows` entries in the JSON data, then re-render with `generate-from-template.py`.
+
+Available arrow override fields (in recommended order of use):
+
+| Field | Type | When to Use |
+|-------|------|-------------|
+| `source_port` / `target_port` | `"left"` / `"right"` / `"top"` / `"bottom"` | Arrow exits/enters from the wrong edge |
+| `corridor_x` | `[x, ...]` | Hint vertical segments toward this x lane (soft preference) |
+| `corridor_y` | `[y, ...]` | Hint horizontal segments toward this y lane (soft preference) |
+| `route_points` | `[[x1,y1], [x2,y2], ...]` | Force exact waypoints (bypasses auto-routing); keep segments orthogonal |
+| `routing_padding` | number (default: 24) | *(Advanced)* Adjust obstacle clearance for this arrow |
+| `port_clearance` | number | *(Advanced)* Adjust first-segment offset from node edge |
+| `label_style` | `"badge"` / `"offset"` | Choose `"offset"` when badge backgrounds create visual clutter; keep `"badge"` (default) for legacy/high-contrast labels |
+
+For JSON/template rendering, the default remains `"badge"` for backward compatibility. Set `"label_style": "offset"` on individual arrows when you want offset-first labels without background rects.
+
+Optimization steps:
+1. Read the existing SVG — identify which arrows overlap, cross nodes, or look misaligned
+2. Find those arrows in the JSON data by `source` / `target` pair
+3. Add `source_port` / `target_port` if the exit/entry direction is wrong; add `corridor_x` / `corridor_y` to space parallel arrows apart; use `route_points` only when hints alone cannot resolve the path
+4. Re-run `generate-from-template.py` with the updated JSON and validate with `validate-svg.sh`
+
+Example — spacing two overlapping arrows into separate corridors:
+```json
+{ "source": "nodeA", "target": "nodeB", "corridor_y": [280] }
+{ "source": "nodeC", "target": "nodeD", "corridor_y": [320] }
+```
 
 **Line Overlap Prevention** (CRITICAL - most common bug on Codex):
 When two arrows must cross each other, ALWAYS use jump-over arcs to prevent visual overlap:
@@ -342,19 +374,23 @@ When two arrows must cross each other, ALWAYS use jump-over arcs to prevent visu
 **Validation Checklist** (run before finalizing):
 1. **Arrow-Component Collision**: Arrows MUST NOT pass through component interiors (route around with orthogonal paths)
 2. **Text Overflow**: All text MUST fit with 8px padding (estimate: `text.length × 7px ≤ shape_width - 16px`)
-3. **Arrow-Text Alignment**: Arrow endpoints MUST connect to shape edges (not floating); all arrow labels MUST have background rects
+3. **Arrow-Text Alignment**: Arrow endpoints MUST connect to shape edges (not floating); arrow labels should not overlap arrow lines (use offset positioning or background rects)
 4. **Container Discipline**: Prefer arrows entering and leaving section containers through open gaps between components, not through inner component bodies
+5. **Filter Boundary Safety**: For every element with `filter="url(...)"`, verify `(element_x + element_width + filter_extension) ≤ viewBox_width` AND `element_x ≥ filter_extension`. The default filter region extends 10-20% beyond bbox; staying near viewBox edges causes Chrome/cairosvg to clip the element's edge-side stroke (one side of the border vanishes while other sides render correctly)
+6. **Arrow-Title Collision**: Arrows MUST NOT cross through section/container title text or region labels (font-size ≥ 13px). For smaller annotations (< 13px), prefer routing around but tolerate if layout constraints require it. *(Visual self-review check — not covered by `validate-svg.sh` automated checks)*
+7. **Frame Label–Arrow Alignment** (sequence diagrams): Section/frame label badges MUST be vertically centered with their first message arrow. Compute `badge_y = first_arrow_y - (badge_height / 2)`. When appending new sections to an existing diagram, verify alignment matches the existing sections — this is the most common regression when adding content incrementally. Use variables in Python list generation to enforce the constraint: `sec_y = 840; badge_y = sec_y - 9  # for height=18 badge`
 
 ## SVG Technical Rules
 
 - ViewBox: `0 0 960 600` default; `0 0 960 800` tall; `0 0 1200 600` wide
-- Fonts: embed via `<style>font-family: ...</style>` — no external `@import` (breaks rsvg-convert)
+- Fonts: embed via `<style>font-family: ...</style>` — no external `@import` (cairosvg / rsvg-convert cannot fetch external URLs)
 - `<defs>`: arrow markers, gradients, filters, clip paths
 - Text: minimum 12px, prefer 13-14px labels, 11px sub-labels, 16-18px titles
 - All arrows: `<marker>` with `markerEnd`, sized `markerWidth="10" markerHeight="7"`
 - Drop shadows: `<feDropShadow>` in `<filter>`, apply sparingly (key nodes only)
 - Curved paths: use `M x1,y1 C cx1,cy1 cx2,cy2 x2,y2` cubic bezier for loops/feedback arrows
 - Clip content: use `<clipPath>` if text might overflow a node box
+- Z-order (drawing order): SVG uses painter's model — later elements cover earlier ones. Recommended layer order (bottom → top): ① canvas background ② dashed containers / region backgrounds ③ arrows and connection lines ④ node shapes (rects, circles) ⑤ text labels and annotations ⑥ legends and overlays. When arrows pass near text, draw arrows BEFORE text so text stays readable. Adjust per diagram needs — this is guidance, not rigid.
 
 ## SVG Generation & Error Prevention
 
@@ -390,7 +426,9 @@ EOF
 
 **Validation** (run after generation):
 ```bash
-rsvg-convert file.svg -o /tmp/test.png 2>&1 && echo "✓ Valid" && rm /tmp/test.png
+python3 -c "import xml.etree.ElementTree as ET; ET.parse('file.svg')" && echo "✓ Valid XML"
+# Or use cairosvg as a render-time check:
+python3 -c "import cairosvg; cairosvg.svg2png(url='file.svg', write_to='/tmp/test.png')" && echo "✓ Renders" && rm /tmp/test.png
 ```
 
 **If using `generate-from-template.py`**:
@@ -405,12 +443,131 @@ rsvg-convert file.svg -o /tmp/test.png 2>&1 && echo "✓ Valid" && rm /tmp/test.
 - ❌ `marker-end=` → ✅ `marker-end="url(#arrow)"`
 - ❌ `L 29450` → ✅ `L 290,220`
 - ❌ Missing `</svg>` at end
+- ❌ Element with `filter` near viewBox edge — filter region extends 20% (default) or more beyond bbox; if that region exceeds viewBox, Chrome/cairosvg clip the filter rendering AND can drop the element's own stroke on that side. Keep filtered elements at least `max(20% of element size, shadow blur radius × 3)` away from viewBox edges, or omit the filter.
 
 ## Output
 
 - **Default**: `./[derived-name].svg` and `./[derived-name].png` in current directory
 - **Custom**: user specifies path with `--output /path/` or `输出到 /path/`
-- **PNG export**: `rsvg-convert -w 1920 file.svg -o file.png` (1920px = 2x retina)
+- **PNG export**: see **SVG → PNG Conversion** below
+
+## SVG → PNG Conversion
+
+### Method Comparison
+
+| Tool | Install | Render Quality | Notes |
+|------|---------|----------------|-------|
+| `rsvg-convert` | System (often preinstalled) | ⚠️ Fair | Drops some CSS styles and `<foreignObject>` elements — missing borders/text on complex SVGs |
+| **`cairosvg` (recommended)** | `pip install cairosvg` | ✅ Good | Solid CSS support; clearly better than rsvg-convert |
+| `puppeteer` (headless Chrome) | `npm install puppeteer` | ✅✅ Best | Real browser engine; 100% fidelity but heavy (Node + Chromium) |
+
+### Recommended: cairosvg (Python one-liner)
+
+```bash
+# Single file (2x resolution for retina/docs)
+python3 -c "import cairosvg; cairosvg.svg2png(url='input.svg', write_to='output.png', scale=2)"
+
+# Batch convert all SVGs in a directory
+python3 -c "
+import cairosvg, os, glob
+d = 'docs/00-core'
+for svg in sorted(glob.glob(os.path.join(d, '*.svg'))):
+    png = svg.replace('.svg', '.png')
+    cairosvg.svg2png(url=svg, write_to=png, scale=2)
+    print(f'Done: {os.path.basename(svg)} -> {os.path.basename(png)}')
+"
+```
+
+> `scale=2` produces 2x resolution PNG, ideal for high-DPI screens and embedded docs.
+
+### Fallback: rsvg-convert (simple but may drop styles)
+
+```bash
+# Single file
+rsvg-convert -w 1920 file.svg -o file.png
+
+# Batch (not recommended — complex SVGs may lose elements)
+for f in docs/00-core/*.svg; do rsvg-convert -o "${f%.svg}.png" "$f"; done
+
+# 2x resolution
+for f in docs/00-core/*.svg; do rsvg-convert -z 2 -o "${f%.svg}.png" "$f"; done
+```
+
+### Highest Fidelity: puppeteer (headless Chrome)
+
+```bash
+npm install puppeteer  # auto-downloads Chromium
+node svg2png.js [directory]
+```
+
+<details>
+<summary>svg2png.js — full puppeteer script</summary>
+
+```javascript
+const puppeteer = require('puppeteer');
+const fs = require('fs');
+const path = require('path');
+
+(async () => {
+  const dir = process.argv[2] || '.';
+  const svgFiles = fs.readdirSync(dir).filter(f => f.endsWith('.svg'));
+
+  const browser = await puppeteer.launch({
+    headless: 'new',
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
+
+  for (const file of svgFiles) {
+    const svgPath = path.resolve(dir, file);
+    const pngPath = svgPath.replace(/\.svg$/, '.png');
+    const svgContent = fs.readFileSync(svgPath, 'utf-8');
+
+    const wMatch = svgContent.match(/width="(\d+)/);
+    const hMatch = svgContent.match(/height="(\d+)/);
+    const vbMatch = svgContent.match(/viewBox="[^"]*\s(\d+)\s(\d+)"/);
+
+    let width = wMatch ? parseInt(wMatch[1]) : (vbMatch ? parseInt(vbMatch[1]) : 1200);
+    let height = hMatch ? parseInt(hMatch[1]) : (vbMatch ? parseInt(vbMatch[2]) : 800);
+
+    const scale = 2;
+    const page = await browser.newPage();
+    await page.setViewport({ width, height, deviceScaleFactor: scale });
+
+    const html = `<!DOCTYPE html>
+<html><head><style>
+  body { margin: 0; padding: 0; background: transparent; }
+  img { display: block; }
+</style></head>
+<body>
+  <img src="data:image/svg+xml;base64,${Buffer.from(svgContent).toString('base64')}" width="${width}" height="${height}" />
+</body></html>`;
+
+    await page.setContent(html, { waitUntil: 'networkidle0' });
+    await page.screenshot({ path: pngPath, type: 'png', omitBackground: true });
+    await page.close();
+
+    console.log(`Done: ${file} -> ${path.basename(pngPath)} (${width}x${height} @${scale}x)`);
+  }
+
+  await browser.close();
+})();
+```
+
+</details>
+
+### Gotchas (lessons learned)
+
+- `rsvg-convert` renders SVGs containing `<foreignObject>`, CSS `filter`, or complex `<style>` blocks **incompletely** — missing borders / missing text are the typical symptoms
+- `cairosvg` (built on Cairo) has much better CSS support than rsvg and is sufficient for most cases
+- `cairosvg` **may fail to render CJK characters and emoji** in `<text>` elements — Cairo's font API (`cairo_select_font_face`) does not reliably perform system fontconfig fallback, so glyphs not present in the matched font face render as □ (empty box). This commonly affects Chinese/Japanese/Korean text and emoji, depending on system font configuration. **Workaround**: use SVG as primary format for web/GitHub rendering (browsers handle CJK natively); reserve PNG export for Latin-only diagrams, or switch to the puppeteer path for full CJK+emoji fidelity
+- If the SVG was generated by a browser (D3.js, Mermaid, etc.), only headless Chrome (puppeteer) renders it 100% faithfully
+- **Chrome headless CLI `--window-size=W,H` is not the drawable area** — even in `--headless=new` mode, browser chrome (scrollbars, internal UI surfaces) consumes ~15-20% of both width and height, so the actual SVG viewport is only ~0.84×W by ~0.84×H. Symptom: SVG content past `x ≈ 0.84 × W` or `y ≈ 0.84 × H` is cut off and renders as a solid white band, even though the SVG file itself is correct. Typical failure modes: a Legend in the top-right corner loses its right border; a bottom-row container loses its bottom dashed line. Fix: pass window dimensions **≥ SVG width × 1.2 AND SVG height × 1.2**, then crop the raw screenshot back to `(SVG_width × scale, SVG_height × scale)` with PIL or ImageMagick. Example: for a 1280×580 SVG at 3× DPR, use `--window-size=1600,800` then crop the output to 3840×1740. The Puppeteer / `page.setViewport()` path does NOT have this issue — it sets a precise viewport regardless of window UI.
+
+### Picking a Method
+
+1. **Default** → `cairosvg` (pip install once, one-line conversion, good fidelity)
+2. **No Python available** → `rsvg-convert` (acceptable for simple flat-color diagrams)
+3. **Browser-generated SVG or pixel-perfect required** → `puppeteer`
 
 ## Styles
 
@@ -423,6 +580,7 @@ rsvg-convert file.svg -o /tmp/test.png 2>&1 && echo "✓ Valid" && rm /tmp/test.
 | 5 | **Glassmorphism** | Dark gradient | Product sites, keynotes |
 | 6 | **Claude Official** | Warm cream `#f8f6f3` | Anthropic-style diagrams |
 | 7 | **OpenAI Official** | Pure white `#ffffff` | OpenAI-style diagrams |
+| 8 | **Dark Luxury** *(AI-authored)* | `#0a0a0a` deep black | Architecture docs, premium editorial — hand-craft SVG from `references/style-8-dark-luxury.md` |
 
 Load `references/style-N.md` for exact color tokens and SVG patterns.
 
