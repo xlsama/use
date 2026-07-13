@@ -28,12 +28,17 @@ _SCRIPTS_DIR = Path(__file__).resolve().parent
 if str(_SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS_DIR))
 
+from console_encoding import configure_utf8_stdio  # noqa: E402
 from svg_to_pptx.animation_config import (  # noqa: E402
     build_group_listing,
     load_animation_config,
     validate_animation_config,
+    validate_animation_config_errors,
+    validate_transition_config,
     write_scaffold,
 )
+
+configure_utf8_stdio()
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -108,10 +113,28 @@ def main(argv: list[str] | None = None) -> int:
         if not config:
             print('No animations.json found; default animation policy will be used.')
             return 0
-        warnings = validate_animation_config(project_path, config)
-        if warnings:
-            for warning in warnings:
-                print(f'Warning: {warning}', file=sys.stderr)
+        errors = list(dict.fromkeys(
+            validate_transition_config(config)
+            + validate_animation_config_errors(config)
+        ))
+        if errors:
+            for error in errors:
+                print(f'Error: {error}', file=sys.stderr)
+            return 1
+        reference_messages = validate_animation_config(project_path, config)
+        reference_warnings = [
+            message for message in reference_messages
+            if ' has no id and cannot be customized in animations.json' in message
+        ]
+        reference_errors = [
+            message for message in reference_messages
+            if message not in reference_warnings
+        ]
+        for warning in reference_warnings:
+            print(f'Warning: {warning}', file=sys.stderr)
+        if reference_errors:
+            for error in reference_errors:
+                print(f'Error: {error}', file=sys.stderr)
             return 1
         print('Animation config validated successfully.')
         return 0

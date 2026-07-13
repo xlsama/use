@@ -14,8 +14,9 @@
 | **Design Style** | {design_style} |
 | **Target Audience** | [Filled by Strategist] |
 | **Use Case** | [Filled by Strategist] |
-| **Delivery Purpose** | [`text` read-close / `balanced` business / `presentation` — confirmed at item 7; a deck-wide consumption mode that drives per-page density, page-count recommendation, page_rhythm lean, and the body baseline (px). See strategist.md §6.1.] |
+| **Delivery Purpose** | [`text` read-close / `balanced` business / `presentation` — confirmed at c; a deck-wide consumption mode that drives per-page density, page-count recommendation, page_rhythm lean, and the body baseline (px). See strategist.md §6.1.] |
 | **Content Strategy** | [Material divergence — the user's free-text intent on how closely to follow the source vs how freely to reshape it (or "balanced default"); facts stay sourced however free. Confirmed at c; consumed when authoring §IX. Not in spec_lock.] |
+| **Template Adherence** | [`adaptive` / `strict` — include only when Step 3 loaded a deck/layout template; omit for free design and brand-only templates. Also written under `spec_lock.md pptx_structure`.] |
 | **Created Date** | {date_str} |
 
 ---
@@ -80,7 +81,7 @@
   <stop offset="100%" stop-color="#[secondary accent]"/>
 </linearGradient>
 
-<!-- Background decorative gradient (note: rgba forbidden, use stop-opacity) -->
+<!-- Background decorative gradient (explicit stop-opacity keeps the palette reusable) -->
 <radialGradient id="bgDecor" cx="80%" cy="20%" r="50%">
   <stop offset="0%" stop-color="#[primary]" stop-opacity="0.15"/>
   <stop offset="100%" stop-color="#[primary]" stop-opacity="0"/>
@@ -95,7 +96,7 @@
 
 > **Per-role families are expected, not optional.** Title / Body / Emphasis / Code may each use a different family (e.g., display serif title + geometric sans body). One family throughout is not required. See [strategist.md §g — Font Combinations](../references/strategist.md) for starting directions; you may propose a combination not listed.
 >
-> **⚠️ PPT-safe stack discipline (HARD rule).** PPTX stores a single `typeface` per run — no runtime fallback. Every stack MUST end with a cross-platform pre-installed font: `"Microsoft YaHei", sans-serif` / `SimSun, serif` / `Arial, sans-serif` / `"Times New Roman", serif` / `Consolas, "Courier New", monospace`. Stacks led by a non-preinstalled font (Inter / Google Fonts / brand typefaces) are allowed only when this spec notes the font-install or embedding requirement.
+> **⚠️ PPT-safe stack discipline (HARD rule).** PPTX stores concrete exported Latin / EA typefaces per run — no runtime fallback. Every stack's exported Latin / EA typefaces MUST resolve to cross-platform pre-installed fonts: `"Microsoft YaHei"` / `SimSun` / `Arial` / `"Times New Roman"` / `Consolas`. Stacks that export non-preinstalled typefaces (Inter / Google Fonts / brand typefaces) are allowed only when this spec notes the font-install or embedding requirement.
 
 **Typography direction**: [Fill in one phrase, e.g., "modern CJK sans" / "academic serif" / "brand-specific: McKinsey Bower (requires font install)"]
 
@@ -124,7 +125,7 @@ Two views on the same font decisions — fill both, keep them consistent:
 > - `Georgia, "Microsoft YaHei", serif` → Latin in Georgia (elegant serif), CJK falls through to Microsoft YaHei. **Use when Latin typography is the primary design statement** (academic / editorial / Latin-heavy covers).
 > - `"Microsoft YaHei", Georgia, serif` → Everything in Microsoft YaHei (Latin uses YaHei's Latin glyphs — a different design tone). **Use when the deck is CJK-primary and Latin is incidental**.
 >
-> The converter (`drawingml_utils.py parse_font_family`) maps these to PPTX `<a:latin>` / `<a:ea>` regardless of order — but browser preview and SVG native rendering reflect stack order. Pick the order matching your design intent.
+> The converter (`drawingml/utils.py parse_font_family`) maps these to PPTX `<a:latin>` / `<a:ea>` regardless of order — but browser preview and SVG native rendering reflect stack order. Pick the order matching your design intent.
 
 > **Why two views**: the breakdown shows role assignment at a glance; stacks carry the ordering info the breakdown can't encode. Keep both consistent — table cells should be exactly the fonts in the stacks (any order).
 
@@ -235,7 +236,7 @@ Two views on the same font decisions — fill both, keep them consistent:
 
 > When pages map to a chart-library template (data charts OR structural patterns — team rosters, agendas, frameworks, etc.), Strategist lists them here for Executor reference. Single combined table — `summary-quote` column is the anti-fabrication audit, `path` + `usage` columns serve Executor lookup.
 
-Catalog read: 71 templates
+Catalog read: 76 templates
 
 | Page | Template | Path | Summary-quote (verbatim from `charts_index.json`) | Usage |
 | ---- | -------- | ---- | ------------------------------------------------- | ----- |
@@ -248,6 +249,8 @@ Catalog read: 71 templates
 - `<key_C>` | rejected for P##: `<reason>`
 
 > **Audit rule**: `Summary-quote` must be copy-pasted verbatim — paraphrasing breaks the audit. Every template name listed must `grep` cleanly inside `charts_index.json` (so misspellings/inventions fail). If fewer than 3 viz pages exist, list what exists and note "fewer than 3 viz pages"; runners-up still required for each page that does exist.
+
+> **Native-preset candidates → append to `Usage`**: for a page already in this list, when its content calls for a literal stock PowerPoint shape (chevron, block arrow, standard flowchart node, callout, banner, star — judged from the page plan, not a template's name), append a candidate note to that page's `Usage`, e.g. `…usage…; native-preset candidate: chevron; Executor applies executor-base §3.0`. The Executor still selects the exact preset, frame, and paint. See [`strategist.md`](../references/strategist.md) Template Match.
 
 ---
 
@@ -266,6 +269,7 @@ Catalog read: 71 templates
 - `Background` — cover / chapter / full-bleed atmosphere
 - `Photography` — real-world photo
 - `Illustration` — vector / flat / painterly art
+- `Illustration Sheet` — a grid of several spot illustrations generated as one image to be sliced (the `ai` sheet row of a `slice` set; never placed itself)
 - `Diagram` — schematic / architecture / flowchart
 - `Portrait` — single-subject person
 - `Latex Formula` — formula PNG rendered by `latex_render.py`
@@ -284,6 +288,9 @@ Catalog read: 71 templates
 - `formula` — already rendered by `latex_render.py` before this spec was written
 - `user` — user-supplied
 - `placeholder` — intentionally deferred
+- `slice` — a spot-illustration element derived in Step 5 by cutting it out of an `ai` sheet row (not generated on its own)
+
+> **Spot-illustration sheets (`slice`).** When the deck draws several same-family spot illustrations from one generated sheet (see [`image-generator.md`](../references/image-generator.md) §4.3), write **two kinds of rows**: one **sheet row** (`Acquire Via: ai`, `Type: Illustration Sheet`, name the intended cell shape + placement purpose in `Reference`, e.g. `portrait side-accent spot set` or `landscape footer-vignette spot set`) that is generated but **never placed** — keep it out of `spec_lock.md images`; and one **element row per used element** (`Acquire Via: slice`, `Reference` naming the parent sheet + cell/element, dimensions filled after slicing) that **is** placed — list every element row in `spec_lock.md images` so the Executor may reference it. Strategist states the shape intent; Image_Generator chooses the exact sheet ratio, grid, and slice command. An element row with no sheet row, or a sliced file absent from `spec_lock.md images`, is an invalid spec. **Each element row's Layout pattern must come from the decorative-cutout family** (`#63` sticker, `#4` edge bleed, `#58` corner fragment, `#66` fade-out, `#69` rotation, `#49` cluster) — a transparent spot is an accessory placed at the margins / off-edge / behind text, never centered in a boxed tile.
 
 **text_policy** (`ai` rows only; AI judges per row, no global default bias):
 
@@ -300,6 +307,8 @@ Catalog read: 71 templates
 ---
 
 ## IX. Content Outline
+
+> **Native Layout boundary**: Each `Layout` line below always describes visual composition intent. On free-design and brand-only routes, it does not create native Master/Layout identity: `spec_lock.md` uses `pptx_structure.mode: flat`, omits `pptx_masters` / `pptx_layouts` / `page_layouts`, and every SVG object stays Slide-local under the default PowerPoint Master and Blank Layout. Deck/layout template routes use `mode: structured`: Strategist writes the Master roster and exactly one `<master_key> | <layout_key> | <PowerPoint layout name>` row per page, and also selects an input prototype through `page_layouts`. Strict preserves the prototype contract. Adaptive keeps its Master and may assign a new Layout key during page authoring only when fixed Layout atoms or slot topology/bounds change. Legacy prototypes first run [`restore-pptx-structure`](../workflows/restore-pptx-structure.md); no deferred distillation or immediate-compatibility fallback exists.
 
 ### Part 1: [Chapter Name]
 
@@ -344,25 +353,3 @@ One speaker note file per page, saved to `notes/`:
 
 - **Filename**: match SVG name (e.g., `01_cover.md`)
 - **Content**: script key points, timing cues, transition phrases
-
----
-
-## XI. Technical Constraints Reminder
-
-### SVG Generation Must Follow:
-
-1. viewBox: `{canvas_info['viewbox']}`
-2. Background uses `<rect>` elements
-3. Text wrapping uses `<tspan>` (`<foreignObject>` FORBIDDEN)
-4. Transparency uses `fill-opacity` / `stroke-opacity`; `rgba()` FORBIDDEN
-5. FORBIDDEN: `mask`, `<style>`, `class`, `foreignObject`
-6. FORBIDDEN: `textPath`, `animate*`, `script`
-7. Text characters: write typography & symbols as raw Unicode (em dash `—`, en dash `–`, `©`, `®`, `→`, NBSP, etc.); HTML named entities (`&nbsp;`, `&mdash;`, `&copy;`, `&reg;` …) are FORBIDDEN. XML reserved chars in text MUST be escaped as `&amp;` `&lt;` `&gt;` `&quot;` `&apos;` (e.g. `R&amp;D`, `error &lt; 5%`). See shared-standards.md §1.0
-7. `marker-start` / `marker-end` conditionally allowed: `<marker>` must be in `<defs>`, `orient="auto"`, shape must be triangle / diamond / circle (see shared-standards.md §1.1)
-8. `clipPath` conditionally allowed **only on `<image>` elements**: `<clipPath>` in `<defs>`, single shape child (circle / ellipse / rect with rx,ry / path / polygon). Do NOT apply to shapes / groups / text — draw the target geometry directly with the matching native element (`<circle>` / `<ellipse>` / `<rect rx>` / `<polygon>` / `<path>`). See shared-standards.md §1.2
-
-### PPT Compatibility Rules:
-
-- `<g opacity="...">` FORBIDDEN (group opacity); set on each child element individually
-- Image transparency uses overlay mask layer (`<rect fill="bg-color" opacity="0.x"/>`)
-- Inline styles only; external CSS and `@font-face` FORBIDDEN

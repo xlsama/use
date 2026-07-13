@@ -114,19 +114,21 @@ python3 ${SKILL_DIR}/scripts/beautify_inventory.py <project_path>/analysis/<stem
     --images <project_path>/images/image_manifest.json -o <project_path>/analysis/beautify_inventory.json
 ```
 
-If `images/image_manifest.json` does not exist because the source deck has no extracted pictures, omit `--images`. The script joins per slide: `text_blocks` (slot text + geometry), `tables` (cell grid) / `charts` (categories + series values) — the **frozen data values inlined**, so the inventory is a self-contained contract, not a pointer back to `slide_library.json` — and `images` (bound via `image_manifest` `occurrences[].slide_index`, with geometry / `usage_count`). It emits `ignored` and `needs_confirmation` as **empty arrays** — fill them with judgment before Step 5:
+If `images/image_manifest.json` does not exist because the source deck has no extracted pictures, omit `--images`. The script joins per slide: `text_blocks` (slot text + geometry), `tables` (cell grid), `charts` (categories + series values), `diagrams` (SmartArt nodes + hierarchy/connections + source layout), and `images` (bound via `image_manifest` `occurrences[].slide_index`, with geometry / `usage_count`). The **frozen source values are inlined**, so the inventory is a self-contained contract, not a pointer back to `slide_library.json`. It emits `ignored` and `needs_confirmation` as **empty arrays** — fill them with judgment before Step 5:
 
 | Field | Fill with |
 |---|---|
 | `ignored` | hidden slides / shapes, master-only text, image crop / opacity / rotation / mask (not captured upstream) |
-| `needs_confirmation` | combo / dual-axis / waterfall charts (only the first plot type is captured), merged-cell or multi-header tables, density-outlier pages — **either** overcrowded **or** near-empty / title-only (e.g. a divider page with a heading and no body) |
+| `needs_confirmation` | unreadable SmartArt data; combo / dual-axis / waterfall charts; merged-cell or multi-header tables; density-outlier pages — **either** overcrowded **or** near-empty / title-only |
+
+**SmartArt output boundary**: Preserve its extracted wording and semantic relationships, then redraw it through SVG as ordinary editable PowerPoint shapes. Do not attempt to regenerate a native SmartArt object or reuse persisted-drawing text as a second content source.
 
 ```markdown
 ## ✅ Extraction Complete
 
 - [x] `sources/<stem>.md` (from Step 3) holds every source slide's text, in order; extracted pictures, if any, are in `images/` + `images/image_manifest.json`
 - [x] `analysis/<stem>.identity.json` has theme + observed identity + canvas aspect
-- [x] `analysis/<stem>.slide_library.json` holds chart + table data for regeneration
+- [x] `analysis/<stem>.slide_library.json` holds chart + table data and SmartArt semantic structure for regeneration
 - [x] `analysis/source_profile.json` (multi-deck index) summarizes the source facts in its `decks[]` entry
 - [x] `analysis/beautify_inventory.json` ledgers per-slide text / images / data + ignored + needs-confirmation
 - [ ] **Next**: Step 5 — Beautify Plan (recommend & confirm)
@@ -136,7 +138,7 @@ If `images/image_manifest.json` does not exist because the source deck has no ex
 
 ## 5. Beautify Plan — Recommend & Confirm
 
-⛔ **BLOCKING**: the scope is not hard-coded — same spirit as the Eight Confirmations. Recommend each item below from what the deck actually contains (the Step 4 inventory), present the plan, and **wait for the user to confirm or adjust** before writing any spec. Chat is the canonical channel; the confirm UI below is the visual convenience surface over it for the palette + typography review (its result is honored identically to a chat reply).
+⛔ **BLOCKING**: the scope is not hard-coded — same spirit as the Strategist confirmation stage. Recommend each item below from what the deck actually contains (the Step 4 inventory), present the plan, and **wait for the user to confirm or adjust** before writing any spec. Chat is the canonical channel; the confirm UI below is the visual convenience surface over it for the palette + typography review (its result is honored identically to a chat reply).
 
 This step has two halves:
 - **Visual re-confirm via the confirm UI** — the **full** Step 4 confirm page (below), seeded from the source so every targeted-confirmation field (canvas, mode, visual style, palette, icons, typography incl. body baseline, image strategy, generation mode) is **pre-filled with the inherited / source-derived default and left editable**. Beautify *recommends* keeping the source's identity, but never removes the user's place to override any field — you may choose not to change a value, but you must not deny the place to change it. This is also where the deck's text size is confirmed: `<stem>.identity.json` now carries size hints — `observed.sizes_pt` (the point sizes the deck actually renders at) and `theme.sizes` (the declared placeholder defaults) — so the `body_size` recommendation **follows the source's own font size** rather than a blind canvas default; the user still confirms or overrides it here.
@@ -145,7 +147,7 @@ This step has two halves:
 | Plan item | Recommend from | Default lean |
 |---|---|---|
 | Identity source | `<stem>.identity.json` `theme` vs `observed` | present **both as color / typography candidates in the confirm UI** so the user picks the one that looks right (theme first when the deck is theme-driven; observed first when slides override heavily) — recommend a default ordering and say why |
-| Preserve scope | inventory `text_blocks` / `images` / `charts` / `tables` | all text verbatim; data values frozen; pictures reused |
+| Preserve scope | inventory `text_blocks` / `images` / `charts` / `tables` / `diagrams` | all text verbatim; data values and SmartArt relationships frozen; pictures reused |
 | Ignored | inventory `ignored` | name them so the user sees what drops (hidden / master-only text / image crop / rotation) |
 | Needs confirmation | inventory `needs_confirmation` | flag complex charts + overcrowded pages explicitly; ask how to handle |
 | Verification level | deck size / risk | recommend the Step 7 per-page checks; user sets strictness |
@@ -176,14 +178,14 @@ Write `<project_path>/confirm_ui/recommendations.json` and launch the same confi
   "page_count": <source-slide-count>,
   "audience": "<carry over from the deck's apparent audience, or leave blank>",
   "color": { "selected": 0, "candidates": [
-    { "name_zh": "复刻源 PPT（推荐）", "name_en": "Source replica (recommended)", "palette": { "background": "#...", "secondary_bg": "#...", "primary": "#...", "accent": "#...", "secondary_accent": "#...", "body_text": "#..." } },
-    { "name_zh": "实际用色（observed）", "name_en": "Observed palette", "palette": { "background": "#...", "secondary_bg": "#...", "primary": "#...", "accent": "#...", "secondary_accent": "#...", "body_text": "#..." } },
-    { "name_zh": "备选配色 A", "name_en": "Alternative palette A", "palette": { "background": "#...", "secondary_bg": "#...", "primary": "#...", "accent": "#...", "secondary_accent": "#...", "body_text": "#..." } }
+    { "name_zh": "复刻源 PPT（推荐）", "name_en": "Source replica (recommended)", "name_ja": "元PPTを再現（推奨）", "palette": { "background": "#...", "secondary_bg": "#...", "primary": "#...", "accent": "#...", "secondary_accent": "#...", "body_text": "#..." } },
+    { "name_zh": "实际用色（observed）", "name_en": "Observed palette", "name_ja": "実際の使用色（observed）", "palette": { "background": "#...", "secondary_bg": "#...", "primary": "#...", "accent": "#...", "secondary_accent": "#...", "body_text": "#..." } },
+    { "name_zh": "备选配色 A", "name_en": "Alternative palette A", "name_ja": "代替配色A", "palette": { "background": "#...", "secondary_bg": "#...", "primary": "#...", "accent": "#...", "secondary_accent": "#...", "body_text": "#..." } }
   ] },
   "typography": { "selected": 0, "candidates": [
-    { "name_zh": "复刻源 PPT（推荐）", "name_en": "Source replica (recommended)", "heading": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body_size": <dominant observed.sizes_pt × 4/3, as px> },
-    { "name_zh": "实际字体（observed）", "name_en": "Observed fonts", "heading": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body_size": <dominant observed.sizes_pt × 4/3, as px> },
-    { "name_zh": "备选字体 A", "name_en": "Alternative pairing A", "heading": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body_size": <canvas-appropriate baseline> }
+    { "name_zh": "复刻源 PPT（推荐）", "name_en": "Source replica (recommended)", "name_ja": "元PPTを再現（推奨）", "heading": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body_size": <dominant observed.sizes_pt × 4/3, as px> },
+    { "name_zh": "实际字体（observed）", "name_en": "Observed fonts", "name_ja": "実際のフォント（observed）", "heading": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body_size": <dominant observed.sizes_pt × 4/3, as px> },
+    { "name_zh": "备选字体 A", "name_en": "Alternative pairing A", "name_ja": "代替ペアリングA", "heading": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body": { "cjk": "...", "latin": "...", "css": "<PPT-safe stack>" }, "body_size": <canvas-appropriate baseline> }
   ] }
 }
 ```

@@ -4,6 +4,67 @@
 
 Source conversion tools turn PDFs, documents, slide decks, and web pages into Markdown before project creation.
 
+Default workflow entry: use `source_to_md.py` unless a backend-specific
+diagnostic or forced route is needed.
+
+## Shared Output Contract
+
+All `source_to_md` converters keep their existing Markdown output behavior and
+now also write a lightweight sidecar profile when conversion succeeds:
+
+| Output | Convention |
+|---|---|
+| Markdown | `<stem>.md` beside the local source unless `-o` selects another path |
+| Asset directory | `<stem>_files/` when the backend extracts images or media |
+| Image manifest | `<stem>_files/image_manifest.json` when image metadata is available |
+| Conversion profile | `<stem>.conversion_profile.json` beside the Markdown output |
+
+The conversion profile is metadata only. It records the converter, source path,
+Markdown structure counts, asset directory, image manifest path, and image
+count. Downstream PPT workflows still use the Markdown and image manifest as the
+content/asset contract; the profile is for inspection and debugging.
+
+## `source_to_md.py`
+
+Unified dispatcher for ad hoc explicit-source conversion. It auto-detects each
+listed input file or URL and calls the existing backend converter, so backend
+behavior remains the source of truth.
+
+Routing is centralized in `source_to_md/_dispatcher.py` and reused by
+`project_manager.py import-sources`; do not add a second type-to-backend table.
+
+```bash
+python3 scripts/source_to_md.py paper.pdf
+python3 scripts/source_to_md.py paper.pdf report.docx deck.pptx
+python3 scripts/source_to_md.py ./sources
+python3 scripts/source_to_md.py ./pdfs/*.pdf
+python3 scripts/source_to_md.py ./decks/*.pptx
+python3 scripts/source_to_md.py report.docx -o report.md
+python3 scripts/source_to_md.py ./sources -o ./markdown  # explicit separate output directory
+python3 scripts/source_to_md.py workbook.xlsx --json
+python3 scripts/source_to_md.py deck.pptx
+python3 scripts/source_to_md.py https://example.com/article -o article.md
+```
+
+Useful options:
+- `-t pdf|doc|excel|pptx|web|markdown|text` forces a route when extension
+  detection is not enough.
+- `--json` prints a compact machine-readable result after success when the
+  output path is known. With multiple inputs, each successful conversion prints
+  its own JSON line after that source finishes.
+- `--images all|filtered|none`, `--no-images`, and `--filter-images` map to the
+  existing PDF image mode. They are intentionally PDF-only until other backends
+  expose the same behavior natively.
+- Unknown backend-specific flags are passed through to each selected converter.
+- `-o/--output` selects one Markdown file for one input, or an output directory
+  for multiple inputs / directory inputs.
+
+For multi-source project intake, use `project_manager.py import-sources` with
+all source paths / URLs. For local files, the default is to keep generated
+Markdown/profile outputs beside the original source. `source_to_md.py` and the
+backend converters support single files, explicit multi-file inputs, and
+non-recursive directory inputs.
+
 ## `source_to_md/pdf_to_md.py`
 
 Recommended first choice for native PDFs.
@@ -11,8 +72,9 @@ Recommended first choice for native PDFs.
 ```bash
 python3 scripts/source_to_md/pdf_to_md.py book.pdf
 python3 scripts/source_to_md/pdf_to_md.py book.pdf -o output.md
+python3 scripts/source_to_md/pdf_to_md.py book.pdf appendix.pdf
 python3 scripts/source_to_md/pdf_to_md.py ./pdfs
-python3 scripts/source_to_md/pdf_to_md.py ./pdfs -o ./markdown
+python3 scripts/source_to_md/pdf_to_md.py ./pdfs -o ./markdown  # explicit separate output directory
 
 # Image extraction control (default: filtered)
 python3 scripts/source_to_md/pdf_to_md.py book.pdf --images filtered  # size/quality filters applied
@@ -41,7 +103,7 @@ pip install PyMuPDF
 Hybrid converter: pure-Python for the common formats, pandoc fallback for the rest.
 
 Native path (no external binary required):
-- `.docx` — via `mammoth`; OMML / Office Math equations (Word-native or MathType "Convert to Office Math") are rewritten to inline LaTeX. Classic MathType OLE objects carry no OMML and are kept only as their preview image.
+- `.docx` — via `mammoth`; text-only tables are preserved as pipe Markdown, and OMML / Office Math equations (Word-native or MathType "Convert to Office Math") are rewritten to inline LaTeX. Classic MathType OLE objects carry no OMML and are kept only as their preview image.
 - `.html` / `.htm` — via `markdownify` + `beautifulsoup4`
 - `.epub` — via `ebooklib` + `markdownify`
 - `.ipynb` — via `nbconvert`
@@ -52,6 +114,9 @@ Pandoc fallback (only if you need these):
 ```bash
 python3 scripts/source_to_md/doc_to_md.py lecture.docx
 python3 scripts/source_to_md/doc_to_md.py lecture.docx -o output.md
+python3 scripts/source_to_md/doc_to_md.py lecture.docx notes.html
+python3 scripts/source_to_md/doc_to_md.py ./docs
+python3 scripts/source_to_md/doc_to_md.py ./docs -o ./markdown  # explicit separate output directory
 python3 scripts/source_to_md/doc_to_md.py notes.epub
 python3 scripts/source_to_md/doc_to_md.py paper.tex -o paper.md  # uses pandoc
 ```
@@ -69,6 +134,7 @@ pip install mammoth markdownify ebooklib nbconvert beautifulsoup4
 ```
 
 All paths produce the same output convention: `<input>.md` plus a sibling `<input>_files/` directory containing extracted images with relative references.
+On success, a sibling `<input>.conversion_profile.json` is also written.
 
 ## `source_to_md/excel_to_md.py`
 
@@ -84,6 +150,9 @@ Unsupported by default:
 ```bash
 python3 scripts/source_to_md/excel_to_md.py report.xlsx
 python3 scripts/source_to_md/excel_to_md.py report.xlsx -o output.md
+python3 scripts/source_to_md/excel_to_md.py report.xlsx budget.xlsm
+python3 scripts/source_to_md/excel_to_md.py ./workbooks
+python3 scripts/source_to_md/excel_to_md.py ./workbooks -o ./markdown  # explicit separate output directory
 python3 scripts/source_to_md/excel_to_md.py report.xlsm --max-rows 200 --max-cols 40
 ```
 
@@ -93,6 +162,7 @@ Behavior:
 - trims empty outer rows and columns
 - propagates merged-cell labels for readable Markdown tables
 - exports formula cells as cached values; it does not recalculate formulas
+- writes `<input>.conversion_profile.json` after successful conversion
 
 Dependency:
 
@@ -114,17 +184,21 @@ Supported formats include:
 ```bash
 python3 scripts/source_to_md/ppt_to_md.py sales_deck.pptx
 python3 scripts/source_to_md/ppt_to_md.py sales_deck.pptx -o output.md
+python3 scripts/source_to_md/ppt_to_md.py sales_deck.pptx appendix.pptx
 python3 scripts/source_to_md/ppt_to_md.py ./decks
-python3 scripts/source_to_md/ppt_to_md.py ./decks -o ./markdown
+python3 scripts/source_to_md/ppt_to_md.py ./decks -o ./markdown  # explicit separate output directory
 python3 scripts/source_to_md/ppt_to_md.py template.ppsx -o notes/template.md
 ```
 
 Behavior:
 - extracts slide text in reading order
-- converts PowerPoint tables to Markdown tables
-- transcribes native chart data (type + categories × series values) into a Markdown table, so chart numbers are not lost in conversion
+- converts PowerPoint tables to Markdown tables; cell-internal line breaks become `<br>` so they cannot break the pipe-table row structure
+- transcribes category charts as category × series tables and scatter/bubble charts as typed X/Y[/size] point tables
+- preserves every readable chart dimension or series and emits `[Chart data warning: <reason>]` for missing caches/count mismatches; `[Chart data unavailable: <reason>]` is reserved for charts with no readable points (and unsupported ChartEx), so XY data is never flattened into a misleading category table
+- transcribes SmartArt semantic nodes as hierarchical Markdown; unreadable diagram data emits an explicit placeholder and conversion warning
 - exports embedded pictures to a sibling `_files/` directory
 - appends speaker notes when present
+- writes `<input>.conversion_profile.json` after successful conversion
 
 Dependency:
 
@@ -146,15 +220,123 @@ python3 scripts/pptx_intake.py deck.pptx -o projects/demo/analysis
 
 Outputs (per source deck, prefixed by file stem):
 - `<stem>.identity.json` — canvas size/aspect, theme palette/fonts, observed colors/fonts
-- `<stem>.slide_library.json` — text slots, geometry, native tables, native chart display caches
-- `source_profile.json` — the single multi-deck index: a compact Strategist-facing digest per deck (over identity, tables, charts, and page types) under `decks[]`, with prefixed artifact pointers
+- `<stem>.slide_library.json` — text slots, geometry, native tables, native chart display caches, and SmartArt nodes/connections
+- `source_profile.json` — the single multi-deck index: a compact Strategist-facing digest per deck (over identity, tables, charts, SmartArt, and page types) under `decks[]`, with prefixed artifact pointers
 
 `project_manager.py import-sources` runs this automatically for PPTX/PPTM/PPSX/PPSM/POTX/POTM inputs and stores the bundle directly under `analysis/`. Multi-deck per project: importing several PPTX files gives each its own `<stem>.*` artifacts and a `decks[]` entry in the shared `source_profile.json` index (re-importing the same stem replaces its entry). The beautify / template-fill workflows stay single-deck and read one chosen deck's `<stem>.*` artifacts.
 
 Usage boundary:
 - Standard generation uses these fields as facts and recommendation candidates; it does not inherit source slide coordinates or page order by default.
-- Beautify promotes selected identity/content fields into locked constraints after confirmation.
-- Template-fill uses the slide library as the native PPTX fill contract.
+- Beautify promotes selected identity/content fields into locked constraints after confirmation and redraws SmartArt meaning with ordinary editable shapes.
+- Template-fill uses the slide library as the native PPTX fill contract; SmartArt is inventory-only and remains unchanged.
+
+## `pptx_to_svg.py`
+
+Reconstruct a PPTX package as editable SVG views by reading OOXML directly.
+
+```bash
+python3 scripts/pptx_to_svg.py deck.pptx --inheritance-mode both
+python3 scripts/pptx_to_svg.py deck.pptx --inheritance-mode layered
+python3 scripts/pptx_to_svg.py deck.pptx --inheritance-mode flat
+```
+
+| Mode | Output |
+|---|---|
+| `both` (default) | Layered master/layout/slide SVGs under `svg/`, plus self-contained slides under `svg-flat/` |
+| `layered` | Only the layered `svg/` view and inheritance metadata |
+| `flat` | One self-contained slide SVG per page under `svg/` |
+
+Supported text-grid tables and conservative classic-chart caches carry
+`data-pptx-native` metadata beside their SVG fallback. Table import requires
+exact physical row/grid topology and accepts canonical rectangular merges,
+safe solid/no-fill per-side borders, plain multi-paragraph cells, and a closed
+run-rich paragraph schema.
+Each run requires `text` and may use only `bold`, `italic`, `underline`,
+`strike`, `color`, `font_size`, one `font_family`, `lang`, and `alt_lang`.
+Presentation-only source run XML normalizes. Relationship-bearing text,
+extensions, noncanonical/overlapping merges, nonblank merge slaves, unsafe
+border XML, non-solid fills, structural line breaks/fields/tabs/bullets, and
+broken text topology remain fallback-only.
+Markers remain dormant
+unless a later export uses `--native-objects`. That opt-in is editable-first:
+it may normalize styling or omit marker-local details not represented by the
+payload, and export reports that risk without disabling an otherwise supported
+active marker. Unsupported tables keep their
+rendered SVG table; unsupported charts keep a baked preview when one exists.
+For the currently supported parsed classic families (column/bar/line/area,
+pie/doughnut, scatter, and bubble), a chart without a baked preview receives a
+deterministic readable fallback marked
+`data-pptx-visual-status="normalized"`. Unknown style XML still fails closed;
+common solid/no-fill/line/marker forms and scheme colors are normalized for the
+SVG fallback and core payload colors, while native opt-in may still normalize
+unmodeled alpha, line, marker, or no-fill details. Common General, decimal,
+grouped, percent, and simple currency-prefix data-label formats render
+deterministically; an unknown Excel format program keeps the active payload but
+does not claim a normalized fallback. Active types outside the current renderer
+continue to use an explicit placeholder marked
+`data-pptx-visual-status="placeholder"` and
+`data-pptx-route-status="reconstruction-only"`. Validation and export report
+that route as a warning. Default export keeps the placeholder; when the same
+group has a valid active native-chart payload, `--native-objects` may still
+reconstruct the editable chart. Invalid or contradictory status declarations
+remain errors.
+Fallback-only native capability uses `data-pptx-native-status` and remains a
+warning when the SVG fallback itself is complete.
+
+Active imported markers also carry `data-pptx-fallback-sha256`, computed over
+their canonical fallback plus reachable document-level SVG fragment definitions.
+A later visible edit, reachable definition change, local reference-target
+change, or marker transform makes the native metadata stale. The mandatory
+quality checker reports the mismatch; default export keeps the edited fallback,
+while `--native-objects` fails before replacement so it cannot discard that edit.
+`visibility:hidden` content, marker-local unused definitions, and explicitly
+referenced document-level target roots (even when hidden) are included
+conservatively; marker-local `display:none` subtrees are excluded, and external
+file bytes are not read.
+A legacy marker without the hash remains native-compatible and warns in the
+checker/native route that stale detection is unavailable.
+
+For table style `{5C22544A-7EE6-4342-B048-85BDC9FD1C3A}`, the importer resolves
+the normalized `wholeTbl`, `firstRow`, `band1H`/`band2H`, theme color/font, and
+direct-format override subset. Other built-in/custom style families remain
+outside this guarantee.
+
+The chart importer also accepts the verified column/line/area combo subset,
+canonical four-series OHLC stock charts with shared numeric date caches, area
+charts with numeric date axes, and verified scatter/bubble charts with a closed
+pair of `axes.x` / `axes.y` value axes. Combo primary/secondary plots may retain
+independent category caches and workbook ranges. Both the category/value and XY
+contracts read back the supported kind/position/visibility, label-position,
+number-format, min/max/major-unit, reverse, and major-gridline fields; the native
+writer emits every field in those closed contracts. Scatter style is derived
+from uniform effective series line/marker/smooth state. The normalized XY
+fallback newly consumes only the two major-gridline flags, not the remaining
+axis fields. The importer also accepts radar, safe `of_pie` `serLines`, the
+closed axis/title/legend normalization cases, and bar/column `gapWidth` /
+`overlap`. `gapWidth` must be one integer in `0..500` and `overlap` one integer
+in `-100..100`; both normalize in native output, while malformed, duplicate, or
+out-of-range values fail closed. These additions do not expand the normalized
+renderer.
+Safe stock series style may pass the structural gate, while stock series,
+`hiLowLines`, and up-down bar local styling can still normalize under the
+editable-first contract.
+ChartEx import accepts exactly the validated treemap, sunburst, histogram,
+pareto, box-whisker, waterfall, and funnel data models. Their supported
+hierarchy/category/value/series/subtotal topology round-trips to native output.
+Numeric caches must be non-empty and finite, with canonical non-negative counts
+and indexes and exact contiguous point topology. Source style, axes, labels,
+and binning details may normalize. This is not full `AxisSpec`, arbitrary
+ChartEx import or presentation fidelity, arbitrary stock variants, other
+date-axis chart families, or unlisted axis semantics. ChartEx native output
+still consumes valid payload colors in its color-style part.
+
+Exporter-canonical charts recover canonical solid series/slice colors and exact
+one- or two-paragraph title styling; two paragraphs retain their `title` /
+`subtitle` roles. This is not a general source-chart style round-trip guarantee.
+
+Concrete slide SVGs resolve `<a:fld type="slidenum">` using the presentation's
+`firstSlideNum` display numbering. Standalone master/layout SVGs keep the
+literal field fallback because one shared part can serve multiple slides.
 
 ## `source_to_md/web_to_md.py`
 
@@ -165,6 +347,7 @@ python3 scripts/source_to_md/web_to_md.py https://example.com/article
 python3 scripts/source_to_md/web_to_md.py https://url1.com https://url2.com
 python3 scripts/source_to_md/web_to_md.py -f urls.txt
 python3 scripts/source_to_md/web_to_md.py https://example.com -o output.md
+python3 scripts/source_to_md/web_to_md.py https://example.com --emit-result /tmp/result.json
 ```
 
 When `curl_cffi` is installed (included in `requirements.txt`), this script
@@ -172,6 +355,11 @@ automatically impersonates a modern Chrome TLS fingerprint, which lets it
 fetch WeChat Official Accounts (`mp.weixin.qq.com`) and other sites that
 block Python's default TLS fingerprint. No extra flags needed. If
 `curl_cffi` is not available, it falls back to plain `requests`.
+
+On success, the converter writes `<output>.conversion_profile.json` beside the
+Markdown output.
+`--emit-result` is for wrapper scripts that need the actual saved Markdown path
+when the converter derives a title-based filename.
 
 
 ## `rotate_images.py`

@@ -10,7 +10,7 @@ Main entry point for project setup and validation.
 
 ```bash
 python3 scripts/project_manager.py init <project_name> --format ppt169
-python3 scripts/project_manager.py import-sources <project_path> <source1> [<source2> ...]
+python3 scripts/project_manager.py import-sources <project_path> <source1_or_dir> [<source2_or_dir> ...]
 python3 scripts/project_manager.py validate <project_path>
 python3 scripts/project_manager.py info <project_path>
 ```
@@ -18,6 +18,10 @@ python3 scripts/project_manager.py info <project_path>
 Notes:
 - Files outside the repo are copied into `sources/` by default
 - With `--move`, files outside the repo are moved into `sources/`
+- Directory inputs are expanded non-recursively. After Step 1 conversion,
+  pass the source file/directory once when generated Markdown lives beside the
+  original source. If Step 1 used `-o` to write Markdown elsewhere, pass both
+  the original source path/directory and the Markdown output path/directory.
 - Files already inside the repo are moved into `sources/` by default (with a stderr
   note), to avoid leaving unintended artifacts that could be committed by mistake.
   Pass `--copy` to force a copy for in-repo sources instead.
@@ -106,7 +110,7 @@ Notes:
 - **SVG output emits two views by default** (`--inheritance-mode both`):
   - `svg/` — layered template view for designers: every master and layout in the deck rendered once as `svg/master_*.svg` / `svg/layout_*.svg` (including ones no sample slide currently references); `svg/slide_NN.svg` contains only that slide's own shapes; `svg/inheritance.json` records which layout / master each slide consumes.
   - `svg-flat/` — companion view: each `slide_NN.svg` is self-contained (master + layout + slide painted into one file), so opening any slide in isolation shows the full page like PowerPoint would. Useful for previews, screenshots, and "did this slide actually render correctly" sanity checks.
-- `manifest.json` records `svgFile` for slides / layouts / masters, `flatSvgFile` for slides when `svg-flat/` exists, placeholder type / index / geometry / base style, an asset map used by SVG `href` values, and common assets reused through slide / layout / master inheritance
+- `manifest.json` records `svgFile` for slides / layouts / masters, `flatSvgFile` for slides when `svg-flat/` exists, placeholder type / index / geometry / base style, an asset map used by SVG `href` values, and common assets reused through slide / layout / master inheritance. Placeholder semantics keep `subTitle`, `obj`, `media`, and `dt` distinct as `subtitle`, `object`, `media`, and `date`.
 - Layered slide SVGs keep only the slide's own background; inherited master / layout backgrounds stay in the corresponding master / layout SVGs
 - Placeholder guides are intentionally lightweight in `svg/` master / layout files; `svg-flat/` hides those guides and is the visual preview source
 - Charts, SmartArt, diagrams, and OLE objects become typed placeholders in `svg/`; `svg-flat/` shows a preview image with a corner badge when one exists, otherwise a visible placeholder. Tables are converted into real SVG content.

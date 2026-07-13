@@ -127,6 +127,7 @@ alias cgb='gb --show-current | copy'
 
 alias o='open'
 alias v='nvim'
+alias h='herdr'
 
 # language
 alias n='fnm' # node version manager
@@ -179,7 +180,6 @@ function gcli
     set project_name (string replace .git '' $project_name)
     git clone $argv ~/i/$project_name
     cd ~/i/$project_name
-    exit
 end
 
 # Git Clone to ~/w Directory
@@ -188,7 +188,6 @@ function gclw
     set project_name (string replace .git '' $project_name)
     git clone $argv ~/w/$project_name
     cd ~/w/$project_name
-    exit
 end
 
 function zip_cur
@@ -228,3 +227,7 @@ function y
     end
     rm -f -- "$tmp"
 end
+
+# >>> grok installer >>>
+fish_add_path $HOME/.grok/bin
+# <<< grok installer <<<

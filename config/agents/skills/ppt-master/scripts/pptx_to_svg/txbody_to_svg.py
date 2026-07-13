@@ -1,6 +1,6 @@
 """DrawingML <p:txBody> -> SVG <text> conversion.
 
-Reverse of svg_to_pptx/drawingml_elements.convert_text.
+Reverse of svg_to_pptx/drawingml/elements.py convert_text.
 
 Strategy (v1):
 - Each <a:p> paragraph emits one <text> element (one line of baseline).
@@ -103,9 +103,11 @@ def convert_txbody(
     palette: ColorPalette | None,
     *,
     theme_fonts: dict[str, str] | None = None,
+    slide_number: int | None = None,
     default_fill: str = DEFAULT_FILL_HEX,
     default_font_size_px: float = DEFAULT_FONT_SIZE_PX,
     fallback_lst_styles: tuple[ET.Element, ...] = (),
+    fallback_run_props: tuple[ET.Element, ...] = (),
     id_prefix: str = "txt",
     id_seq: list[int] | None = None,
 ) -> TextResult:
@@ -118,7 +120,8 @@ def convert_txbody(
         tx_body, palette, theme_fonts or {}, default_fill=default_fill,
         default_font_size_px=default_font_size_px,
         fallback_lst_styles=fallback_lst_styles,
-        id_prefix=id_prefix, id_seq=id_seq,
+        fallback_run_props=fallback_run_props,
+        slide_number=slide_number, id_prefix=id_prefix, id_seq=id_seq,
     )
     if not paragraphs or not _has_visible_text(paragraphs):
         return TextResult()
@@ -188,9 +191,11 @@ def convert_vertical_txbody(
     palette: ColorPalette | None,
     *,
     theme_fonts: dict[str, str] | None = None,
+    slide_number: int | None = None,
     default_fill: str = DEFAULT_FILL_HEX,
     default_font_size_px: float = DEFAULT_FONT_SIZE_PX,
     fallback_lst_styles: tuple[ET.Element, ...] = (),
+    fallback_run_props: tuple[ET.Element, ...] = (),
     id_prefix: str = "txt",
     id_seq: list[int] | None = None,
 ) -> TextResult:
@@ -208,7 +213,8 @@ def convert_vertical_txbody(
         tx_body, palette, theme_fonts or {}, default_fill=default_fill,
         default_font_size_px=default_font_size_px,
         fallback_lst_styles=fallback_lst_styles,
-        id_prefix=id_prefix, id_seq=id_seq,
+        fallback_run_props=fallback_run_props,
+        slide_number=slide_number, id_prefix=id_prefix, id_seq=id_seq,
     )
     runs = [
         run
@@ -342,6 +348,8 @@ def _parse_paragraphs(
     default_fill: str = DEFAULT_FILL_HEX,
     default_font_size_px: float = DEFAULT_FONT_SIZE_PX,
     fallback_lst_styles: tuple[ET.Element, ...] = (),
+    fallback_run_props: tuple[ET.Element, ...] = (),
+    slide_number: int | None = None,
     id_prefix: str = "txt",
     id_seq: list[int] | None = None,
 ) -> list[TextParagraph]:
@@ -358,8 +366,10 @@ def _parse_paragraphs(
         para = _parse_paragraph(
             p_elem, palette, theme_fonts, autonum_state,
             lst_styles=lst_styles,
+            fallback_run_props=fallback_run_props,
             default_fill=default_fill,
             default_font_size_px=default_font_size_px,
+            slide_number=slide_number,
             id_prefix=id_prefix, id_seq=id_seq,
         )
         paragraphs.append(para)
@@ -374,8 +384,10 @@ def _parse_paragraph(
     autonum_state: dict[int, int],
     *,
     lst_styles: tuple[ET.Element, ...] = (),
+    fallback_run_props: tuple[ET.Element, ...] = (),
     default_fill: str = DEFAULT_FILL_HEX,
     default_font_size_px: float = DEFAULT_FONT_SIZE_PX,
+    slide_number: int | None = None,
     id_prefix: str = "txt",
     id_seq: list[int] | None = None,
 ) -> TextParagraph:
@@ -417,6 +429,7 @@ def _parse_paragraph(
                 text, rpr, end_rpr, palette, theme_fonts,
                 def_rpr=def_rpr,
                 list_def_rpr=list_def_rpr,
+                fallback_run_props=fallback_run_props,
                 default_fill=default_fill,
                 default_font_size_px=default_font_size_px,
                 id_prefix=id_prefix, id_seq=id_seq,
@@ -430,15 +443,21 @@ def _parse_paragraph(
                 is_break=True,
             ))
         elif local == "fld":
-            # Field (datetime / slidenum). Use the literal a:t fallback.
+            # Slide SVGs have a concrete page context, so resolve slide-number
+            # fields there. Standalone master/layout renders keep the literal
+            # fallback because one shared part can serve many slide numbers.
             rpr = child.find("a:rPr", NS)
             text_elem = child.find("a:t", NS)
             text = text_elem.text or "" if text_elem is not None else ""
+            field_type = child.attrib.get("type", "").strip().lower()
+            if field_type == "slidenum" and slide_number is not None:
+                text = str(slide_number)
             if text:
                 run = _build_run(
                     text, rpr, end_rpr, palette, theme_fonts,
                     def_rpr=def_rpr,
                     list_def_rpr=list_def_rpr,
+                    fallback_run_props=fallback_run_props,
                     default_fill=default_fill,
                     default_font_size_px=default_font_size_px,
                     id_prefix=id_prefix, id_seq=id_seq,
@@ -457,13 +476,16 @@ def _build_run(
     *,
     def_rpr: ET.Element | None = None,
     list_def_rpr: ET.Element | None = None,
+    fallback_run_props: tuple[ET.Element, ...] = (),
     default_fill: str = DEFAULT_FILL_HEX,
     default_font_size_px: float = DEFAULT_FONT_SIZE_PX,
     id_prefix: str = "txt",
     id_seq: list[int] | None = None,
 ) -> TextRun:
     """Resolve a single <a:r> run from its rPr and fallback run properties."""
-    style_chain = (rpr, def_rpr, list_def_rpr, end_rpr)
+    style_chain = (
+        rpr, def_rpr, list_def_rpr, end_rpr,
+    ) + fallback_run_props
     # font-size: rPr > pPr/defRPr > lstStyle/lvlNpPr/defRPr > endParaRPr > default
     sz = _attr_chain(style_chain, "sz")
     font_size_px = hundredths_pt_to_px(sz, default_font_size_px)
@@ -803,7 +825,7 @@ def _is_cjk(ch: str) -> bool:
 def _char_width(ch: str, font_size: float, bold: bool) -> float:
     """Estimate a single character's rendered width in pixels.
 
-    Mirrors svg_to_pptx/drawingml_utils.estimate_text_width so wrapping breaks
+    Mirrors svg_to_pptx/drawingml/utils.py estimate_text_width so wrapping breaks
     align with the same heuristic used to estimate text-box sizes elsewhere.
     """
     if _is_cjk(ch):

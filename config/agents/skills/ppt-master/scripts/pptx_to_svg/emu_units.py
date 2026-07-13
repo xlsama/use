@@ -1,6 +1,6 @@
 """EMU <-> pixel conversion and DrawingML unit constants.
 
-Mirrors svg_to_pptx/drawingml_utils.py and pptx_dimensions.py, in reverse.
+Mirrors svg_to_pptx/drawingml/utils.py and pptx_package/dimensions.py, in reverse.
 
 DrawingML unit conventions:
 - Coordinates / sizes: EMU (English Metric Unit). 914400 EMU = 1 inch = 96 px.
@@ -93,6 +93,18 @@ def percent_to_ratio(val: float | int | str | None, default: float = 0.0) -> flo
         return default
 
 
+def ooxml_bool(value: str | None, default: bool = False) -> bool:
+    """Parse the boolean lexical forms accepted by OOXML."""
+    if value is None:
+        return default
+    normalized = value.strip().lower()
+    if normalized in {"1", "true", "on"}:
+        return True
+    if normalized in {"0", "false", "off"}:
+        return False
+    return default
+
+
 # ---------------------------------------------------------------------------
 # xfrm / transform parsing
 # ---------------------------------------------------------------------------
@@ -162,14 +174,16 @@ class Xfrm:
         cy = self.y + self.h / 2.0
         parts: list[str] = []
         if self.rot:
-            parts.append(f"rotate({_fmt(self.rot)} {_fmt(cx)} {_fmt(cy)})")
+            parts.append(
+                f"rotate({_fmt(self.rot, 8)} {_fmt(cx, 8)} {_fmt(cy, 8)})"
+            )
         if self.flip_h or self.flip_v:
             sx = -1 if self.flip_h else 1
             sy = -1 if self.flip_v else 1
             # scale around shape center
-            parts.append(f"translate({_fmt(cx)} {_fmt(cy)})")
+            parts.append(f"translate({_fmt(cx, 8)} {_fmt(cy, 8)})")
             parts.append(f"scale({sx} {sy})")
-            parts.append(f"translate({_fmt(-cx)} {_fmt(-cy)})")
+            parts.append(f"translate({_fmt(-cx, 8)} {_fmt(-cy, 8)})")
         return " ".join(parts) if parts else None
 
 
@@ -179,8 +193,8 @@ def parse_xfrm(xfrm_elem: ET.Element | None) -> Xfrm:
         return Xfrm()
 
     rot = angle_to_deg(xfrm_elem.get("rot"))
-    flip_h = xfrm_elem.get("flipH") == "1"
-    flip_v = xfrm_elem.get("flipV") == "1"
+    flip_h = ooxml_bool(xfrm_elem.get("flipH"))
+    flip_v = ooxml_bool(xfrm_elem.get("flipV"))
 
     off = xfrm_elem.find("a:off", NS)
     ext = xfrm_elem.find("a:ext", NS)

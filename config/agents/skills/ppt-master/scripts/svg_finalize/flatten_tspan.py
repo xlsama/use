@@ -2,7 +2,16 @@ import os
 import sys
 import re
 import argparse
+from pathlib import Path
 from xml.etree import ElementTree as ET
+
+_SCRIPTS_DIR = Path(__file__).resolve().parents[1]
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from console_encoding import configure_utf8_stdio  # noqa: E402
+
+configure_utf8_stdio()
 
 
 SVG_NS = "http://www.w3.org/2000/svg"
@@ -251,6 +260,18 @@ def _get_font_size_px(elem: ET.Element) -> float | None:
     return parse_first_number(style_size)
 
 
+def _effective_line_font_size_px(
+    text_el: ET.Element,
+    line_group: list[ET.Element],
+) -> float:
+    """Return the positioned line starter's effective font size."""
+    line_size = _get_font_size_px(line_group[0])
+    if line_size is not None:
+        return line_size
+    parent_size = _get_font_size_px(text_el)
+    return parent_size if parent_size is not None else 16.0
+
+
 def _classify_paragraph_block(
     text_el: ET.Element,
     is_svg_tag,
@@ -283,6 +304,7 @@ def _classify_paragraph_block(
         is treated as a section break and rejected.
       - Every line-break tspan that sets x repeats the parent <text>'s x.
       - No nested tspan inside any line carries x/y/dy.
+      - Adjacent lines with different effective font sizes start new paragraphs.
     """
     base_x = parse_first_number(get_attr(text_el, "x"))
     child_view = _build_paragraph_child_view(text_el, is_svg_tag)
@@ -349,6 +371,10 @@ def _classify_paragraph_block(
 
     extras: list[float] = [0.0]  # first line never has space-before
     soft_breaks: list[bool] = [False]  # first line starts a paragraph
+    line_font_sizes = [
+        _effective_line_font_size_px(text_el, group)
+        for group in line_groups
+    ]
     for idx, d in enumerate(dy_values[1:], start=1):
         if d + DY_TOLERANCE_PX < base:
             return None  # below base — line overlap, not a paragraph
@@ -359,11 +385,12 @@ def _classify_paragraph_block(
             extra = 0.0
         # dy at the base line-height = soft break (SVG was simulating wrap);
         # dy strictly greater than base = hard paragraph break. List markers
-        # also start a fresh paragraph so bullet/ordered items do not merge
-        # into the previous item when exported to PowerPoint.
+        # and font-size changes also start a fresh paragraph so semantically
+        # distinct visual lines do not merge into one PowerPoint line.
         is_soft = (
             abs(extra) <= DY_TOLERANCE_PX
             and not _starts_with_list_marker(line_groups[idx])
+            and abs(line_font_sizes[idx] - line_font_sizes[idx - 1]) <= 1e-6
         )
         extras.append(0.0 if is_soft else extra)
         soft_breaks.append(is_soft)
