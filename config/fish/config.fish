@@ -165,13 +165,13 @@ alias us='uv sync'
 # ai
 alias cc='claude --dangerously-skip-permissions --effort max'
 alias cch="claude --dangerously-skip-permissions --model haiku"
+alias ccs="claude --dangerously-skip-permissions --model sonnet"
 alias ccr="cc --resume"
-alias cm="cch /commit"
-alias cca="claude agents"
+alias cm="ccs /commit"
 alias cx="codex --sandbox danger-full-access"
 
 function c
-  zed $argv
+  code $argv
 end
 
 # Git Clone to ~/i Directory
