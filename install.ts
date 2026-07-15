@@ -20,9 +20,6 @@ const LINK_MAP = [
   { source: '~/i/use/config/starship.toml', target: '~/.config/starship.toml' },
   // ghostty
   { source: '~/i/use/config/ghostty.conf', target: '~/.config/ghostty/config' },
-  // zed
-  { source: '~/i/use/config/zed/settings.json', target: '~/.config/zed/settings.json' },
-  { source: '~/i/use/config/zed/keymap.json', target: '~/.config/zed/keymap.json' },
   // agents - universal
   { source: '~/i/use/config/agents/AGENTS.md', target: '~/.codex/AGENTS.md' },
   { source: '~/i/use/config/agents/commands', target: '~/.agents/commands' },
