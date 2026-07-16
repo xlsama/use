@@ -1,5 +1,6 @@
 ---
 description: Commit 当前工作区所有变更并 push 到 origin
+model: sonnet
 allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git diff:*), Bash(git commit:*), Bash(git push:*), Bash(git branch:*), Bash(git log:*), Bash(git rev-parse:*)
 ---
 
