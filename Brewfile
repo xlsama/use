@@ -28,6 +28,8 @@ brew fzf
 brew im-select
 brew fnm # node version manager
 brew uv # python package and project manager
+brew herdr
+brew hunk
 
 
 # programming languages
