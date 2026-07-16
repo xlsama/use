@@ -29,6 +29,7 @@ brew im-select
 brew fnm # node version manager
 brew uv # python package and project manager
 
+
 # programming languages
 brew rust
 brew go

@@ -22,6 +22,8 @@ const LINK_MAP = [
   { source: '~/i/use/config/ghostty.conf', target: '~/.config/ghostty/config' },
   // hunk
   { source: '~/i/use/config/hunk.toml', target: '~/.config/hunk/config.toml' },
+  // herdr
+  { source: '~/i/use/config/herdr.toml', target: '~/.config/herdr/config.toml' },
   // agents - universal
   { source: '~/i/use/config/agents/AGENTS.md', target: '~/.codex/AGENTS.md' },
   { source: '~/i/use/config/agents/commands', target: '~/.agents/commands' },
