@@ -1,0 +1,5 @@
+mode = "stack"
+watch = true
+hunk_headers = false  # 关闭 Hunk metadata 行
+wrap_lines = true     # 开启 Line wrapping
+

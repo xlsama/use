@@ -8,6 +8,7 @@
 [core]
 	excludesfile = /Users/xlsama/.gitignore
 	editor = nvim
+	pager = hunk pager
 [init]
 	defaultBranch = main
 [includeIf "gitdir:/Users/xlsama/w/"]

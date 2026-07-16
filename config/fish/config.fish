@@ -17,6 +17,13 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 
 fish_add_path /opt/homebrew/opt/postgresql@18/bin
+
+# 顶层交互式 shell 自动进入 herdr（仅限 Ghostty；herdr 内部 pane 带 HERDR_ENV=1，会跳过，不会无限嵌套）
+# 想临时用纯 fish：先 `set -x NO_HERDR 1` 再开 shell
+if status is-interactive; and not set -q HERDR_ENV; and not set -q NO_HERDR; and test "$TERM_PROGRAM" = ghostty
+    exec /opt/homebrew/bin/herdr
+end
+
 starship init fish | source
 functions -c fish_prompt __starship_fish_prompt
 function fish_prompt

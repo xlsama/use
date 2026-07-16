@@ -20,6 +20,8 @@ const LINK_MAP = [
   { source: '~/i/use/config/starship.toml', target: '~/.config/starship.toml' },
   // ghostty
   { source: '~/i/use/config/ghostty.conf', target: '~/.config/ghostty/config' },
+  // hunk
+  { source: '~/i/use/config/hunk.toml', target: '~/.config/hunk/config.toml' },
   // agents - universal
   { source: '~/i/use/config/agents/AGENTS.md', target: '~/.codex/AGENTS.md' },
   { source: '~/i/use/config/agents/commands', target: '~/.agents/commands' },
@@ -79,3 +81,4 @@ await $`npm i -g @antfu/ni nnrm vite`.nothrow()
 function log(msg: string) {
   console.log(`\x1b[35m${msg}\x1b[0m\n`)
 }
+
