@@ -17,3 +17,5 @@ auto_switch = false
 
 [keys]
 prefix = "ctrl+o"
+split_vertical = "prefix+s"
+split_horizontal = "prefix+d"
